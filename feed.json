@@ -1,17 +1,22 @@
 {
-  "updated_at": null,
+  "updated_at": "2026-10-12T03:17:56+00:00",
   "headlines": [
     {
-      "category": "SETUP",
-      "title": "Connect the automated news feed to populate recent headlines",
-      "verification": "Not yet verified",
-      "url": "https://chatgpt.com/"
+      "category": "ECONOMY",
+      "title": "Major Economic Indicators Latest Numbers",
+      "url": "https://www.bls.gov/bls/",
+      "published_at": "Fri,  9 Oct 2026 10:00:29 -0400",
+      "verification": "Not yet verified"
     }
   ],
   "weekly_trend": {
     "title": "No verified weekly trend published yet",
-    "summary": "Weekly findings appear after editorial review."
+    "summary": "Publish a sourced weekly trend in editorial.json to replace this message."
   },
   "report_url": "https://chatgpt.com/",
-  "notes": "Initial configuration data, not a live news report."
+  "notes": "Automated RSS headlines are NOT independently fact-checked. Only curated editorial.json entries may carry Confirmed status.",
+  "source_errors": [
+    "U.S. POLICY: ParseError",
+    "TECH & SECURITY: HTTPError"
+  ]
 }

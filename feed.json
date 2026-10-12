@@ -1,11 +1,81 @@
 {
-  "updated_at": "2026-10-12T03:17:56+00:00",
+  "updated_at": "2026-10-12T03:28:45+00:00",
   "headlines": [
+    {
+      "category": "U.S. POLICY",
+      "title": "Columbus Day, 2026",
+      "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20972/columbus-day-2026",
+      "published_at": "Tue, 13 Oct 2026 04:00:00 GMT",
+      "verification": "Not yet verified"
+    },
+    {
+      "category": "U.S. POLICY",
+      "title": "National Energy Dominance Month, 2026",
+      "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20969/national-energy-dominance-month-2026",
+      "published_at": "Tue, 13 Oct 2026 04:00:00 GMT",
+      "verification": "Not yet verified"
+    },
     {
       "category": "ECONOMY",
       "title": "Major Economic Indicators Latest Numbers",
       "url": "https://www.bls.gov/bls/",
       "published_at": "Fri,  9 Oct 2026 10:00:29 -0400",
+      "verification": "Not yet verified"
+    },
+    {
+      "category": "U.S. POLICY",
+      "title": "Emergency Tax Relief on Diesel Fuel",
+      "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20855/emergency-tax-relief-on-diesel-fuel",
+      "published_at": "Fri, 09 Oct 2026 04:00:00 GMT",
+      "verification": "Not yet verified"
+    },
+    {
+      "category": "U.S. POLICY",
+      "title": "National Manufacturing Day, 2026",
+      "url": "https://www.federalregister.gov/documents/2026/10/07/2026-20629/national-manufacturing-day-2026",
+      "published_at": "Wed, 07 Oct 2026 04:00:00 GMT",
+      "verification": "Not yet verified"
+    },
+    {
+      "category": "U.S. POLICY",
+      "title": "Presidential Determination on the Revocation of Presidential Determinations Related to Lebanon",
+      "url": "https://www.federalregister.gov/documents/2026/10/05/2026-20439/presidential-determination-on-the-revocation-of-presidential-determinations-related-to-lebanon",
+      "published_at": "Mon, 05 Oct 2026 04:00:00 GMT",
+      "verification": "Not yet verified"
+    },
+    {
+      "category": "U.S. POLICY",
+      "title": "Continuation of the National Emergency With Respect to the Situation in and in Relation to Syria",
+      "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20322/continuation-of-the-national-emergency-with-respect-to-the-situation-in-and-in-relation-to-syria",
+      "published_at": "Fri, 02 Oct 2026 04:00:00 GMT",
+      "verification": "Not yet verified"
+    },
+    {
+      "category": "U.S. POLICY",
+      "title": "Inaugurating the Era of Super Intelligence",
+      "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20321/inaugurating-the-era-of-super-intelligence",
+      "published_at": "Fri, 02 Oct 2026 04:00:00 GMT",
+      "verification": "Not yet verified"
+    },
+    {
+      "category": "U.S. POLICY",
+      "title": "Eliminating Disease-Carrying Pests and Restoring Enjoyment of the Great Outdoors",
+      "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20320/eliminating-disease-carrying-pests-and-restoring-enjoyment-of-the-great-outdoors",
+      "published_at": "Fri, 02 Oct 2026 04:00:00 GMT",
+      "verification": "Not yet verified"
+    },
+    {
+      "category": "U.S. POLICY",
+      "title": "Streamlining Access to Government Services Through America.gov",
+      "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20319/streamlining-access-to-government-services-through-americagov",
+      "published_at": "Fri, 02 Oct 2026 04:00:00 GMT",
+      "verification": "Not yet verified"
+    },
+    {
+      "category": "U.S. POLICY",
+      "title": "Presidential Determination on Refugee Admissions for Fiscal Year 2027",
+      "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20318/presidential-determination-on-refugee-admissions-for-fiscal-year-2027",
+      "published_at": "Fri, 02 Oct 2026 04:00:00 GMT",
       "verification": "Not yet verified"
     }
   ],
@@ -14,9 +84,24 @@
     "summary": "Publish a sourced weekly trend in editorial.json to replace this message."
   },
   "report_url": "https://chatgpt.com/",
-  "notes": "Automated RSS headlines are NOT independently fact-checked. Only curated editorial.json entries may carry Confirmed status.",
+  "notes": "Automated RSS entries are NOT independently fact-checked. Verification conclusions require editorial review.",
+  "source_status": {
+    "U.S. POLICY": {
+      "ok": true,
+      "items": 25,
+      "url": "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Btype%5D%5B%5D=PRESDOCU"
+    },
+    "ECONOMY": {
+      "ok": true,
+      "items": 1,
+      "url": "https://www.bls.gov/feed/bls_latest.rss"
+    },
+    "TECH & SECURITY": {
+      "ok": false,
+      "items": 0
+    }
+  },
   "source_errors": [
-    "U.S. POLICY: ParseError",
-    "TECH & SECURITY: HTTPError"
+    "TECH & SECURITY: all endpoints failed (HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden)"
   ]
 }

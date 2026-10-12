@@ -1,0 +1,17 @@
+{
+  "updated_at": null,
+  "headlines": [
+    {
+      "category": "SETUP",
+      "title": "Connect the automated news feed to populate recent headlines",
+      "verification": "Not yet verified",
+      "url": "https://chatgpt.com/"
+    }
+  ],
+  "weekly_trend": {
+    "title": "No verified weekly trend published yet",
+    "summary": "Weekly findings appear after editorial review."
+  },
+  "report_url": "https://chatgpt.com/",
+  "notes": "Initial configuration data, not a live news report."
+}

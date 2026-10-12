@@ -2,7 +2,8 @@
   "headlines": [],
   "weekly_trend": {
     "title": "No verified weekly trend published yet",
-    "summary": "Publish a sourced weekly trend in editorial.json to replace this message."
+    "summary": "Weekly analysis will appear here after evidence review.",
+    "evidence": []
   },
   "report_url": "https://chatgpt.com/"
 }

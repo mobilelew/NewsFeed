@@ -1,140 +1,140 @@
 {
-  "updated_at": "2026-10-12T03:49:43+00:00",
+  "updated_at": "2026-10-12T11:04:07+00:00",
   "headlines": [
     {
-      "category": "U.S. POLICY",
-      "title": "Supreme Court allows Trump to implement parts of his mail-in voting executive order - ABC News - Breaking News, Latest News and Videos",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQLUpWVmxZNkVNNGxlamhNRjkteVhjUVJNMXhDQ3Vyc3V3UkdTVEcyeUM0ZnEzTUlJQXRYMUZsNkZ5LTN5Q0VzWDFrVmVFSVlpOFBSaEpwa19qd0Q4SExzankxMEpIQjMxT2k5R0Z3emE0cDFCNng3V3lwVjBQUDg1NNIBhgFBVV95cUxOWGtmd1BpZ1U2QlJOeTZIcXhKMTVTOVFEZDJKcDJPS1NzX2NsOG1RT2w2TkpUMDkwTWY1QzlZcGt4LVlmNV9NZlFVUG04S0Y1U2hUSUdFSk5sUlFId1VsZzlnd1JvOGlWQnY2LThiN1J6cjZDSjdSWHd3elNWS3FpYWJqMXFnUQ?oc=5",
-      "published_at": "2026-10-11T04:19:55+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.04
-    },
-    {
       "category": "ECONOMY",
-      "title": "Week Ahead: US CPI, Fed Rates, Treasury Yields and Markets - Equiti Global",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMk5POUNKajlFVTd3ODVYbUlQLUl5RElmV1RocFktZGNHQjQxcnU0dUdyN2lUeUdydW9yZ0xvTV9qclQ2RG1Oem9zaEI5aEVmbTlLaGtTMkpQWkNrcXhzd3AzbmFRUEpVOHVrYTZlOVdoRElxRFVGblMxak1CUWtDamdiQ1pnemJDcVFBeUxtZEZmdUpvaWw0?oc=5",
-      "published_at": "2026-10-11T08:57:16+00:00",
+      "title": "Major Economic Indicators Latest Numbers",
+      "url": "https://www.bls.gov/bls/",
+      "published_at": "2026-10-09T14:00:29+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 128.43
-    },
-    {
-      "category": "AGRICULTURE",
-      "title": "Weston Livestock Auction Report - October 10, 2026 | USDA Market News - News and Statistics - IndexBox",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSWJkOTJZS0UtNDBFYWZUZUNVX1VROHp0cmViU1lyMmp0U1dOMXJnX3dOMmtmcmRWVW8zVzF5T00yTHlLcHh1YXJVT19TRGhQWENvdWhmSGdrQXZyazE0VDVvQm9HTmVDUkwxN2NyVmhQd1FuQTBxZHc4TTRCdWFpbzFVOFFpRVdBUlgyQ09NWHB5empHc3c?oc=5",
-      "published_at": "2026-10-11T04:01:01+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.02
-    },
-    {
-      "category": "CRYPTO",
-      "title": "Solana: 6.4 percent of stablecoin reserves have gone - CryptoTicker",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE02MzBQclV6eFNlMFFkdzZGNUhWQmpyQW90emhQb1premo4Q0ZPcXdzcnRyX19Jb3BjVjVTcHVqU1FGdFhlMkF1UU9BOFVNNXJTTVhRb3RiZ2g1VWY0Nk9CbXM5U2MtVEFsRXNOU3MtV3ZnWm9SaDlOSklYc3hWdFU?oc=5",
-      "published_at": "2026-10-11T18:32:48+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.23
+      "discovery_score": 39.24
     },
     {
       "category": "AI",
-      "title": "Not Nvidia. Not Broadcom. This Little-Known Chip Supplier Could Be the AI Boom's Best-Kept Secret. - The Motley Fool",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUFBoMi1Gb09QbG1PWlRZRnFPMkJya3BDNnUwSGI1T2JOVXMteEFHd0h6R2ZSaUJ1dUgxUXhJSDRyZmZYQ0NPMHpxRmpMVk1qcEk2eGZEUDM5TTJ3U1lNeUVvN2R6aElLeUxNbDR0cll0R0FBcTRJclByOHZ3MHVDV2NoeHo3ZXlGckNzNjc3RzZiaFBRVXRlMg?oc=5",
-      "published_at": "2026-10-12T00:30:00+00:00",
+      "title": "SpireBench: Evaluating Long-Horizon Strategic Play of Agentic Models with Slay the Spire",
+      "url": "https://arxiv.org/abs/2610.12596",
+      "published_at": "2026-10-12T04:00:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.72
-    },
-    {
-      "category": "TECH & SECURITY",
-      "title": "U.S. CISA adds ProFTPD, ONLYOFFICE Docs, Strapi, Apache Struts, and ISC BIND flaws to its Known Exploited V... - Security Affairs",
-      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQZExGQmNqcC1LTnpna2VKRWJIbFN5Z1U0dlBaSUdQTFR4M2pISHU2SDRFcHhrQlY5UnRMWUJTRHZiU3c4cEl4Z2xjeXR2SWF0RnBhampZajJsajJIMHZ5Yjg3eTI0b0NlbTVjRVRLd0RhY3BDZVctT0w0dVgxa3RSWkljd3lMcy1VdmFwY3dHX243WEhMb3RVSlN0NWx0NmFNaVo2eWpSTkcyanRIQVM0NjFlZUtlMjRJTzVONk9nemNJSDVfYVJMbGdWaWd1b0FKR0tnTkRPLWJxdi1DT1JJcUhnRnhvRlUwWmk0Mk1vV25yQzRRbTRPaU92emhOZlEyVUJRQWFLVk3SAYgCQVVfeXFMUGRMRkJjanAtS056Z2tlSkViSGxTeWdVNHZQWklHUExUeDNqSEh1Nkg0RXB4a0JWOVJ0TFlCU0R2YlN3OHBJeGdsY3l0dklhdEZwYWpqWWoybGoySDB2eWI4N3kyNG9DZW01Y0VUS3dEYWNwQ2VXLU9MNHVYMWt0UlpJY3d5THMtVXZhcGN3R19uN1hITG90VUpTdDVsdDZhTWlaNnlqUk5HMmp0SEFTNDYxZWVLZTI0SU81TjZPZ3pjSUg1X2FSTGxnVmlndW9BSkdLZ05ETy1icXYtQ09SSXFIZ0Z4b0ZVMFppNDJNb1duckM0UW00T2lPdnpoTmZRMlVCUUFhS1ZN?oc=5",
-      "published_at": "2026-10-11T09:21:16+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.46
+      "discovery_score": 119.41
     },
     {
       "category": "AI",
-      "title": "Not Nvidia. Not Broadcom. This Little-Known Chip Supplier Could Be the AI Boom's Best-Kept Secret. - The Globe and Mail",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPRFdoN1hVM2RDNkNrV0ExRGlSdHNmX1RPZDc2cFozRnhveDg4bG1qMGxjUEVmWXZpdl9wb0cwVnFTRnpFTTQxVkJENFVKLXRpNDV3TnBMdVZGaldGaXdPX2dTUmZfUXNaMmZnRXA1dzdWc3Y4cUVpOUtfLUJBMWp3SC1lbERfTGcyZFloc051bXdheldnaURmc3Q0TlctdFNYNGxNRXpmN1RHaDMyaVJUZ19CZ0lOeEZLMmh4eGloeVR3T2J5blNVdFpVZ2RuY256dVdIM3pvbkFRVFRrRXZjLWtWSmVBT3lOUm5ROWs0NXBRWlA3X3k5SXo2RmxYcmhsU3NzLQ?oc=5",
-      "published_at": "2026-10-11T23:59:14+00:00",
+      "title": "EvoBelief: Falsifiable World Models for Self-Improving LLM Agents",
+      "url": "https://arxiv.org/abs/2610.12789",
+      "published_at": "2026-10-12T04:00:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.68
+      "discovery_score": 119.41
     },
     {
       "category": "AI",
-      "title": "SpaceX Seeks $40B to Buy NVIDIA Chips for Orbit AI [2026] - https://tech-insider.org/",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9jN3NIc2xkcnZTYzQ2czlrWE1KZGxpZmFyLU1ySldDOVFKcmlFYkJQVWlwbHVzVlN2QVd3cjdzX2pBMjJRV2djVVFabmpzb1p2X1Z6MWQ0ejFjejd0eXpFR2xoLUJITzRTNjJ4OVVHVUtQQWxvdE9rN0d4NEk?oc=5",
-      "published_at": "2026-10-11T19:49:38+00:00",
+      "title": "Faithfulness Without Anchors: A Position Paper on the Structural Misalignments of Explainable AI Faithfulness Metrics for Feature Importance",
+      "url": "https://arxiv.org/abs/2610.12493",
+      "published_at": "2026-10-12T04:00:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.33
-    },
-    {
-      "category": "CRYPTO",
-      "title": "Stablecoin swaps: France plans what Germany taxes - CryptoTicker",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE85M0NqbUphU0d5U2o1SFRrZjZaUDRuNDdwcmc1emJ3YUppZzdmNVBrbDNjVDNqcG5hU3hrUEQ3QWQyODVnMXBwNE13RnpRM3pzMTlPT3RFLTFlUklMeWRaS3I4azVlOFRWclFKcFF3?oc=5",
-      "published_at": "2026-10-11T18:26:29+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.22
+      "discovery_score": 109.41
     },
     {
       "category": "AI",
-      "title": "Die KI-Falle für den Staat: Warum Nvidia, Palantir und Cisco zur Gefahr werden können und Managed AI die richtige Antwort ist - Xpert.Digital - Konrad Wolf",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlb1M2Umt1eG9neU5DVUVyTGNMZ2NqNTVsVjRjSnhPVEE0azRUZUhnV0dEeE1kbk9QNTdKdmZPUk5TbFoyWTl2Q0p0dFVKX0RMN3F4ZUUxaGE3WEVpZVJRUdIBaEFVX3lxTFB6bDdxcGZyc2FiUHNUSG12c21XSVhqbjZlNzlUQ0p4elF0N0ZDRldVczc5VGN2WDBiX2syZ1BsaEhaMmE0OUpEWVMzOUhvVEZMTG9TTExJSXU5R3AxQXVVN2J1cDA4RFNs?oc=5",
-      "published_at": "2026-10-11T16:37:26+00:00",
+      "title": "Know What You Don't Know: Agentic Data Synthesis by Evolving Generation Space for Closed-Loop Learning",
+      "url": "https://arxiv.org/abs/2610.12593",
+      "published_at": "2026-10-12T04:00:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.07
-    },
-    {
-      "category": "CRYPTO",
-      "title": "Asia’s crypto regulatory updates include Kyrgyzstan’s USDKG stablecoin shutdown - The Cryptonomist",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9BMjB6N2tVUDg4RFlCbV81SEJ6LVNNSlJ0TE5ucjF4ejlJNmJ3RVQyRXFhd1dYVjMwSWcxT0hnV2NLanpQSzFVOV8yNjE3SHlaZmliWThxTllSNXQtYWVhb1FQN3NSdU53aWxTazhlQmpzWTZGMWgzVw?oc=5",
-      "published_at": "2026-10-11T16:25:46+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.05
+      "discovery_score": 109.41
     },
     {
       "category": "AI",
-      "title": "Nvidia's Power-Cushion Edge and Its Unconfirmed Reflection AI Options - ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOOGt2UDZ6YWxMMDR5VHNGdkdXUjVoZlpNTkt3d0x1b3NDazYwdklJQmpqZFViWnZmRFBhV1FmYnVBa2lVOHp0MjJBcGZwSTBnR0Y5UG9IOGZlSEtOaWtSTmZSUkZrZDlnRi1Yc19PUFFLSXBhU0pfQllVc2x1dUs4TkpXNjFjSEdqUkwzUWFrYVVaOVRyMEJvcEl2dm1UNFR6RzVpNDZIeldYVUNUVmFTdVN5b2NWa3hFMldSdTI4ck9xRXRyR2VTUUtObHJab25kU0JHcmNfR3M?oc=5",
-      "published_at": "2026-10-11T14:31:18+00:00",
+      "title": "Beyond Binary Verifiable Rewards: Behavioral Self-Rewarding for SWE Agents",
+      "url": "https://arxiv.org/abs/2610.12598",
+      "published_at": "2026-10-12T04:00:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.89
-    },
-    {
-      "category": "CRYPTO",
-      "title": "Asia's weekly TOP10 crypto news: Kyrgyzstan Halts National Stablecoin Project, South Korea Tightens Cross-Border Virtual Asset Oversight and Top10 News - S",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1FMHpjUzJDc2w0SXlNTTZsbjNLTUE5d1Nwb200OFdqQXk4Q2xuaV9yQXRqT0t2aTk5a1NqT3NnMmE0anUzaGg1c1o1N01ST21uVGlPU0FkQXI1NndXRzFHY0NkbmtVM3A2aE45MEotZUV6cUNZRmVkZUNpME4?oc=5",
-      "published_at": "2026-10-11T11:17:48+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.62
+      "discovery_score": 109.41
     },
     {
       "category": "AI",
-      "title": "How much energy does AI use, and why does it need so many data centers? - Dallas News",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcEljOFJKYWdYV2RjUGswNXN2bFFISFo5SjRiNS1ldWM3T1J6aW5nZTBUTWhkTFp1OFVPenFEZUFmX1BBTDhRNFFRMG9zSnVCSUVhNmdCT1JuN2FuQWxiQmlRU3ktWWpIbGFpeG1EamVEZVloVERJSU9oWWFJQXdOQ2czOEw0TVl4MU4tamlSNHBzYzFLMUdNYUNKSTNHZ3Zm?oc=5",
-      "published_at": "2026-10-11T11:18:55+00:00",
+      "title": "CLEAT: Learning Value-Guided Clarification for Interactive Agents",
+      "url": "https://arxiv.org/abs/2610.12655",
+      "published_at": "2026-10-12T04:00:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.62
+      "discovery_score": 109.41
     },
     {
       "category": "AI",
-      "title": "AM Intelligence Orders 20,000 NVIDIA Rubin GPUs for India [2026] - https://tech-insider.org/",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNNkdWUkxNUVdqaDR4VC14N1RKYjdLd1hkaXNDN3BYTFd3cnNWVU5PN19yOWdqSWVNQmtMV0l2U2l0VTFFbVBRZ3pyajhZNUE5N1Y5aVpCbk51amNvVVliSXVGaUltNTdnX1ZPaE81OXowQlpPWkJKQ3JjWVFDZEY5WnRB?oc=5",
-      "published_at": "2026-10-11T09:52:29+00:00",
+      "title": "VEPA: Verified Evolving Formal Policy for Lifelong LLM Agent Guardrails",
+      "url": "https://arxiv.org/abs/2610.12813",
+      "published_at": "2026-10-12T04:00:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.5
+      "discovery_score": 109.41
+    },
+    {
+      "category": "AI",
+      "title": "Reward Hacking as a Transmissible Strategy in Multi-Agent Coding Systems",
+      "url": "https://arxiv.org/abs/2610.12822",
+      "published_at": "2026-10-12T04:00:00+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.41
+    },
+    {
+      "category": "AI",
+      "title": "Towards Defining, Measuring, and Leveraging Creativity in AI Applications",
+      "url": "https://arxiv.org/abs/2610.12845",
+      "published_at": "2026-10-12T04:00:00+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.41
+    },
+    {
+      "category": "AI",
+      "title": "OGPO: Offline Goal-conditioned Policy Optimization for Recoverable Vision-Language-Action Models",
+      "url": "https://arxiv.org/abs/2610.12914",
+      "published_at": "2026-10-12T04:00:00+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.41
+    },
+    {
+      "category": "AI",
+      "title": "Collaborative Learning and Reasoning over Model Slices",
+      "url": "https://arxiv.org/abs/2610.12927",
+      "published_at": "2026-10-12T04:00:00+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.41
+    },
+    {
+      "category": "AI",
+      "title": "MathVis: Can AI Reason through Drawing? A Benchmark for Mathematical Figure Generation",
+      "url": "https://arxiv.org/abs/2610.12954",
+      "published_at": "2026-10-12T04:00:00+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.41
+    },
+    {
+      "category": "AI",
+      "title": "SmartSalesBench: A Resistance-Aware Multi-Turn Benchmark for Evaluating LLM Sales Agents",
+      "url": "https://arxiv.org/abs/2610.12975",
+      "published_at": "2026-10-12T04:00:00+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.41
+    },
+    {
+      "category": "AI",
+      "title": "Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction",
+      "url": "https://arxiv.org/abs/2610.12984",
+      "published_at": "2026-10-12T04:00:00+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.41
     }
   ],
   "weekly_trend": {
@@ -146,18 +146,15 @@
   "notes": "RSS and aggregators are discovery only. Verification requires separately curated original evidence; no automatic fact-checking is claimed.",
   "source_status": {
     "U.S. POLICY": {
-      "ok": true,
-      "items": 16,
-      "working_sources": [
-        "https://news.google.com/rss/search?q=executive%20order%20congress%20legislation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
-      ]
+      "ok": false,
+      "items": 0,
+      "working_sources": []
     },
     "ECONOMY": {
       "ok": true,
-      "items": 26,
+      "items": 1,
       "working_sources": [
-        "https://www.bls.gov/feed/bls_latest.rss",
-        "https://news.google.com/rss/search?q=Federal%20Reserve%20dollar%20inflation%20treasury%20yields%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
+        "https://www.bls.gov/feed/bls_latest.rss"
       ]
     },
     "HOUSING": {
@@ -166,35 +163,33 @@
       "working_sources": []
     },
     "AGRICULTURE": {
-      "ok": true,
-      "items": 6,
-      "working_sources": [
-        "https://news.google.com/rss/search?q=USDA%20beef%20cattle%20chicken%20turkey%20livestock%20prices%20farms%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
-      ]
+      "ok": false,
+      "items": 0,
+      "working_sources": []
     },
     "CRYPTO": {
-      "ok": true,
-      "items": 34,
-      "working_sources": [
-        "https://news.google.com/rss/search?q=bitcoin%20ethereum%20SEC%20stablecoin%20regulation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
-      ]
+      "ok": false,
+      "items": 0,
+      "working_sources": []
     },
     "AI": {
       "ok": true,
-      "items": 33,
+      "items": 19,
       "working_sources": [
-        "https://news.google.com/rss/search?q=AI%20models%20OpenAI%20NVIDIA%20data%20centers%20electricity%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
+        "https://export.arxiv.org/rss/cs.AI"
       ]
     },
     "TECH & SECURITY": {
-      "ok": true,
-      "items": 4,
-      "working_sources": [
-        "https://news.google.com/rss/search?q=CISA%20cybersecurity%20breach%20ransomware%20vulnerability%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
-      ]
+      "ok": false,
+      "items": 0,
+      "working_sources": []
     }
   },
   "source_errors": [
-    "HOUSING: ValueError: No RSS/Atom entries"
+    "U.S. POLICY: ValueError: No fresh, relevant items; ValueError: No RSS/Atom entries",
+    "HOUSING: ValueError: No RSS/Atom entries",
+    "AGRICULTURE: ValueError: No RSS/Atom entries",
+    "CRYPTO: ValueError: No RSS/Atom entries",
+    "TECH & SECURITY: HTTPError: HTTP Error 406: Not Acceptable; ValueError: No RSS/Atom entries"
   ]
 }

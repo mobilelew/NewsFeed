@@ -1,0 +1,96 @@
+name: Auto-publish official-record pilot
+
+on:
+  workflow_dispatch:
+    inputs:
+      report_type:
+        description: 'morning or evening'
+        required: true
+        default: morning
+        type: choice
+        options:
+          - morning
+          - evening
+  schedule:
+    # Both Central Standard and Daylight Time. Guard below selects local hour.
+    - cron: '25 12,13 * * *'
+    - cron: '25 1,2 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-reader-publication
+  cancel-in-progress: false
+
+jobs:
+  auto-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests
+        run: python -m unittest -v test_publication_policy.py test_official_collector.py
+      - name: Select reporting window
+        id: window
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          CHOSEN_KIND: ${{ inputs.report_type }}
+        run: |
+          set -euo pipefail
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "kind=$CHOSEN_KIND" >> "$GITHUB_OUTPUT"
+          else
+            local_hour=$(TZ=America/Chicago date +%H)
+            if [ "$local_hour" = "06" ]; then
+              echo 'kind=morning' >> "$GITHUB_OUTPUT"
+            elif [ "$local_hour" = "20" ]; then
+              echo 'kind=evening' >> "$GITHUB_OUTPUT"
+            else
+              echo 'kind=skip' >> "$GITHUB_OUTPUT"
+            fi
+          fi
+      - name: Generate and publish when official records exist
+        if: steps.window.outputs.kind != 'skip'
+        shell: bash
+        env:
+          KIND: ${{ steps.window.outputs.kind }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git checkout main
+            git reset --hard origin/main
+            python collect_official_records.py --kind "$KIND" --output submissions/auto-pilot.json
+            if [ ! -f submissions/auto-pilot.json ]; then
+              echo "No matching records. No publication."
+              exit 0
+            fi
+            archive="reports/$(TZ=America/Chicago date +%F)/$KIND.json"
+            if [ -f "$archive" ]; then
+              echo "Archive already exists: $archive; do not overwrite."
+              exit 0
+            fi
+            python publish_report.py --input submissions/auto-pilot.json
+            git add briefing.json reports/
+            if git diff --cached --quiet; then
+              echo "No changes to publish."
+              exit 0
+            fi
+            git commit -m "Publish Federal Register metadata-only $KIND pilot"
+            if git push origin HEAD:main; then
+              echo "Published pilot successfully."
+              exit 0
+            fi
+            echo "Concurrent update; retrying from latest main."
+            sleep 3
+          done
+          exit 1

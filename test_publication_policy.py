@@ -48,7 +48,7 @@ class PublicationPolicyTests(unittest.TestCase):
     def test_uncertainty_cannot_be_declared_fact(self):
         data = json.loads(json.dumps(self.base))
         h = data["headlines"][0]
-        h.update(verification="Disputed", attribution="Two accounts",
+        h.update(verification="Disputed", claim_type="established_fact", attribution="Two accounts",
                  what_is_known="Conflicting documents", uncertainty="Different dates",
                  what_cannot_be_concluded="Operative deadline", resolution_needed="Court order")
         self.check(data, False)

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "report_type": "morning",
+  "report_time": "2026-10-14T06:00:00-05:00",
+  "approved": false,
+  "editorial_review": "pending",
+  "reviewed_by": "",
+  "headlines": [
+    {
+      "title": "REPLACE WITH DOCUMENTED FINDING",
+      "category": "RIGHTS & LEGISLATION",
+      "jurisdiction": "texas",
+      "verification": "Not Yet Verifiable",
+      "evidence": [
+        {
+          "type": "primary",
+          "description": "REPLACE WITH VERIFIED OFFICIAL RECORD",
+          "url": "https://example.org/replace"
+        }
+      ]
+    }
+  ],
+  "baseline": [
+    {
+      "identifier": "REPLACE",
+      "status": "REPLACE",
+      "as_of": "2026-10-14T06:00:00-05:00"
+    }
+  ],
+  "weekly_trend": null
+}

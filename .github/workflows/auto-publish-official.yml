@@ -74,18 +74,18 @@ jobs:
               echo "No matching records. No publication."
               exit 0
             fi
-            archive="reports/$(TZ=America/Chicago date +%F)/$KIND.json"
+            archive="reports/official-records/$(TZ=America/Chicago date +%F)/$KIND.json"
             if [ -f "$archive" ]; then
               echo "Archive already exists: $archive; do not overwrite."
               exit 0
             fi
-            python publish_report.py --input submissions/auto-pilot.json
-            git add briefing.json reports/
+            python publish_official_pilot.py --input submissions/auto-pilot.json
+            git add official-records.json reports/official-records/
             if git diff --cached --quiet; then
               echo "No changes to publish."
               exit 0
             fi
-            git commit -m "Publish Federal Register metadata-only $KIND pilot"
+            git commit -m "Publish isolated Federal Register metadata-only $KIND pilot"
             if git push origin HEAD:main; then
               echo "Published pilot successfully."
               exit 0

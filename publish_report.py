@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publish manually approved News Reader reports. This does NOT independently fact-check claims."""
+"""Publish evidence-labelled News Reader reports. Does NOT fact-check cited evidence."""
 import argparse
 import datetime as dt
 import json
@@ -11,6 +11,8 @@ from zoneinfo import ZoneInfo
 ROOT = pathlib.Path(__file__).resolve().parent
 TYPES = {"morning", "evening", "weekly"}
 STATES = {"federal", "texas", "arkansas", "oklahoma"}
+STATUSES = {"Verified", "Corroborated", "Unsubstantiated", "Disputed", "Legal Effect Unclear", "Unverified", "Refuted"}
+UNCERTAIN = STATUSES - {"Verified"}
 ZONE = ZoneInfo("America/Chicago")
 
 def fail(msg):
@@ -26,10 +28,8 @@ def load_submission(path):
     data = json.loads(path.read_text(encoding="utf-8"))
     if data.get("schema_version") != 1 or data.get("report_type") not in TYPES:
         fail("Expected schema_version=1 and report_type morning/evening/weekly")
-    if data.get("approved") is not True or data.get("editorial_review") != "completed":
-        fail("Report has not passed explicit editorial approval")
-    if not str(data.get("reviewed_by", "")).strip():
-        fail("Reviewed-by attribution required")
+    if data.get("publication_policy") != "evidence-status-v1":
+        fail("publication_policy must be evidence-status-v1 (legacy approval templates rejected)")
     try:
         when = dt.datetime.fromisoformat(data["report_time"])
     except (KeyError, TypeError, ValueError):
@@ -40,22 +40,45 @@ def load_submission(path):
     if when > dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=5):
         fail("Future report_time is invalid")
     if not isinstance(data.get("headlines"), list) or not data["headlines"]:
-        fail("Approved reports require at least one headline")
+        fail("Reports require at least one headline")
     for i, h in enumerate(data["headlines"]):
         if not isinstance(h, dict) or not str(h.get("title", "")).strip():
             fail(f"Headline {i} lacks title")
-        if h.get("verification") not in {"Confirmed", "Partially Supported", "Disputed", "Not Yet Verifiable"}:
+        status = h.get("verification")
+        if status not in STATUSES:
             fail(f"Headline {i} has unsupported verification status")
+        if not str(h.get("summary", "")).strip():
+            fail(f"Headline {i} needs a bounded, attributable summary")
+        if h.get("claim_type") not in {"established_fact", "attributed_claim", "proposal", "legal_proceeding", "data_release"}:
+            fail(f"Headline {i} needs an explicit claim_type")
+        if status in UNCERTAIN:
+            for field in ("attribution", "what_is_known", "uncertainty", "what_cannot_be_concluded", "resolution_needed"):
+                if not str(h.get(field, "")).strip():
+                    fail(f"Headline {i} ({status}) needs {field}")
+            if h["claim_type"] == "established_fact":
+                fail(f"Headline {i}: uncertain finding cannot claim established_fact")
+        if status == "Legal Effect Unclear" and not str(h.get("legal_status", "")).strip():
+            fail(f"Headline {i} must specify unknown or qualified legal status")
+        if status == "Refuted" and h["claim_type"] != "attributed_claim":
+            fail(f"Headline {i}: refuted assertion must be presented as an attributed claim")
+        if re.search(r"REPLACE|PLACEHOLDER|EXAMPLE\.ORG", json.dumps(h), re.I):
+            fail(f"Headline {i} contains placeholder material")
         evidence = h.get("evidence")
         if not isinstance(evidence, list) or not evidence:
-            fail(f"Headline {i} needs cited evidence")
+            fail(f"Headline {i} needs at least one source for the claim or its uncertainty")
         for e in evidence:
-            if not isinstance(e, dict) or not https(e.get("url")) or not e.get("description"):
+            if not isinstance(e, dict) or not https(e.get("url")) or not str(e.get("description", "")).strip() or e.get("type") not in {"primary", "independent", "attribution"}:
                 fail(f"Headline {i} has invalid evidence")
-        if h["verification"] == "Confirmed" and not any(e.get("type") == "primary" for e in evidence):
-            fail(f"Confirmed headline {i} needs primary evidence")
+            if urlparse(e["url"]).hostname in {"example.org", "example.com", "example.net"}:
+                fail(f"Headline {i} contains an example evidence URL")
+        if status == "Verified" and not any(e.get("type") == "primary" for e in evidence):
+            fail(f"Verified headline {i} needs primary evidence")
+        if status == "Corroborated" and len(set(e["url"] for e in evidence if e["type"] == "independent")) < 2:
+            fail(f"Corroborated headline {i} needs two distinct independent-source URLs")
         if h.get("jurisdiction") not in STATES | {"national", "international", "multiple"}:
             fail(f"Headline {i} needs jurisdiction")
+    if re.search(r"REPLACE|PLACEHOLDER", json.dumps(data.get("baseline", [])), re.I):
+        fail("Baseline contains placeholders")
     if data["report_type"] == "morning":
         baseline = data.get("baseline")
         if not isinstance(baseline, list) or not baseline:
@@ -91,7 +114,7 @@ def publish(source):
                   "report_date": date, "report_type": kind, "report_time": report["report_time"],
                   "headlines": report["headlines"][:8], "report_path": str(dest.relative_to(ROOT)),
                   "weekly_trend": None,
-                  "notes": "Only independently approved, evidence-linked findings. Verify citations for details."}
+                  "notes": "Evidence-labelled published reporting. Verification labels describe evidentiary support, not guarantees of accuracy. Check original sources and operative legal guidance."}
         weekly = latest / "weekly.json"
         if weekly.exists():
             w = json.loads(weekly.read_text())
@@ -102,7 +125,7 @@ def publish(source):
         current = json.loads(brief.read_text()) if brief.exists() else {"schema_version": 1, "status": "unpublished", "headlines": []}
         current["weekly_trend"] = report.get("weekly_trend")
         brief.write_text(json.dumps(current, indent=2, ensure_ascii=False) + "\n")
-    print(f"Published approved {kind} report: {dest.relative_to(ROOT)}")
+    print(f"Published evidence-labelled {kind} report: {dest.relative_to(ROOT)}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

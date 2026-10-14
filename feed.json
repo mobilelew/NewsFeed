@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T23:17:24+00:00",
+  "updated_at": "2026-10-14T01:59:07+00:00",
   "headlines": [
     {
       "category": "U.S. POLICY",
@@ -8,7 +8,7 @@
       "published_at": "2026-10-12T17:27:25+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 42.51
+      "discovery_score": 42.29
     },
     {
       "category": "ECONOMY",
@@ -17,7 +17,7 @@
       "published_at": "2026-10-13T15:01:56+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.31
+      "discovery_score": 129.09
     },
     {
       "category": "AGRICULTURE",
@@ -26,34 +26,34 @@
       "published_at": "2026-10-13T19:31:02+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.69
+      "discovery_score": 119.46
     },
     {
       "category": "CRYPTO",
-      "title": "Aptos token gains 51% in four weeks, outpacing Bitcoin and Ether - Crypto Briefing",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbFVqbjZ1T3JhNnRQT3FYTkNpYWVsTnpnTjgyemVaVHR6NjMyWmVSRGJCT1IyTnYxNXZUYU44eENSRFpISmNVRUNHeE10NzBhM3JlMWdZYW4xTkUzQ3cxSk50ajN0cVdfWnEwTzlzOFZSQ3hQczhzSzhHLVN2bHZPeU1fWmRUb1VqM3FrUGh6RFMxcXlSZExTV3pFLUVwRTZKOHY0?oc=5",
-      "published_at": "2026-10-13T19:28:25+00:00",
+      "title": "Stablecoins Are Redefining Crypto Banking for Businesses - OneSafe",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQ1JyTDJnUTdLTmp2b2tOSzZsSDh4Ni1PLVZSNm9nQXdzTm9ma2pjUmRNSTJROVIyRzNnMjY2UTVNUWxwbmw1RzBpUUFXZ2NybUsyRndtejEyZGFOc09SODN0S2FTay0xcURyRC1vYVQ3aF9PZUVBUWhrVFpyZHRjTWFn?oc=5",
+      "published_at": "2026-10-14T00:08:16+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.68
+      "discovery_score": 119.85
     },
     {
       "category": "AI",
-      "title": "Although artificial intelligence (AI) technology is rapidly developing, the lack of data centers to - 매일경제",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBMTDc3Y3UyXzRubmNIazhjSVFGQmVBUHVpQkZZUFJMbGJPeTM4Nmk4di1PRG9MbUc4ZUxYTFNZc0w5cGpFZ3ZiZl9zYw?oc=5",
-      "published_at": "2026-10-13T22:10:02+00:00",
+      "title": "Cerebras CEO: OpenAI Defection Stemmed from Data Center Shortage, Not Chips - BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1qY2pGS2lJWW1qRVQ0LTNqNnFuaXJ0R3dPa0Z6OWUydmNyX3VXLXM4MDU5UHJGRml4bHdwZFZTZjJod0ctaW52UW5vSjZDR18ycm1HZVJSeVZYQlBrdy0taEI3bDRGclVuaVNkUTJZVlhHQVhIVmc?oc=5",
+      "published_at": "2026-10-13T23:25:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.91
+      "discovery_score": 119.79
     },
     {
       "category": "TECH & SECURITY",
-      "title": "CISA Warns of Hackers Exploiting Two Citrix NetScaler 0-Days to Execute Code Remotely - CyberSecurityNews",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1DYXpYQkZNV1hFN0tpdHlxQWkzUXVLNlN1c0tQS3pMa0RFTDZOTkFKazJoWXgzSUY3NWlQUDl4Y1VlaHVBX1dSdUV5X1VjZzRHYjc1UEowbnNib3czQkpNeVRCcXRlSFNyblBXTHlFOUFiNmvSAXhBVV95cUxOdTc3RDZBTERzSFQxdXc0X2dKYkhHSllNbmc4Nm81d29pV1Y0Rk1xc1B5ZmxkN2ZYMXZYQUpZR2tvbEFVZmxRbUdsU01FTkxnVFdYdE1QUnZLazIwMkk3ZGVidlBDdGNOb29vdEV2UVpiRWZhbFVYeEw?oc=5",
-      "published_at": "2026-10-13T15:31:55+00:00",
+      "title": "U.S. CISA adds Ivanti Connect Secure flaw to its Known Exploited Vulnerabilities catalog - Security Affairs",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPZ1o1djVFZmMxLTBYeEVqTnhPWTl3emhoZ0RsSFh1WFVRcWdpMy0tQ3paMmZGS002TUZKVVdaNUFhcWJGMVFkRWN5QTdJdGRrbEROVVk4ME9yV2RYWDh2OTdubzNhU3hiRU1pamhNblZEU2N1ZlpqR1FqclpON1BsbXlrTDh6UXZ0ay1CaFh0anlQX01MVEZ1RXBocExkMXJ1Q3p1RlljOTRiNnh4V0x3bl9jU0VrcW5yUGxjX1J2WHVXdVlHQnZtSVQ2OFBmUlAzRXfSAdcBQVVfeXFMUFhTZGdBTVRtNmJLMzVvV0xWX2Zsbi01aUFjT1VUU1Vqei0tT2hudkhMaXY0SmJaZzd6cEhnWUlYellPS0xQclpMWC1Jc1ZJSFZHUks0MTRkRzNON1FURmpsRHhEclNPUC1EOUQ5LVBPQ19yaEZRTUhVa2VUakc1V2JNbXZhVlpsWHU3d0Vya1ZMU1U0R2VGS2dva193VzMzMjhwTEZJM0tyLUxRZ2F6N0Y0eExhdy02ZmVLeXlTVzFIaUJHLWV5Nl9idUF0eF9kSmFrR1pTS0U?oc=5",
+      "published_at": "2026-10-13T19:15:47+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.35
+      "discovery_score": 119.44
     },
     {
       "category": "ECONOMY",
@@ -62,7 +62,7 @@
       "published_at": "2026-10-13T13:49:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.21
+      "discovery_score": 128.99
     },
     {
       "category": "ECONOMY",
@@ -71,7 +71,25 @@
       "published_at": "2026-10-13T07:05:28+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 128.65
+      "discovery_score": 128.43
+    },
+    {
+      "category": "AI",
+      "title": "Although artificial intelligence (AI) technology is rapidly developing, the lack of data centers to - 매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBMTDc3Y3UyXzRubmNIazhjSVFGQmVBUHVpQkZZUFJMbGJPeTM4Nmk4di1PRG9MbUc4ZUxYTFNZc0w5cGpFZ3ZiZl9zYw?oc=5",
+      "published_at": "2026-10-13T22:10:02+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.68
+    },
+    {
+      "category": "CRYPTO",
+      "title": "Aptos token gains 51% in four weeks, outpacing Bitcoin and Ether - Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbFVqbjZ1T3JhNnRQT3FYTkNpYWVsTnpnTjgyemVaVHR6NjMyWmVSRGJCT1IyTnYxNXZUYU44eENSRFpISmNVRUNHeE10NzBhM3JlMWdZYW4xTkUzQ3cxSk50ajN0cVdfWnEwTzlzOFZSQ3hQczhzSzhHLVN2bHZPeU1fWmRUb1VqM3FrUGh6RFMxcXlSZExTV3pFLUVwRTZKOHY0?oc=5",
+      "published_at": "2026-10-13T19:28:25+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.46
     },
     {
       "category": "AGRICULTURE",
@@ -80,7 +98,7 @@
       "published_at": "2026-10-13T19:20:25+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.67
+      "discovery_score": 119.45
     },
     {
       "category": "ECONOMY",
@@ -89,7 +107,7 @@
       "published_at": "2026-10-13T17:57:58+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.56
+      "discovery_score": 119.33
     },
     {
       "category": "ECONOMY",
@@ -98,7 +116,16 @@
       "published_at": "2026-10-13T15:39:22+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.36
+      "discovery_score": 119.14
+    },
+    {
+      "category": "TECH & SECURITY",
+      "title": "CISA Warns of Hackers Exploiting Two Citrix NetScaler 0-Days to Execute Code Remotely - CyberSecurityNews",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1DYXpYQkZNV1hFN0tpdHlxQWkzUXVLNlN1c0tQS3pMa0RFTDZOTkFKazJoWXgzSUY3NWlQUDl4Y1VlaHVBX1dSdUV5X1VjZzRHYjc1UEowbnNib3czQkpNeVRCcXRlSFNyblBXTHlFOUFiNmvSAXhBVV95cUxOdTc3RDZBTERzSFQxdXc0X2dKYkhHSllNbmc4Nm81d29pV1Y0Rk1xc1B5ZmxkN2ZYMXZYQUpZR2tvbEFVZmxRbUdsU01FTkxnVFdYdE1QUnZLazIwMkk3ZGVidlBDdGNOb29vdEV2UVpiRWZhbFVYeEw?oc=5",
+      "published_at": "2026-10-13T15:31:55+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.13
     },
     {
       "category": "CRYPTO",
@@ -107,34 +134,7 @@
       "published_at": "2026-10-13T14:37:47+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.28
-    },
-    {
-      "category": "AI",
-      "title": "Beyond Nvidia: Why tech firms are turning to custom chips for AI inference - Business Standard",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNVHhTWjNvcmw0azc3SnlpM0c3RTJEZ3NLZThQZTBkQTdZOE5zdkJMSnZNck5aTWtocFo5Y3VCNzJNTkt3bnlLRDhVd0dXQlpEalRSRmtfQUMtN2xfRFZTdjJVaGZPVmdRbTVHOWRwaHQxandfSDFCQUUzWFdjMVhuNDFndzZ6eE00cXhBT2xOWGZTM0MtZVVocTFkamRRYWZsemtMR282YktkcnRiT0diMVo0T0Y4M1ZxcE0tWUZDc2ZDVzRFMGlXWXVxZFRjMW42TURCWnViblNabGVPMGFXRzZ30gHnAUFVX3lxTE50eEJZWlZMUWZPenRlX2RJU0taSmliU185YVVUVDF0ZV9lSmltQ2ItUXNTMlpXRE5na00xOUtoLWY5Wi1sY3ZXWmxQUm8tZXkxaGVIOGN1S29jQzR5Mm91cC0tWm04bklFUDBwR251djgtZmxGMGRWUlhpd1lQa3Y1NF9NVmxudVRneGdiUEkzOW1aVWtKbWR5WUlTTk94ZDFYZi1KZThGdnFRRURoem1LUVdQVldlb3BLejhKZUYwTmkwZmloSVpKSTBNSERJV0R2V1FHYklTSEtQRVBLd0tKWjYwSElsNA?oc=5",
-      "published_at": "2026-10-13T11:26:40+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.01
-    },
-    {
-      "category": "ECONOMY",
-      "title": "Gold struggles below $4,200 despite retreat in US Dollar, Treasury yields | FXStreet - شبكة تواصل الإخبارية",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5wRVBfRkVGVmVieDEzb25YWTBMSFl5VnRzOG9qT0RpQzByTXpMQUpXaWN2eHBmRTN0NjNlSUUxeWtZaktXT25uR2pmaENZZVU2X0Vn?oc=5",
-      "published_at": "2026-10-13T11:15:00+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.0
-    },
-    {
-      "category": "ECONOMY",
-      "title": "Gold rises on weaker dollar, lower oil ahead of US inflation data - Kitco",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdm01ZWpsQXcxSlV4V202V1JUUE91VFBnRHY2QlVsdkxnaUZDUDcxam1ZTEp2bEd0cVFxcWhiSEVXYk9CdU45aE1FRlI0YUU1SUNyckJyLW9xV1JsekpxR1ZIaWZhUC1IN25ScldrYzhfUGpaUk1hd2U5V0ozUWZaeUNQbWNRT2RfcWlib0kxLU56anJ2VGZsZ1FLTm5kN2NHdTB4UmMweG1pWTZaMFE?oc=5",
-      "published_at": "2026-10-13T10:46:00+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.96
+      "discovery_score": 119.05
     }
   ],
   "weekly_trend": {
@@ -154,7 +154,7 @@
     },
     "ECONOMY": {
       "ok": true,
-      "items": 26,
+      "items": 27,
       "working_sources": [
         "https://www.bls.gov/feed/bls_latest.rss",
         "https://news.google.com/rss/search?q=Federal%20Reserve%20dollar%20inflation%20treasury%20yields%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
@@ -167,14 +167,14 @@
     },
     "AGRICULTURE": {
       "ok": true,
-      "items": 6,
+      "items": 7,
       "working_sources": [
         "https://news.google.com/rss/search?q=USDA%20beef%20cattle%20chicken%20turkey%20livestock%20prices%20farms%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "CRYPTO": {
       "ok": true,
-      "items": 26,
+      "items": 28,
       "working_sources": [
         "https://news.google.com/rss/search?q=bitcoin%20ethereum%20SEC%20stablecoin%20regulation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
@@ -189,7 +189,7 @@
     },
     "TECH & SECURITY": {
       "ok": true,
-      "items": 11,
+      "items": 12,
       "working_sources": [
         "https://news.google.com/rss/search?q=CISA%20cybersecurity%20breach%20ransomware%20vulnerability%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]

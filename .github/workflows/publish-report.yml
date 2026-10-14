@@ -26,6 +26,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Validate publication policy tests
+        run: python -m unittest -v test_publication_policy.py
       - name: Publish evidence-labelled submission
         env:
           SUBMISSION_PATH: ${{ inputs.submission_path }}

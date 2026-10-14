@@ -1,21 +1,21 @@
-# News Reader — Shared Approved Report Archive
+# News Reader — Shared Evidence-Labelled Report Archive
 
 ## Separation of feeds
 - `feed.json`: automated RSS research discovery; **not verified**.
-- `briefing.json`: latest **approved** morning/evening briefing for Scriptable, starting in `unpublished` status.
+- `briefing.json`: latest evidence-labelled morning/evening briefing for Scriptable, starting in `unpublished` status.
 - `reports/YYYY-MM-DD/{morning,evening,weekly}.json`: dated reports that the publisher refuses to overwrite.
-- `reports/latest/{morning,evening,weekly}.json`: latest approved report for each type.
+- `reports/latest/{morning,evening,weekly}.json`: latest published report for each type.
 - `reports/latest/morning-baseline.json`: dated morning baseline the evening process may retrieve.
 - `reports/latest/index.json`: stable pointers to archival reports.
 
 ## Publish workflow
-1. Independently research and verify report claims. This repository **does not** ingest ChatGPT scheduled-task output automatically and the publisher **does not** verify whether cited links substantiate claims.
-2. Prepare a JSON under `submissions/`. The sample file `submissions/approved_report.template.json` is intentionally unapproved and contains placeholders; never publish it unchanged.
-3. Review each assertion against original records (Congress.gov, Texas Legislature Online, Arkansas General Assembly, Oklahoma Legislature, applicable courts/agencies) and independent reporting when available. Set `approved=true`, `editorial_review=completed`, and a nonempty `reviewed_by` only after that review.
-4. In GitHub, configure **Settings → Environments → news-reader-publication**, including required reviewers if supported by your plan and repository visibility. The workflow references this environment, but merely naming an environment in YAML does **not** guarantee review enforcement.
-5. Run **Actions → Publish approved News Reader report → Run workflow** using a committed submission path such as `submissions/2026-10-14-morning.json`.
-6. Inspect `https://mobilelew.github.io/NewsFeed/briefing.json` and the `reports/latest/` pointers. Confirm the report date is current, the evidence URLs work, and no placeholder content is present.
-7. Only after real publication and validation, replace the Scriptable widget code to read `briefing.json`. Its current script may still use `feed.json` and intentionally has not been changed in this deployment.
+
+Publication policy: **evidence-status-v1**. Findings may be published with qualifications (Verified, Corroborated, Unsubstantiated, Disputed, Legal Effect Unclear, Unverified, Refuted) without mandatory human review. No automated verification engine has been deployed: publisher validation checks formatting, attribution fields, evidence-link syntax, and status-dependent requirements, **not source truth**.
+1. Research and identify credible source material; classify each claim accurately. Never describe unknown legal effect as currently operative.
+2. Prepare an `evidence-status-v1` JSON under `submissions/`, following `submissions/README.md`. Old approval-format submissions are rejected.
+3. Run **Actions → Publish evidence-labelled News Reader report → Run workflow** with the committed submission path. The workflow no longer specifies the `news-reader-publication` environment, so GitHub environment manual review is not a publication prerequisite.
+4. Inspect `https://mobilelew.github.io/NewsFeed/briefing.json` and archive pointers; ensure original URLs and time frames are correct.
+5. The widget still needs migration from `feed.json` to `briefing.json` and installed iPhone Scriptable updates.
 
 ## Important limits
 - RSS source discovery is not an approved report; approval flags and evidence URL formatting alone do not establish independent verification.

@@ -1,0 +1,27 @@
+name: Validate News Reader automation
+
+on:
+  push:
+    paths:
+      - 'collect_official_records.py'
+      - 'publish_official_pilot.py'
+      - 'publish_report.py'
+      - 'test_official_collector.py'
+      - 'test_publication_policy.py'
+      - '.github/workflows/auto-publish-official.yml'
+      - '.github/workflows/validate-news-reader.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest -v test_publication_policy.py test_official_collector.py
+      - run: python -m py_compile publish_report.py collect_official_records.py publish_official_pilot.py

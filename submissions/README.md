@@ -1,9 +1,15 @@
-# Approved report submissions
+# Evidence-labelled report submissions
 
-Place a JSON file here only after independent editorial verification. Run the GitHub Actions **Publish approved News Reader report** workflow with its path, for example `submissions/2026-10-14-morning.json`.
+News Reader uses the **evidence-status-v1** policy: publish qualified findings without mandatory human editorial approval. This repository does **not** automatically ingest ChatGPT reports or independently check whether cited documents prove a finding.
 
-Required: `schema_version: 1`, `report_type` (morning/evening/weekly), offset-aware `report_time`, `approved: true`, `editorial_review: completed`, `reviewed_by`, and nonempty `headlines`. Each headline needs `title`, `jurisdiction` (federal/texas/arkansas/oklahoma/national/international/multiple), `verification`, and `evidence` [{type: primary/independent, description, url}]. Confirmed conclusions must cite a primary source. Morning reports also require a nonempty `baseline` array. Weekly reports may contain `weekly_trend`.
+Add a JSON document under `submissions/` and run **Actions → Publish evidence-labelled News Reader report** with its repository path. The workflow has no protected-environment reviewer requirement; the existing GitHub environment settings remain saved but are not used by this workflow.
 
-**Approval flags are not proof of verification.** The publisher checks structure, not the accuracy of the evidence or conclusions. Do not publish private information. The GitHub Pages archive is public. Do not use placeholder/example evidence as actual citations.
+Required top-level: `schema_version: 1`, `publication_policy: "evidence-status-v1"`, `report_type` (morning/evening/weekly), timezone-aware `report_time`, and nonempty `headlines`. Morning reports require `baseline`; weekly reports may include `weekly_trend`.
 
-Reports are immutable by path: publication refuses to overwrite an existing date+type. A correction needs a deliberate, reviewed versioning process.
+Each headline must include `title`, `summary`, `jurisdiction`, `claim_type`, `verification`, and `evidence`. `claim_type` is one of `established_fact`, `attributed_claim`, `proposal`, `legal_proceeding`, `data_release`. `verification` is one of **Verified**, **Corroborated**, **Unsubstantiated**, **Disputed**, **Legal Effect Unclear**, **Unverified**, or **Refuted**.
+
+Every evidence entry has `type` (`primary`, `independent`, or `attribution`), `description`, and an HTTPS `url`. **Verified** requires a primary source. **Corroborated** requires two different independent-source URLs. Any other classification requires `attribution`, `what_is_known`, `uncertainty`, `what_cannot_be_concluded`, and `resolution_needed`. **Legal Effect Unclear** additionally requires `legal_status`. A **Refuted** claim must be explicitly attributed, not treated as an established fact.
+
+This is a **structural and editorial-language gate, not substantive fact checking**. Automated workflows must avoid publishing private or sensitive information, defamatory allegations without appropriate sourcing and framing, and unsafe legal instructions derived from uncertain evidence. A placeholder/example URL is rejected. Existing dated archives are immutable; corrections need a superseding entry rather than silent overwriting.
+
+A sample is available at `submissions/evidence_report.template.json`. Never publish sample content.

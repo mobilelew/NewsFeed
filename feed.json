@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T01:59:07+00:00",
+  "updated_at": "2026-10-14T07:40:44+00:00",
   "headlines": [
     {
       "category": "U.S. POLICY",
@@ -8,7 +8,7 @@
       "published_at": "2026-10-12T17:27:25+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 42.29
+      "discovery_score": 41.81
     },
     {
       "category": "ECONOMY",
@@ -17,16 +17,16 @@
       "published_at": "2026-10-13T15:01:56+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.09
+      "discovery_score": 128.61
     },
     {
       "category": "AGRICULTURE",
-      "title": "USDA Chicken Market Report Oct 13, 2026: Whole Bird Prices, Retail Features, Cold Storage - News and Statistics - IndexBox",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVVV6LWtNR0MtN2h1WVFqdTh6a2VQb3E4dEpYTUxJTzI1MGVOQ0VfQjhUQTZNb0hjNERDV1dSSWtYM3k4M3lGcjhlbmk1TW9GbVRQbWpyM2lXTldUbU5fVUVxeHdseUNiMWljcHE0WUFKaElYelBjeS1JYmhhSzV4R3U0M1l5WUFoTzlveW9XajZBR2ZiNHVtU2tyZEdvU2tJWE1XaERZZw?oc=5",
-      "published_at": "2026-10-13T19:31:02+00:00",
+      "title": "USDA Organic Poultry & Eggs Report October 13, 2026: Egg Prices, Chicken Prices, Production - News and Statistics - IndexBox",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMnlnZWExLVNUTW5yamV0MDZGVlJCejJwUlMxdjJUM3BuM2FTcjFqZXVhS3diN1EycHVFUHM1U2UxU3ROM2Vrc3lPQnV0N0F4eUZPTE11NXdKd0owMHhtdFRiMVFKcUZOc1c0VkxwakVNYU8yODF6SkZPRURwWjY2VzhUNF9XNzFEeWV6aFFFVGxzTFVwZlFUMmNSTlduU1UwTTd4cXZYbw?oc=5",
+      "published_at": "2026-10-13T14:30:31+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.46
+      "discovery_score": 128.57
     },
     {
       "category": "CRYPTO",
@@ -35,7 +35,7 @@
       "published_at": "2026-10-14T00:08:16+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.85
+      "discovery_score": 119.37
     },
     {
       "category": "AI",
@@ -44,7 +44,7 @@
       "published_at": "2026-10-13T23:25:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.79
+      "discovery_score": 119.31
     },
     {
       "category": "TECH & SECURITY",
@@ -53,7 +53,7 @@
       "published_at": "2026-10-13T19:15:47+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.44
+      "discovery_score": 118.97
     },
     {
       "category": "ECONOMY",
@@ -62,16 +62,7 @@
       "published_at": "2026-10-13T13:49:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 128.99
-    },
-    {
-      "category": "ECONOMY",
-      "title": "US September CPI Preview: Inflation May Heat Up, How Will US Stocks, Dollar and Gold React? - TradingKey",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQSDR2cGVLdFM0VERBWkRpd1JMSUUwSFF1eTZHSXVPakVhU3ZvVjdDaWhiZXFzc2dxQTJ3bHZSMVZoT3NVcUptWEoyeHk5WWNWMm85UEp3NU9qbFlyandmOXRCOTM1ektuME5ZSmstWV9xZURqRjY4OEtMVGExdFlxVFpjSGI1TGFTMjFHQngtWExGQlpEeWtiamFFWnQ5cUduM2ZhSlJQUS1NekRqNWJLSHctWjJ0a2FpaF96RUtaZFYxZGhOSWxlektRZUxfWEtPVzM4cS1zSEZtdw?oc=5",
-      "published_at": "2026-10-13T07:05:28+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 128.43
+      "discovery_score": 128.51
     },
     {
       "category": "AI",
@@ -80,7 +71,25 @@
       "published_at": "2026-10-13T22:10:02+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.68
+      "discovery_score": 119.21
+    },
+    {
+      "category": "ECONOMY",
+      "title": "High Rates, Low Won: Expert Advises Dollar Bond Investments - 조선일보",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNkt0Q2p6SlV5Q0QtZmFKdklKUzJCVk5aUjRIeURMV2UxaTZ3V1hfUTNxMEMtT3o5REpIbHE3cWpxQllob0poRVBCZ1N5VmcwT1M3bUd1RWI1Y0h2d2E2WG1nRHoxNHlDNF9zOVZzVkVWYjdLSHNFU24tWnBIdFVVdl8zVGExZWV3X3UyZlRR?oc=5",
+      "published_at": "2026-10-13T20:29:03+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.07
+    },
+    {
+      "category": "AGRICULTURE",
+      "title": "USDA Chicken Market Report Oct 13, 2026: Whole Bird Prices, Retail Features, Cold Storage - News and Statistics - IndexBox",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVVV6LWtNR0MtN2h1WVFqdTh6a2VQb3E4dEpYTUxJTzI1MGVOQ0VfQjhUQTZNb0hjNERDV1dSSWtYM3k4M3lGcjhlbmk1TW9GbVRQbWpyM2lXTldUbU5fVUVxeHdseUNiMWljcHE0WUFKaElYelBjeS1JYmhhSzV4R3U0M1l5WUFoTzlveW9XajZBR2ZiNHVtU2tyZEdvU2tJWE1XaERZZw?oc=5",
+      "published_at": "2026-10-13T19:31:02+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 118.99
     },
     {
       "category": "CRYPTO",
@@ -89,7 +98,7 @@
       "published_at": "2026-10-13T19:28:25+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.46
+      "discovery_score": 118.98
     },
     {
       "category": "AGRICULTURE",
@@ -98,7 +107,7 @@
       "published_at": "2026-10-13T19:20:25+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.45
+      "discovery_score": 118.97
     },
     {
       "category": "ECONOMY",
@@ -107,16 +116,7 @@
       "published_at": "2026-10-13T17:57:58+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.33
-    },
-    {
-      "category": "ECONOMY",
-      "title": "Hanwha Expert Recommends Dollar Bonds Amid High Yields, Low Exchange Rates - 조선일보",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNkt0Q2p6SlV5Q0QtZmFKdklKUzJCVk5aUjRIeURMV2UxaTZ3V1hfUTNxMEMtT3o5REpIbHE3cWpxQllob0poRVBCZ1N5VmcwT1M3bUd1RWI1Y0h2d2E2WG1nRHoxNHlDNF9zOVZzVkVWYjdLSHNFU24tWnBIdFVVdl8zVGExZWV3X3UyZlRR?oc=5",
-      "published_at": "2026-10-13T15:39:22+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.14
+      "discovery_score": 118.86
     },
     {
       "category": "TECH & SECURITY",
@@ -125,7 +125,7 @@
       "published_at": "2026-10-13T15:31:55+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.13
+      "discovery_score": 118.65
     },
     {
       "category": "CRYPTO",
@@ -134,7 +134,7 @@
       "published_at": "2026-10-13T14:37:47+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.05
+      "discovery_score": 118.58
     }
   ],
   "weekly_trend": {
@@ -147,14 +147,14 @@
   "source_status": {
     "U.S. POLICY": {
       "ok": true,
-      "items": 3,
+      "items": 2,
       "working_sources": [
         "https://news.google.com/rss/search?q=executive%20order%20congress%20legislation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "ECONOMY": {
       "ok": true,
-      "items": 27,
+      "items": 29,
       "working_sources": [
         "https://www.bls.gov/feed/bls_latest.rss",
         "https://news.google.com/rss/search?q=Federal%20Reserve%20dollar%20inflation%20treasury%20yields%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
@@ -174,16 +174,15 @@
     },
     "CRYPTO": {
       "ok": true,
-      "items": 28,
+      "items": 29,
       "working_sources": [
         "https://news.google.com/rss/search?q=bitcoin%20ethereum%20SEC%20stablecoin%20regulation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "AI": {
       "ok": true,
-      "items": 54,
+      "items": 34,
       "working_sources": [
-        "https://export.arxiv.org/rss/cs.AI",
         "https://news.google.com/rss/search?q=AI%20models%20OpenAI%20NVIDIA%20data%20centers%20electricity%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "publication_policy": "evidence-status-v1",
+  "report_type": "evening",
+  "report_time": "2026-10-14T16:00:00-05:00",
+  "headlines": [
+    {
+      "title": "REPLACE WITH DOCUMENTED AND ATTRIBUTED FINDING",
+      "summary": "REPLACE WITH CAUTIOUS CLAIM SUMMARY",
+      "category": "RIGHTS & LEGISLATION",
+      "jurisdiction": "texas",
+      "claim_type": "attributed_claim",
+      "verification": "Unverified",
+      "attribution": "REPLACE WITH ATTRIBUTED SOURCE",
+      "what_is_known": "REPLACE WITH ESTABLISHED EVIDENCE",
+      "uncertainty": "REPLACE WITH EXPLANATION OF MISSING EVIDENCE",
+      "what_cannot_be_concluded": "REPLACE WITH BOUNDARY OF CLAIM",
+      "resolution_needed": "REPLACE WITH PRIMARY DOCUMENT NEEDED",
+      "evidence": [
+        {
+          "type": "attribution",
+          "description": "REPLACE WITH ACTUAL SOURCE",
+          "url": "https://example.org/replace"
+        }
+      ]
+    }
+  ],
+  "baseline": [],
+  "weekly_trend": null
+}

@@ -1,0 +1,48 @@
+name: Publish approved News Reader report
+
+on:
+  workflow_dispatch:
+    inputs:
+      submission_path:
+        description: 'Reviewed JSON path under submissions/'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-reader-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: news-reader-publication
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Publish reviewed submission
+        env:
+          SUBMISSION_PATH: ${{ inputs.submission_path }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "$SUBMISSION_PATH" in
+            submissions/*.json) ;;
+            *) echo "Submission must be a JSON file under submissions/"; exit 1;;
+          esac
+          python publish_report.py --input "$SUBMISSION_PATH"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add briefing.json reports/
+          if git diff --cached --quiet; then
+            echo "Nothing new to publish"; exit 0
+          fi
+          git commit -m "Publish reviewed News Reader report"
+          git push origin HEAD:main

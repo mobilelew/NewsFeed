@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T18:39:05+00:00",
+  "updated_at": "2026-10-14T22:19:03+00:00",
   "headlines": [
     {
       "category": "U.S. POLICY",
@@ -8,7 +8,7 @@
       "published_at": "2026-10-14T06:00:05+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 108.95
+      "discovery_score": 108.64
     },
     {
       "category": "ECONOMY",
@@ -17,7 +17,7 @@
       "published_at": "2026-10-14T16:06:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.79
+      "discovery_score": 129.48
     },
     {
       "category": "AGRICULTURE",
@@ -26,16 +26,16 @@
       "published_at": "2026-10-14T18:10:33+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.96
+      "discovery_score": 129.65
     },
     {
       "category": "CRYPTO",
-      "title": "Bitcoin Price Loses $83K as U.S. CPI Inflation Data Fuels Fresh Crypto Market Selloff - CryptoRank",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWXpxQUI1UFdDUHkxS2gzc1NlcElmbURSdGFDVWF4b0t6LTY1V3ZPOENsMGkzU21KNEhLYnhXVnpUU2J1X0lubC12TkxnNW1IM3c5ZTM1TWZneUMzeXJhLThoRkxQbEZkbnpVanlvblNzWEc0WFRXOVNuSjlhajk1QTdrTzE4bUpBMTdMRXFJUm9NMnNhdnZmRWd6elNpalFPZGFteVRDUl9aX0N0amF3aDVsSGwyY09Gc2IwWFZR?oc=5",
-      "published_at": "2026-10-14T15:05:05+00:00",
+      "title": "Sberbank Crypto Trading: Russia’s Biggest Bank Approved to Exchange Bitcoin and Ethereum - CryptoRank",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQck83V2FrWUJhNDUyRWRCdlRMU3JFWld5Mi1UbDc4MjVKcTVZRXZaSThjb1FwUmZBdjQ0Q3JXdElnZml6MGxxX0pwNjRBUDRaeGtucFBIY3NSQTE4SGtIMVVHWmx4a3A0Y1R1UUVJNThoRGhuMjFZTk9RMzNyelFIOXRZdEU?oc=5",
+      "published_at": "2026-10-13T22:28:49+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.7
+      "discovery_score": 128.01
     },
     {
       "category": "AI",
@@ -44,16 +44,16 @@
       "published_at": "2026-10-14T18:18:16+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.97
+      "discovery_score": 119.67
     },
     {
       "category": "TECH & SECURITY",
-      "title": "U.S. CISA adds Ivanti Connect Secure flaw to its Known Exploited Vulnerabilities catalog - Security Affairs",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPZ1o1djVFZmMxLTBYeEVqTnhPWTl3emhoZ0RsSFh1WFVRcWdpMy0tQ3paMmZGS002TUZKVVdaNUFhcWJGMVFkRWN5QTdJdGRrbEROVVk4ME9yV2RYWDh2OTdubzNhU3hiRU1pamhNblZEU2N1ZlpqR1FqclpON1BsbXlrTDh6UXZ0ay1CaFh0anlQX01MVEZ1RXBocExkMXJ1Q3p1RlljOTRiNnh4V0x3bl9jU0VrcW5yUGxjX1J2WHVXdVlHQnZtSVQ2OFBmUlAzRXfSAdcBQVVfeXFMUFhTZGdBTVRtNmJLMzVvV0xWX2Zsbi01aUFjT1VUU1Vqei0tT2hudkhMaXY0SmJaZzd6cEhnWUlYellPS0xQclpMWC1Jc1ZJSFZHUks0MTRkRzNON1FURmpsRHhEclNPUC1EOUQ5LVBPQ19yaEZRTUhVa2VUakc1V2JNbXZhVlpsWHU3d0Vya1ZMU1U0R2VGS2dva193VzMzMjhwTEZJM0tyLUxRZ2F6N0Y0eExhdy02ZmVLeXlTVzFIaUJHLWV5Nl9idUF0eF9kSmFrR1pTS0U?oc=5",
-      "published_at": "2026-10-13T19:15:47+00:00",
+      "title": "CISA Warns of Apache Struts Command Injection Vulnerability Exploited in Attacks - CyberSecurityNews",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9MWWR5X2xBY0pReHo2cThHQWNCSWlYaDhUOUYyNHUyN2REZXdRcjk4QVVzQnpxblhJbnRGUGg5N2VHUUMtN3N1QmtqUFFnckZEVUtudUJiQmYzUGpyZHktUGRHcDFCWkJYb2VMVnZmaFprZjNZUUxF0gF8QVVfeXFMTWVzd3dMRXVLQ3RhREcwbXZtY01aR0duTEZlRGlxTFpORmVXcjZ2dXJpdXJUd1pzSTNZYTc0NU9FR0xndnZlNkRNSXRYcE9tbThEWmZqcVBJZFBiRW9zVnFkZ0tQbXBsc0pwZUp6ZlNldEV2X19ReWJydGdEVQ?oc=5",
+      "published_at": "2026-10-14T03:15:07+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.05
+      "discovery_score": 128.41
     },
     {
       "category": "ECONOMY",
@@ -62,7 +62,25 @@
       "published_at": "2026-10-14T11:07:54+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.37
+      "discovery_score": 129.07
+    },
+    {
+      "category": "CRYPTO",
+      "title": "Qivalis: EMI licence for a euro stablecoin - CryptoTicker",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9Fb0pSeHNxT0lRUWFreHNZTkpNall3cTMwWEdnV0Fmcm41eVlqLTN4a1ZxXzJZQmNqRkZPcGVMMEhFVlhPM0xlem1yZEtORnpESWFCSFQtazVPdGFySEIxTFFUUHI1eUJOeWllSnNMbw?oc=5",
+      "published_at": "2026-10-14T21:21:58+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.92
+    },
+    {
+      "category": "ECONOMY",
+      "title": "Stocks fall, dollar rallies as US inflation tops forecasts - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUE1ZbW9adzJiM0pObko5Tmc1bEl5d3ZSak1NS2lKa01LMWhWTjAwQnRUWldyX0VLSXllSV9kTkJRS0dNZ3Z1bGt6U1ZGR25DR0hCdHE2UlZ0TnotMllqVmlWTW9uaFVWQm5LMWNvRFFnOFhDdkFWZi1TNkNxcFBiWHk2SUJTX2xvUDVxZGY1d0VZRTNWMGxPMkh3?oc=5",
+      "published_at": "2026-10-14T19:31:42+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.77
     },
     {
       "category": "ECONOMY",
@@ -71,7 +89,25 @@
       "published_at": "2026-10-14T16:11:15+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.79
+      "discovery_score": 119.49
+    },
+    {
+      "category": "ECONOMY",
+      "title": "US Stock Market Today LIVE: NASDAQ, S&P 500, Dow Jones Falls As Inflation Rises To 3.7%; Dollar, Yields Rally - Goodreturns",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOc2kyNk5sdS0tZ01HQ0xtVFJqOEVtVW9BWVJYRmMxZ3NVdE14TkptYU9obFNzdnp1Y28xdk5POEM3NUp3TVhSaXEzVURVRjJJVVZhcU13dC15NFB1V3g4WGJwYTFtM1NVekp4d0lsMEZMSXdfZ0xxbHl3SnJHTk00TUU1dEpRek82R1puRUo3U1RFWFVtX01sNmNRcnpOdUtzV3EyX2dlNlI2UlQ2NTRtODdBczFoQVYxdzVSTWtPMEVRbU1zMUJuTG1yU2RHNGFELWM5aTB5YTNzUQ?oc=5",
+      "published_at": "2026-10-14T15:52:17+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.46
+    },
+    {
+      "category": "CRYPTO",
+      "title": "Bitcoin Price Loses $83K as U.S. CPI Inflation Data Fuels Fresh Crypto Market Selloff - CryptoRank",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWXpxQUI1UFdDUHkxS2gzc1NlcElmbURSdGFDVWF4b0t6LTY1V3ZPOENsMGkzU21KNEhLYnhXVnpUU2J1X0lubC12TkxnNW1IM3c5ZTM1TWZneUMzeXJhLThoRkxQbEZkbnpVanlvblNzWEc0WFRXOVNuSjlhajk1QTdrTzE4bUpBMTdMRXFJUm9NMnNhdnZmRWd6elNpalFPZGFteVRDUl9aX0N0amF3aDVsSGwyY09Gc2IwWFZR?oc=5",
+      "published_at": "2026-10-14T15:05:05+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.4
     },
     {
       "category": "CRYPTO",
@@ -80,7 +116,7 @@
       "published_at": "2026-10-14T14:16:55+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.64
+      "discovery_score": 119.33
     },
     {
       "category": "CRYPTO",
@@ -89,52 +125,16 @@
       "published_at": "2026-10-14T14:06:25+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.62
-    },
-    {
-      "category": "CRYPTO",
-      "title": "Qivalis Secures Dutch Approval for Euro Stablecoin Backed by 37 European Banks - The Crypto Times",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNOVdFWk1XbWthczZ4dDhWVEtWVEJPM1Vsc0VRNVVNR1VQb2Y1ckg1MmhhX0NRMjQxWGctYno2dDNjb2U5dFRWeGRnRHFQRTVnaGt6dEZoYzNPVzVNbjU5TDhmcjdkT2tSQmRCRUpvSkdPSkpCSGp5ZmFOcG14VE9zVVM5eTd2c0RtQzlzNWhEbzdtTDNUYTNqWVhkRFlpc3RHY1ZfVVJjcS00eGlFRlJvaHMtQXNvbUY3?oc=5",
-      "published_at": "2026-10-14T13:23:04+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.56
-    },
-    {
-      "category": "ECONOMY",
-      "title": "US Dollar Trades Near 102 Ahead of Key CPI Release - VT Markets",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONWl5SGJmS1EwbU1KNGZza2d2MDNtS05QTEpDWXE2RWpIUE1MY0dIM1V3dTdDUFlQWTUzMXlRZFdCc0NST1hJbWhaZXAwVGxhdGpwSDZfeGt5aVJtdVRXRTR5ZXRIbzJZS2o0TjFHZWlaQjNhLWpMaHc4NTZvQmtnNkVuNllRbnlIek9LYlJ0WmRPQ0NzVTN3?oc=5",
-      "published_at": "2026-10-14T10:31:34+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
       "discovery_score": 119.32
     },
     {
-      "category": "ECONOMY",
-      "title": "US CPI Report Today: September Inflation Expectations and Market Impact - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPWFFrQ2huOTlXaWt4SG14THhydUhvOThyUXdXZ3B1N3A0TkpqaHVXSS1XWDQ5Y3pIdWlhS1Z3NGFPaFRCY1dtTXVIY1VROFFEc28zU2xZdTc0V29rQjEwWUpyMDdhSmltVUFiOUNib1ZERDdtenIzUzB4amwwdUZVMThSVEtxbi1nVnhPMERyTGtxeDJyZXZFR1dPNEZNX3JCdVFXY0t2NlRsRDRVRkpMekNrOGlnVkNSbjhERHRKZWZiWG8xZ1pfMg?oc=5",
-      "published_at": "2026-10-14T07:23:37+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.06
-    },
-    {
-      "category": "ECONOMY",
-      "title": "Stocks fall, dollar rallies as US inflation tops forecasts - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcE96RkhyZDBlQ2VWRERNYlZtdm5FaVdQSXF2M3ZtR3JIOU05UExLWnZ3dmFBY1NZcndTRlozR29sdmxWaExXUmIycmZPZGk3UXI1amRxTDR6WHpSQl82ckhxZ016SnZYdGtPdC14TnZVWlpjeHl4SW5pUnJKbjl2M0pzcw?oc=5",
-      "published_at": "2026-10-14T01:53:00+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.6
-    },
-    {
       "category": "CRYPTO",
-      "title": "Stablecoins Are Redefining Crypto Banking for Businesses - OneSafe",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQ1JyTDJnUTdLTmp2b2tOSzZsSDh4Ni1PLVZSNm9nQXdzTm9ma2pjUmRNSTJROVIyRzNnMjY2UTVNUWxwbmw1RzBpUUFXZ2NybUsyRndtejEyZGFOc09SODN0S2FTay0xcURyRC1vYVQ3aF9PZUVBUWhrVFpyZHRjTWFn?oc=5",
-      "published_at": "2026-10-14T00:08:16+00:00",
+      "title": "France Proposes 31.4% Tax on Stablecoin Swaps and Crypto Wallet Disclosures - CoinCodex",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMWJaS1F4SmdEWVdUTGZEVGFPX2dIRFFrZkZlZy1WSlNKMXhvWjJoMjZGR1A1MENHMmxVaTc1OWVqSC1YdjlYWkxHRTdFd2c5Uzg5aXVBdFNwVndVSFFIQUFwVFVDbXczUW5IR29pckwzanhBWHVoQ3BaM0V0VTlKVklaTVRJUEpWbzRQQkJXbkZWMXExaXBNV1RrNDlZd1ROb1lnWlp4dm01VGU5bVlr?oc=5",
+      "published_at": "2026-10-14T13:39:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.46
+      "discovery_score": 119.28
     }
   ],
   "weekly_trend": {
@@ -174,21 +174,21 @@
     },
     "CRYPTO": {
       "ok": true,
-      "items": 25,
+      "items": 30,
       "working_sources": [
         "https://news.google.com/rss/search?q=bitcoin%20ethereum%20SEC%20stablecoin%20regulation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "AI": {
       "ok": true,
-      "items": 33,
+      "items": 32,
       "working_sources": [
         "https://news.google.com/rss/search?q=AI%20models%20OpenAI%20NVIDIA%20data%20centers%20electricity%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "TECH & SECURITY": {
       "ok": true,
-      "items": 10,
+      "items": 12,
       "working_sources": [
         "https://news.google.com/rss/search?q=CISA%20cybersecurity%20breach%20ransomware%20vulnerability%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]

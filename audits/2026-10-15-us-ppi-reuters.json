@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "case_id": "2026-10-15-us-ppi-reuters",
+  "case_type": "real-news-audit",
+  "review_method": "Analyst-assisted examination of actual Reuters reporting and an original BLS release; this is not an autonomous verification run.",
+  "reported_at": "2026-10-15",
+  "reported_by": "Reuters",
+  "report_url": "https://www.reuters.com/business/us-producer-prices-post-largest-increase-4-12-years-september-2026-10-15/",
+  "report_headline": "US producer prices post largest gain in 4-1/2 years; expensive gasoline boosts retail sales",
+  "primary_source": {
+    "issuer": "U.S. Bureau of Labor Statistics",
+    "title": "Producer Price Indexes — September 2026",
+    "document_id": "USDL 26-1576",
+    "published_at": "2026-10-15",
+    "url": "https://www.bls.gov/news.release/archives/ppi_10152026.htm"
+  },
+  "findings": [
+    {
+      "claim": "The final-demand Producer Price Index increased 1.3 percent in September 2026, seasonally adjusted.",
+      "verification": "Verified",
+      "source_evidence": "The Producer Price Index for final demand increased 1.3 percent in September, seasonally adjusted",
+      "reason": "BLS explicitly reports the figure, period, metric and adjustment."
+    },
+    {
+      "claim": "It was the largest monthly producer-price rise in about four and a half years.",
+      "verification": "Verified",
+      "source_evidence": "The September increase is the largest advance since rising 1.7 percent in March 2022",
+      "reason": "March 2022 to September 2026 is approximately 4.5 years."
+    },
+    {
+      "claim": "Final-demand producer prices rose 6.3 percent over 12 months.",
+      "verification": "Verified",
+      "source_evidence": "the index for final demand climbed 6.3 percent for the 12 months ended in September",
+      "reason": "BLS explicitly reports the unadjusted year-over-year change."
+    },
+    {
+      "claim": "The producer-price increase proves consumers' prices increased by an identical amount.",
+      "verification": "Unsubstantiated",
+      "source_evidence": "PPIs measure price change from the perspective of the seller.",
+      "reason": "The PPI is not the CPI. No fixed one-to-one consumer pass-through is established."
+    }
+  ],
+  "scope_limitations": [
+    "Verified status applies to specific BLS figures, not every interpretation or forward-looking statement in the Reuters article.",
+    "Source excerpts were compared by an analyst, not by a fully autonomous semantic verification service.",
+    "The provided Reuters item is a news source, while BLS is the competent authority for its published PPI series."
+  ],
+  "editorial_acceptance": {
+    "news_coverage": "not_tested_complete",
+    "evidence_authentication": "passed_for_three_factual_subclaims",
+    "morning_evening_continuity": "not_tested",
+    "publication_delivery": "not_tested"
+  },
+  "production_ready": false
+}

@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "publication_policy": "evidence-status-v1",
+  "report_type": "evening",
+  "report_time": "2026-10-14T21:13:11-05:00",
+  "coverage_note": "Automated Federal Register metadata-only pilot; not a comprehensive News Reader briefing. Federal law impacts, Texas, Arkansas, Oklahoma, markets, agriculture, and technology remain outside this pilot. No substantive independent legal verification performed.",
+  "source_checked": [
+    {
+      "name": "Federal Register public API",
+      "date": "2026-10-14",
+      "status": "metadata_only"
+    }
+  ],
+  "headlines": [
+    {
+      "title": "Federal Register: Agency Information Collection Activities; Comment Request; IHE Considerations Around Program Closure: How External Pressures and Internal Policies Shape Decision Making",
+      "summary": "The Federal Register lists document 2026-20975 as a notice published 2026-10-14. Its legal effect and any implementation timetable have not been independently analyzed.",
+      "category": "U.S. POLICY",
+      "jurisdiction": "federal",
+      "claim_type": "legal_proceeding",
+      "verification": "Legal Effect Unclear",
+      "legal_status": "Publication metadata located; operative legal status not determined",
+      "attribution": "Federal Register document index (U.S. National Archives)",
+      "what_is_known": "Document 2026-20975 is listed for publication 2026-10-14, with document type Notice.",
+      "uncertainty": "Document text, applicability, amendments, judicial stays and effective dates have not been independently checked.",
+      "what_cannot_be_concluded": "This document currently imposes an enforceable duty or changes any individual's rights.",
+      "resolution_needed": "Review the full published document, relevant effective-date provisions, implementing guidance, and controlling court orders.",
+      "evidence": [
+        {
+          "type": "primary",
+          "description": "Federal Register listing for 2026-20975",
+          "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20975/agency-information-collection-activities-comment-request-ihe-considerations-around-program-closure"
+        }
+      ],
+      "document_number": "2026-20975",
+      "publication_date": "2026-10-14"
+    },
+    {
+      "title": "Federal Register: Agency Information Collection Activities: Proposed Collection Renewal; Comment Request",
+      "summary": "The Federal Register lists document 2026-20976 as a notice published 2026-10-14. Its legal effect and any implementation timetable have not been independently analyzed.",
+      "category": "U.S. POLICY",
+      "jurisdiction": "federal",
+      "claim_type": "legal_proceeding",
+      "verification": "Legal Effect Unclear",
+      "legal_status": "Publication metadata located; operative legal status not determined",
+      "attribution": "Federal Register document index (U.S. National Archives)",
+      "what_is_known": "Document 2026-20976 is listed for publication 2026-10-14, with document type Notice.",
+      "uncertainty": "Document text, applicability, amendments, judicial stays and effective dates have not been independently checked.",
+      "what_cannot_be_concluded": "This document currently imposes an enforceable duty or changes any individual's rights.",
+      "resolution_needed": "Review the full published document, relevant effective-date provisions, implementing guidance, and controlling court orders.",
+      "evidence": [
+        {
+          "type": "primary",
+          "description": "Federal Register listing for 2026-20976",
+          "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20976/agency-information-collection-activities-proposed-collection-renewal-comment-request"
+        }
+      ],
+      "document_number": "2026-20976",
+      "publication_date": "2026-10-14"
+    },
+    {
+      "title": "Federal Register: Presidential Declaration of a Major Disaster for the State of Wisconsin",
+      "summary": "The Federal Register lists document 2026-20977 as a notice published 2026-10-14. Its legal effect and any implementation timetable have not been independently analyzed.",
+      "category": "U.S. POLICY",
+      "jurisdiction": "federal",
+      "claim_type": "legal_proceeding",
+      "verification": "Legal Effect Unclear",
+      "legal_status": "Publication metadata located; operative legal status not determined",
+      "attribution": "Federal Register document index (U.S. National Archives)",
+      "what_is_known": "Document 2026-20977 is listed for publication 2026-10-14, with document type Notice.",
+      "uncertainty": "Document text, applicability, amendments, judicial stays and effective dates have not been independently checked.",
+      "what_cannot_be_concluded": "This document currently imposes an enforceable duty or changes any individual's rights.",
+      "resolution_needed": "Review the full published document, relevant effective-date provisions, implementing guidance, and controlling court orders.",
+      "evidence": [
+        {
+          "type": "primary",
+          "description": "Federal Register listing for 2026-20977",
+          "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20977/presidential-declaration-of-a-major-disaster-for-the-state-of-wisconsin"
+        }
+      ],
+      "document_number": "2026-20977",
+      "publication_date": "2026-10-14"
+    },
+    {
+      "title": "Federal Register: Presidential Declaration of a Major Disaster for Public Assistance Only for the Territory of Guam",
+      "summary": "The Federal Register lists document 2026-20978 as a notice published 2026-10-14. Its legal effect and any implementation timetable have not been independently analyzed.",
+      "category": "U.S. POLICY",
+      "jurisdiction": "federal",
+      "claim_type": "legal_proceeding",
+      "verification": "Legal Effect Unclear",
+      "legal_status": "Publication metadata located; operative legal status not determined",
+      "attribution": "Federal Register document index (U.S. National Archives)",
+      "what_is_known": "Document 2026-20978 is listed for publication 2026-10-14, with document type Notice.",
+      "uncertainty": "Document text, applicability, amendments, judicial stays and effective dates have not been independently checked.",
+      "what_cannot_be_concluded": "This document currently imposes an enforceable duty or changes any individual's rights.",
+      "resolution_needed": "Review the full published document, relevant effective-date provisions, implementing guidance, and controlling court orders.",
+      "evidence": [
+        {
+          "type": "primary",
+          "description": "Federal Register listing for 2026-20978",
+          "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20978/presidential-declaration-of-a-major-disaster-for-public-assistance-only-for-the-territory-of-guam"
+        }
+      ],
+      "document_number": "2026-20978",
+      "publication_date": "2026-10-14"
+    },
+    {
+      "title": "Federal Register: Food Additives Permitted in Feed and Drinking Water of Animals; Chromium Propionate",
+      "summary": "The Federal Register lists document 2026-20979 as a rule published 2026-10-14. Its legal effect and any implementation timetable have not been independently analyzed.",
+      "category": "U.S. POLICY",
+      "jurisdiction": "federal",
+      "claim_type": "legal_proceeding",
+      "verification": "Legal Effect Unclear",
+      "legal_status": "Publication metadata located; operative legal status not determined",
+      "attribution": "Federal Register document index (U.S. National Archives)",
+      "what_is_known": "Document 2026-20979 is listed for publication 2026-10-14, with document type Rule.",
+      "uncertainty": "Document text, applicability, amendments, judicial stays and effective dates have not been independently checked.",
+      "what_cannot_be_concluded": "This document currently imposes an enforceable duty or changes any individual's rights.",
+      "resolution_needed": "Review the full published document, relevant effective-date provisions, implementing guidance, and controlling court orders.",
+      "evidence": [
+        {
+          "type": "primary",
+          "description": "Federal Register listing for 2026-20979",
+          "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20979/food-additives-permitted-in-feed-and-drinking-water-of-animals-chromium-propionate"
+        }
+      ],
+      "document_number": "2026-20979",
+      "publication_date": "2026-10-14"
+    },
+    {
+      "title": "Federal Register: Agency Information Collection Activities; Submission for Office of Management and Budget Review; Comment Request; Infant Formula Requirements",
+      "summary": "The Federal Register lists document 2026-20980 as a notice published 2026-10-14. Its legal effect and any implementation timetable have not been independently analyzed.",
+      "category": "U.S. POLICY",
+      "jurisdiction": "federal",
+      "claim_type": "legal_proceeding",
+      "verification": "Legal Effect Unclear",
+      "legal_status": "Publication metadata located; operative legal status not determined",
+      "attribution": "Federal Register document index (U.S. National Archives)",
+      "what_is_known": "Document 2026-20980 is listed for publication 2026-10-14, with document type Notice.",
+      "uncertainty": "Document text, applicability, amendments, judicial stays and effective dates have not been independently checked.",
+      "what_cannot_be_concluded": "This document currently imposes an enforceable duty or changes any individual's rights.",
+      "resolution_needed": "Review the full published document, relevant effective-date provisions, implementing guidance, and controlling court orders.",
+      "evidence": [
+        {
+          "type": "primary",
+          "description": "Federal Register listing for 2026-20980",
+          "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20980/agency-information-collection-activities-submission-for-office-of-management-and-budget-review"
+        }
+      ],
+      "document_number": "2026-20980",
+      "publication_date": "2026-10-14"
+    },
+    {
+      "title": "Federal Register: Agency Information Collection Activities; Submission for Office of Management and Budget Review; Comment Request; Voluntary National Retail Food Regulatory Program Standards",
+      "summary": "The Federal Register lists document 2026-20981 as a notice published 2026-10-14. Its legal effect and any implementation timetable have not been independently analyzed.",
+      "category": "U.S. POLICY",
+      "jurisdiction": "federal",
+      "claim_type": "legal_proceeding",
+      "verification": "Legal Effect Unclear",
+      "legal_status": "Publication metadata located; operative legal status not determined",
+      "attribution": "Federal Register document index (U.S. National Archives)",
+      "what_is_known": "Document 2026-20981 is listed for publication 2026-10-14, with document type Notice.",
+      "uncertainty": "Document text, applicability, amendments, judicial stays and effective dates have not been independently checked.",
+      "what_cannot_be_concluded": "This document currently imposes an enforceable duty or changes any individual's rights.",
+      "resolution_needed": "Review the full published document, relevant effective-date provisions, implementing guidance, and controlling court orders.",
+      "evidence": [
+        {
+          "type": "primary",
+          "description": "Federal Register listing for 2026-20981",
+          "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20981/agency-information-collection-activities-submission-for-office-of-management-and-budget-review"
+        }
+      ],
+      "document_number": "2026-20981",
+      "publication_date": "2026-10-14"
+    },
+    {
+      "title": "Federal Register: Extending the Reporting Deadline Under the Greenhouse Gas Reporting Rule for Reporting Year 2025 to March 10, 2027",
+      "summary": "The Federal Register lists document 2026-20982 as a rule published 2026-10-14. Its legal effect and any implementation timetable have not been independently analyzed.",
+      "category": "U.S. POLICY",
+      "jurisdiction": "federal",
+      "claim_type": "legal_proceeding",
+      "verification": "Legal Effect Unclear",
+      "legal_status": "Publication metadata located; operative legal status not determined",
+      "attribution": "Federal Register document index (U.S. National Archives)",
+      "what_is_known": "Document 2026-20982 is listed for publication 2026-10-14, with document type Rule.",
+      "uncertainty": "Document text, applicability, amendments, judicial stays and effective dates have not been independently checked.",
+      "what_cannot_be_concluded": "This document currently imposes an enforceable duty or changes any individual's rights.",
+      "resolution_needed": "Review the full published document, relevant effective-date provisions, implementing guidance, and controlling court orders.",
+      "evidence": [
+        {
+          "type": "primary",
+          "description": "Federal Register listing for 2026-20982",
+          "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20982/extending-the-reporting-deadline-under-the-greenhouse-gas-reporting-rule-for-reporting-year-2025-to"
+        }
+      ],
+      "document_number": "2026-20982",
+      "publication_date": "2026-10-14"
+    }
+  ],
+  "published_at": "2026-10-15T02:13:11+00:00"
+}

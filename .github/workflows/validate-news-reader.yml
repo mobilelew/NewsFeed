@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'collect_official_records.py'
-      - 'publish_official_pilot.py monitor_state_sources.py'
+      - 'publish_official_pilot.py'
       - 'publish_report.py'
       - 'test_official_collector.py'
       - 'test_publication_policy.py'
@@ -26,4 +26,4 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m unittest -v test_publication_policy.py test_official_collector.py test_state_monitor.py
-      - run: python -m py_compile publish_report.py collect_official_records.py publish_official_pilot.py
+      - run: python -m py_compile publish_report.py collect_official_records.py publish_official_pilot.py monitor_state_sources.py

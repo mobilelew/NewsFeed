@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "report_type": "source_monitor",
+  "checked_at": "2026-10-15T12:21:13-05:00",
+  "scope": "Texas, Arkansas and Oklahoma legislature official-source reachability and changes",
+  "verification": "Unverified",
+  "legal_changes_verified": false,
+  "jurisdictions": {
+    "texas": {
+      "status": "reachable",
+      "sources": [
+        {
+          "name": "Texas Legislature Online — legislative activity",
+          "url": "https://capitol.texas.gov/Home.aspx",
+          "status": "reachable",
+          "change": "no_baseline",
+          "content_sha256": "308316ea90cfdf141f18e413d4176e6c27a349e85e47a00381d9c071e57cc105",
+          "visible_characters": 3344
+        },
+        {
+          "name": "Texas Legislature Online — legislation",
+          "url": "https://capitol.texas.gov/MnuLegislation.aspx",
+          "status": "reachable",
+          "change": "no_baseline",
+          "content_sha256": "fc35199a6d8f29d543f864feee1f3857aa80663f8ff5cabd08d048eac37bb452",
+          "visible_characters": 1628
+        }
+      ],
+      "legal_changes_verified": false,
+      "note": "Website monitoring only. A changed page does not establish a bill, rule or court action."
+    },
+    "arkansas": {
+      "status": "reachable",
+      "sources": [
+        {
+          "name": "Arkansas General Assembly — recent activities",
+          "url": "https://www.arkleg.state.ar.us/",
+          "status": "reachable",
+          "change": "no_baseline",
+          "content_sha256": "04a77342b5bc017be908803cce59787fd56874bb4f7fb95245092bca9d80fec3",
+          "visible_characters": 8467
+        },
+        {
+          "name": "Arkansas General Assembly — meetings",
+          "url": "https://www.arkleg.state.ar.us/Calendars/Meetings",
+          "status": "reachable",
+          "change": "no_baseline",
+          "content_sha256": "14b0fef149d6d89b80c4e1b41d59c46ee08ed7e0f2d7fd6fd923fecc5e92b659",
+          "visible_characters": 8362
+        }
+      ],
+      "legal_changes_verified": false,
+      "note": "Website monitoring only. A changed page does not establish a bill, rule or court action."
+    },
+    "oklahoma": {
+      "status": "reachable",
+      "sources": [
+        {
+          "name": "Oklahoma Legislature — bill tracking",
+          "url": "https://www.oklegislature.gov/AdvancedSearchForm.aspx",
+          "status": "reachable",
+          "change": "no_baseline",
+          "content_sha256": "b1bbbf526059676e65d6edbe0eac37fb143c309444786eabbeccc7974e45e89e",
+          "visible_characters": 1449
+        },
+        {
+          "name": "Oklahoma Legislature — official homepage",
+          "url": "https://www.oklegislature.gov/",
+          "status": "reachable",
+          "change": "no_baseline",
+          "content_sha256": "10d93f0d6562e4df9fafa52d544da43990cff23fc5630436e2b2c0ab1772f211",
+          "visible_characters": 1279
+        }
+      ],
+      "legal_changes_verified": false,
+      "note": "Website monitoring only. A changed page does not establish a bill, rule or court action."
+    }
+  },
+  "notes": "No substantive legal facts inferred. Check individual bills, final rules, official election guidance, and operative court orders before publishing legal effect."
+}

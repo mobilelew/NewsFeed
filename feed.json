@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-14T22:19:03+00:00",
+  "updated_at": "2026-10-15T01:30:14+00:00",
   "headlines": [
     {
       "category": "U.S. POLICY",
-      "title": "Trump says 'too bad' SCOTUS upheld birthright citizenship, pushes legislation to end it - ABC News - Breaking News, Latest News and Videos",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOUtNcmJXczF3UFJWVkVwU050WlEyYnJsSHdSMG5sbklfX2twUHVzb2RTYWctMVlrT2NTYVdfbUcwdV9waVdRNEhHTUJ1T09NNVBVeVQzY1dybTczQUpqaHF4QXNNcThEQk90S2hiT2NobXh0R0FZTElwMGxLX3FsYkR4dmVFMkhzMlNub3NWTm9aR2R0TV9GVzQzWFpwSjR6X2pXejFjZnJoVXpaREEzQVh6VdIBuAFBVV95cUxQenFmbk8wVlB5aVk3Y0ZmOTM2QnA1SVFoMy1VYVBBaTFHWXhHczdGdTRDZUtERFNIZGkwX2Y5NGE5bllPYjU2U3REbGRkUDVDZXNnQXpkZFBHaURIUTJvR1l1YzhDWTJ5WDVKYUI0U1hUbkNXX3JZTUZab0RyczhKUVdXX0RfR1B1NE52YmhTckhFMm9RSzBCY1dfY2EwazNWVzMybG5NdEQ2ZHBlM3NqZG5wek9abHA2?oc=5",
-      "published_at": "2026-10-14T06:00:05+00:00",
+      "title": "Presidents Cannot Distort Laws To Justify Deploying Federal Forces To ‘Repel Armed Enemies’ in Elections - Center for American Progress",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxORHptNGlwRndjblh6aWdOU2gxNlo0ZWxXLTNwMWxnM1BDaUdhX2pORG82WGVHS1RGWGtxZDFWakkybksxNTRTX0dWSVhGVmY2dG1RNE1ZX3hMeWItYmhDR1RfSmR0SkNZZ1Q3b01QZGxmWVFfRXJjd2xPR0F3aDU2TTNwYTUtd2g3Q2x0cEQ0TVNFTTA3aFE4OEUycFYwdFBRV0hqTExfaFpURTdXczc5YXhxZGxmZWxWSm5adUl4ZTFSVE1qMGNEb1Bqc09vNzJyX0Q2a055TUl0d3lo?oc=5",
+      "published_at": "2026-10-14T13:53:30+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 108.64
+      "discovery_score": 119.03
     },
     {
       "category": "ECONOMY",
@@ -17,7 +17,7 @@
       "published_at": "2026-10-14T16:06:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.48
+      "discovery_score": 129.22
     },
     {
       "category": "AGRICULTURE",
@@ -26,43 +26,7 @@
       "published_at": "2026-10-14T18:10:33+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.65
-    },
-    {
-      "category": "CRYPTO",
-      "title": "Sberbank Crypto Trading: Russia’s Biggest Bank Approved to Exchange Bitcoin and Ethereum - CryptoRank",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQck83V2FrWUJhNDUyRWRCdlRMU3JFWld5Mi1UbDc4MjVKcTVZRXZaSThjb1FwUmZBdjQ0Q3JXdElnZml6MGxxX0pwNjRBUDRaeGtucFBIY3NSQTE4SGtIMVVHWmx4a3A0Y1R1UUVJNThoRGhuMjFZTk9RMzNyelFIOXRZdEU?oc=5",
-      "published_at": "2026-10-13T22:28:49+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 128.01
-    },
-    {
-      "category": "AI",
-      "title": "Sachin Katti Leaving OpenAI Compute Role to Build Something New - Unite.AI",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaHVHQmRNd081OTlUempnMTByMHFoX24zeDNISEpIZzBQZVJqQklJNDVPc0lNZHEyajRnT0N5MEhvMVBlUEllei00QkU4eV9CSm1ueWhmYjlkSUZMUWVOSUMzTEttYm83QlJnNGlHRkRYWEQ4b2FIdnE4djdzeFBBTVl4OXg5by1TU2pXQ29R?oc=5",
-      "published_at": "2026-10-14T18:18:16+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.67
-    },
-    {
-      "category": "TECH & SECURITY",
-      "title": "CISA Warns of Apache Struts Command Injection Vulnerability Exploited in Attacks - CyberSecurityNews",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9MWWR5X2xBY0pReHo2cThHQWNCSWlYaDhUOUYyNHUyN2REZXdRcjk4QVVzQnpxblhJbnRGUGg5N2VHUUMtN3N1QmtqUFFnckZEVUtudUJiQmYzUGpyZHktUGRHcDFCWkJYb2VMVnZmaFprZjNZUUxF0gF8QVVfeXFMTWVzd3dMRXVLQ3RhREcwbXZtY01aR0duTEZlRGlxTFpORmVXcjZ2dXJpdXJUd1pzSTNZYTc0NU9FR0xndnZlNkRNSXRYcE9tbThEWmZqcVBJZFBiRW9zVnFkZ0tQbXBsc0pwZUp6ZlNldEV2X19ReWJydGdEVQ?oc=5",
-      "published_at": "2026-10-14T03:15:07+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 128.41
-    },
-    {
-      "category": "ECONOMY",
-      "title": "Understanding the Next Inflation Test: How CPI and PPI Could Move Gold and the US Dollar - VT Markets",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPNXdKa1FDM3ZSdGltM1NSWDZ6TTN1X2xZaWVvQjN4c2UzS3BjOHR2YmdXbUxWV1I1UkVPREhCRFE2YW8wR2FXU2I2MGVyWVdpVGtmN1A5RzVTSGZRd0E1NjZGdldGLWhCcy1vNl9SMkRxWERiYmZZVTNzWkk4UllUcWp5cDRjQjF6Z05Lc1EtWWhyWXJVMkNCT3JvODBQbi1TdXNTQ2tDa1VJbExkTVh6elBYQXlTb3p2cjBVaEVfU2pubmZZZFUxag?oc=5",
-      "published_at": "2026-10-14T11:07:54+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 129.07
+      "discovery_score": 129.39
     },
     {
       "category": "CRYPTO",
@@ -71,7 +35,61 @@
       "published_at": "2026-10-14T21:21:58+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.92
+      "discovery_score": 119.66
+    },
+    {
+      "category": "AI",
+      "title": "An Interview with Nvidia’s Ian Buck on Why GPUs Keep Winning - Key Context by Tae Kim",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1tMDdRQUl2cUpIdlhsQ2RSZTJaU3NZSFRFV3JIcDAyOF9NRWhLT3NRSlNJWDNvN21MSTZrWGVfMVpyOEd5cWlENmh2eWs2alIzWjFPcWZsbHRxbjg4MHJ1emtJMVhaR0szMzNPRk0xREM3NkhfZDFj?oc=5",
+      "published_at": "2026-10-15T00:02:22+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.88
+    },
+    {
+      "category": "TECH & SECURITY",
+      "title": "CISA Warns of Apache Struts Command Injection Vulnerability Exploited in Attacks - CyberSecurityNews",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9MWWR5X2xBY0pReHo2cThHQWNCSWlYaDhUOUYyNHUyN2REZXdRcjk4QVVzQnpxblhJbnRGUGg5N2VHUUMtN3N1QmtqUFFnckZEVUtudUJiQmYzUGpyZHktUGRHcDFCWkJYb2VMVnZmaFprZjNZUUxF0gF8QVVfeXFMTWVzd3dMRXVLQ3RhREcwbXZtY01aR0duTEZlRGlxTFpORmVXcjZ2dXJpdXJUd1pzSTNZYTc0NU9FR0xndnZlNkRNSXRYcE9tbThEWmZqcVBJZFBiRW9zVnFkZ0tQbXBsc0pwZUp6ZlNldEV2X19ReWJydGdEVQ?oc=5",
+      "published_at": "2026-10-14T03:15:07+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 128.15
+    },
+    {
+      "category": "ECONOMY",
+      "title": "Understanding the Next Inflation Test: How CPI and PPI Could Move Gold and the US Dollar - VT Markets",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPNXdKa1FDM3ZSdGltM1NSWDZ6TTN1X2xZaWVvQjN4c2UzS3BjOHR2YmdXbUxWV1I1UkVPREhCRFE2YW8wR2FXU2I2MGVyWVdpVGtmN1A5RzVTSGZRd0E1NjZGdldGLWhCcy1vNl9SMkRxWERiYmZZVTNzWkk4UllUcWp5cDRjQjF6Z05Lc1EtWWhyWXJVMkNCT3JvODBQbi1TdXNTQ2tDa1VJbExkTVh6elBYQXlTb3p2cjBVaEVfU2pubmZZZFUxag?oc=5",
+      "published_at": "2026-10-14T11:07:54+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 128.8
+    },
+    {
+      "category": "TECH & SECURITY",
+      "title": "Cisco Secure Email Gateway zero-day exploited in the wild, CISA orders federal patch by Saturday - news.lavx.hu",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdGZWbjRadjZqTUloWFFKd1VndTlPQzF3UkEydXJ4azV6aGFYb29BZ3dHTG1jN09QaFNXb1lmMjJqTWxTZExwN3Fpb19KcEFkNTFPQUZnQkk0NEIySk9XWHlwY2FvYzRDSHYtUUNLVEt0YUt1Q3RxNFNyc08zWjhHTXlKOGMzSEREZHdsVXdPZTFqSUs1aUItUVJWNkgyOG1ROUpLRV91aDI3LUk2SUJ1QmdPeXFkaGJwZU9UT0ZZWWw2Zw?oc=5",
+      "published_at": "2026-10-15T00:45:54+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.94
+    },
+    {
+      "category": "ECONOMY",
+      "title": "GLOBAL MARKETS-Dollar gains, Wall Street stocks fall after hot inflation data - Devdiscourse",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNV0F1TDdkZFo3X2xjVGRiRHprMml5cVpQSFF6TmhBbzlXOU83cTMwc1hRNHUtMTl4S29qWTl4bG1rckE2cU5vSkY5Z0ltMkpaLWE3d0NSZmRlYlN5RkFZd3FXM1o1dGtRUXZPRmJHV1g5Rk1SWXh2V0oxZGpsX2Z6Y015R1M4bVpBVGFtRWlwQkNQWE9HcDhOVkxrN1JqUmpGbVNmVFhEdExncEk3bUk0d3A0ZF9fZGViVzhNanI5bUNxQXpCTjh5TmRzRG1vcENrV1cwNjd30gHWAUFVX3lxTE1XQXVMN2RkWjdfbGNUZGJEemsyaXlxWlBIUXpOaEFvOVc5TzdxMzBzWFE0dS0xOXhLb2pZOXhsbWtyQTZxTm9KRjlnSW0ySlotYTd3Q1JmZGViU3lGQVl3cVczWjV0a1FRdk9GYkdXWDlGTVJZeHZXSjFkamxfZnpjTXlHUzhtWkFUYW1FaXBCQ1BYT0dwOE5WTGs3UmpSakZtU2ZUWER0TGdwSTdtSTR3cDRkX19kZWJXOE1qcjltQ3FBekJOOHlOZHNEbW9wQ2tXVzA2N3c?oc=5",
+      "published_at": "2026-10-14T21:40:14+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.68
+    },
+    {
+      "category": "TECH & SECURITY",
+      "title": "U.S. CISA adds Microsoft Windows Shell flaw to its Known Exploited Vulnerabilities catalog - Security Affairs",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbG96amlzVXRUbWV4N2FmVTktWURKQUd2aUxXMFZQOVAwalNmWmZzWmdBczNqYVRNTUtTalhYNmJJdUhCb2hTZmpWS1hSQUw0SVVBdzE2enpTZnpNTWdqQXBlbEZadkJ1RTAycVBub1Vndmw1VzhLalBOMmI0b2VlSGthYXoxOS1OVDN0aWJGZGh4YjNnZTQzak82X20zX3BZSWEySEFoYXZmeXFodi1hYlNGNVZZS0lDUzlVbHNKblU2ZTEtckhBWlozbC11bXV0ZDNjSXBCenrSAdgBQVVfeXFMTWxvemppc1V0VG1leDdhZlU5LVlESkFHdmlMVzBWUDlQMGpTZlpmc1pnQXMzamFUTU1LU2pYWDZiSXVIQm9oU2ZqVktYUkFMNElVQXcxNnp6U2Z6TU1nakFwZWxGWnZCdUUwMnFQbm9VZ3ZsNVc4S2pQTjJiNG9lZUhrYWF6MTktTlQzdGliRmRoeGIzZ2U0M2pPNl9tM19wWUlhMkhBaGF2ZnlxaHYtYWJTRjVWWUtJQ1M5VWxzSm5VNmUxLXJIQVpaM2wtdW11dGQzY0lwQnp6?oc=5",
+      "published_at": "2026-10-14T21:26:48+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.66
     },
     {
       "category": "ECONOMY",
@@ -80,7 +98,34 @@
       "published_at": "2026-10-14T19:31:42+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.77
+      "discovery_score": 119.5
+    },
+    {
+      "category": "CRYPTO",
+      "title": "EU Banking Regulator Takes Over Key Oversight of Circle’s USDC Stablecoin - Cryptonews.net",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9fcWdqZGZ5bkdqaVBMMHY3YnpTcEZtVUlDdXZLeHo5dzhMMmRGZWdmRGFRSEtNV3otbzhIQ2ZNMGFtVl9JQUpZeVVJbkh1RU1qUktHbmFB?oc=5",
+      "published_at": "2026-10-14T19:17:37+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.48
+    },
+    {
+      "category": "AI",
+      "title": "OpenAI Compute Chief Sachin Katti to Exit, Stay On as Adviser - BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBrOU1MZjU2MTdwV2diTlczX0ZrY1k5YkhVUEwtVUplOURjV1AtTzljR0JuMWpLR3JpTVhCZXpJZUNxX1BSRWpveUhKNHhtX2lBVHBYZ1JDRFZNQWpNdFhBTzN5Tzl0MldPMTZXaWVhU0ZFTTAzeUE?oc=5",
+      "published_at": "2026-10-14T18:28:00+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.41
+    },
+    {
+      "category": "AI",
+      "title": "Sachin Katti Leaving OpenAI Compute Role to Build Something New - Unite.AI",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaHVHQmRNd081OTlUempnMTByMHFoX24zeDNISEpIZzBQZVJqQklJNDVPc0lNZHEyajRnT0N5MEhvMVBlUEllei00QkU4eV9CSm1ueWhmYjlkSUZMUWVOSUMzTEttYm83QlJnNGlHRkRYWEQ4b2FIdnE4djdzeFBBTVl4OXg5by1TU2pXQ29R?oc=5",
+      "published_at": "2026-10-14T18:18:16+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.4
     },
     {
       "category": "ECONOMY",
@@ -89,52 +134,7 @@
       "published_at": "2026-10-14T16:11:15+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.49
-    },
-    {
-      "category": "ECONOMY",
-      "title": "US Stock Market Today LIVE: NASDAQ, S&P 500, Dow Jones Falls As Inflation Rises To 3.7%; Dollar, Yields Rally - Goodreturns",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOc2kyNk5sdS0tZ01HQ0xtVFJqOEVtVW9BWVJYRmMxZ3NVdE14TkptYU9obFNzdnp1Y28xdk5POEM3NUp3TVhSaXEzVURVRjJJVVZhcU13dC15NFB1V3g4WGJwYTFtM1NVekp4d0lsMEZMSXdfZ0xxbHl3SnJHTk00TUU1dEpRek82R1puRUo3U1RFWFVtX01sNmNRcnpOdUtzV3EyX2dlNlI2UlQ2NTRtODdBczFoQVYxdzVSTWtPMEVRbU1zMUJuTG1yU2RHNGFELWM5aTB5YTNzUQ?oc=5",
-      "published_at": "2026-10-14T15:52:17+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.46
-    },
-    {
-      "category": "CRYPTO",
-      "title": "Bitcoin Price Loses $83K as U.S. CPI Inflation Data Fuels Fresh Crypto Market Selloff - CryptoRank",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWXpxQUI1UFdDUHkxS2gzc1NlcElmbURSdGFDVWF4b0t6LTY1V3ZPOENsMGkzU21KNEhLYnhXVnpUU2J1X0lubC12TkxnNW1IM3c5ZTM1TWZneUMzeXJhLThoRkxQbEZkbnpVanlvblNzWEc0WFRXOVNuSjlhajk1QTdrTzE4bUpBMTdMRXFJUm9NMnNhdnZmRWd6elNpalFPZGFteVRDUl9aX0N0amF3aDVsSGwyY09Gc2IwWFZR?oc=5",
-      "published_at": "2026-10-14T15:05:05+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.4
-    },
-    {
-      "category": "CRYPTO",
-      "title": "France Stablecoin Tax Proposal and Upcoming 2027 Budget Debate - The Cryptonomist",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5MNE8wUFhxbGlLTkNUOC1waXN2WVNEVTctV0c5UUNEMkRHc2VqMl90R3dQUFo1QWw2bHZKbWQtbW9Oa2F5ZHdpZ1RpV1BNTGMza2ZHRWdXUEN2RndGNmUtbUlIVjRmYmVnU0ZQQg?oc=5",
-      "published_at": "2026-10-14T14:16:55+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.33
-    },
-    {
-      "category": "CRYPTO",
-      "title": "France's 31.4% Crypto Tax Could Hit Stablecoin Swaps - Altcoin Buzz",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOY2x2eTlNOHc2RExtbzZ5RGtOWFZaMGk1MGNLUG9tYnNZak5KbExoWk50ckRYV1htQmJDTUQwVWxNSERrU1ZkbmRrMFg0LXNIT2JIbXYxdG82bjhLS21xOXVjRXBTZ2lOQTl4SEl1MzdINXNXRG9INEU2OXhhWE9JZHBnenh6dw?oc=5",
-      "published_at": "2026-10-14T14:06:25+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.32
-    },
-    {
-      "category": "CRYPTO",
-      "title": "France Proposes 31.4% Tax on Stablecoin Swaps and Crypto Wallet Disclosures - CoinCodex",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMWJaS1F4SmdEWVdUTGZEVGFPX2dIRFFrZkZlZy1WSlNKMXhvWjJoMjZGR1A1MENHMmxVaTc1OWVqSC1YdjlYWkxHRTdFd2c5Uzg5aXVBdFNwVndVSFFIQUFwVFVDbXczUW5IR29pckwzanhBWHVoQ3BaM0V0VTlKVklaTVRJUEpWbzRQQkJXbkZWMXExaXBNV1RrNDlZd1ROb1lnWlp4dm01VGU5bVlr?oc=5",
-      "published_at": "2026-10-14T13:39:00+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.28
+      "discovery_score": 119.22
     }
   ],
   "weekly_trend": {
@@ -147,14 +147,14 @@
   "source_status": {
     "U.S. POLICY": {
       "ok": true,
-      "items": 3,
+      "items": 4,
       "working_sources": [
         "https://news.google.com/rss/search?q=executive%20order%20congress%20legislation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "ECONOMY": {
       "ok": true,
-      "items": 29,
+      "items": 31,
       "working_sources": [
         "https://www.bls.gov/feed/bls_latest.rss",
         "https://news.google.com/rss/search?q=Federal%20Reserve%20dollar%20inflation%20treasury%20yields%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
@@ -167,14 +167,14 @@
     },
     "AGRICULTURE": {
       "ok": true,
-      "items": 9,
+      "items": 10,
       "working_sources": [
         "https://news.google.com/rss/search?q=USDA%20beef%20cattle%20chicken%20turkey%20livestock%20prices%20farms%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "CRYPTO": {
       "ok": true,
-      "items": 30,
+      "items": 32,
       "working_sources": [
         "https://news.google.com/rss/search?q=bitcoin%20ethereum%20SEC%20stablecoin%20regulation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
@@ -188,7 +188,7 @@
     },
     "TECH & SECURITY": {
       "ok": true,
-      "items": 12,
+      "items": 13,
       "working_sources": [
         "https://news.google.com/rss/search?q=CISA%20cybersecurity%20breach%20ransomware%20vulnerability%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]

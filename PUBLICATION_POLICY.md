@@ -25,3 +25,16 @@ The current `publish_report.py` checks whether **metadata and required qualifier
 
 ## Archival integrity
 Immutable `reports/YYYY-MM-DD/<type>.json` files; supersede with explicit corrections rather than silently rewriting history. `briefing.json` is the display feed of most recently published morning/evening findings and their labels. `feed.json` remains an unverified discovery feed. Other endpoints and device readers must preserve labels and links.
+
+## Unified briefing presentation — mandatory
+Morning and evening News Reader reports use **one unified main briefing**. Important claims with incomplete authentication remain in the same prioritized coverage, not relegated to a separate unresolved-news appendix. Each item prominently displays its evidence label (Verified, Corroborated, Unsubstantiated, Disputed, Legal Effect Unclear, Unverified, or Refuted), direct source citations, and material limitations. Qualification must appear alongside the finding, not only in an endnote. Never imply that an attributed allegation is established fact, or that a disputed legal requirement is operative.
+
+## Production-readiness acceptance tests — all four required
+A successful build, unit-test suite, workflow run, valid schema, or published metadata-only digest is **not** sufficient to claim production readiness. Evaluate a real morning/evening news cycle with inspectable artifacts and record pass/fail evidence for each test:
+
+1. **News coverage:** A substantive briefing covers federal, Texas, Arkansas, Oklahoma, rights, financial markets and household economy, housing/crypto, beef/chicken/turkey agriculture, AI/data centers/technology, and cybersecurity. Prioritize consequential developments, and explicitly distinguish absent verified developments from unresearched or inaccessible sources.
+2. **Evidence authentication:** Check a documented sample of consequential assertions against actual retrievable original records and independent corroboration as appropriate. Confirm claimed action, jurisdiction, event date, legal status, effective/stay dates, statistics, units, and uncertainty labels. A formatted URL alone is not authentication.
+3. **Morning/evening continuity:** Evening reporting retrieves the same Central-date *complete* archived morning report, compares the actual findings, identifies sourced changes or corrections, and explicitly flags any missing baseline. Text differences alone do not prove real-world changes.
+4. **Publication and delivery:** The same complete evidence-labelled report and citations reach the dated archive, current `briefing.json`, and each claimed supported device/feed; inspect actual rendered content for consistency, age and attribution.
+
+Until all four tests pass using real sourced reporting, call the system **development/pilot**, even if individual engineering components succeed. Keep existing scheduled ChatGPT reports enabled until the replacement demonstrates parity. Do not claim autonomous research or automatic ingestion from scheduled ChatGPT conversations without actual integration.

@@ -1,0 +1,46 @@
+name: Monitor official state sources
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 12 * * *'
+    - cron: '40 1 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-reader-state-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test source monitor
+        run: python -m unittest -v test_state_monitor.py
+      - name: Check and publish official-source availability
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git checkout main
+            git reset --hard origin/main
+            python monitor_state_sources.py
+            git add state-source-monitor.json
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m "Update official state source-monitoring status"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 3
+          done
+          exit 1

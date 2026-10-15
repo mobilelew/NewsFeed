@@ -1,0 +1,68 @@
+name: Ingest and publish News Reader report
+
+on:
+  workflow_dispatch:
+    inputs:
+      report_json:
+        description: 'Complete evidence-status-v1 report as JSON'
+        required: true
+        type: string
+  repository_dispatch:
+    types:
+      - news_reader_report
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-reader-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run publisher and ingestion tests
+        run: python -m unittest -v test_publication_policy.py test_compare_briefings.py test_ingest_report.py
+      - name: Capture supplied JSON safely
+        env:
+          REPORT_JSON: ${{ github.event_name == 'repository_dispatch' && toJSON(github.event.client_payload.report) || inputs.report_json }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          printf '%s' "$REPORT_JSON" > "$RUNNER_TEMP/news-reader-report.json"
+          test -s "$RUNNER_TEMP/news-reader-report.json"
+      - name: Publish validated report
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git checkout main
+            git reset --hard origin/main
+            rm -f submissions/direct-ingest.json
+            python ingest_report.py --input "$RUNNER_TEMP/news-reader-report.json" --output submissions/direct-ingest.json
+            python publish_report.py --input submissions/direct-ingest.json
+            git add briefing.json reports/
+            if git diff --cached --quiet; then
+              echo "No report changes to publish."
+              exit 0
+            fi
+            git commit -m "Publish ingested News Reader briefing"
+            if git push origin HEAD:main; then
+              echo "Published report successfully."
+              exit 0
+            fi
+            echo "Concurrent update; retry with new checkout."
+            sleep 3
+          done
+          exit 1

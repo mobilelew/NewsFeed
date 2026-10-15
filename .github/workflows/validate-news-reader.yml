@@ -10,6 +10,8 @@ on:
       - 'test_publication_policy.py'
       - 'monitor_state_sources.py'
       - 'test_state_monitor.py'
+      - 'legislative_event_ledger.py'
+      - 'test_legislative_event_ledger.py'
       - '.github/workflows/auto-publish-official.yml'
       - '.github/workflows/validate-news-reader.yml'
   workflow_dispatch:
@@ -25,5 +27,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m unittest -v test_publication_policy.py test_official_collector.py test_state_monitor.py
-      - run: python -m py_compile publish_report.py collect_official_records.py publish_official_pilot.py monitor_state_sources.py
+      - run: python -m unittest -v test_publication_policy.py test_official_collector.py test_state_monitor.py test_legislative_event_ledger.py
+      - run: python -m py_compile publish_report.py collect_official_records.py publish_official_pilot.py monitor_state_sources.py legislative_event_ledger.py

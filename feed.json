@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T07:28:42+00:00",
+  "updated_at": "2026-10-15T13:27:56+00:00",
   "headlines": [
     {
       "category": "U.S. POLICY",
@@ -8,16 +8,16 @@
       "published_at": "2026-10-14T23:34:27+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.34
+      "discovery_score": 118.84
     },
     {
       "category": "ECONOMY",
-      "title": "Dollar Strengthens on Hot Inflation Data, Higher Treasury Yields - WSJ",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbEx1Q0FoZmpVSGRtUnE4U2hYRGtNeHpEanFrRUM4UFZRUC10NUh5WmZyUWQ3SUJjTUEzb19YR1JFUXZXQ2pnYlpRbk5fWGVJUEdKZUxTQ1UwRXFmSkhpRy1QOGZGb0d2YlhiTlRMSjlwSGI5c2RDeXZTaDFDbGR3Qm1LdktxaHRzeFZRMElqLVRqZ2hrd0w4NjhwbXJKY3lVNUVodUs0RHB1a2dJLUc2Nw?oc=5",
-      "published_at": "2026-10-14T16:06:00+00:00",
+      "title": "Gold Prices Rebound as Dollar and Treasury Yields Ease Despite Higher US Inflation - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYVBLMlFnTThPMXFubDNhemJmNnBhcHZ5bFBTYTQxZGFJSlJVY1VQMElRVDlaWTFacG55QUZVU1lqNG5FNFhiQXZHLWFsajNDM3VBUGxnSWE0OXpxVEg1UXF1Z25LUVY0MmwwQzI1bjRiU2dRNldjbnd1M2FoZEZfNXE5Z0VSQUdCb25zbWF0Y2s0dk9WM21Yd1VYeGtsdEtGRDVDbmlHUTg?oc=5",
+      "published_at": "2026-10-15T09:44:16+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 128.72
+      "discovery_score": 129.69
     },
     {
       "category": "AGRICULTURE",
@@ -26,16 +26,16 @@
       "published_at": "2026-10-14T18:10:33+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 128.89
+      "discovery_score": 128.39
     },
     {
       "category": "CRYPTO",
-      "title": "Qivalis: EMI licence for a euro stablecoin - CryptoTicker",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9Fb0pSeHNxT0lRUWFreHNZTkpNall3cTMwWEdnV0Fmcm41eVlqLTN4a1ZxXzJZQmNqRkZPcGVMMEhFVlhPM0xlem1yZEtORnpESWFCSFQtazVPdGFySEIxTFFUUHI1eUJOeWllSnNMbw?oc=5",
-      "published_at": "2026-10-14T21:21:58+00:00",
+      "title": "Crypto Prices Today: Bitcoin Slips Near USD 81,150 as Hot US CPI Sparks USD 1B Liquidations - Analytics Insight",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNdHIzVWp5WVlEZlcwYzROWTUzT0x1WV9CeWc4Q0lVR1BJRS1VdXBRZ2pJSk1TSkRPTUNwWjFhVHZEa21Ca1lJQUstc0R3Y3BrVWM5V0lYWjFyckdoaUNuTlB1RTdVRkdSVV9RMUVwdlZ4a0FtN3JYRVFoU1ZoSnZSeVY1SWN4X2dtQm1xYTlCNVdzYWtPb1J0ZXFZRlFlQW00TkE2SjN2YU50V3NycjZBbTlTcmdPdllKckJ2dnByNW52RUtwcXkzcjZoNWVEYjRINlo1cmVkNGFtNTVEc2hHUdIB4AFBVV95cUxNdHIzVWp5WVlEZlcwYzROWTUzT0x1WV9CeWc4Q0lVR1BJRS1VdXBRZ2pJSk1TSkRPTUNwWjFhVHZEa21Ca1lJQUstc0R3Y3BrVWM5V0lYWjFyckdoaUNuTlB1RTdVRkdSVV9RMUVwdlZ4a0FtN3JYRVFoU1ZoSnZSeVY1SWN4X2dtQm1xYTlCNVdzYWtPb1J0ZXFZRlFlQW00TkE2SjN2YU50V3NycjZBbTlTcmdPdllKckJ2dnByNW52RUtwcXkzcjZoNWVEYjRINlo1cmVkNGFtNTVEc2hHUQ?oc=5",
+      "published_at": "2026-10-15T07:20:34+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.16
+      "discovery_score": 119.49
     },
     {
       "category": "AI",
@@ -44,97 +44,97 @@
       "published_at": "2026-10-15T00:02:22+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.38
+      "discovery_score": 118.88
     },
     {
       "category": "TECH & SECURITY",
-      "title": "Cisco Secure Email Gateway zero-day exploited in the wild, CISA orders federal patch by Saturday - news.lavx.hu",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdGZWbjRadjZqTUloWFFKd1VndTlPQzF3UkEydXJ4azV6aGFYb29BZ3dHTG1jN09QaFNXb1lmMjJqTWxTZExwN3Fpb19KcEFkNTFPQUZnQkk0NEIySk9XWHlwY2FvYzRDSHYtUUNLVEt0YUt1Q3RxNFNyc08zWjhHTXlKOGMzSEREZHdsVXdPZTFqSUs1aUItUVJWNkgyOG1ROUpLRV91aDI3LUk2SUJ1QmdPeXFkaGJwZU9UT0ZZWWw2Zw?oc=5",
-      "published_at": "2026-10-15T00:45:54+00:00",
+      "title": "Hackers Exploit Fortinet Vulnerabilities to Deploy Stealthy PEERSTITCH Malware on FortiGate Firewalls - CyberSecurityNews",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1WbVNvbGZsSm5SZHlsQ3REQlBhdTBwTXhNUVZjVndCM2FZd1Q0cHJlV2MwZk85Q0JxWllBVm9BWk9nMlJXYk5TNTc1UWxuVV9qTlBnNkUtelFIcUQ1ZHVQN2tCSnVibnVMTUlR0gFrQVVfeXFMTVZtU29sZmxKblJkeWxDdERCUGF1MHBNeE1RVmNWd0IzYVl3VDRwcmVXYzBmTzlDQnFaWUFWb0FaT2cyUldiTlM1NzVRbG5VX2pOUGc2RS16UUhxRDVkdVA3a0JKdWJudUxNSVE?oc=5",
+      "published_at": "2026-10-15T12:22:26+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.44
+      "discovery_score": 129.91
     },
     {
       "category": "ECONOMY",
-      "title": "Understanding the Next Inflation Test: How CPI and PPI Could Move Gold and the US Dollar - VT Markets",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPNXdKa1FDM3ZSdGltM1NSWDZ6TTN1X2xZaWVvQjN4c2UzS3BjOHR2YmdXbUxWV1I1UkVPREhCRFE2YW8wR2FXU2I2MGVyWVdpVGtmN1A5RzVTSGZRd0E1NjZGdldGLWhCcy1vNl9SMkRxWERiYmZZVTNzWkk4UllUcWp5cDRjQjF6Z05Lc1EtWWhyWXJVMkNCT3JvODBQbi1TdXNTQ2tDa1VJbExkTVh6elBYQXlTb3p2cjBVaEVfU2pubmZZZFUxag?oc=5",
-      "published_at": "2026-10-14T11:07:54+00:00",
+      "title": "Dollar Strengthens on Hot Inflation Data, Higher Treasury Yields - WSJ",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbEx1Q0FoZmpVSGRtUnE4U2hYRGtNeHpEanFrRUM4UFZRUC10NUh5WmZyUWQ3SUJjTUEzb19YR1JFUXZXQ2pnYlpRbk5fWGVJUEdKZUxTQ1UwRXFmSkhpRy1QOGZGb0d2YlhiTlRMSjlwSGI5c2RDeXZTaDFDbGR3Qm1LdktxaHRzeFZRMElqLVRqZ2hrd0w4NjhwbXJKY3lVNUVodUs0RHB1a2dJLUc2Nw?oc=5",
+      "published_at": "2026-10-14T16:06:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 128.3
+      "discovery_score": 128.22
     },
     {
       "category": "ECONOMY",
-      "title": "Dollar Eases From 18-Month High as Treasury Yields Fall - Qatar news agency",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdGRNU3B5ZzcxcVhWM01LUE9MUG1RYzlYRW4zSmV4b2dsYWlTVGxSVkJhaVYxRzJCdFJIaDdGRkphWUFxUTRMdWh2cTQwWUhzc0RSR2RtVmhnVlR4RzB5SExFNWp6TmpIbGNfNE5LODl6dWExM3dqS2hyZVYwR05ObWE4S21HZ01oRml0enNWYlpFRVNURkljWHN6THBQdkpfenJ1eFFn?oc=5",
-      "published_at": "2026-10-15T05:32:00+00:00",
+      "title": "Dollar weakens after US Treasury yields fall — Channel NewsAsia - UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcW1GbEZxaXBvLUMxMnpmWXVGVnFlXzdtMUpHeUZ3cHo3MzAwMDBrT1VnTVhYM3k5d2ttUGlUeWdmTlB0QnM4SklsSExkck9wOHNYdTVCVUVvWkpCMnJxal9KQ0g4bW85UWQxRWF4QkxzWDdZcHFYelZTcldFNWdDUTRtSkpybDhFS3JYLTgweFZ6RlRaaEpFcXFRVzZiY1RaczBjYkF3VXZiM0hlQTlpbQ?oc=5",
+      "published_at": "2026-10-15T12:28:45+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.92
+    },
+    {
+      "category": "ECONOMY",
+      "title": "Pound-to-Dollar Forecast: GBP/USD Bounces as US Treasury Yields Retreat - currencynews.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMkpYYzZDSnNXbUFLSkg0ME5pREUxbVU2NXF6bUgtLUUtam9kTElPdEZuM2p1VUp0M3ZxcFFycG1VamNfS2p4c1loRkVMRWR0RWNYT1lBZGdZVzVUSmlnVk93NGV6N2NMeUxxbU9SVnZTWU5ZbGV1WVVGS2lMSC0tTkFvLTd3TnhDWVQ0TnU5LVltSnV2QjRaZDNVZEVJYklmR1BQM1Z3ZzRjS1ppQVVKRDVaOXRYWV80T3VyOEdDSXlnU2d5T2xSRzhn?oc=5",
+      "published_at": "2026-10-15T11:36:03+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
       "discovery_score": 119.84
     },
     {
       "category": "ECONOMY",
-      "title": "Dollar retreats from 18-month high despite hot CPI as Fed officials temper hike bets - CNBC",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOFRfWnV4YUItU29iaF9MWFJqOUFmNnJTckRHRVBNZDRfNEk3SS1vTVJ6TG1zcmJzeWxWT1djaVQ3cm1jb1VHbnI5Q3ZZcDRGdU1yalducE5faEhOR0Jjc1FYNFBseEo3SkVpWElKX3hfcG5yQzJzVUNQQl9FakFsdjFZbTJpdDZjMC1xNENvbWdJQzAteGVraWhRREF4WTRXUUh3SXctcWlqNUMxdzdV0gGvAUFVX3lxTE04VF9adXhhQi1Tb2JoX0xYUmo5QWY2clNyREdFUE1kNF80STdJLW9NUnpMbXNyYnN5bFZPV2NpVDdybWNvVUducjlDdllwNEZ1TXJqV25wTl9oSE5HQmNzUVg0UGx4SjdKRWlYSUpfeF9wbnJDMnNVQ1BCX0VqQWx2MVltMml0NmMwLXE0Q29tZ0lDMC14ZWtpaFFEQXhZNFdRSHdJdy1xaWo1QzF3N1U?oc=5",
-      "published_at": "2026-10-15T04:33:27+00:00",
+      "title": "Gold Prices Recover as Weaker Dollar and Falling Bond Yields Offset US Inflation Concerns - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSFVaWno3TG10cU9rNzktMkhhWnY4VmpVZE9PQzlmY0l0Z0xoTDN3UTJUVk9BRUM2R3JiRTM5VlVMMTcwT1kxRVZTZVNSYkVDYTc4UW5XdkF3RnB2OVFzQzZQYWd5Y0hud1M0dUp6U0tjWW1kX0dpRjFTZ2hyN2h6ODNmTkFDS1RFd1E?oc=5",
+      "published_at": "2026-10-15T09:46:34+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.76
-    },
-    {
-      "category": "ECONOMY",
-      "title": "Dollar Retreats From 18-Month High Despite Hot US Inflation - BusinessToday Malaysia",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS2ptdGNmUk43Ny1RUzJYOHRodm5qZnFwSXFpRGJlVU56YlZNbEY0RVo2aUpkSDJzS1ZWRnFuVEZZLUEzX2V6ZXVwUVNDdDFVRzNNOGpRNGJYc1BOOTB1RnA4THVLOVJHX1NyQlc5SVJWZ2Zfa2oxdVg3VFBTTnVWTU1FSHBQamhnRVhUZGpXeEhsSlcwSFVuUENnMFNyMXZrMjFESjhaUQ?oc=5",
-      "published_at": "2026-10-15T03:16:24+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.65
-    },
-    {
-      "category": "ECONOMY",
-      "title": "Dollar retreats from 18-month high as Treasury yields dip; Fed hike bets ease - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPbDE0ZWJRMm1PNWhpVzUwaDhHb2o1YkVXVExaeFVQWWFwcnJtemVfakY3WHV0aFFQWHR3dkR4eVN1OTZ3dXVqb0QzQ0ZuNkNhek1IbFRhVEtBXzNKcVpSQ1dHQm16ZGMxZHF1Z0txU2xHVUVsb0txUzhxLVljb0NXWWZzX2ZETk9QbHF1dm5XdmMybWFYRzl4d1VuS3J0NlU4enJvQVFuYTYydDNYUVVHM3pjandDUHdHbHhLT2otUU1HQk1PTVpReHpmTQ?oc=5",
-      "published_at": "2026-10-15T01:49:00+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.53
+      "discovery_score": 119.69
     },
     {
       "category": "TECH & SECURITY",
-      "title": "Ivanti's three-headed zero-day exploited in wild, CISA says patch now – but one flaw has no fix - Cybernews",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5oUkhVWUsyam91TXBMSWdQdExvZ0VMV3k2dUhXaDVaNUdHUW0wYm9oNFJkaFk4R0JoVE5aZzZ4QnBraV9Fcl9LZGxNaWphVFVzZlpxMHZoNlRhbjd3YkRwMUIwMjJqQUh0VVQ3UUtfT29BQXFTdDJTTVRR?oc=5",
-      "published_at": "2026-10-14T23:19:19+00:00",
+      "title": "Cisco Urges Customers to Patch Email Gateway Flaw and Check for Compromise - Security Affairs",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPS0p3LVFzeUFKaEs3V0daRXRseWI4NWxJUHU2Nm5BczM4NWVIQTdEYmNtaGlOTWUyS0F1V05XUmFpRzBXRFROdnhlZFNINkVYMG04S2xNaTFjTTV2N1FBQ2VWaDNpUVp0OG9BVThGM1hPS0t2RzAzaEZVVi1qVDQyMTFTSVdYSUMweU5oQjRVQ29PaHF4ak42dVhGU0tXNkJWdVctT291R2Vvb242R29lZzBieW5lcFlxd2NqTEtkaVVPRmJwNmfSAcYBQVVfeXFMT0tKdy1Rc3lBSmhLN1dHWkV0bHliODVsSVB1NjZuQXMzODVlSEE3RGJjbWhpTk1lMktBdVdOV1JhaUcwV0RUTnZ4ZWRTSDZFWDBtOEtsTWkxY001djdRQUNlVmgzaVFadDhvQVU4RjNYT0tLdkcwM2hGVVYtalQ0MjExU0lXWElDMHlOaEI0VUNvT2hxeGpONnVYRlNLVzZCVnVXLU9vdUdlb29uNkdvZWcwYnluZXBZcXdjakxLZGlVT0ZicDZn?oc=5",
+      "published_at": "2026-10-15T09:27:13+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.32
+      "discovery_score": 119.67
     },
     {
       "category": "ECONOMY",
-      "title": "GLOBAL MARKETS-Dollar gains, Wall Street stocks fall after hot inflation data - Devdiscourse",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNV0F1TDdkZFo3X2xjVGRiRHprMml5cVpQSFF6TmhBbzlXOU83cTMwc1hRNHUtMTl4S29qWTl4bG1rckE2cU5vSkY5Z0ltMkpaLWE3d0NSZmRlYlN5RkFZd3FXM1o1dGtRUXZPRmJHV1g5Rk1SWXh2V0oxZGpsX2Z6Y015R1M4bVpBVGFtRWlwQkNQWE9HcDhOVkxrN1JqUmpGbVNmVFhEdExncEk3bUk0d3A0ZF9fZGViVzhNanI5bUNxQXpCTjh5TmRzRG1vcENrV1cwNjd30gHWAUFVX3lxTE1XQXVMN2RkWjdfbGNUZGJEemsyaXlxWlBIUXpOaEFvOVc5TzdxMzBzWFE0dS0xOXhLb2pZOXhsbWtyQTZxTm9KRjlnSW0ySlotYTd3Q1JmZGViU3lGQVl3cVczWjV0a1FRdk9GYkdXWDlGTVJZeHZXSjFkamxfZnpjTXlHUzhtWkFUYW1FaXBCQ1BYT0dwOE5WTGs3UmpSakZtU2ZUWER0TGdwSTdtSTR3cDRkX19kZWJXOE1qcjltQ3FBekJOOHlOZHNEbW9wQ2tXVzA2N3c?oc=5",
-      "published_at": "2026-10-14T21:40:14+00:00",
+      "title": "Dollar Retreats From 18-Month High Despite US Inflation... - Jordan News",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOcWJqdG9LNWEyb3lwUm1HVEJVUXAxQV9NcmU5bUliRW9RZEwxdW0yOEdGazVRaGRJTU5hdjFFNTBIcnJ3Q2tOeHo5SVlhclRqTmJxWHFFOTlDWTFTaHBmY1FIYmFCampOSExIdlpLUGNIeG01LTEtc1JRR1lDU2ZEOHFQZ2o3VG1ReUpmUzdCb0IxUFlkMTkzOE50bGY4UkxTT0xzbmZrNG4wT2s?oc=5",
+      "published_at": "2026-10-15T08:19:07+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.18
-    },
-    {
-      "category": "TECH & SECURITY",
-      "title": "U.S. CISA adds Microsoft Windows Shell flaw to its Known Exploited Vulnerabilities catalog - Security Affairs",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbG96amlzVXRUbWV4N2FmVTktWURKQUd2aUxXMFZQOVAwalNmWmZzWmdBczNqYVRNTUtTalhYNmJJdUhCb2hTZmpWS1hSQUw0SVVBdzE2enpTZnpNTWdqQXBlbEZadkJ1RTAycVBub1Vndmw1VzhLalBOMmI0b2VlSGthYXoxOS1OVDN0aWJGZGh4YjNnZTQzak82X20zX3BZSWEySEFoYXZmeXFodi1hYlNGNVZZS0lDUzlVbHNKblU2ZTEtckhBWlozbC11bXV0ZDNjSXBCenrSAdgBQVVfeXFMTWxvemppc1V0VG1leDdhZlU5LVlESkFHdmlMVzBWUDlQMGpTZlpmc1pnQXMzamFUTU1LU2pYWDZiSXVIQm9oU2ZqVktYUkFMNElVQXcxNnp6U2Z6TU1nakFwZWxGWnZCdUUwMnFQbm9VZ3ZsNVc4S2pQTjJiNG9lZUhrYWF6MTktTlQzdGliRmRoeGIzZ2U0M2pPNl9tM19wWUlhMkhBaGF2ZnlxaHYtYWJTRjVWWUtJQ1M5VWxzSm5VNmUxLXJIQVpaM2wtdW11dGQzY0lwQnp6?oc=5",
-      "published_at": "2026-10-14T21:26:48+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.16
+      "discovery_score": 119.57
     },
     {
       "category": "ECONOMY",
-      "title": "Stocks fall, dollar rallies as US inflation tops forecasts - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUE1ZbW9adzJiM0pObko5Tmc1bEl5d3ZSak1NS2lKa01LMWhWTjAwQnRUWldyX0VLSXllSV9kTkJRS0dNZ3Z1bGt6U1ZGR25DR0hCdHE2UlZ0TnotMllqVmlWTW9uaFVWQm5LMWNvRFFnOFhDdkFWZi1TNkNxcFBiWHk2SUJTX2xvUDVxZGY1d0VZRTNWMGxPMkh3?oc=5",
-      "published_at": "2026-10-14T19:31:42+00:00",
+      "title": "US September PPI Preview: Will Inflation Surprise Again? US Stocks, Dollar and Gold Face Key Test - TradingKey",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOdGFYM2liOVpqd0U2SW5BZTFKanB0NDcxMTlfeV9RbXpNSDREenV4TF9OWVJqTVpzWmk3U2xfb1pKRFVGNGp6dm5YMXhLa0VnYnZXeFF3UnFQeG1rSEVxUTdHM3dPbHMzSkRGQnFJUjFMbXFGSXNaQVd4d0RucnVVLWJCYXdtTnJWVHZ4elp3SWVCdjFCX2s0TVhzbGlpaXJUZWJBdVg1VWJZMWhwUFpZaTc5aU5kbXpxc0o4SWdZWDdaSUhJODNDRUh1V2wzYzV2clh3WGtkdzNsdXVEdDBz?oc=5",
+      "published_at": "2026-10-15T08:06:49+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.0
+      "discovery_score": 119.55
+    },
+    {
+      "category": "ECONOMY",
+      "title": "Dollar Eases From 18-Month High as Treasury Yields Fall - Fana News -",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcXZJWEd5V1JkMWVYQVRjOVZlWHB4dDVhRGxrdVduZXVpU0NIaGdyNkhZRkhUU2RkQ1RnSUZCSDA1RlBzTmNwTjRkLWR4Q1RfR1M5NkM2S09zQlY5aG5DR2FrQ20tNmp0Y1pOLTlXMjVRZXhCajlTdWZnUmtJV205SWhtZ2huZDBxUk5fX1UxZVpVQ1FSRjJ4Qw?oc=5",
+      "published_at": "2026-10-15T05:35:18+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.34
+    },
+    {
+      "category": "CRYPTO",
+      "title": "EU Designates Circle’s USDC as First Significant Stablecoin Under MiCA - Crypto Adventure",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOckVjd0FaOS00SU81RnFjWlhkRjFKdFZGX1pXcWZFaEt5c0haZWZiOEtqQ213OW1YUDRJRkxNaEt0My1IZUtsTmRNNUd6U3FPblN1RjdHeWpWMHFLaTcyRy1WWnQ4enYzZlVhZWROekNId1lXRHQ2LUpFbVRDdDJDR0c2SzkybWprOGlrU0djcGF2UUh2Q0dqMER2S1BvNHc?oc=5",
+      "published_at": "2026-10-15T04:22:15+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.24
     }
   ],
   "weekly_trend": {
@@ -147,14 +147,14 @@
   "source_status": {
     "U.S. POLICY": {
       "ok": true,
-      "items": 6,
+      "items": 7,
       "working_sources": [
         "https://news.google.com/rss/search?q=executive%20order%20congress%20legislation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "ECONOMY": {
       "ok": true,
-      "items": 33,
+      "items": 34,
       "working_sources": [
         "https://www.bls.gov/feed/bls_latest.rss",
         "https://news.google.com/rss/search?q=Federal%20Reserve%20dollar%20inflation%20treasury%20yields%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
@@ -167,7 +167,7 @@
     },
     "AGRICULTURE": {
       "ok": true,
-      "items": 10,
+      "items": 9,
       "working_sources": [
         "https://news.google.com/rss/search?q=USDA%20beef%20cattle%20chicken%20turkey%20livestock%20prices%20farms%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
@@ -181,14 +181,14 @@
     },
     "AI": {
       "ok": true,
-      "items": 33,
+      "items": 31,
       "working_sources": [
         "https://news.google.com/rss/search?q=AI%20models%20OpenAI%20NVIDIA%20data%20centers%20electricity%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "TECH & SECURITY": {
       "ok": true,
-      "items": 13,
+      "items": 10,
       "working_sources": [
         "https://news.google.com/rss/search?q=CISA%20cybersecurity%20breach%20ransomware%20vulnerability%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]

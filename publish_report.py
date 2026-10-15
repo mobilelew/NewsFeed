@@ -96,6 +96,14 @@ def publish(source):
     latest.mkdir(parents=True, exist_ok=True)
     dest.parent.mkdir(parents=True, exist_ok=True)
     published = dict(report)
+    if kind == "evening":
+        from compare_briefings import compare
+        morning_path = ROOT / "reports" / date / "morning.json"
+        morning = json.loads(morning_path.read_text(encoding="utf-8")) if morning_path.exists() else None
+        comparison = compare(morning, report)
+        if comparison["comparison_status"] == "direct_text_comparison":
+            comparison["morning_report_path"] = str(morning_path.relative_to(ROOT))
+        published["morning_comparison"] = comparison
     published["report_date"] = date
     published["published_at"] = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     serialized = json.dumps(published, indent=2, ensure_ascii=False) + "\n"

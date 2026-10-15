@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T18:19:23+00:00",
+  "updated_at": "2026-10-15T22:21:27+00:00",
   "headlines": [
     {
       "category": "U.S. POLICY",
@@ -8,7 +8,7 @@
       "published_at": "2026-10-14T23:34:27+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.44
+      "discovery_score": 118.1
     },
     {
       "category": "ECONOMY",
@@ -17,7 +17,7 @@
       "published_at": "2026-10-15T09:44:16+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.28
+      "discovery_score": 128.95
     },
     {
       "category": "AGRICULTURE",
@@ -26,7 +26,7 @@
       "published_at": "2026-10-15T16:42:55+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.87
+      "discovery_score": 129.53
     },
     {
       "category": "CRYPTO",
@@ -35,7 +35,7 @@
       "published_at": "2026-10-15T15:01:14+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.72
+      "discovery_score": 119.39
     },
     {
       "category": "AI",
@@ -44,7 +44,7 @@
       "published_at": "2026-10-15T13:30:59+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.6
+      "discovery_score": 129.26
     },
     {
       "category": "TECH & SECURITY",
@@ -53,16 +53,25 @@
       "published_at": "2026-10-15T12:22:26+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.5
+      "discovery_score": 129.17
+    },
+    {
+      "category": "AI",
+      "title": "BlackRock’s Larry Fink Warns AI Data Center Halt Could Tip US Into Recession - Decrypt",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYkxEQ3R1LU1UcWoxYUt6NXJGcXBtYU1JdmdseXplTm5ESFM4N3VxTEFZUU43WHZLbTF2UG00TXVxNzdJX3ZRNkJjYXZkNU55Z0paNDA3VDViS3E3UFBULURLMFA3SG1kYjUtZksyM0h5ay1oSmQzakE2V3NrMzJKTzBn?oc=5",
+      "published_at": "2026-10-15T18:16:04+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.66
     },
     {
       "category": "ECONOMY",
-      "title": "Swiss Franc gains ground as US Dollar retreats despite hot inflation data - FXStreet",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOS0prWGtWY1dvdkh2ODVlYW55MlBXaVJyckVUblBTanFXVjQxU1RGMXAyS0NqdXZOMFFpYWh2UVhwNDJRbVI4SDdzVHBaUFktWjVuLVZLa1k3Z2E1Q05oMjRzbHpTSUotdUE5MXRIYkgwWUZhSXMyUTNrdFUydkFMU01FdU85elg1UkVZODhPY2tvRjZ2LTlCamxZeGRaMWVJczltdEQ4WnJPREpaLUV3clVtU3ZhbUU?oc=5",
-      "published_at": "2026-10-15T14:29:46+00:00",
+      "title": "Core Inflation Firms Beneath Hot CPI as the Fed Signals No Urgency - StoneX",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPc2VGX1ZHRGpxM0Y5d1VIZFYyVW1VRzRpbnZDbHlBRkI3WENJMTFRUGZQdnlCbWlpWENKLXFUZUZjUmprckY5SGUzcmdSTmF5a3ZRb25oNVo0eVBHZmV1Zk00dUFHUXFNdzNaTDU1enJwbE9oZk9nNzZPVkE5TXlYS1N1bWd0VEx6eFNsY0twRFBsNURndGhLUGtNRXE0SlZvNHhDNA?oc=5",
+      "published_at": "2026-10-15T17:15:56+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.68
+      "discovery_score": 119.58
     },
     {
       "category": "ECONOMY",
@@ -71,7 +80,7 @@
       "published_at": "2026-10-15T13:40:27+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.61
+      "discovery_score": 119.28
     },
     {
       "category": "TECH & SECURITY",
@@ -80,7 +89,7 @@
       "published_at": "2026-10-15T12:55:13+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.55
+      "discovery_score": 119.21
     },
     {
       "category": "ECONOMY",
@@ -89,16 +98,7 @@
       "published_at": "2026-10-15T12:28:45+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.51
-    },
-    {
-      "category": "ECONOMY",
-      "title": "Pound-to-Dollar Forecast: GBP/USD Bounces as US Treasury Yields Retreat - currencynews.co.uk",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMkpYYzZDSnNXbUFLSkg0ME5pREUxbVU2NXF6bUgtLUUtam9kTElPdEZuM2p1VUp0M3ZxcFFycG1VamNfS2p4c1loRkVMRWR0RWNYT1lBZGdZVzVUSmlnVk93NGV6N2NMeUxxbU9SVnZTWU5ZbGV1WVVGS2lMSC0tTkFvLTd3TnhDWVQ0TnU5LVltSnV2QjRaZDNVZEVJYklmR1BQM1Z3ZzRjS1ppQVVKRDVaOXRYWV80T3VyOEdDSXlnU2d5T2xSRzhn?oc=5",
-      "published_at": "2026-10-15T11:36:03+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.44
+      "discovery_score": 119.18
     },
     {
       "category": "CRYPTO",
@@ -107,16 +107,25 @@
       "published_at": "2026-10-15T11:37:33+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.44
+      "discovery_score": 119.11
     },
     {
       "category": "ECONOMY",
-      "title": "Dollar pulls back from 18-month high as Treasury yields fall; Fed hike bets ease - CNBC",
+      "title": "Pound-to-Dollar Forecast: GBP/USD Bounces as US Treasury Yields Retreat - currencynews.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMkpYYzZDSnNXbUFLSkg0ME5pREUxbVU2NXF6bUgtLUUtam9kTElPdEZuM2p1VUp0M3ZxcFFycG1VamNfS2p4c1loRkVMRWR0RWNYT1lBZGdZVzVUSmlnVk93NGV6N2NMeUxxbU9SVnZTWU5ZbGV1WVVGS2lMSC0tTkFvLTd3TnhDWVQ0TnU5LVltSnV2QjRaZDNVZEVJYklmR1BQM1Z3ZzRjS1ppQVVKRDVaOXRYWV80T3VyOEdDSXlnU2d5T2xSRzhn?oc=5",
+      "published_at": "2026-10-15T11:36:03+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.1
+    },
+    {
+      "category": "ECONOMY",
+      "title": "Dollar retreats from 18-month high despite strong inflation data - CNBC",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNS3RhaFpXd1N0Q0w4VVdpWXU5WkEzV3dYM1pqM19hWHFRTjVMQ1c1YVNMejc2enVRWG1PY2RibV9FSllOTkg2eXRGalZoUGRmMk0tQlJPWFNJV1p3eEduZnhxUm0yaHdhUE1RTHdjeUF2NDlUUkJLYW4tWEdWbHUtdUN5VHRLRDdVZVMxRDNjVGlPZFdqQnNWUHIxUXA0bnkzT3hyc3pxcjJiRzZLUXZLNU41LTdFRDTSAbwBQVVfeXFMT2V2NzVUaUpqMTVVM0w0YWRfVHRveVJNNXFWZkdOeTBnZjlBV2JaMExQaDQ4T2tnWF92ZEFHVklBUk9YdGNhQ2tTX2Q5WWNFUVhST1c3bEVacG52XzJfazVISFBXaWpPU1dSdnFKalE3RnVkbHNaYk91LXJ5U082YlRleXM5QmZxenNIeGV0ZHNiUlE3cHNSbW03UUFPWGNyRzhmVDN4TUJfR0ZQcFpTaVlEb1prMGxMV2ZPQUM?oc=5",
       "published_at": "2026-10-15T10:09:35+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.32
+      "discovery_score": 118.98
     },
     {
       "category": "ECONOMY",
@@ -125,16 +134,7 @@
       "published_at": "2026-10-15T09:46:34+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.29
-    },
-    {
-      "category": "TECH & SECURITY",
-      "title": "Cisco Urges Customers to Patch Email Gateway Flaw and Check for Compromise - Security Affairs",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPS0p3LVFzeUFKaEs3V0daRXRseWI4NWxJUHU2Nm5BczM4NWVIQTdEYmNtaGlOTWUyS0F1V05XUmFpRzBXRFROdnhlZFNINkVYMG04S2xNaTFjTTV2N1FBQ2VWaDNpUVp0OG9BVThGM1hPS0t2RzAzaEZVVi1qVDQyMTFTSVdYSUMweU5oQjRVQ29PaHF4ak42dVhGU0tXNkJWdVctT291R2Vvb242R29lZzBieW5lcFlxd2NqTEtkaVVPRmJwNmfSAcYBQVVfeXFMT0tKdy1Rc3lBSmhLN1dHWkV0bHliODVsSVB1NjZuQXMzODVlSEE3RGJjbWhpTk1lMktBdVdOV1JhaUcwV0RUTnZ4ZWRTSDZFWDBtOEtsTWkxY001djdRQUNlVmgzaVFadDhvQVU4RjNYT0tLdkcwM2hGVVYtalQ0MjExU0lXWElDMHlOaEI0VUNvT2hxeGpONnVYRlNLVzZCVnVXLU9vdUdlb29uNkdvZWcwYnluZXBZcXdjakxLZGlVT0ZicDZn?oc=5",
-      "published_at": "2026-10-15T09:27:13+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.26
+      "discovery_score": 118.95
     }
   ],
   "weekly_trend": {
@@ -147,14 +147,14 @@
   "source_status": {
     "U.S. POLICY": {
       "ok": true,
-      "items": 14,
+      "items": 17,
       "working_sources": [
         "https://news.google.com/rss/search?q=executive%20order%20congress%20legislation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "ECONOMY": {
       "ok": true,
-      "items": 32,
+      "items": 33,
       "working_sources": [
         "https://www.bls.gov/feed/bls_latest.rss",
         "https://news.google.com/rss/search?q=Federal%20Reserve%20dollar%20inflation%20treasury%20yields%20when%3A3d&hl=en-US&gl=US&ceid=US:en"

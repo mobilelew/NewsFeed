@@ -14,6 +14,9 @@ on:
       - 'test_legislative_event_ledger.py'
       - 'compare_briefings.py'
       - 'test_compare_briefings.py'
+      - 'ingest_report.py'
+      - 'test_ingest_report.py'
+      - '.github/workflows/ingest-report.yml'
       - '.github/workflows/auto-publish-official.yml'
       - '.github/workflows/validate-news-reader.yml'
   workflow_dispatch:
@@ -29,5 +32,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m unittest -v test_publication_policy.py test_official_collector.py test_state_monitor.py test_legislative_event_ledger.py test_compare_briefings.py
-      - run: python -m py_compile publish_report.py collect_official_records.py publish_official_pilot.py monitor_state_sources.py legislative_event_ledger.py compare_briefings.py
+      - run: python -m unittest -v test_publication_policy.py test_official_collector.py test_state_monitor.py test_legislative_event_ledger.py test_compare_briefings.py test_ingest_report.py
+      - run: python -m py_compile publish_report.py collect_official_records.py publish_official_pilot.py monitor_state_sources.py legislative_event_ledger.py compare_briefings.py ingest_report.py

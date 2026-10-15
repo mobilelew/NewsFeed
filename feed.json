@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T13:27:56+00:00",
+  "updated_at": "2026-10-15T18:19:23+00:00",
   "headlines": [
     {
       "category": "U.S. POLICY",
@@ -8,7 +8,7 @@
       "published_at": "2026-10-14T23:34:27+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.84
+      "discovery_score": 118.44
     },
     {
       "category": "ECONOMY",
@@ -17,34 +17,34 @@
       "published_at": "2026-10-15T09:44:16+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.69
+      "discovery_score": 129.28
     },
     {
       "category": "AGRICULTURE",
-      "title": "USDA Daily Slaughter Report: Cattle, Hogs, Sheep, Chickens - News and Statistics - IndexBox",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTk1VVWxhRnZHUXpSQUdHZHhxSVRITklfTnRfaWdnWDNlakNZNmFndU1YNjd4aV9vUFIwMkFUU2JGRmdXVXZrbXlPY3hldC1uYjJMOFZKR1F5NUhrdXo5U1g4LVVpRngyWVdOMm5BN05ERllwbzdSRzd4ZVYzek1wcEdVUzljY0hUNUZOeUV2UWY2TTExSkE2dnBzZGhtcmlTT1E?oc=5",
-      "published_at": "2026-10-14T18:10:33+00:00",
+      "title": "USDA Weekly Slaughter Data: Meat Production, Beef, Pork, Poultry Prices - News and Statistics - IndexBox",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbWhMMXU2Wkdmb1J2LXdSSDNKT2RJV0htOGZ0cTVXQ1NTMkhuam8yc0RTQ3UzUG1ILWVldDlxQ0x6LVY5SE84YXJxQWZDdGdhdkU2VXlWS3dKdFp1NXl2d09sZW9JQ1RRTHBteUtTV05aSGxzZ29DQld0bGEtbFlwOEtJdVZkdzBpd1pEM1ZES09DaGxwdVN1RE5R?oc=5",
+      "published_at": "2026-10-15T16:42:55+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 128.39
+      "discovery_score": 129.87
     },
     {
       "category": "CRYPTO",
-      "title": "Crypto Prices Today: Bitcoin Slips Near USD 81,150 as Hot US CPI Sparks USD 1B Liquidations - Analytics Insight",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNdHIzVWp5WVlEZlcwYzROWTUzT0x1WV9CeWc4Q0lVR1BJRS1VdXBRZ2pJSk1TSkRPTUNwWjFhVHZEa21Ca1lJQUstc0R3Y3BrVWM5V0lYWjFyckdoaUNuTlB1RTdVRkdSVV9RMUVwdlZ4a0FtN3JYRVFoU1ZoSnZSeVY1SWN4X2dtQm1xYTlCNVdzYWtPb1J0ZXFZRlFlQW00TkE2SjN2YU50V3NycjZBbTlTcmdPdllKckJ2dnByNW52RUtwcXkzcjZoNWVEYjRINlo1cmVkNGFtNTVEc2hHUdIB4AFBVV95cUxNdHIzVWp5WVlEZlcwYzROWTUzT0x1WV9CeWc4Q0lVR1BJRS1VdXBRZ2pJSk1TSkRPTUNwWjFhVHZEa21Ca1lJQUstc0R3Y3BrVWM5V0lYWjFyckdoaUNuTlB1RTdVRkdSVV9RMUVwdlZ4a0FtN3JYRVFoU1ZoSnZSeVY1SWN4X2dtQm1xYTlCNVdzYWtPb1J0ZXFZRlFlQW00TkE2SjN2YU50V3NycjZBbTlTcmdPdllKckJ2dnByNW52RUtwcXkzcjZoNWVEYjRINlo1cmVkNGFtNTVEc2hHUQ?oc=5",
-      "published_at": "2026-10-15T07:20:34+00:00",
+      "title": "VanEck Withdraws Lido Staked Ethereum ETF Filing Nearly a Year After Proposing It - CryptoRank",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeG83OHhyQTI3emF5Mm91aXVmX0dzUkxMWlAzY3p2cnZlbDFFR0l2YVVtRG1YTThsY3VnMGlQSWcwQUYtMnQ0U01ORmZrTXFNWmFKVGVjcHJ0UFc3QWptdzJPYXhNNDdLMUV2aDRFZ0V5TXdIWXdZeFFtdWQ2RmRzWFdQUV9Rd0ItSHUxeGVSbw?oc=5",
+      "published_at": "2026-10-15T15:01:14+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.49
+      "discovery_score": 119.72
     },
     {
       "category": "AI",
-      "title": "An Interview with Nvidia’s Ian Buck on Why GPUs Keep Winning - Key Context by Tae Kim",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1tMDdRQUl2cUpIdlhsQ2RSZTJaU3NZSFRFV3JIcDAyOF9NRWhLT3NRSlNJWDNvN21MSTZrWGVfMVpyOEd5cWlENmh2eWs2alIzWjFPcWZsbHRxbjg4MHJ1emtJMVhaR0szMzNPRk0xREM3NkhfZDFj?oc=5",
-      "published_at": "2026-10-15T00:02:22+00:00",
+      "title": "OpenAI appointed ex-xAI executive Uday Ruddarraju to replace Sachin Katti as its infrastructure and compute chief amid leadership changes in its data cente",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5YZVo0QjJQS2NhTHFPaVlPX1puWXluRm51LTVocktTVHktbldqSWRoYm5Pak4tQldNcXFkYjNyUXJTdjFOMmlEODZVVHBGVjJIVnc?oc=5",
+      "published_at": "2026-10-15T13:30:59+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.88
+      "discovery_score": 129.6
     },
     {
       "category": "TECH & SECURITY",
@@ -53,16 +53,34 @@
       "published_at": "2026-10-15T12:22:26+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.91
+      "discovery_score": 129.5
     },
     {
       "category": "ECONOMY",
-      "title": "Dollar Strengthens on Hot Inflation Data, Higher Treasury Yields - WSJ",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbEx1Q0FoZmpVSGRtUnE4U2hYRGtNeHpEanFrRUM4UFZRUC10NUh5WmZyUWQ3SUJjTUEzb19YR1JFUXZXQ2pnYlpRbk5fWGVJUEdKZUxTQ1UwRXFmSkhpRy1QOGZGb0d2YlhiTlRMSjlwSGI5c2RDeXZTaDFDbGR3Qm1LdktxaHRzeFZRMElqLVRqZ2hrd0w4NjhwbXJKY3lVNUVodUs0RHB1a2dJLUc2Nw?oc=5",
-      "published_at": "2026-10-14T16:06:00+00:00",
+      "title": "Swiss Franc gains ground as US Dollar retreats despite hot inflation data - FXStreet",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOS0prWGtWY1dvdkh2ODVlYW55MlBXaVJyckVUblBTanFXVjQxU1RGMXAyS0NqdXZOMFFpYWh2UVhwNDJRbVI4SDdzVHBaUFktWjVuLVZLa1k3Z2E1Q05oMjRzbHpTSUotdUE5MXRIYkgwWUZhSXMyUTNrdFUydkFMU01FdU85elg1UkVZODhPY2tvRjZ2LTlCamxZeGRaMWVJczltdEQ4WnJPREpaLUV3clVtU3ZhbUU?oc=5",
+      "published_at": "2026-10-15T14:29:46+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 128.22
+      "discovery_score": 119.68
+    },
+    {
+      "category": "ECONOMY",
+      "title": "Dollar Slips from 18-Month Peak: Yields Ease, Fed Signals Caution Despite Hot Inflation - News and Statistics - IndexBox",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaHNRUG1jTHA4TnZUMGRyTzhJNmhMdVg2azMzZkFiZC1DRVdqRnpHV29pd2lNVTEwMDRsOWhYbmx6Rkd2THdDWHJXbkphLVdDSGg3UDAwbEpURV9kY0NKUUl4QTZtR1pubUpFVmw3aWJUbUtYaXhNc2plczRWV2xWa3FOcUhCVl9RU2tNcnc4ZVpwN3hlSHhud0ZNcFI3UW9ld0E?oc=5",
+      "published_at": "2026-10-15T13:40:27+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.61
+    },
+    {
+      "category": "TECH & SECURITY",
+      "title": "UK Legal Aid Agency Data Breach Exposes Personal Records Dating Back to 1978 - CyberSecurityNews",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1LcWUyN0hfdVdySmVNOFRva3lGNC04TUFzb2o0d3F6V1h3NVJOVGRDLXptNWZSYnpaNFVNZnlRYWkzNDM1VmFfaHMwVFdHOE5hUmdyMzB6Yy1XQ2JGSzFwYnVUY2hWYmhEaGFKdWF3RnFkUzJ60gF0QVVfeXFMTUtxZTI3SF91V3JKZU04VG9reUY0LThNQXNvajR3cXpXWHc1Uk5UZEMtem01ZlJielo0VU1meVFhaTM0MzVWYV9oczBUV0c4TmFSZ3IzMHpjLVdDYkZLMXBidVRjaFZiaERoYUp1YXdGcWRTMno?oc=5",
+      "published_at": "2026-10-15T12:55:13+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.55
     },
     {
       "category": "ECONOMY",
@@ -71,7 +89,7 @@
       "published_at": "2026-10-15T12:28:45+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.92
+      "discovery_score": 119.51
     },
     {
       "category": "ECONOMY",
@@ -80,7 +98,25 @@
       "published_at": "2026-10-15T11:36:03+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.84
+      "discovery_score": 119.44
+    },
+    {
+      "category": "CRYPTO",
+      "title": "Europe’s banks have a euro stablecoin license. Can they win users? - Crypto News",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQT2s3eU9vX1NJc0lCMVlrU2ktZ2dTZWVheXJBZ2dRSGdSdlp0UHoxQ1FSb1V5cU5YUjVxaGNhU0Jva3R0eHlETHJqQmFYM0NGSHNlTExtYmtEejItSW9iR3EwanlvUS1FdDFfUlNoSkQ2Z2NnS1J2eXJENk5nRnN5T3lYRkgwdDRZa3g4Mg?oc=5",
+      "published_at": "2026-10-15T11:37:33+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.44
+    },
+    {
+      "category": "ECONOMY",
+      "title": "Dollar pulls back from 18-month high as Treasury yields fall; Fed hike bets ease - CNBC",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNS3RhaFpXd1N0Q0w4VVdpWXU5WkEzV3dYM1pqM19hWHFRTjVMQ1c1YVNMejc2enVRWG1PY2RibV9FSllOTkg2eXRGalZoUGRmMk0tQlJPWFNJV1p3eEduZnhxUm0yaHdhUE1RTHdjeUF2NDlUUkJLYW4tWEdWbHUtdUN5VHRLRDdVZVMxRDNjVGlPZFdqQnNWUHIxUXA0bnkzT3hyc3pxcjJiRzZLUXZLNU41LTdFRDTSAbwBQVVfeXFMT2V2NzVUaUpqMTVVM0w0YWRfVHRveVJNNXFWZkdOeTBnZjlBV2JaMExQaDQ4T2tnWF92ZEFHVklBUk9YdGNhQ2tTX2Q5WWNFUVhST1c3bEVacG52XzJfazVISFBXaWpPU1dSdnFKalE3RnVkbHNaYk91LXJ5U082YlRleXM5QmZxenNIeGV0ZHNiUlE3cHNSbW03UUFPWGNyRzhmVDN4TUJfR0ZQcFpTaVlEb1prMGxMV2ZPQUM?oc=5",
+      "published_at": "2026-10-15T10:09:35+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.32
     },
     {
       "category": "ECONOMY",
@@ -89,7 +125,7 @@
       "published_at": "2026-10-15T09:46:34+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.69
+      "discovery_score": 119.29
     },
     {
       "category": "TECH & SECURITY",
@@ -98,43 +134,7 @@
       "published_at": "2026-10-15T09:27:13+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.67
-    },
-    {
-      "category": "ECONOMY",
-      "title": "Dollar Retreats From 18-Month High Despite US Inflation... - Jordan News",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOcWJqdG9LNWEyb3lwUm1HVEJVUXAxQV9NcmU5bUliRW9RZEwxdW0yOEdGazVRaGRJTU5hdjFFNTBIcnJ3Q2tOeHo5SVlhclRqTmJxWHFFOTlDWTFTaHBmY1FIYmFCampOSExIdlpLUGNIeG01LTEtc1JRR1lDU2ZEOHFQZ2o3VG1ReUpmUzdCb0IxUFlkMTkzOE50bGY4UkxTT0xzbmZrNG4wT2s?oc=5",
-      "published_at": "2026-10-15T08:19:07+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.57
-    },
-    {
-      "category": "ECONOMY",
-      "title": "US September PPI Preview: Will Inflation Surprise Again? US Stocks, Dollar and Gold Face Key Test - TradingKey",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOdGFYM2liOVpqd0U2SW5BZTFKanB0NDcxMTlfeV9RbXpNSDREenV4TF9OWVJqTVpzWmk3U2xfb1pKRFVGNGp6dm5YMXhLa0VnYnZXeFF3UnFQeG1rSEVxUTdHM3dPbHMzSkRGQnFJUjFMbXFGSXNaQVd4d0RucnVVLWJCYXdtTnJWVHZ4elp3SWVCdjFCX2s0TVhzbGlpaXJUZWJBdVg1VWJZMWhwUFpZaTc5aU5kbXpxc0o4SWdZWDdaSUhJODNDRUh1V2wzYzV2clh3WGtkdzNsdXVEdDBz?oc=5",
-      "published_at": "2026-10-15T08:06:49+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.55
-    },
-    {
-      "category": "ECONOMY",
-      "title": "Dollar Eases From 18-Month High as Treasury Yields Fall - Fana News -",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcXZJWEd5V1JkMWVYQVRjOVZlWHB4dDVhRGxrdVduZXVpU0NIaGdyNkhZRkhUU2RkQ1RnSUZCSDA1RlBzTmNwTjRkLWR4Q1RfR1M5NkM2S09zQlY5aG5DR2FrQ20tNmp0Y1pOLTlXMjVRZXhCajlTdWZnUmtJV205SWhtZ2huZDBxUk5fX1UxZVpVQ1FSRjJ4Qw?oc=5",
-      "published_at": "2026-10-15T05:35:18+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.34
-    },
-    {
-      "category": "CRYPTO",
-      "title": "EU Designates Circle’s USDC as First Significant Stablecoin Under MiCA - Crypto Adventure",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOckVjd0FaOS00SU81RnFjWlhkRjFKdFZGX1pXcWZFaEt5c0haZWZiOEtqQ213OW1YUDRJRkxNaEt0My1IZUtsTmRNNUd6U3FPblN1RjdHeWpWMHFLaTcyRy1WWnQ4enYzZlVhZWROekNId1lXRHQ2LUpFbVRDdDJDR0c2SzkybWprOGlrU0djcGF2UUh2Q0dqMER2S1BvNHc?oc=5",
-      "published_at": "2026-10-15T04:22:15+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.24
+      "discovery_score": 119.26
     }
   ],
   "weekly_trend": {
@@ -147,14 +147,14 @@
   "source_status": {
     "U.S. POLICY": {
       "ok": true,
-      "items": 7,
+      "items": 14,
       "working_sources": [
         "https://news.google.com/rss/search?q=executive%20order%20congress%20legislation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "ECONOMY": {
       "ok": true,
-      "items": 34,
+      "items": 32,
       "working_sources": [
         "https://www.bls.gov/feed/bls_latest.rss",
         "https://news.google.com/rss/search?q=Federal%20Reserve%20dollar%20inflation%20treasury%20yields%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
@@ -174,7 +174,7 @@
     },
     "CRYPTO": {
       "ok": true,
-      "items": 33,
+      "items": 31,
       "working_sources": [
         "https://news.google.com/rss/search?q=bitcoin%20ethereum%20SEC%20stablecoin%20regulation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]

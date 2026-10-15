@@ -1,0 +1,45 @@
+name: Verify reported CISA KEV claims
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 13 * * *'
+    - cron: '15 2 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-reader-verified-claims
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest -v test_verify_kev_news.py
+      - name: Check public headlines against CISA source catalog
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git checkout main
+            git reset --hard origin/main
+            python verify_kev_news.py
+            git add verified-claims-pilot.json
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m "Update CISA report-to-original-source verification pilot"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 3
+          done
+          exit 1

@@ -4,8 +4,6 @@ This check answers whether a claimed official-source excerpt is present in
 the retrieved page. Absence means 'not confirmed by cited source', not false.
 Positive excerpt matching is text confirmation only, not broad semantic proof.
 """
-import datetime as dt
-from claim_evidence_audit import normalize
 from research_source_probe import review as capture_review
 
 def audit(candidate,capturer=None):

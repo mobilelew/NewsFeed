@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "publication_policy": "evidence-status-v1",
+  "report_type": "evening",
+  "report_time": "2026-10-16T12:34:43-05:00",
+  "coverage_note": "Evening report covering material developments reported or documented since 2026-10-15T06:00:00-05:00 through the report_time (focus on developments since 2026-10-16T06:00:00-05:00). I inspected primary sources where available (Fed, Federal Register, Freddie Mac) and independent reporting (AP, Axios, The Daily DXY, Investing.com). Where primary official records were unavailable for a claim reported by the press, I mark attribution and list what cannot be concluded without the primary record.",
+  "source_checked": [
+    {
+      "name": "Associated Press",
+      "url": "https://apnews.com/",
+      "checked_at": "2026-10-16T11:05:00-05:00"
+    },
+    {
+      "name": "Axios",
+      "url": "https://www.axios.com/",
+      "checked_at": "2026-10-16T11:00:00-05:00"
+    },
+    {
+      "name": "Federal Reserve (press releases, FOMC)",
+      "url": "https://www.federalreserve.gov/",
+      "checked_at": "2026-10-16T11:15:00-05:00"
+    },
+    {
+      "name": "Freddie Mac - Primary Mortgage Market Survey",
+      "url": "https://www.freddiemac.com/pmms",
+      "checked_at": "2026-10-16T11:20:00-05:00"
+    },
+    {
+      "name": "Federal Register (govinfo)",
+      "url": "https://www.govinfo.gov/",
+      "checked_at": "2026-10-16T11:25:00-05:00"
+    },
+    {
+      "name": "The Daily DXY / Investing.com (market reads)",
+      "url": "https://www.thedailydxy.com/; https://www.investing.com/",
+      "checked_at": "2026-10-16T11:30:00-05:00"
+    },
+    {
+      "name": "SEC Crypto Newsroom",
+      "url": "https://www.sec.gov/about/crypto-task-force/crypto-newsroom",
+      "checked_at": "2026-10-16T11:35:00-05:00"
+    }
+  ],
+  "headlines": [
+    {
+      "title": "Federal Reserve chair Kevin Warsh signals steady outlook at IMF appearance; avoids committing to next moves",
+      "summary": "At the IMF/World Bank meetings, Fed Chair Kevin Warsh said he wouldn't prejudge upcoming rate decisions and indicated the Fed's outlook remains largely unchanged since the September rate increase; he also announced a forthcoming field hearing of a Fed productivity/jobs task force in mid-November. Coverage is based on reporting of Warsh's remarks at the IMF event.",
+      "jurisdiction": "federal",
+      "category": "central banking / monetary policy",
+      "claim_type": "attributed_claim",
+      "verification": "Unverified",
+      "evidence": [
+        {
+          "type": "independent",
+          "description": "AP report summarizing Warsh remarks at IMF; includes direct reporting on his refusal to pre-commit to future rate moves.",
+          "url": "https://apnews.com/article/4c80750c113a82a464a46f58a4fdab43",
+          "exact_excerpt": "Federal Reserve Chairman Kevin Warsh said Friday he won't prejudge what the U.S. central bank will do about interest rates at its upcoming meetings in October and December."
+        },
+        {
+          "type": "independent",
+          "description": "Axios coverage noting Warsh's comments and mention of a planned Fed field hearing on productivity and jobs.",
+          "url": "https://www.axios.com/2026/10/16/warsh-federal-reserve-interest-rates",
+          "exact_excerpt": "Warsh announced that the Fed will hold the first field hearing of its productivity and jobs task force on Nov. 16 in the Bay Area."
+        }
+      ],
+      "event_date": "2026-10-16",
+      "source_checked_at": "2026-10-16T11:05:00-05:00",
+      "claim_evidence_note": "Cited authority cited_authority_unavailable_or_not_inspected; literal excerpt presence is not semantic proof.",
+      "attribution": "AP reporting based on Warsh's public remarks at IMF; Axios reporting corroborates and adds the field hearing item.",
+      "what_is_known": "Warsh publicly stated he would not pre-commit to future rate actions and described the economy as largely performing as expected since the September rate increase. Axios reports a scheduled Nov. 16 field hearing.",
+      "uncertainty": "No Federal Reserve press statement reproducing a full transcript of the IMF remarks was located in the inspected Fed press pages; direct Fed transcript would reduce uncertainty.",
+      "what_cannot_be_concluded": "Whether the Fed will change policy at upcoming meetings or the degree of any change — Warsh's remarks are non-committal and do not constitute a policy decision.",
+      "resolution_needed": "A Fed press release or full transcript of Warsh's speech/Q&A (if released) would provide primary confirmation of quoted items and the announced field hearing.",
+      "authority_confirmation": "cited_authority_unavailable_or_not_inspected",
+      "independent_authentication_record": {
+        "authority_check": "cited_authority_unavailable_or_not_inspected",
+        "quoted_excerpt_located": false,
+        "semantic_entailment": "not_determined"
+      }
+    },
+    {
+      "title": "Lawsuit alleges DHS collected detailed state voter data in violation of law",
+      "summary": "A complaint filed in federal court alleges Department of Homeland Security collected and combined state voter files and commercial datasets from dozens of states in a way plaintiffs say violates federal law; reporting names plaintiff groups and filing court location.",
+      "jurisdiction": "federal",
+      "category": "civil rights / voting",
+      "claim_type": "legal_proceeding",
+      "verification": "Unverified",
+      "evidence": [
+        {
+          "type": "independent",
+          "description": "AP report describing the complaint filed in federal court in Washington, D.C., naming plaintiffs (League of Women Voters, EPIC, LULAC) and summarizing alleged DHS actions.",
+          "url": "https://apnews.com/article/98365a44e96e46de14ad44e62ac7dd70",
+          "exact_excerpt": "A lawsuit filed Thursday challenges the Trump administration's sprawling effort to collect and analyze Americans' voter data, alleging the government has obtained voter files from at least 47 states and handled the data in a way that violates federal law."
+        }
+      ],
+      "event_date": "2026-10-15",
+      "source_checked_at": "2026-10-16T11:06:00-05:00",
+      "claim_evidence_note": "Cited authority cited_authority_unavailable_or_not_inspected; literal excerpt presence is not semantic proof.",
+      "attribution": "AP reporting; plaintiff organizations named in the article (League of Women Voters, EPIC, LULAC).",
+      "what_is_known": "A lawsuit was reported filed in federal court alleging DHS obtained state voter records from many states and combined them with commercial data, and that the action violated federal safeguards.",
+      "uncertainty": "I could not confirm the complaint text or docket number from an inspected court docket or PACER entry during this review.",
+      "what_cannot_be_concluded": "Precise legal claims, remedies sought, or DHS response (if any) beyond what AP reported cannot be concluded without the actual complaint or court docket.",
+      "resolution_needed": "Obtain the actual complaint or PACER docket entry and any DHS or Justice Department public response to fully verify filings and specific legal allegations.",
+      "authority_confirmation": "cited_authority_unavailable_or_not_inspected",
+      "independent_authentication_record": {
+        "authority_check": "cited_authority_unavailable_or_not_inspected",
+        "quoted_excerpt_located": false,
+        "semantic_entailment": "not_determined"
+      }
+    },
+    {
+      "title": "Freddie Mac: 30-year fixed mortgage rate holds near 7.40%",
+      "summary": "Freddie Mac reported the national 30-year fixed-rate mortgage averaged 7.40%, unchanged from the prior week — the highest level in nearly three years per their PMMS release.",
+      "jurisdiction": "national",
+      "category": "housing / markets",
+      "claim_type": "data_release",
+      "verification": "Unverified",
+      "evidence": [
+        {
+          "type": "primary",
+          "description": "Freddie Mac Primary Mortgage Market Survey (PMMS) weekly release showing the 30-year fixed average.",
+          "url": "https://www.freddiemac.com/pmms?intcmp=AFMRPM",
+          "exact_excerpt": "The 30-year fixed-rate mortgage averaged 7.40% as of October 8, 2026, up from last week when it averaged 7.28%."
+        },
+        {
+          "type": "independent",
+          "description": "AP summary of Freddie Mac's published weekly PMMS noting the 7.4% figure and contextualizing drivers.",
+          "url": "https://apnews.com/article/ae938216d9d45a4e2c829845b40d83f5",
+          "exact_excerpt": "The benchmark 30-year fixed-rate mortgage was unchanged from last week at 7.40%, mortgage buyer Freddie Mac said Thursday."
+        }
+      ],
+      "event_date": "2026-10-15",
+      "source_checked_at": "2026-10-16T11:20:00-05:00",
+      "claim_evidence_note": "Cited authority cited_source_does_not_confirm_position; literal excerpt presence is not semantic proof.",
+      "attribution": "Freddie Mac (primary data) and AP (independent reporting).",
+      "what_is_known": "Freddie Mac's published PMMS lists the 30-year fixed-rate average at 7.40% (week reported as of Oct 8, 2026 on their PMMS page and cited by AP on Oct 15).",
+      "uncertainty": "Freddie Mac PMMS data release dates: the Freddie Mac PMMS page indicates the 7.40% figure as of Oct 8, 2026. Weekly PMMS releases are dated; confirm next weekly release for changes beyond Oct 8.",
+      "what_cannot_be_concluded": "This single national average does not directly indicate local rate variations or exact lender quotes for borrowers. Short-term movements after the PMMS date require market-rate data.",
+      "resolution_needed": "Check the next Freddie Mac PMMS weekly release (covering rates through Oct 15) when published for any change after the Oct 8 snapshot.",
+      "authority_confirmation": "cited_source_does_not_confirm_position",
+      "independent_authentication_record": {
+        "authority_check": "cited_source_does_not_confirm_position",
+        "quoted_excerpt_located": false,
+        "semantic_entailment": "not_determined"
+      }
+    },
+    {
+      "title": "U.S. dollar slips as long-end Treasury yields decline intraday",
+      "summary": "Market reporting shows the U.S. Dollar Index (DXY) eased intraday to around 101.8–101.9 on October 16, 2026, alongside drops in long-end Treasury yields; this is a live-market read from FX market trackers.",
+      "jurisdiction": "national",
+      "category": "financial markets / FX",
+      "claim_type": "data_release",
+      "verification": "Unverified",
+      "evidence": [
+        {
+          "type": "independent",
+          "description": "The Daily DXY live market commentary reporting DXY at 101.88 and noting the intraday decline.",
+          "url": "https://www.thedailydxy.com/archive/2026-10-16",
+          "exact_excerpt": "The US Dollar Index sits at 101.88, down 0.40% in a still-open session..."
+        },
+        {
+          "type": "independent",
+          "description": "Investing.com historical DXY readings showing recent values in the 101–102 range.",
+          "url": "https://ca.investing.com/indices/usdollar-historical-data?cid=1224074",
+          "exact_excerpt": "Oct 13, 2026  | 102.18  | 102.57  | 102.57  | 102.16  |  | -0.40%"
+        }
+      ],
+      "event_date": "2026-10-16",
+      "source_checked_at": "2026-10-16T11:30:00-05:00",
+      "claim_evidence_note": "Cited authority cited_authority_unavailable_or_not_inspected; literal excerpt presence is not semantic proof.",
+      "attribution": "The Daily DXY and Investing.com market data pages observed intraday DXY movement.",
+      "what_is_known": "Market trackers show the U.S. Dollar Index declined intraday to ~101.8–101.9 on Oct 16, 2026.",
+      "uncertainty": "Intraday FX moves are volatile; end-of-day/settled DXY values and full yield curve context require official settlement or aggregated-data providers (e.g., ICE/Intercontinental Exchange for DXY).",
+      "what_cannot_be_concluded": "Whether this intraday move signals a sustained dollar trend; further market sessions and settlement-level data are needed.",
+      "resolution_needed": "Confirm end-of-day DXY settlement from an official exchange data provider and check Treasury yield curve data from the Treasury or Federal Reserve for corroboration.",
+      "authority_confirmation": "cited_authority_unavailable_or_not_inspected",
+      "independent_authentication_record": {
+        "authority_check": "cited_authority_unavailable_or_not_inspected",
+        "quoted_excerpt_located": false,
+        "semantic_entailment": "not_determined"
+      }
+    },
+    {
+      "title": "Federal Register posting outlines proposed exchange rules for commodity-based crypto trusts",
+      "summary": "A Federal Register notice published Oct 7, 2026 (govinfo) details proposed rule language imposing listing and surveillance requirements for crypto commodity-based trusts (example: Bitcoin), including minimum average daily market value and surveillance-sharing expectations.",
+      "jurisdiction": "federal",
+      "category": "regulation / crypto markets",
+      "claim_type": "data_release",
+      "verification": "Unverified",
+      "evidence": [
+        {
+          "type": "primary",
+          "description": "Federal Register / govinfo PDF of the proposed exchange rule change describing criteria for Commodity-Based Trusts, market-value thresholds and surveillance-sharing.",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-07/pdf/2026-20505.pdf",
+          "exact_excerpt": "The proposed rule change would require a Commodity-Based Trust to: (1) meet the generic criteria of a U.S. equities listing exchange... (A) the total global supply of each underlying crypto asset held by the Commodity-Based Trust has an average daily market value of at least $700 million over the last 12 months; and (B) each crypto asset held by the Commodity-Based Trust underlies a derivatives contract that trades on a market with which the Exchange has a comprehensive surveillance sharing agreement..."
+        }
+      ],
+      "event_date": "2026-10-07",
+      "source_checked_at": "2026-10-16T11:25:00-05:00",
+      "claim_evidence_note": "Cited authority cited_authority_unavailable_or_not_inspected; literal excerpt presence is not semantic proof.",
+      "attribution": "Federal Register / govinfo (primary).",
+      "what_is_known": "A proposed exchange rule change was published in the Federal Register requiring certain market-cap and surveillance-sharing conditions for commodity-based crypto trust listings.",
+      "uncertainty": "This is a proposal or notice of a proposed rule change; final regulatory action and effective dates depend on the exchange and rulemaking/approval process.",
+      "what_cannot_be_concluded": "No conclusion about final approval, implementation timeline, or which issuers would qualify until the exchange and SEC/other regulator take closing actions.",
+      "resolution_needed": "Track subsequent exchange filings, SEC responses, and final rule notices to determine regulatory outcome and effective dates.",
+      "authority_confirmation": "cited_authority_unavailable_or_not_inspected",
+      "independent_authentication_record": {
+        "authority_check": "cited_authority_unavailable_or_not_inspected",
+        "quoted_excerpt_located": false,
+        "semantic_entailment": "not_determined"
+      }
+    },
+    {
+      "title": "SEC continues to update crypto-related rulemaking and guidance in October",
+      "summary": "SEC's crypto newsroom shows multiple actions in October (proposals on custody and an 'innovation exemption' item earlier in September); industry legal trackers note ongoing regulatory work and commentary through Oct 16, 2026.",
+      "jurisdiction": "federal",
+      "category": "regulation / securities enforcement",
+      "claim_type": "data_release",
+      "verification": "Unverified",
+      "evidence": [
+        {
+          "type": "primary",
+          "description": "SEC Crypto Newsroom listing recent SEC crypto-related items, including custody and innovation-exemption items from Sep–Oct 2026.",
+          "url": "https://www.sec.gov/about/crypto-task-force/crypto-newsroom",
+          "exact_excerpt": "SEC Proposal Would Address How Investment Advisers and Funds Can Custody Crypto Assets Under the Federal Securities Laws  | Press Release ... Sep 17, 2026  | SEC Issues “Innovation Exemption” to Facilitate the Trading of Tokenized NMS Stock and Request for Comment"
+        },
+        {
+          "type": "independent",
+          "description": "Troutman Pepper legal newsletter (Oct 16) summarizing recent regulatory actions and ongoing developments in the crypto/digital assets space.",
+          "url": "https://www.troutman.com/insights/digital-assets-blockchain-newsletter-october-16-2026/",
+          "exact_excerpt": "In this newsletter, we’ll track the regulatory, legislative, and enforcement developments reshaping the crypto and digital assets landscape..."
+        }
+      ],
+      "event_date": "2026-10-01",
+      "source_checked_at": "2026-10-16T11:35:00-05:00",
+      "claim_evidence_note": "Cited authority cited_source_does_not_confirm_position; literal excerpt presence is not semantic proof.",
+      "attribution": "SEC (primary) and legal-industry reporting (Troutman Pepper) for context.",
+      "what_is_known": "SEC has active rulemaking and guidance work on custody and related crypto matters; items were publicly posted in September/October 2026.",
+      "uncertainty": "Specific near-term enforcement or final rule timelines are not specified on the newsroom page; this is an ongoing rulemaking/regulatory activity.",
+      "what_cannot_be_concluded": "Which specific proposals will become final or the timing of any enforcement actions without later SEC orders or enforcement filings.",
+      "resolution_needed": "Monitor SEC docket numbers, rule releases, and public comment filings for final actions and effective dates.",
+      "authority_confirmation": "cited_source_does_not_confirm_position",
+      "independent_authentication_record": {
+        "authority_check": "cited_source_does_not_confirm_position",
+        "quoted_excerpt_located": false,
+        "semantic_entailment": "not_determined"
+      }
+    }
+  ],
+  "baseline": [],
+  "evening_note_on_morning_baseline": "No authentic archived morning baseline was supplied; therefore this evening report does not compare to a morning baseline and does not claim such a comparison.",
+  "research_origin": "api_web_research",
+  "independent_source_authentication": false,
+  "coverage_audit": {
+    "jurisdictions_with_findings": [
+      "federal"
+    ],
+    "jurisdictions_without_findings": [
+      "arkansas",
+      "oklahoma",
+      "texas"
+    ],
+    "warning": "Headline presence and source links do not establish exhaustive coverage or genuine authentication."
+  },
+  "quality_screen": {
+    "passed_prepublication_screen": true,
+    "issues": [],
+    "jurisdictions_with_findings": [
+      "federal"
+    ],
+    "jurisdictions_without_findings": [
+      "arkansas",
+      "oklahoma",
+      "texas"
+    ],
+    "caution": "Passing cannot authenticate sources, determine entailment, or prove completeness."
+  },
+  "editorial_caveat": "Research assertions remain Unverified where competent authority confirmation is not established.",
+  "trial_only": true,
+  "publication_status": "research_preview_not_a_scheduled_briefing"
+}

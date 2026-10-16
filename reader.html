@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>News Reader | Live News</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#182235;background:#f5f7fa}
+*{box-sizing:border-box}body{margin:0}.wrap{max-width:1000px;margin:auto;padding:20px}
+header{background:#11223a;color:white;padding:26px 0}header h1{margin:0 0 7px;font-size:2rem}header p{margin:0;color:#dde6f1}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}button{padding:10px 14px;border:1px solid #b9c7d9;border-radius:9px;background:white;cursor:pointer}button.active{background:#123f70;color:white}
+.note{background:#eaf1f9;border-left:4px solid #3b76b0;padding:14px;border-radius:5px;margin:18px 0}
+section{background:white;border:1px solid #dce2e9;border-radius:12px;padding:16px;margin:17px 0}h2{margin:0 0 8px}
+.meta{color:#52647b;font-size:.86rem}.story{border-top:1px solid #e4e9ef;padding:14px 0}.story:first-child{border-top:0}
+.story a{color:#134877;font-weight:650;text-decoration:none;line-height:1.4}.story a:hover{text-decoration:underline}
+.tag{display:inline-block;background:#f0f3f6;color:#43526a;padding:4px 7px;border-radius:5px;font-size:.75rem;margin:0 5px 5px 0}
+.small{font-size:.9rem;color:#475569}.empty{padding:16px;color:#64748b}.updated{margin-top:8px;font-size:.83rem;color:#c0d1e2}
+footer{font-size:.83rem;color:#64748b;padding-bottom:35px}
+</style></head><body>
+<header><div class="wrap"><h1>News Reader</h1><p>U.S. &amp; priority-state news · economy · agriculture · technology</p><div class="updated" id="updated">Loading current sources…</div></div></header>
+<main class="wrap">
+<div class="note"><strong>Evidence matters.</strong> Discovery stories below are <strong>not yet independently verified</strong>. Official-record entries confirm listed document metadata only; they do not establish legal effect. A full claim-verified briefing appears separately when available.</div>
+<nav aria-label="News categories" id="filters"><button class="active" data-filter="ALL">All topics</button></nav>
+<section id="brief-section" hidden><h2>Published evidence-labelled briefing</h2><p class="small">Source-linked findings; verify controlling records for legal and financial decisions.</p><div id="brief"></div></section>
+<section><h2>Current news discovery</h2><p class="small">Automatically updated article leads. Headlines may be inaccurate, outdated, promotional, or disputed; read and assess the linked reporting.</p><div id="discovery" aria-live="polite"><div class="empty">Loading stories…</div></div></section>
+<section id="official-section"><h2>Official federal document notices</h2><p class="small">Federal Register publication metadata only. The legal effect and effective dates have not been independently analyzed.</p><div id="official"><div class="empty">Checking available notices…</div></div></section>
+<footer>News Reader · Reporting dates shown in America/Chicago · Feeds update on GitHub Actions schedules · No story is certified true solely because it is listed here.</footer>
+</main>
+<script>
+const base=new URL('.',location.href);
+let stories=[],filter='ALL';
+const $=id=>document.getElementById(id);
+function local(ts){if(!ts)return 'Date unavailable';const d=new Date(ts);return Number.isNaN(+d)?String(ts):new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',dateStyle:'medium',timeStyle:'short'}).format(d)+' CT'}
+function item(title,url,meta,description){const box=document.createElement('article');box.className='story';const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=title||'Untitled record';box.append(a);const p=document.createElement('div');p.className='meta';p.textContent=meta;box.append(p);if(description){const d=document.createElement('p');d.className='small';d.textContent=description;box.append(d)}return box}
+async function read(path){const r=await fetch(new URL(path,base),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);return r.json()}
+function draw(){const out=$('discovery');out.replaceChildren();let shown=stories.filter(s=>filter==='ALL'||s.category===filter);if(!shown.length){out.textContent='No stories available for this category.';return}for(const s of shown.slice(0,60)){const meta=(s.category||'NEWS')+' · '+local(s.published_at)+' · Not yet independently verified';out.append(item(s.title,s.url,meta))}}
+async function main(){
+const results=await Promise.allSettled([read('feed.json'),read('official-records.json'),read('briefing.json')]);
+if(results[0].status==='fulfilled'){const feed=results[0].value;stories=(feed.headlines||[]).filter(x=>x.title&&x.url&&/^https:\/\//.test(x.url));$('updated').textContent='Discovery feed refreshed: '+local(feed.updated_at);const categories=[...new Set(stories.map(s=>s.category).filter(Boolean))];for(const c of categories){const b=document.createElement('button');b.textContent=c;b.dataset.filter=c;$('filters').append(b)}$('filters').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;filter=b.dataset.filter;document.querySelectorAll('#filters button').forEach(x=>x.classList.toggle('active',x===b));draw()});draw()}else{$('discovery').textContent='Discovery feed temporarily unavailable. Try refreshing shortly.';$('updated').textContent='Feed status unknown'}
+if(results[1].status==='fulfilled'){const o=results[1].value;const area=$('official');area.replaceChildren();const entries=Object.entries(o.latest||{}).sort((a,b)=>String(b[1].date).localeCompare(String(a[1].date)));let count=0;for(const [kind,entry] of entries){for(const h of (entry.headlines||[]).slice(0,8)){const e=(h.evidence||[]).find(x=>x.url);if(!e)continue;area.append(item(h.title,e.url,'Federal Register · '+kind+' · '+(h.publication_date||entry.date)+' · Legal effect unclear',h.summary));count++}}if(!count)area.textContent='No current official-record pilot entries available.'}else{$('official').textContent='Official-record feed temporarily unavailable.'}
+if(results[2].status==='fulfilled'){const b=results[2].value;if(b.status==='published'&&Array.isArray(b.headlines)&&b.headlines.length){$('brief-section').hidden=false;for(const h of b.headlines){const e=(h.evidence||[]).find(x=>x.url);$('brief').append(item(h.title,e?.url||'#',(h.verification||'Status unknown')+' · '+(h.jurisdiction||'')+' · '+local(b.report_time),h.summary))}}}
+}
+main().catch(()=>{$('updated').textContent='Unable to load feeds'});
+</script></body></html>

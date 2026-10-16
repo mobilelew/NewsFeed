@@ -43,7 +43,8 @@ jobs:
 
             python build_feed.py
             python service_health.py
-            git add feed.json service-health.json
+            python acceptance_check.py
+            git add feed.json service-health.json acceptance-status.json
 
             if git diff --cached --quiet; then
               echo "No changes to commit."

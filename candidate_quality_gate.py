@@ -20,7 +20,7 @@ def review(report):
     stamp=report.get("report_time")
     try:
         current=dt.datetime.fromisoformat(stamp).astimezone(LOCAL)
-    except (ValueError, TypeError):
+    except (ValueError, TypeError, AttributeError):
         current=None
         problems.append("Report timestamp missing or invalid")
     if current and report_type=="morning" and not 5 <= current.hour < 12:
@@ -46,8 +46,15 @@ def review(report):
             problems.append(f"Headline {i}: event_date absent or invalid; cannot establish fresh news")
         elif current and date_value(event)>current.date():
             problems.append(f"Headline {i}: event_date in future, identify as scheduled not occurred")
-        if not h.get("source_checked_at"):
-            problems.append(f"Headline {i}: source_checked_at missing")
+        checked=h.get("source_checked_at")
+        try:
+            parsed=dt.datetime.fromisoformat(checked)
+            if parsed.tzinfo is None or parsed.utcoffset() is None:
+                raise ValueError("timezone required")
+            if current and parsed > current + dt.timedelta(minutes=5):
+                problems.append(f"Headline {i}: source_checked_at is later than report time")
+        except (ValueError, TypeError):
+            problems.append(f"Headline {i}: source_checked_at missing, invalid or without timezone")
         if not h.get("claim_evidence_note"):
             problems.append(f"Headline {i}: no claim-specific evidence explanation")
     return {"passed_prepublication_screen":not problems,"issues":problems,

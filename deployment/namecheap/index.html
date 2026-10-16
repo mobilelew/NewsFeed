@@ -35,7 +35,52 @@ async function main(){
 const results=await Promise.allSettled([read('feed.json'),read('official-records.json'),read('briefing.json')]);
 if(results[0].status==='fulfilled'){const feed=results[0].value;stories=(feed.headlines||[]).filter(x=>x.title&&x.url&&/^https:\/\//.test(x.url));$('updated').textContent='Discovery feed refreshed: '+local(feed.updated_at);const categories=[...new Set(stories.map(s=>s.category).filter(Boolean))];for(const c of categories){const b=document.createElement('button');b.textContent=c;b.dataset.filter=c;$('filters').append(b)}$('filters').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;filter=b.dataset.filter;document.querySelectorAll('#filters button').forEach(x=>x.classList.toggle('active',x===b));draw()});draw()}else{$('discovery').textContent='Discovery feed temporarily unavailable. Try refreshing shortly.';$('updated').textContent='Feed status unknown'}
 if(results[1].status==='fulfilled'){const o=results[1].value;const area=$('official');area.replaceChildren();const entries=Object.entries(o.latest||{}).sort((a,b)=>String(b[1].date).localeCompare(String(a[1].date)));let count=0;for(const [kind,entry] of entries){for(const h of (entry.headlines||[]).slice(0,8)){const e=(h.evidence||[]).find(x=>x.url);if(!e)continue;area.append(item(h.title,e.url,'Federal Register · '+kind+' · '+(h.publication_date||entry.date)+' · Legal effect unclear',h.summary));count++}}if(!count)area.textContent='No current official-record pilot entries available.'}else{$('official').textContent='Official-record feed temporarily unavailable.'}
-if(results[2].status==='fulfilled'){const b=results[2].value;if(b.status==='published'&&Array.isArray(b.headlines)&&b.headlines.length){$('brief-section').hidden=false;for(const h of b.headlines){const e=(h.evidence||[]).find(x=>x.url);$('brief').append(item(h.title,e?.url||'#',(h.verification||'Status unknown')+' · '+(h.jurisdiction||'')+' · '+local(b.report_time),h.summary))}}}
+if(results[2].status==='fulfilled'){
+ const b=results[2].value;
+ if(b.status==='published'&&Array.isArray(b.headlines)&&b.headlines.length){
+  $('brief-section').hidden=false;
+  for(const h of b.headlines){
+   const e=(h.evidence||[]).find(x=>x.url);
+   const article=item(h.title,e?.url||'#',(h.verification||'Status unknown')+' · '+(h.jurisdiction||'')+' · '+local(b.report_time),h.summary);
+   const details=document.createElement('details');
+   details.style.marginTop='10px';
+   const summary=document.createElement('summary');
+   summary.textContent='Authority check, uncertainties and sources';
+   details.append(summary);
+   for(const [label,value] of [
+    ['Authority check',h.authority_confirmation||'Not independently established'],
+    ['What is known',h.what_is_known],
+    ['Uncertainty',h.uncertainty],
+    ['What cannot be concluded',h.what_cannot_be_concluded],
+    ['Resolution needed',h.resolution_needed],
+    ['Source assessment',h.claim_evidence_note]
+   ]){
+    if(!value)continue;
+    const paragraph=document.createElement('p');
+    paragraph.className='small';
+    const strong=document.createElement('strong');
+    strong.textContent=label+': ';
+    paragraph.append(strong,document.createTextNode(String(value)));
+    details.append(paragraph);
+   }
+   const sources=document.createElement('div');
+   sources.className='small';
+   for(const source of h.evidence||[]){
+    if(!source.url||!/^https:\/\//.test(source.url))continue;
+    const link=document.createElement('a');
+    link.href=source.url;
+    link.target='_blank';
+    link.rel='noopener noreferrer';
+    link.textContent=source.description||source.url;
+    link.style.display='block';
+    sources.append(link);
+   }
+   details.append(sources);
+   article.append(details);
+   $('brief').append(article);
+  }
+ }
+}
 }
 main().catch(()=>{$('updated').textContent='Unable to load feeds'});
 // Refresh the displayed feed timestamp when Safari resumes and every 5 minutes.

@@ -116,7 +116,7 @@ def build(kind, now, input_baseline=None):
         raise RuntimeError(f"Research API request failed HTTP {e.code}; no report published") from None
     diag=ROOT/"submissions"/"ai-response-diagnostic.json"
     diag.parent.mkdir(parents=True,exist_ok=True)
-    diag.write_text(json.dumps(diagnostic(result),indent=2)+"\\n",encoding="utf-8")
+    diag.write_text(json.dumps(diagnostic(result),indent=2)+"\n",encoding="utf-8")
     document=extract(result)
     document["schema_version"]=1
     document["publication_policy"]="evidence-status-v1"

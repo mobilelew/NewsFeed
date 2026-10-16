@@ -11,6 +11,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from article_reader import article_extract
 
 ROOT = pathlib.Path(__file__).resolve().parent
 NOW = dt.datetime.now(dt.timezone.utc)
@@ -199,6 +200,15 @@ def main():
         if bycat[category]: selected.append(bycat[category].pop(0))
     remaining=sorted((x for values in bycat.values() for x in values),key=lambda x:x["discovery_score"],reverse=True)
     selected=(selected+remaining)[:24]
+    # Best-effort publisher article extracts; RSS-derived summaries remain labelled.
+    # Limit network work to bounded selected stories, not all discovered links.
+    for story in selected:
+        if story.get("is_editorial"): continue
+        extraction=article_extract(story.get("url",""))
+        if extraction:
+            story["summary"]=extraction["summary"]
+            story["summary_provenance"]=extraction["summary_provenance"]
+            story["article_url"]=extraction["article_url"]
     # Cached previous discovery is NOT re-used when any live source works.
     if not selected and previous.get("headlines"):
         source_errors.append("No fresh discoveries; prior headlines intentionally not republished as current.")

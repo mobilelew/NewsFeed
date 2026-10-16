@@ -54,14 +54,37 @@ def coverage_audit(document):
             "jurisdictions_without_findings":sorted(required-jurisdictions),
             "warning":"Headline presence and source links do not establish exhaustive coverage or genuine authentication."}
 
+def diagnostic(output):
+    """Safe metadata only: no response body, secrets, source text or prompts."""
+    return {
+        "response_id": str(output.get("id", ""))[:80],
+        "status": output.get("status"),
+        "incomplete_reason": (output.get("incomplete_details") or {}).get("reason"),
+        "usage": output.get("usage"),
+        "output_item_types": [
+            item.get("type") for item in output.get("output", [])
+            if isinstance(item, dict)
+        ],
+        "content_types": [
+            part.get("type")
+            for item in output.get("output", []) if isinstance(item, dict)
+            for part in item.get("content", []) if isinstance(part, dict)
+        ],
+    }
+
 def extract(output):
+    if output.get("status") == "incomplete":
+        reason=(output.get("incomplete_details") or {}).get("reason", "unknown")
+        raise ValueError(f"API response incomplete ({reason}); no report published")
     strings=[]
     for item in output.get("output",[]):
+        if not isinstance(item,dict):
+            continue
         for part in item.get("content",[]):
             if part.get("type")=="output_text" and isinstance(part.get("text"),str):
                 strings.append(part["text"])
     if not strings:
-        raise ValueError("No JSON text returned; no report will be published")
+        raise ValueError("API returned no output_text. Check safe diagnostics artifact; no report published.")
     return json.loads("\n".join(strings))
 def build(kind, now, input_baseline=None):
     if kind not in ("morning","evening"): raise ValueError("Invalid kind")
@@ -75,13 +98,13 @@ def build(kind, now, input_baseline=None):
             "Research material news developments in preceding 24 hours (for evening focus on "
             "developments since 6 AM Central). Verify against official records. "
             "Focus areas: "+TOPICS+"\nSource registry (starting points, not a publisher whitelist): "+sources+"\n"+baseline_note+
-            "\nMaximum 12 well-evidenced, newsworthy findings. Strict JSON object only.")
+            "\nMaximum 8 well-evidenced, newsworthy findings. Strict JSON object only.")
     body={"model":os.environ.get("OPENAI_NEWS_MODEL","gpt-5-mini"),
           "instructions":INSTRUCTIONS,
           "input":prompt,
           "tools":[{"type":"web_search"}],
           "tool_choice":"auto",
-          "max_output_tokens":6500,
+          "max_output_tokens":12000,\n          "reasoning":{"effort":"low"},
           "store":False}
     req=urllib.request.Request("https://api.openai.com/v1/responses",
         data=json.dumps(body).encode(),method="POST",
@@ -91,6 +114,9 @@ def build(kind, now, input_baseline=None):
             result=json.load(response)
     except urllib.error.HTTPError as e:
         raise RuntimeError(f"Research API request failed HTTP {e.code}; no report published") from None
+    diag=ROOT/"submissions"/"ai-response-diagnostic.json"
+    diag.parent.mkdir(parents=True,exist_ok=True)
+    diag.write_text(json.dumps(diagnostic(result),indent=2)+"\\n",encoding="utf-8")
     document=extract(result)
     document["schema_version"]=1
     document["publication_policy"]="evidence-status-v1"

@@ -7,6 +7,7 @@ Publication is gated by existing report-schema validation and evidence review st
 import argparse, datetime as dt, json, os, pathlib, urllib.request, urllib.error
 from zoneinfo import ZoneInfo
 import publish_report
+from candidate_quality_gate import review as quality_review
 
 ROOT=pathlib.Path(__file__).resolve().parent
 ZONE=ZoneInfo("America/Chicago")
@@ -124,6 +125,7 @@ def build(kind, now, input_baseline=None):
     document["report_type"]=kind
     document["report_time"]=local.isoformat(timespec="seconds")
     document["coverage_audit"]=coverage_audit(document)
+    document["quality_screen"]=quality_review(document)
     if kind=="morning":
         document["baseline"]=[{"identifier":str(h.get("identifier") or h.get("title")),
                                "status":str(h.get("verification","Unverified")),
@@ -139,6 +141,9 @@ def build(kind, now, input_baseline=None):
         validation = {"valid": False, "reason": str(exc),
                       "candidate_path": str(dest.relative_to(ROOT))}
         print("Candidate retained for correction; publication validation failed: " + str(exc))
+    if not document["quality_screen"]["passed_prepublication_screen"]:
+        validation["valid"]=False
+        validation["quality_screen_issues"]=document["quality_screen"]["issues"]
     (ROOT/"submissions"/"ai-candidate-validation.json").write_text(
         json.dumps(validation, indent=2) + "\n", encoding="utf-8")
     return dest,document

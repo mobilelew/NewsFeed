@@ -1,0 +1,38 @@
+name: Generate real News Reader report candidate
+
+on:
+  workflow_dispatch:
+    inputs:
+      report_type:
+        type: choice
+        options:
+          - morning
+          - evening
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate and structurally validate a real sourced report
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_NEWS_MODEL: gpt-5-mini
+          REPORT_TYPE: ${{ inputs.report_type }}
+        run: python generate_news_candidate.py --kind "$REPORT_TYPE"
+      - name: Preserve useful research output for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: news-reader-research-candidate
+          path: submissions/ai-research-candidate.json
+          if-no-files-found: ignore
+          retention-days: 14

@@ -53,3 +53,5 @@ Implement real OpenAI API-driven research generator using live original-source r
 For each milestone, record what changed, direct link to source/commit, demonstrated result, unresolved limitations, and next dependency. Distinguish code-tests, live source verification, editorial coverage, and observed website delivery.
 
 - 2026-10-15: Owner confirmed OPENAI_API_KEY stored in GitHub repository secret; committed secure minimal API connectivity workflow `.github/workflows/test-openai-api.yml` and `test_openai_connection.py`. Live invocation not yet run or confirmed. API test is not editorial authentication or full-report generation.
+
+- 2026-10-15: Owner set resource-efficiency rule: no standalone paid API smoke calls. Deleted `.github/workflows/test-openai-api.yml` and `test_openai_connection.py`. First billed API run must produce a real source-backed briefing attempt with reusable evidence; dry-run structural checks remain free. Do not assert connectivity until the real workflow runs.

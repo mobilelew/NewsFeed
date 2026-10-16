@@ -104,7 +104,8 @@ def build(kind, now, input_baseline=None):
           "input":prompt,
           "tools":[{"type":"web_search"}],
           "tool_choice":"auto",
-          "max_output_tokens":12000,\n          "reasoning":{"effort":"low"},
+          "max_output_tokens":12000,
+          "reasoning":{"effort":"low"},
           "store":False}
     req=urllib.request.Request("https://api.openai.com/v1/responses",
         data=json.dumps(body).encode(),method="POST",

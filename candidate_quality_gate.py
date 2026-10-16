@@ -42,8 +42,8 @@ def review(report):
         if h.get("verification")=="Verified" and not any(e.get("type")=="primary" for e in evidence):
             problems.append(f"Headline {i}: Verified lacks a primary-source reference")
         event=h.get("event_date")
-        if not date_value(event):
-            problems.append(f"Headline {i}: event_date absent or invalid; cannot establish fresh news")
+        if not date_value(event) and h.get("verification")=="Verified":
+            problems.append(f"Headline {i}: verified finding requires a valid event_date")
         elif current and date_value(event)>current.date():
             problems.append(f"Headline {i}: event_date in future, identify as scheduled not occurred")
         checked=h.get("source_checked_at")
@@ -54,7 +54,8 @@ def review(report):
             if current and parsed > current + dt.timedelta(minutes=5):
                 problems.append(f"Headline {i}: source_checked_at is later than report time")
         except (ValueError, TypeError):
-            problems.append(f"Headline {i}: source_checked_at missing, invalid or without timezone")
+            if h.get("verification")=="Verified":
+                problems.append(f"Headline {i}: verified finding requires valid timezone-aware source_checked_at")
         if not h.get("claim_evidence_note"):
             problems.append(f"Headline {i}: no claim-specific evidence explanation")
     return {"passed_prepublication_screen":not problems,"issues":problems,

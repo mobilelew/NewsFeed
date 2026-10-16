@@ -33,6 +33,11 @@ SOURCES = {
     "HOUSING": [
         news("mortgage rates FHFA Census housing inventory affordability when:3d"),
     ],
+    "CIVIL RIGHTS": [news("federal court privacy voting rights civil liberties decisions when:3d")],
+    "BEEF": [news("USDA cattle beef livestock cattle-on-feed market report when:3d")],
+    "CHICKEN": [news("USDA broiler chicken poultry supply prices avian flu when:3d")],
+    "TURKEY": [news("USDA turkey production hatchery poultry prices when:3d")],
+    "DATA CENTERS": [news("AI data center power grid permitting construction United States when:3d")],
     "AGRICULTURE": [
         news("USDA beef cattle chicken turkey livestock prices farms when:3d"),
     ],
@@ -55,6 +60,11 @@ KEYWORDS = {
     "U.S. POLICY": ("executive", "rule", "law", "tariff", "policy", "budget", "military", "sanction", "congress", "federal", "legislation", "order"),
     "ECONOMY": ("dollar", "inflation", "payroll", "employment", "rates", "treasury", "federal reserve", "wages", "economic", "consumer", "cpi"),
     "HOUSING": ("housing", "mortgage", "home", "rental", "rent", "inventory", "construction", "foreclosure"),
+    "CIVIL RIGHTS": ("rights", "voting", "privacy", "court", "constitutional", "civil liberty", "surveillance", "due process", "speech"),
+    "BEEF": ("beef", "cattle", "fed cattle", "cow", "livestock", "feedlot", "usda"),
+    "CHICKEN": ("chicken", "broiler", "poultry", "avian", "usda"),
+    "TURKEY": ("turkey", "turkeys", "poultry", "hatchery", "usda"),
+    "DATA CENTERS": ("data center", "datacenter", "power grid", "gigawatt", "compute campus", "hyperscale"),
     "AGRICULTURE": ("usda", "cattle", "beef", "poultry", "chicken", "turkey", "livestock", "feed", "farm", "avian", "meat"),
     "CRYPTO": ("bitcoin", "ethereum", "crypto", "stablecoin", "blockchain", "digital asset", "tokenization"),
     "AI": ("artificial intelligence", "ai ", "model", "agent", "nvidia", "compute", "data center", "gpu", "automation"),

@@ -9,7 +9,7 @@ import json
 import re
 
 VALID_TYPES={"Rule","Proposed Rule","Notice","Presidential Document"}
-DOCUMENT_NUMBER=re.compile(r"^[0-9]{4}-[0-9]{4,6}$")
+DOCUMENT_NUMBER=re.compile(r"^(?:C[0-9]+-)?[0-9]{4}-[0-9]{4,6}$")
 
 def compare_document(index_record,original_record):
     number=index_record.get("document_number")

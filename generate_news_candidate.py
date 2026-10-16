@@ -99,7 +99,7 @@ def build(kind, now, input_baseline=None):
             "Research material news developments in preceding 24 hours (for evening focus on "
             "developments since 6 AM Central). Verify against official records. "
             "Focus areas: "+TOPICS+"\nSource registry (starting points, not a publisher whitelist): "+sources+"\n"+baseline_note+
-            "\nMaximum 8 well-evidenced, newsworthy findings. Strict JSON object only.")
+            "\nMaximum 12 concise findings. Before selecting findings, check separately: federal, Texas, Arkansas, Oklahoma; rights/courts/laws; dollar/Fed/mortgages/crypto; USDA beef, chicken and turkey; AI/data centers and cybersecurity. Use separate actual findings for each jurisdiction and sector when supported. Explicitly disclose each jurisdiction and sector with no current verified development in coverage_note, rather than omitting it or inventing stories. No category may dominate the report merely because its sources are easier to find. Strict JSON object only.")
     body={"model":os.environ.get("OPENAI_NEWS_MODEL","gpt-5-mini"),
           "instructions":INSTRUCTIONS,
           "input":prompt,

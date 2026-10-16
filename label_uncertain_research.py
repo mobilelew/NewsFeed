@@ -45,6 +45,8 @@ def main():
     if not paths[0].exists():raise ValueError("Research candidate unavailable")
     evidence=json.loads(paths[1].read_text()) if paths[1].exists() else {}
     result=prepare(json.loads(paths[0].read_text()),evidence)
+    result["trial_only"]=True
+    result["publication_status"]="research_preview_not_a_scheduled_briefing"
     paths[2].write_text(json.dumps(result,indent=2,ensure_ascii=False)+"\n")
     print("Preserved "+str(len(result["headlines"]))+" findings; unsupported claims remain labelled Unverified.")
 if __name__=="__main__":main()

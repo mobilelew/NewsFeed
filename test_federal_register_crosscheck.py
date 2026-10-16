@@ -21,4 +21,9 @@ class FederalCrossCheckTests(unittest.TestCase):
     def test_bad_source_link_not_accepted(self):
         original=dict(self.original,html_url="https://fake.gov/article")
         self.assertFalse(compare_document(self.index,original)["metadata_fields_matched"])
+    def test_correction_number_is_supported(self):
+        self.index["document_number"]="C1-2026-12345"
+        self.original["document_number"]="C1-2026-12345"
+        self.original["html_url"]="https://www.federalregister.gov/documents/2026/10/16/C1-2026-12345/correction"
+        self.assertTrue(compare_document(self.index,self.original)["metadata_fields_matched"])
 if __name__=="__main__":unittest.main()

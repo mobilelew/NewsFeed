@@ -17,7 +17,8 @@ from zoneinfo import ZoneInfo
 ROOT=pathlib.Path(__file__).resolve().parent
 LOCAL=ZoneInfo("America/Chicago")
 CATALOG="https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
-CISA_MIRROR="https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"\nRSS="https://news.google.com/rss/search?q="+urllib.parse.quote('CISA "known exploited" CVE when:2d')+"&hl=en-US&gl=US&ceid=US:en"
+CISA_MIRROR="https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
+RSS="https://news.google.com/rss/search?q="+urllib.parse.quote('CISA "known exploited" CVE when:2d')+"&hl=en-US&gl=US&ceid=US:en"
 CVE=re.compile(r"\bCVE-20\d{2}-\d{4,}\b",re.I)
 ACTION=re.compile(r"\bCISA\b.{0,140}\b(adds?|added|lists?|listed|includes?|included)\b|\b(adds?|added|lists?|listed|includes?|included)\b.{0,140}\bCISA\b",re.I)
 

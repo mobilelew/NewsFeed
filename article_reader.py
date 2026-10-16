@@ -9,6 +9,7 @@ import re
 import socket
 import urllib.parse
 import urllib.request
+import html
 
 class Paragraphs(HTMLParser):
     def __init__(self):
@@ -17,8 +18,13 @@ class Paragraphs(HTMLParser):
         self.paragraph=0
         self.parts=[]
         self.current=[]
+        self.metadata=[]
     def handle_starttag(self,tag,attrs):
         if tag in ("script","style","nav","footer","header"):self.ignore+=1
+        if tag=="meta":
+            d=dict(attrs)
+            if d.get("property") in ("og:description","article:description") or d.get("name") in ("description","twitter:description"):
+                if d.get("content"):self.metadata.append(html.unescape(d["content"]).strip())
         if tag=="p" and not self.ignore:
             self.paragraph+=1;self.current=[]
     def handle_endtag(self,tag):
@@ -60,8 +66,21 @@ def article_extract(url,opener=None):
         parser=Paragraphs()
         parser.feed(raw.decode("utf-8",errors="replace"))
         paragraphs=[p for p in parser.parts if not re.search(r"cookies|subscribe to our newsletter",p,re.I)]
-        if not paragraphs:return None
-        return {"summary":" ".join(paragraphs)[:450].rsplit(" ",1)[0]+"…",
-                "summary_provenance":"publisher_article_excerpt","article_url":final}
+        if paragraphs:
+            # An extractive, bounded preview of the actual article text; never a fabricated paraphrase.
+            sentences=re.split(r"(?<=[.!?])\\s+", " ".join(paragraphs[:4]))
+            selected=[]
+            for sentence in sentences:
+                if len(" ".join(selected+[sentence]))>440:break
+                selected.append(sentence)
+                if len(" ".join(selected))>=240:break
+            excerpt=" ".join(selected).strip() or paragraphs[0][:420].rsplit(" ",1)[0]+"…"
+            return {"summary":excerpt,"summary_provenance":"publisher_article_excerpt",
+                    "article_url":final,"article_read":True}
+        descriptions=[m for m in parser.metadata if 50<=len(m)<=600]
+        if descriptions:
+            return {"summary":descriptions[0][:440],"summary_provenance":"publisher_page_description",
+                    "article_url":final,"article_read":False}
+        return None
     except (OSError,ValueError,UnicodeError):
         return None

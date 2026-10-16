@@ -37,6 +37,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: news-reader-research-candidate
-          path: |\n            submissions/ai-research-candidate.json\n            submissions/ai-response-diagnostic.json
+          path: |
+            submissions/ai-research-candidate.json
+            submissions/ai-response-diagnostic.json
           if-no-files-found: ignore
           retention-days: 14

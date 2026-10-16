@@ -18,6 +18,9 @@ on:
       - 'test_ingest_report.py'
       - 'claim_evidence_audit.py'
       - 'test_claim_evidence_audit.py'
+      - 'generate_news_candidate.py'
+      - 'test_generate_news_candidate.py'
+      - '.github/workflows/generate-news-candidate.yml'
       - 'verify_kev_news.py'
       - 'test_verify_kev_news.py'
       - '.github/workflows/verify-kev-news.yml'
@@ -37,5 +40,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m unittest -v test_publication_policy.py test_official_collector.py test_state_monitor.py test_legislative_event_ledger.py test_compare_briefings.py test_ingest_report.py test_claim_evidence_audit.py test_verify_kev_news.py
-      - run: python -m py_compile publish_report.py collect_official_records.py publish_official_pilot.py monitor_state_sources.py legislative_event_ledger.py compare_briefings.py ingest_report.py claim_evidence_audit.py verify_kev_news.py
+      - run: python -m unittest -v test_publication_policy.py test_official_collector.py test_state_monitor.py test_legislative_event_ledger.py test_compare_briefings.py test_ingest_report.py test_claim_evidence_audit.py test_verify_kev_news.py test_generate_news_candidate.py
+      - run: python -m py_compile publish_report.py collect_official_records.py publish_official_pilot.py monitor_state_sources.py legislative_event_ledger.py compare_briefings.py ingest_report.py claim_evidence_audit.py verify_kev_news.py generate_news_candidate.py

@@ -53,7 +53,7 @@ class CollectorTests(unittest.TestCase):
     def test_no_abstract_disclosed(self):
         report=create_report(self.now,[self.record],"morning")
         authenticated=crosscheck_report(report,lambda number:dict(self.record))
-        self.assertFalse(authenticated["headlines"][0]["document_text_reviewed"])
+        self.assertFalse(authenticated["headlines"][0]["agency_abstract_read"])
     def test_date_mismatch_discards_record_and_baseline(self):
         report=create_report(self.now,[self.record],"morning")
         result=crosscheck_report(report,lambda number:dict(self.record,publication_date="2025-10-14"))

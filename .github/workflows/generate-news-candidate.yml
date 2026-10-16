@@ -23,9 +23,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Compile research generator and dependencies without API use
-        run: python -m py_compile generate_news_candidate.py publish_report.py compare_briefings.py
+        run: python -m py_compile generate_news_candidate.py publish_report.py compare_briefings.py candidate_quality_gate.py
       - name: Run no-cost generator unit tests
-        run: python -m unittest -v test_generate_news_candidate.py
+        run: python -m unittest -v test_generate_news_candidate.py test_candidate_quality_gate.py
       - name: Generate and structurally validate a real sourced report
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}

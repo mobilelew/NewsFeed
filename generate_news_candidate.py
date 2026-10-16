@@ -70,11 +70,6 @@ def build(kind, now, input_baseline=None):
     baseline_note=("No authentic archived morning baseline available." if input_baseline is None else
                    "Morning baseline for comparison: "+json.dumps(input_baseline,ensure_ascii=False)[:10000])
     registry=source_registry()
-    source_guidance=json.dumps({"discovery_policy":registry["discovery"]["policy"],
-        "named_discovery_starting_points":registry["discovery"]["general"],
-        "priority_state_outlets":registry["discovery"]["states"],
-        "claim_specific_original_sources":registry["primary_sources"]},ensure_ascii=False)
-    registry=source_registry()
     sources=json.dumps({"discovery":registry["discovery"],"primary_sources":registry["primary_sources"]},ensure_ascii=False)
     prompt=(f"News Reader {kind} as of {local.isoformat(timespec='seconds')}. "
             "Research material news developments in preceding 24 hours (for evening focus on "

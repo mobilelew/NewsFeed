@@ -132,7 +132,15 @@ def build(kind, now, input_baseline=None):
     dest.parent.mkdir(parents=True,exist_ok=True)
     dest.write_text(json.dumps(document,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
     # Structural validation only; does not independently establish source entailment.
-    publish_report.load_submission(dest)
+    try:
+        publish_report.load_submission(dest)
+        validation = {"valid": True, "candidate_path": str(dest.relative_to(ROOT))}
+    except (ValueError, KeyError, TypeError) as exc:
+        validation = {"valid": False, "reason": str(exc),
+                      "candidate_path": str(dest.relative_to(ROOT))}
+        print("Candidate retained for correction; publication validation failed: " + str(exc))
+    (ROOT/"submissions"/"ai-candidate-validation.json").write_text(
+        json.dumps(validation, indent=2) + "\n", encoding="utf-8")
     return dest,document
 def main():
     p=argparse.ArgumentParser()

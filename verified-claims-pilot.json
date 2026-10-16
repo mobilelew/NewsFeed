@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "kind": "automated-claim-matching-pilot",
+  "scope": "Only CISA KEV listing claims explicitly identifiable from third-party headlines",
+  "production_ready": false,
+  "checked_at": "2026-10-16T02:06:21-05:00",
+  "discovery_source": "https://news.google.com/rss/search?q=CISA%20%22known%20exploited%22%20CVE%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
+  "primary_source": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+  "findings": [],
+  "coverage_note": "Automated source-specific matching, not complete fact-checking, independent verification of every headline, or a full News Reader daily briefing."
+}

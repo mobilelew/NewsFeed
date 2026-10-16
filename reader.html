@@ -38,4 +38,28 @@ if(results[1].status==='fulfilled'){const o=results[1].value;const area=$('offic
 if(results[2].status==='fulfilled'){const b=results[2].value;if(b.status==='published'&&Array.isArray(b.headlines)&&b.headlines.length){$('brief-section').hidden=false;for(const h of b.headlines){const e=(h.evidence||[]).find(x=>x.url);$('brief').append(item(h.title,e?.url||'#',(h.verification||'Status unknown')+' · '+(h.jurisdiction||'')+' · '+local(b.report_time),h.summary))}}}
 }
 main().catch(()=>{$('updated').textContent='Unable to load feeds'});
+// Refresh the displayed feed timestamp when Safari resumes and every 5 minutes.
+// Use a unique query parameter to avoid stale intermediary caches.
+let lastStamp='';
+async function refreshHeader(){
+ try{
+  const url=new URL('feed.json',base);
+  url.searchParams.set('_checked',String(Date.now()));
+  const response=await fetch(url,{cache:'no-store'});
+  if(!response.ok)throw Error('Feed unavailable');
+  const feed=await response.json();
+  if(feed.updated_at){
+   $('updated').textContent='Discovery feed refreshed: '+local(feed.updated_at);
+   if(lastStamp && lastStamp!==feed.updated_at){
+    stories=(feed.headlines||[]).filter(s=>s.title&&/^https:\/\//.test(s.url||''));
+    draw();
+   }
+   lastStamp=feed.updated_at;
+  }
+ }catch(err){console.warn('Unable to refresh feed timestamp',err)}
+}
+refreshHeader();
+setInterval(refreshHeader,5*60*1000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshHeader()});
+window.addEventListener('focus',refreshHeader);
 </script></body></html>

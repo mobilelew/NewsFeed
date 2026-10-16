@@ -40,6 +40,20 @@ a note on whether an actual morning baseline was supplied, but never claim a
 comparison if absent. Every material event needs an actual date and linked source.
 Keep findings concise, diverse and relevant. If sources are insufficient, note a
 coverage gap rather than invent news. Headlines should be independently meaningful."""
+def source_registry():
+    data=json.loads((ROOT/"news_sources.json").read_text(encoding="utf-8"))
+    required={"federal_law","texas","arkansas","oklahoma","finance_housing","agriculture","technology_cyber"}
+    if data.get("schema_version")!=1 or not required.issubset(data.get("primary_sources",{})):
+        raise ValueError("Incomplete source registry")
+    return data
+
+def coverage_audit(document):
+    jurisdictions={h.get("jurisdiction") for h in document.get("headlines",[]) if isinstance(h,dict)}
+    required={"federal","texas","arkansas","oklahoma"}
+    return {"jurisdictions_with_findings":sorted(required & jurisdictions),
+            "jurisdictions_without_findings":sorted(required-jurisdictions),
+            "warning":"Headline presence and source links do not establish exhaustive coverage or genuine authentication."}
+
 def extract(output):
     strings=[]
     for item in output.get("output",[]):
@@ -60,10 +74,12 @@ def build(kind, now, input_baseline=None):
         "named_discovery_starting_points":registry["discovery"]["general"],
         "priority_state_outlets":registry["discovery"]["states"],
         "claim_specific_original_sources":registry["primary_sources"]},ensure_ascii=False)
+    registry=source_registry()
+    sources=json.dumps({"discovery":registry["discovery"],"primary_sources":registry["primary_sources"]},ensure_ascii=False)
     prompt=(f"News Reader {kind} as of {local.isoformat(timespec='seconds')}. "
             "Research material news developments in preceding 24 hours (for evening focus on "
             "developments since 6 AM Central). Verify against official records. "
-            "Focus areas: "+TOPICS+"\n"+baseline_note+
+            "Focus areas: "+TOPICS+"\nSource registry (starting points, not a publisher whitelist): "+sources+"\n"+baseline_note+
             "\nMaximum 12 well-evidenced, newsworthy findings. Strict JSON object only.")
     body={"model":os.environ.get("OPENAI_NEWS_MODEL","gpt-5-mini"),
           "instructions":INSTRUCTIONS,
@@ -85,7 +101,8 @@ def build(kind, now, input_baseline=None):
     document["publication_policy"]="evidence-status-v1"
     document["report_type"]=kind
     document["report_time"]=local.isoformat(timespec="seconds")
-    document["coverage_audit"]=coverage_audit(document)\n    if kind=="morning":
+    document["coverage_audit"]=coverage_audit(document)\n    document["coverage_audit"]=coverage_audit(document)
+    if kind=="morning":
         document["baseline"]=[{"identifier":str(h.get("identifier") or h.get("title")),
                                "status":str(h.get("verification","Unverified")),
                                "as_of":document["report_time"]} for h in document.get("headlines",[])]

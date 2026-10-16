@@ -50,11 +50,25 @@ def safe_public_https(url):
     except (TypeError,AttributeError):
         return False
 
+def google_rss_link(url):
+    try:
+        p=urllib.parse.urlsplit(url)
+        return (p.scheme=="https" and p.hostname=="news.google.com" and
+                p.path.startswith("/rss/articles/") and not p.username and not p.password)
+    except (ValueError,AttributeError,TypeError):
+        return False
+
+class StrictRedirects(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self,request,fp,code,msg,headers,newurl):
+        if not safe_public_https(newurl) and not google_rss_link(newurl):
+            raise ValueError("Unsafe article redirect refused")
+        return super().redirect_request(request,fp,code,msg,headers,newurl)
+
 def article_extract(url,opener=None):
-    if not safe_public_https(url):return None
+    if not (safe_public_https(url) or google_rss_link(url)):return None
     # The feed often links to Google News rather than the original publisher.
     # Do not call an aggregator's snippet the full article.
-    opener=opener or urllib.request.build_opener()
+    opener=opener or urllib.request.build_opener(StrictRedirects())
     req=urllib.request.Request(url,headers={"User-Agent":"NewsReader/2.0","Accept":"text/html"})
     try:
         with opener.open(req,timeout=8) as resp:

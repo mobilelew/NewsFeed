@@ -40,6 +40,20 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(authenticated["source_crosscheck"]["matched"],1)
         self.assertFalse(authenticated["source_crosscheck"]["legal_effect_authenticated"])
         self.assertEqual(len(authenticated["baseline"]),1)
+    def test_official_abstract_and_dates_are_read_from_individual_record(self):
+        report=create_report(self.now,[self.record],"morning")
+        body=dict(self.record,abstract="The agency proposes to revise its application procedures.",
+                  comments_close_on="2026-11-16",effective_on="2026-12-01")
+        authenticated=crosscheck_report(report,lambda number:body)
+        h=authenticated["headlines"][0]
+        self.assertEqual(h["summary"],body["abstract"])
+        self.assertEqual(h["summary_provenance"],"federal_register_document_abstract")
+        self.assertEqual(h["official_document_details"]["comments_close_on"],"2026-11-16")
+        self.assertEqual(h["verification"],"Legal Effect Unclear")
+    def test_no_abstract_disclosed(self):
+        report=create_report(self.now,[self.record],"morning")
+        authenticated=crosscheck_report(report,lambda number:dict(self.record))
+        self.assertFalse(authenticated["headlines"][0]["document_text_reviewed"])
     def test_date_mismatch_discards_record_and_baseline(self):
         report=create_report(self.now,[self.record],"morning")
         result=crosscheck_report(report,lambda number:dict(self.record,publication_date="2025-10-14"))

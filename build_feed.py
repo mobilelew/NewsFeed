@@ -23,6 +23,29 @@ SOURCES = {
     "TEXAS": [news("Texas legislature governor courts policy economy when:3d")],
     "ARKANSAS": [news("Arkansas legislature governor courts economy when:3d"), news("Arkansas state news government"), news("Arkansas economy court")],
     "OKLAHOMA": [news("Oklahoma legislature governor courts economy when:3d"), news("Oklahoma state government news"), news("Oklahoma economy court")],
+    "OKC & TULSA": [
+        "https://kfor.com/feed/",
+        "https://oklahomawatch.org/feed/",
+        "https://www.kjrh.com/news.rss",
+        news("Oklahoma City Tulsa local government economy when:3d"),
+    ],
+    "LITTLE ROCK": [
+        "https://www.fox16.com/feed/",
+        "https://arktimes.com/feed/",
+        "https://arkansasadvocate.com/feed/",
+        news("Little Rock Arkansas city government Pulaski County when:3d"),
+    ],
+    "DALLAS–FORT WORTH": [
+        "https://fortworthreport.org/feed/",
+        "https://www.nbcdfw.com/?rss=y",
+        "https://fortworthbusiness.com/feed/",
+        news("Dallas Fort Worth metro local government housing when:3d"),
+    ],
+    "AUSTIN": [
+        "https://www.kxan.com/feed/",
+        "https://thetexan.news/feed/",
+        news("Austin Texas Travis County city government housing when:3d"),
+    ],
     "U.S. POLICY": [
         "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Btype%5D%5B%5D=PRESDOCU",
         news("executive order congress legislation when:3d"),
@@ -59,6 +82,10 @@ KEYWORDS = {
     "TEXAS": ("texas", "austin", "dallas", "houston", "senate", "governor", "legislature", "court", "bill", "property tax"),
     "ARKANSAS": ("arkansas", "little rock", "governor", "legislature", "court", "bill", "schools", "tax"),
     "OKLAHOMA": ("oklahoma", "oklahoma city", "tulsa", "governor", "legislature", "court", "bill", "tax"),
+    "OKC & TULSA": ("oklahoma", "tulsa", "okc", "norman", "edmond", "broken arrow", "oklahoma city"),
+    "LITTLE ROCK": ("arkansas", "little rock", "pulaski", "north little rock", "central arkansas"),
+    "DALLAS–FORT WORTH": ("dallas", "fort worth", "dfw", "tarrant", "collin", "denton", "arlington", "plano", "frisco"),
+    "AUSTIN": ("austin", "travis", "round rock", "georgetown", "cedar park", "bastrop", "central texas"),
     "U.S. POLICY": ("executive", "rule", "law", "tariff", "policy", "budget", "military", "sanction", "congress", "federal", "legislation", "order"),
     "ECONOMY": ("dollar", "inflation", "payroll", "employment", "rates", "treasury", "federal reserve", "wages", "economic", "consumer", "cpi"),
     "HOUSING": ("housing", "mortgage", "home", "rental", "rent", "inventory", "construction", "foreclosure"),
@@ -200,7 +227,7 @@ def main():
     for category in SOURCES:
         if bycat[category]: selected.append(bycat[category].pop(0))
     remaining=sorted((x for values in bycat.values() for x in values),key=lambda x:x["discovery_score"],reverse=True)
-    selected=(selected+remaining)[:24]
+    selected=(selected+remaining)[:36]
     # Best-effort publisher article extracts; RSS-derived summaries remain labelled.
     # Limit network work to bounded selected stories, not all discovered links.
     for story in selected:

@@ -40,5 +40,6 @@ jobs:
           path: |
             submissions/ai-research-candidate.json
             submissions/ai-response-diagnostic.json
+            submissions/ai-candidate-validation.json
           if-no-files-found: ignore
           retention-days: 14

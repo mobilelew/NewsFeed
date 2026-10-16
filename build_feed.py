@@ -209,6 +209,7 @@ def main():
             story["summary"]=extraction["summary"]
             story["summary_provenance"]=extraction["summary_provenance"]
             story["article_url"]=extraction["article_url"]
+            story["article_read"]=extraction.get("article_read",False)
     # Cached previous discovery is NOT re-used when any live source works.
     if not selected and previous.get("headlines"):
         source_errors.append("No fresh discoveries; prior headlines intentionally not republished as current.")

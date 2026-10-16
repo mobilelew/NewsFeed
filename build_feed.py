@@ -129,8 +129,13 @@ def parse(xml, category):
             continue
         # 24h freshness gets priority; keep 72h context and up to 7d as fallback.
         score= (100 if age<=24 else 35 if age<=72 else 0) + 10*min(keyword_hits,3) - age/12
+        description = clean(entry.findtext("description","") if not is_atom else entry.findtext(f"{atom}summary",""))
+        # RSS summaries are source-provided snippets, not independently established article summaries.
+        if description.casefold()==title.casefold(): description=""
         items.append({
             "category":category, "title":title[:155], "url":link,
+            "summary":description[:450] if description else "",
+            "summary_provenance":"rss_description" if description else "unavailable",
             "published_at": when.isoformat(timespec="seconds"),
             "verification":"Not yet verified", "is_editorial":False,
             "discovery_score":round(score,2)

@@ -37,7 +37,7 @@ Production ready only if all four have actually passed a real end-to-end morning
 | Development follow-up task | Scheduled daily | Does not guarantee engineering task completion |
 
 ## Current decision and blocking dependency
-Use GitHub Actions as scheduled research/verification compute initially; Namecheap hosts frontend; FreshRSS optional later as additional discovery source. A functioning API-based research generator requires dedicated API credentials and separately billed OpenAI API usage. **No key has been provided or configured during this step.** Next owner action: create an OpenAI API project, enable billing/spend controls, create scoped key, store in GitHub repository Actions secret `OPENAI_API_KEY`; never paste credential into chat or commit it to code.
+Use GitHub Actions as scheduled research/verification compute initially; Namecheap hosts frontend; FreshRSS optional later as additional discovery source. A functioning API-based research generator requires dedicated API credentials and separately billed OpenAI API usage. Owner reports OpenAI API project created, billing credits and spend controls configured, and GitHub Actions secret `OPENAI_API_KEY` saved. Credential value has not been exposed to the assistant or independently tested. Next action: execute secure `Test News Reader OpenAI API connection` workflow and inspect outcome.
 
 ## Next engineering milestone
 Implement real OpenAI API-driven research generator using live original-source retrieval with source pinning, claim entailment/contradiction, conservative uncertainty, full briefing JSON output, publisher integration and two scheduled America/Chicago report cycles. Validate real source audit and public site rendering. Do not claim done merely because an API key is set.
@@ -51,3 +51,5 @@ Implement real OpenAI API-driven research generator using live original-source r
 
 ## Progress reporting convention
 For each milestone, record what changed, direct link to source/commit, demonstrated result, unresolved limitations, and next dependency. Distinguish code-tests, live source verification, editorial coverage, and observed website delivery.
+
+- 2026-10-15: Owner confirmed OPENAI_API_KEY stored in GitHub repository secret; committed secure minimal API connectivity workflow `.github/workflows/test-openai-api.yml` and `test_openai_connection.py`. Live invocation not yet run or confirmed. API test is not editorial authentication or full-report generation.

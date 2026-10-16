@@ -33,12 +33,12 @@ national/international/multiple), category, claim_type (established_fact/
 attributed_claim/proposal/legal_proceeding/data_release), verification (Verified,
 Corroborated, Unsubstantiated, Disputed, Legal Effect Unclear, Unverified, Refuted),
 evidence=[{type:primary/independent/attribution,description,url}].
-For each non-Verified item also include nonempty attribution, what_is_known,
+For each headline use exactly one permitted jurisdiction, splitting different states into separate findings. A story cannot be Corroborated unless two genuinely independently originating sources can be demonstrated; syndications do not count. For each non-Verified item also include nonempty attribution, what_is_known,
 uncertainty, what_cannot_be_concluded, resolution_needed. For Legal Effect Unclear
 include legal_status. For Verified include original authoritative primary support.
 For morning, include baseline=[{identifier,status,as_of}]. For evening include
 a note on whether an actual morning baseline was supplied, but never claim a
-comparison if absent. Every material event needs an actual date and linked source.
+comparison if absent. Every material event needs an actual event_date YYYY-MM-DD, source_checked_at ISO timestamp and claim_evidence_note explaining what cited text actually establishes. Do not confuse date printed on search-result page with action date. If unknown, do not fabricate, and allow the publication screen to flag the gap.
 Keep findings concise, diverse and relevant. If sources are insufficient, note a
 coverage gap rather than invent news. Headlines should be independently meaningful."""
 def source_registry():

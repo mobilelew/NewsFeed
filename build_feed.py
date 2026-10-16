@@ -20,8 +20,8 @@ def news(query):
 
 SOURCES = {
     "TEXAS": [news("Texas legislature governor courts policy economy when:3d")],
-    "ARKANSAS": [news("Arkansas legislature governor courts economy when:3d")],
-    "OKLAHOMA": [news("Oklahoma legislature governor courts economy when:3d")],
+    "ARKANSAS": [news("Arkansas legislature governor courts economy when:3d"), news("Arkansas state news government"), news("Arkansas economy court")],
+    "OKLAHOMA": [news("Oklahoma legislature governor courts economy when:3d"), news("Oklahoma state government news"), news("Oklahoma economy court")],
     "U.S. POLICY": [
         "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Btype%5D%5B%5D=PRESDOCU",
         news("executive order congress legislation when:3d"),
@@ -32,10 +32,11 @@ SOURCES = {
     ],
     "HOUSING": [
         news("mortgage rates FHFA Census housing inventory affordability when:3d"),
+        news("US mortgage housing rates"),
     ],
     "CIVIL RIGHTS": [news("federal court privacy voting rights civil liberties decisions when:3d")],
     "BEEF": [news("USDA cattle beef livestock cattle-on-feed market report when:3d")],
-    "CHICKEN": [news("USDA broiler chicken poultry supply prices avian flu when:3d")],
+    "CHICKEN": [news("USDA broiler chicken poultry supply prices avian flu when:3d"), news("chicken broiler poultry USDA prices")],
     "TURKEY": [news("USDA turkey production hatchery poultry prices when:3d")],
     "DATA CENTERS": [news("AI data center power grid permitting construction United States when:3d")],
     "AGRICULTURE": [

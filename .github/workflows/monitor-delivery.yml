@@ -1,0 +1,33 @@
+name: Monitor public News Reader delivery
+
+on:
+  schedule:
+    - cron: '48 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Free offline probe tests
+        run: |
+          python -m py_compile web_delivery_probe.py
+          python -m unittest -v test_web_delivery_probe.py
+      - name: Check public custom domain and news feeds
+        run: python web_delivery_probe.py
+      - name: Preserve delivery diagnostics even when degraded
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: news-reader-delivery-health
+          path: delivery-health.json
+          if-no-files-found: ignore
+          retention-days: 7

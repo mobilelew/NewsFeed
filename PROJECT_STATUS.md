@@ -28,7 +28,7 @@ Production ready only if all four have actually passed a real end-to-end morning
 | State legislative web monitors | Active pilot | Page changes are not legislative events |
 | Claim-level audit structure | Partial | Excerpt presence != semantic entailment |
 | Full source retrieval + claim interpretation and evidence reasoning | Missing | Essential for requested service |
-| Full AI-generated evidence-backed report scheduler | Missing | ChatGPT scheduled task chats do not automatically submit to GitHub |
+| Full AI-generated evidence-backed report scheduler | Candidate generator implemented, not exercised | ChatGPT scheduled task chats do not automatically submit to GitHub |
 | Morning/evening report publisher and JSON archive | Built, not exercised end to end | briefing.json remains unpublished as last observed |
 | Actual full evening-to-morning baseline comparison | Unproven | Comparison script exists |
 | Website automatic presentation | Frontend installed; no full reports | Depends on report publication |
@@ -55,3 +55,5 @@ For each milestone, record what changed, direct link to source/commit, demonstra
 - 2026-10-15: Owner confirmed OPENAI_API_KEY stored in GitHub repository secret; committed secure minimal API connectivity workflow `.github/workflows/test-openai-api.yml` and `test_openai_connection.py`. Live invocation not yet run or confirmed. API test is not editorial authentication or full-report generation.
 
 - 2026-10-15: Owner set resource-efficiency rule: no standalone paid API smoke calls. Deleted `.github/workflows/test-openai-api.yml` and `test_openai_connection.py`. First billed API run must produce a real source-backed briefing attempt with reusable evidence; dry-run structural checks remain free. Do not assert connectivity until the real workflow runs.
+
+- 2026-10-15: Added `generate_news_candidate.py` and manual GitHub Actions `Generate real News Reader report candidate`. Makes one Responses API request with web_search, tries to generate a sourced full-coverage morning/evening candidate, validates schema, and retains candidate as an Actions artifact. Added offline tests. **Not run**, content authenticity not established, no automatic full-report publishing, no scheduled production cycle. First execution should be a useful paid research attempt, not an isolated API connection test.\n

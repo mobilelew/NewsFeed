@@ -35,6 +35,9 @@ jobs:
       - name: Collect original primary-source records for independent review
         if: always()
         run: python research_source_probe.py
+      - name: Evaluate cited authority evidence
+        if: always()
+        run: python authority_claim_check.py
       - name: Preserve useful research output for review
         if: always()
         uses: actions/upload-artifact@v4
@@ -45,5 +48,6 @@ jobs:
             submissions/ai-response-diagnostic.json
             submissions/ai-candidate-validation.json
             submissions/ai-original-source-review.json
+            submissions/ai-authority-confirmation.json
           if-no-files-found: ignore
           retention-days: 14

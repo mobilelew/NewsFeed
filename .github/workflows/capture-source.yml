@@ -1,0 +1,48 @@
+name: Capture original public record
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_url:
+        description: Exact official HTTPS page to capture (allowlisted)
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate capture code without API charges
+        run: |
+          python -m py_compile source_capture.py
+          python -m unittest -v test_source_capture.py
+      - name: Capture nominated public record
+        env:
+          SOURCE_URL: ${{ inputs.source_url }}
+        run: |
+          python - <<'PY'
+          import json, os
+          from source_capture import allowed
+          url = os.environ["SOURCE_URL"]
+          if not allowed(url):
+              raise SystemExit("Not an allowlisted public authority URL")
+          with open("source-manifest.json","w",encoding="utf-8") as f:
+              json.dump({"urls":[url]},f)
+          PY
+          python source_capture.py --input source-manifest.json --output source-record.json
+      - name: Retain source snapshot for claim review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: original-source-capture
+          path: source-record.json
+          if-no-files-found: ignore
+          retention-days: 14

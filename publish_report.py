@@ -83,6 +83,13 @@ def load_submission(path):
         baseline = data.get("baseline")
         if not isinstance(baseline, list) or not baseline:
             fail("Morning report requires explicit baseline list")
+    if data.get("research_origin") == "api_web_research":
+        from candidate_quality_gate import review
+        screen = review(data)
+        if not screen["passed_prepublication_screen"]:
+            fail("AI research candidate fails prepublication screen: " + "; ".join(screen["issues"][:4]))
+        if not data.get("independent_source_authentication"):
+            fail("AI research candidate lacks independent source authentication; publication blocked")
     return data, chicago
 
 def publish(source):

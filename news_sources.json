@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "purpose": "Editorial source map: broad outlet-neutral discovery, claim-specific original-record verification",
+  "discovery": {
+    "policy": "Open to all publishers. Named outlets are discovery starting points, not an inclusion whitelist or credibility ranking.",
+    "general": ["Associated Press", "Reuters", "Bloomberg", "local and regional reporting"],
+    "states": {"texas": ["Texas Tribune", "Texas local news outlets"], "arkansas": ["Arkansas Democrat-Gazette", "Arkansas local news outlets"], "oklahoma": ["Oklahoma Voice", "Oklahoma local news outlets"]},
+    "topics": ["federal affairs", "civil rights", "voting", "housing", "markets", "cryptocurrency", "agriculture", "AI", "data centers", "cybersecurity"]
+  },
+  "primary_sources": {
+    "federal_law": ["https://www.congress.gov/", "https://www.govinfo.gov/", "https://www.federalregister.gov/", "https://www.regulations.gov/"],
+    "texas": ["https://capitol.texas.gov/", "https://www.sos.state.tx.us/"],
+    "arkansas": ["https://www.arkleg.state.ar.us/", "https://www.sos.arkansas.gov/"],
+    "oklahoma": ["https://www.oklegislature.gov/", "https://oklahoma.gov/elections.html"],
+    "finance_housing": ["https://www.bls.gov/", "https://www.bea.gov/", "https://www.federalreserve.gov/", "https://www.treasury.gov/", "https://www.sec.gov/", "https://www.freddiemac.com/"],
+    "agriculture": ["https://www.usda.gov/", "https://www.ams.usda.gov/", "https://www.nass.usda.gov/", "https://www.ers.usda.gov/"],
+    "technology_cyber": ["https://www.cisa.gov/", "https://www.nist.gov/", "https://www.sec.gov/"]
+  },
+  "requirements": [
+    "Competent authority is selected by the specific claim, not source reputation.",
+    "Check legal action, operative effect, current court orders, dates and supersession where relevant.",
+    "Check cited passages and data rather than assuming a homepage or link verifies an assertion.",
+    "Disclose unreachable sources and missing coverage; do not fabricate verification.",
+    "This file is a research configuration reference, not proof that all domains are programmatically integrated."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-16T17:26:30+00:00",
+  "discovery": {
+    "current": true,
+    "item_count": 24,
+    "last_updated": "2026-10-16T17:26:24+00:00",
+    "age_hours": 0.0,
+    "status": "available_unverified"
+  },
+  "official_record_pilot": {
+    "last_updated": "2026-10-15T02:13:11+00:00",
+    "available_kinds": [
+      "evening",
+      "morning"
+    ],
+    "status": "metadata_only_not_legal_effect"
+  },
+  "verified_briefing": {
+    "published": false,
+    "last_updated": null,
+    "report_date": null,
+    "report_type": null,
+    "status": "not_published"
+  },
+  "archive": {
+    "kinds": []
+  },
+  "acceptance": {
+    "full_coverage_confirmed": false,
+    "independent_claim_authentication_confirmed": false,
+    "morning_evening_cycle_confirmed": false,
+    "full_briefing_delivery_confirmed": false
+  },
+  "overall": "discovery_available_full_service_incomplete"
+}

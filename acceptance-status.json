@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-10-16T17:26:30.871970+00:00",
+  "acceptance": {
+    "coverage": false,
+    "claim_authentication": false,
+    "same_day_morning_evening_comparison": false,
+    "published_feed_exists": false,
+    "live_custom_domain_delivery": "not_tested_by_repository_audit"
+  },
+  "all_accepted": false,
+  "note": "Repository-level audit cannot prove factual entailment or remotely viewed website rendering. Acceptance remains blocked pending independent evidence and live delivery."
+}

@@ -1,14 +1,23 @@
 {
-  "updated_at": "2026-10-16T12:27:32+00:00",
+  "updated_at": "2026-10-16T17:26:24+00:00",
   "headlines": [
     {
-      "category": "U.S. POLICY",
-      "title": "Bipartisan permitting bill in Congress could speed energy projects, but draws green critics - Big Country News |",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMUtXLTlnTmtVNHRsa2NJLWFrdDZ5Q3hfQ0RIMVdhd0dwYWdnN3BOMG1oN1ZmXzkycjNkYk43TGh2ejAxa0RaR0hFOUpjdERrU2pYbzR2T3pJRjk4MEZqcFBKYVJDdU5fcExtMGlLeWdaaHVHSVpQUzR0SFBobDNfWFhsX2RDNnNLcTljR2hxQ0hZUkdEcWdUMF9uVmk2NWxLNmZlZ3haRkVnS0pfSThDUTVMbEw0XzlCQW9oNUlKdlduUHE2Q2R0bGRTdW4?oc=5",
-      "published_at": "2026-10-16T00:32:58+00:00",
+      "category": "TEXAS",
+      "title": "Why Elon Musk has so much at stake in Greg Abbott’s reelection bid - Houston Chronicle",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNOHVCaDhvdDdCR1F4ZWlCV1RjaWxfTTFsQ0ZTMnVRREZFWXV5aDNtSTV6YzhVRDlJVmtPRUxjXzlaUUxVRWRNdGsxVHRTdGxMeXFIcVdFZXZ1RXdJSkozb2syd0VhZFVMMkFNT0RSYWU4VkhWNGp2YkU1bVhEWHFQcm8tWFV0dnBldFFjNUhB?oc=5",
+      "published_at": "2026-10-16T09:06:43+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 109.01
+      "discovery_score": 109.31
+    },
+    {
+      "category": "U.S. POLICY",
+      "title": "‘You just do it! You’re the president!’: Donald Trump brags about ignoring Congress - thecomeback.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOM2JyTGNkTmhILTVqUFEyb0VCRldkUE12SW9SUzhTcW9BNWNpYVJOc2x2bzRfT1RXWks0RUpfM0hJaGFwdjBNV09Qa2lkbVh0SVh6Mjlnc1A3cEtLSXhtMXZjWENxVkJMSDJ6LUo5LTVXZFQxR3RqVmNjTXdhLXFYWlRXNEEtWTZnUFZVeExDOTJITlI3THR0MVBuQkdvZ2xCMk94QzRnMjd0cF9Ub1V5ZDV3SUI1dw?oc=5",
+      "published_at": "2026-10-16T12:40:30+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.6
     },
     {
       "category": "ECONOMY",
@@ -17,25 +26,61 @@
       "published_at": "2026-10-16T11:53:27+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.95
+      "discovery_score": 129.54
+    },
+    {
+      "category": "CIVIL RIGHTS",
+      "title": "Blockbuster-era law governing privacy of video rentals gets a fresh look from Supreme Court - The Tribune-Democrat",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPMlVqcjA3V21KTk1EdWxwMVFWeVB1NWg5dm1NTXYyTEFwMVN3TTUwSGpPU0trdTRBdzNRaUVrS0dnSFhDQ1FHNEY4T1d5WElBTDhMVjBTRFc0d2QtTjlwNXZyQ051YkpObUxRdUhBcHA2RU5EMlZVZTY1NTlzWG5nclVrTFptQ09rZFFHN1NicGF6OUtzQU1NRlhYcEFLa3NLWWM5djZyUGVzY3lzMTNSdk1MSWYwdkZHUFRGdzYzdTVQQlJpa1BKd2xLSWdpQkVRZXhYZWQ3cWJGejRKYXFibGxDZzR3d0FmbFFZMkExd2d6cEt0cU52eG1vclNxUGtHNEpGYV80TzNNU3FPMWdV?oc=5",
+      "published_at": "2026-10-14T18:04:00+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 51.05
+    },
+    {
+      "category": "BEEF",
+      "title": "Cattle climb, hogs slide after USDA report - Farm Progress",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQMFZJYUJlNEQ2M0lULTQ3Y3V2clpOS1IxTGFmRlA0alVWUmx6bFFiODVJSTVUanlSYktTX3RtRTJ4VnF0WE9WaGVfcExGMms0SXZLLTNFM1BzRDNqU0NyVmRJRElTclR0U0Q4RUlrN1dENm9JRjFMTndrRDF4LTU5TWwzazByZEptNFpJ?oc=5",
+      "published_at": "2026-10-16T14:40:58+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.77
+    },
+    {
+      "category": "TURKEY",
+      "title": "USDA raises poultry and egg production forecasts for 2026 and 2027 - High Plains Journal",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNjB1Yno2b3pDdzlQZk1aQUYzcS01V2U1VEFmYmVOMmY2TzlBSnEwY2I3S19MM1FVUWNUWFdkWEwwUDE2a2FUNkVLam1yYTRtekhhZjhRZ3dVbjkwdzl5WTM0WFJkeWEtLXM0bmUzMF9lcHNJX0lySWN0UHFGOGJjb2l1TVFWQzQtckNtRHJaaWZ3M0FPSFBzMFR3?oc=5",
+      "published_at": "2026-10-16T15:11:22+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.81
+    },
+    {
+      "category": "DATA CENTERS",
+      "title": "NTT Global Data Centers weighs the price tag of not building fast enough - The Register",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQWM0NkM0OE1qS2w5TkF3NGFrQ1J6VGFaVnA3b0xhekc4cEo4NjJxTU5XeE11X1dxUWI3dDJRN2tEcUtTT3FNRm44UFFMc1FnRXg4a1o1Tm04MHVUcXI3ZDRDSEFSZzhVOHlkZm5kMTRvNE9fclJRaEtRYlZjdy03ampodmZIM0dKOUotN3dOUDdvMjlBeS1mVms1RkM5YUtZU1p3bWYwS2cxMXFvYng1RnlNRWxKSmhNbURMajJYVkNyYklKZU1Za0xCV29lTHVC?oc=5",
+      "published_at": "2026-10-16T15:00:00+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.8
     },
     {
       "category": "AGRICULTURE",
-      "title": "USDA Weekly Slaughter Data: Meat Production, Beef, Pork, Poultry Prices - News and Statistics - IndexBox",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbWhMMXU2Wkdmb1J2LXdSSDNKT2RJV0htOGZ0cTVXQ1NTMkhuam8yc0RTQ3UzUG1ILWVldDlxQ0x6LVY5SE84YXJxQWZDdGdhdkU2VXlWS3dKdFp1NXl2d09sZW9JQ1RRTHBteUtTV05aSGxzZ29DQld0bGEtbFlwOEtJdVZkdzBpd1pEM1ZES09DaGxwdVN1RE5R?oc=5",
-      "published_at": "2026-10-15T16:42:55+00:00",
+      "title": "USDA Turkey Market: Wholesale Prices Fall, Retail Features Increase - News and Statistics - IndexBox",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMWxkZFd0aXRxdWg4dnBneGtkQUJYMVo1WlY1ZlVqV1FMSHhPc2tVV2dhYnQ1ZjNRczI5b1lyMExpZmdRV2tTSDdJUGoyQTlZU1BBN1d3UzVWYVRLbVpOUXlpaXg3cm5BVlpSSjF4bzNZVFZvUlhZZUFzblJaNlljMERlRjNFUXVIdV9IZ3ppMWhReXY3cnVMcTR5aFhuUVk?oc=5",
+      "published_at": "2026-10-16T14:30:38+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 128.35
+      "discovery_score": 119.76
     },
     {
       "category": "CRYPTO",
-      "title": "Thailand’s Bitcoin and Ethereum ETF Rules Take Effect - Coindoo",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE13UzdTNVlEOTRwZHppc3l1eGdnRE9LNk9sODFBTDVIenJnVEprQVRNVDJGTi1zN09IM254NUVmZ2lxWnUxSlk5MDc5OUZ5dVZ3LUpTbTFwcl9MeUZPRVBNc2lwLTdUMXppWFVRNnpIc2ZKOTQtakRQZldORWk0UQ?oc=5",
-      "published_at": "2026-10-16T09:21:41+00:00",
+      "title": "Deutsche Bank to Launch Bitcoin and Ethereum Custody Within Weeks - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOS1RqN1FjZy0tNV9PQXNVVGRpZXBheTB5MkpHWTVPQktkblpqVzY2SUdNQVR6cDdHeER5ME1oT25xeGRaallQNFYxTkFtOVdxY0t6YnpZUXh6NkExTnNPMk9TSTdOWHpOSVdKeXdDdHNNTkl4RkF3Z3JGMGhHMkF3Y1o0WGNSUlZoeHRjUVo2RHhKa0g0UU42RGtLZnVXUk1hY0dnZUxaek1RcjdmR0RPX1RaLWp6OUdDa3RuZVZqUEZtOVk?oc=5",
+      "published_at": "2026-10-16T13:39:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.74
+      "discovery_score": 119.68
     },
     {
       "category": "AI",
@@ -44,7 +89,7 @@
       "published_at": "2026-10-16T00:15:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 128.98
+      "discovery_score": 128.57
     },
     {
       "category": "TECH & SECURITY",
@@ -53,25 +98,16 @@
       "published_at": "2026-10-16T06:45:45+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 129.53
-    },
-    {
-      "category": "AI",
-      "title": "OpenAI appointed ex-xAI executive Uday Ruddarraju to replace Sachin Katti as its infrastructure and compute chief amid leadership changes in its data cente",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5YZVo0QjJQS2NhTHFPaVlPX1puWXluRm51LTVocktTVHktbldqSWRoYm5Pak4tQldNcXFkYjNyUXJTdjFOMmlEODZVVHBGVjJIVnc?oc=5",
-      "published_at": "2026-10-15T13:30:59+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 128.09
+      "discovery_score": 129.11
     },
     {
       "category": "TECH & SECURITY",
-      "title": "CenterPoint Energy Data Breach: More Than 1 Million Texans Affected - Security Affairs",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOb2ZBblRjX2ZSQXFXT2lQTWxzYlNYamY2Q0pWc3RtZmVWenl5WEFvTGp5T0plamQ3LXViMEtlX0RISW52ZEF1dGdQOVpYSmxyVXFORm1ob1lHZlFRdFRYdWFpM3ZDTXRPN21NTGN2MWdlMklDUS1LYThzZlgyR29velRxYjVLSjRob2xZeHk4TmlYU3hSSFBCRFFyelZqckpmZlFmeEVpMXBqZXNTVzlLUUwyd2c2VWdESE8ySTJIRdIBvwFBVV95cUxOb2ZBblRjX2ZSQXFXT2lQTWxzYlNYamY2Q0pWc3RtZmVWenl5WEFvTGp5T0plamQ3LXViMEtlX0RISW52ZEF1dGdQOVpYSmxyVXFORm1ob1lHZlFRdFRYdWFpM3ZDTXRPN21NTGN2MWdlMklDUS1LYThzZlgyR29velRxYjVLSjRob2xZeHk4TmlYU3hSSFBCRFFyelZqckpmZlFmeEVpMXBqZXNTVzlLUUwyd2c2VWdESE8ySTJIRQ?oc=5",
-      "published_at": "2026-10-16T07:31:25+00:00",
+      "title": "U.S. CISA adds Atlassian flaw to its Known Exploited Vulnerabilities catalog - Security Affairs",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNOXpFdUNkVmJmcGJTdnhqX2JaYXVPaHlBVDlXeHBZYkc0VU00QzdzeDNWdFl1VTRBV3N0TFRNYmp2SjZrM1RXWjlRRDN6R1BuWXA3NXZSeUZFcW9SeW95Q3VjMldnQWZkN1g1Yko0YzBoUldkZ19GN0lPQkUtaVcyOW5fZ3lld3pUVzZnRmVmSWtyVlVBX0RoZHluQmU5LWVzN19sc3dxVVY2aWdMYXR0T3dEenVlQ0lwTnlselJVcWxMMEk0R3fSAcYBQVVfeXFMTTl6RXVDZFZiZnBiU3Z4al9iWmF1T2h5QVQ5V3hwWWJHNFVNNEM3c3gzVnRZdVU0QVdzdExUTWJqdko2azNUV1o5UUQzekdQbllwNzV2UnlGRXFvUnlveUN1YzJXZ0FmZDdYNWJKNGMwaFJXZGdfRjdJT0JFLWlXMjluX2d5ZXd6VFc2Z0ZlZklrclZVQV9EaGR5bkJlOS1lczdfbHN3cVVWNmlnTGF0dE93RHp1ZUNJcE55bHpSVXFsTDBJNEd3?oc=5",
+      "published_at": "2026-10-16T11:06:31+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.59
+      "discovery_score": 119.47
     },
     {
       "category": "TECH & SECURITY",
@@ -80,7 +116,7 @@
       "published_at": "2026-10-16T07:07:41+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.56
+      "discovery_score": 119.14
     },
     {
       "category": "ECONOMY",
@@ -89,7 +125,16 @@
       "published_at": "2026-10-16T07:01:37+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.55
+      "discovery_score": 119.13
+    },
+    {
+      "category": "CRYPTO",
+      "title": "Crypto Prices Today: Bitcoin Climbs Near USD 82,140 as Zcash Surges 10.2% - Analytics Insight",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSTdfUUY4c1VHMFdpRVgyeHI0V2lld283UUVKdFNERXFSLXQwc1oxeWJVTEFqX1BYUjltcFZHZTJrajd0Mmk0aEJMY216VkpVQmxjWHNFMXNoOTBLTzVtRzM3enRjRW5YVnpELWxJNkRPcWd1by00N1ZRa1l0c2VEaW5KRHVDWkNEaGhyQnQ5LUZtUmxUNXdtQVlSRlJrbDJobFk3Y2hnelNGYmR4anNQWmRXRkszVExnUmZ0Ui0ydnJ4TkJMOGfSAcYBQVVfeXFMTUk3X1FGOHNVRzBXaUVYMnhyNFdpZXdvN1FFSnRTREVxUi10MHNaMXliVUxBal9QWFI5bXBWR2Uya2o3dDJpNGhCTGNtelZKVUJsY1hzRTFzaDkwS081bUczN3p0Y0VuWFZ6RC1sSTZET3FndW8tNDdWUWtZdHNlRGluSkR1Q1pDRGhockJ0OS1GbVJsVDV3bUFZUkZSa2wyaGxZN2NoZ3pTRmJkeGpzUFpkV0ZLM1RMZ1JmdFItMnZyeE5CTDhn?oc=5",
+      "published_at": "2026-10-16T06:49:40+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.12
     },
     {
       "category": "ECONOMY",
@@ -98,7 +143,7 @@
       "published_at": "2026-10-16T06:01:26+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.46
+      "discovery_score": 119.05
     },
     {
       "category": "AI",
@@ -107,7 +152,7 @@
       "published_at": "2026-10-16T05:02:36+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.38
+      "discovery_score": 118.97
     },
     {
       "category": "AI",
@@ -116,7 +161,7 @@
       "published_at": "2026-10-16T04:00:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.3
+      "discovery_score": 118.88
     },
     {
       "category": "AI",
@@ -125,7 +170,7 @@
       "published_at": "2026-10-16T04:00:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.3
+      "discovery_score": 118.88
     },
     {
       "category": "AI",
@@ -134,7 +179,43 @@
       "published_at": "2026-10-16T04:00:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.3
+      "discovery_score": 118.88
+    },
+    {
+      "category": "AI",
+      "title": "How Investors Are Reacting To NVIDIA (NVDA) AI Partnership Wave - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQaHhnc0tIbHYtRE8zcTVtS2laZG5IT29wWG1yaDBkUkVUanpvaWpFWm1pTEpyVjR6aDZ3Zi1Yd2tMclFDLWc0WHgxYzJ1Z0NpcWxyOWRPYWVUMW05OC1xU2Y4Ri11R0JFb0hqWGVlZDZKU25HSllfRUxzNVlJdmkzNVAydVkzYUFhLU1qRU5UamNPRV9Ic2VOZElYMUFlVGs?oc=5",
+      "published_at": "2026-10-16T02:17:00+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 118.74
+    },
+    {
+      "category": "BEEF",
+      "title": "Livestock Analysis | Live cattle close at nine-week high - Pro Farmer",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNd3BWUnp0S1dmWGxhNGlLV0JjZGlKZ1lWenFwemxFR0lHRlI4aEN1YWxvSXFqaFRhWnJpUURRRE05NnpiZnJBeGpPZWxEdklxOXkxdkl4ME1GM0dzWGJiMWVIZDlXdFZKMU5xRlZwVDFOVkU4TFhKS2I1NUgxd0o0SWhCQU90WFUtSE5RNG9vNTV0VFF3Rnh2WkdmdnA2QlFIZXhlSXNEZnlOVXJFZnpPZw?oc=5",
+      "published_at": "2026-10-15T21:26:02+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 118.33
+    },
+    {
+      "category": "BEEF",
+      "title": "USDA Boxed Beef Cutout Report October 15, 2026: Choice and Select Values - News and Statistics - IndexBox",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNV0N3NTczbEtyNFNLdEl1N01GUmJtd0JNOGNTX0R3T0ljTXQ5NG00VFZreTg0SFo0c0pzd1pXQWhKQl9FbHJkWEZIaHVSQktvZVNKc3gtTExyRk5HOTVXdmpoaWREVFpKZHBId0FpZWs5ZDF5VVdzNzQ5emxuQUZ2aU5DZmt5THVUUE1DWF82V2dqX21LcDE5dXZUVWk4LThY?oc=5",
+      "published_at": "2026-10-15T20:40:36+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 118.27
+    },
+    {
+      "category": "AI",
+      "title": "BlackRock’s Larry Fink Warns AI Data Center Halt Could Tip US Into Recession - Decrypt",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYkxEQ3R1LU1UcWoxYUt6NXJGcXBtYU1JdmdseXplTm5ESFM4N3VxTEFZUU43WHZLbTF2UG00TXVxNzdJX3ZRNkJjYXZkNU55Z0paNDA3VDViS3E3UFBULURLMFA3SG1kYjUtZksyM0h5ay1oSmQzakE2V3NrMzJKTzBn?oc=5",
+      "published_at": "2026-10-15T18:16:04+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 118.07
     }
   ],
   "weekly_trend": {
@@ -145,6 +226,23 @@
   "report_url": "https://chatgpt.com/",
   "notes": "RSS and aggregators are discovery only. Verification requires separately curated original evidence; no automatic fact-checking is claimed.",
   "source_status": {
+    "TEXAS": {
+      "ok": true,
+      "items": 1,
+      "working_sources": [
+        "https://news.google.com/rss/search?q=Texas%20legislature%20governor%20courts%20policy%20economy%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
+      ]
+    },
+    "ARKANSAS": {
+      "ok": false,
+      "items": 0,
+      "working_sources": []
+    },
+    "OKLAHOMA": {
+      "ok": false,
+      "items": 0,
+      "working_sources": []
+    },
     "U.S. POLICY": {
       "ok": true,
       "items": 15,
@@ -154,7 +252,7 @@
     },
     "ECONOMY": {
       "ok": true,
-      "items": 31,
+      "items": 32,
       "working_sources": [
         "https://www.bls.gov/feed/bls_latest.rss",
         "https://news.google.com/rss/search?q=Federal%20Reserve%20dollar%20inflation%20treasury%20yields%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
@@ -165,23 +263,56 @@
       "items": 0,
       "working_sources": []
     },
+    "CIVIL RIGHTS": {
+      "ok": true,
+      "items": 2,
+      "working_sources": [
+        "https://news.google.com/rss/search?q=federal%20court%20privacy%20voting%20rights%20civil%20liberties%20decisions%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
+      ]
+    },
+    "BEEF": {
+      "ok": true,
+      "items": 31,
+      "working_sources": [
+        "https://news.google.com/rss/search?q=USDA%20cattle%20beef%20livestock%20cattle-on-feed%20market%20report%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
+      ]
+    },
+    "CHICKEN": {
+      "ok": false,
+      "items": 0,
+      "working_sources": []
+    },
+    "TURKEY": {
+      "ok": true,
+      "items": 5,
+      "working_sources": [
+        "https://news.google.com/rss/search?q=USDA%20turkey%20production%20hatchery%20poultry%20prices%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
+      ]
+    },
+    "DATA CENTERS": {
+      "ok": true,
+      "items": 27,
+      "working_sources": [
+        "https://news.google.com/rss/search?q=AI%20data%20center%20power%20grid%20permitting%20construction%20United%20States%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
+      ]
+    },
     "AGRICULTURE": {
       "ok": true,
-      "items": 8,
+      "items": 7,
       "working_sources": [
         "https://news.google.com/rss/search?q=USDA%20beef%20cattle%20chicken%20turkey%20livestock%20prices%20farms%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "CRYPTO": {
       "ok": true,
-      "items": 33,
+      "items": 34,
       "working_sources": [
         "https://news.google.com/rss/search?q=bitcoin%20ethereum%20SEC%20stablecoin%20regulation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "AI": {
       "ok": true,
-      "items": 52,
+      "items": 53,
       "working_sources": [
         "https://export.arxiv.org/rss/cs.AI",
         "https://news.google.com/rss/search?q=AI%20models%20OpenAI%20NVIDIA%20data%20centers%20electricity%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
@@ -189,13 +320,16 @@
     },
     "TECH & SECURITY": {
       "ok": true,
-      "items": 14,
+      "items": 13,
       "working_sources": [
         "https://news.google.com/rss/search?q=CISA%20cybersecurity%20breach%20ransomware%20vulnerability%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     }
   },
   "source_errors": [
-    "HOUSING: ValueError: No RSS/Atom entries"
+    "ARKANSAS: ValueError: No RSS/Atom entries",
+    "OKLAHOMA: ValueError: No RSS/Atom entries",
+    "HOUSING: ValueError: No RSS/Atom entries",
+    "CHICKEN: ValueError: No fresh, relevant items"
   ]
 }

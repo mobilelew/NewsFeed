@@ -23,15 +23,18 @@ jobs:
         with:
           python-version: '3.12'
       - name: Compile research generator and dependencies without API use
-        run: python -m py_compile generate_news_candidate.py publish_report.py compare_briefings.py candidate_quality_gate.py
+        run: python -m py_compile generate_news_candidate.py publish_report.py compare_briefings.py candidate_quality_gate.py research_source_probe.py
       - name: Run no-cost generator unit tests
-        run: python -m unittest -v test_generate_news_candidate.py test_candidate_quality_gate.py
+        run: python -m unittest -v test_generate_news_candidate.py test_candidate_quality_gate.py test_research_source_probe.py
       - name: Generate and structurally validate a real sourced report
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_NEWS_MODEL: gpt-5-mini
           REPORT_TYPE: ${{ inputs.report_type }}
         run: python generate_news_candidate.py --kind "$REPORT_TYPE"
+      - name: Collect original primary-source records for independent review
+        if: always()
+        run: python research_source_probe.py
       - name: Preserve useful research output for review
         if: always()
         uses: actions/upload-artifact@v4
@@ -41,5 +44,6 @@ jobs:
             submissions/ai-research-candidate.json
             submissions/ai-response-diagnostic.json
             submissions/ai-candidate-validation.json
+            submissions/ai-original-source-review.json
           if-no-files-found: ignore
           retention-days: 14

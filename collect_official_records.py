@@ -34,7 +34,7 @@ def fetch_register(day):
     return payload["results"]
 
 def fetch_individual_document(number):
-    if not isinstance(number,str) or not __import__("re").fullmatch(r"[0-9]{4}-[0-9]{4,6}",number):
+    if not isinstance(number,str) or not __import__("re").fullmatch(r"(?:C[0-9]+-)?[0-9]{4}-[0-9]{4,6}",number):
         raise ValueError("Invalid document identifier")
     url="https://www.federalregister.gov/api/v1/documents/"+number+".json"
     req=urllib.request.Request(url,headers={

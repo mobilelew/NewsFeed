@@ -132,12 +132,13 @@ def parse(xml, category):
         # 24h freshness gets priority; keep 72h context and up to 7d as fallback.
         score= (100 if age<=24 else 35 if age<=72 else 0) + 10*min(keyword_hits,3) - age/12
         description = clean(entry.findtext("description","") if not is_atom else entry.findtext(f"{atom}summary",""))
+        publisher_content = clean(entry.findtext("{http://purl.org/rss/1.0/modules/content/}encoded","")) if not is_atom else ""
         # RSS summaries are source-provided snippets, not independently established article summaries.
         if description.casefold()==title.casefold(): description=""
         items.append({
             "category":category, "title":title[:155], "url":link,
-            "summary":description[:450] if description else "",
-            "summary_provenance":"rss_description" if description else "unavailable",
+            "summary":publisher_content[:450] if len(publisher_content)>=200 else description[:450] if description else "",
+            "summary_provenance":"publisher_rss_content" if len(publisher_content)>=200 else "rss_description" if description else "unavailable",
             "published_at": when.isoformat(timespec="seconds"),
             "verification":"Not yet verified", "is_editorial":False,
             "discovery_score":round(score,2)
@@ -213,12 +214,17 @@ def main():
     # Cached previous discovery is NOT re-used when any live source works.
     if not selected and previous.get("headlines"):
         source_errors.append("No fresh discoveries; prior headlines intentionally not republished as current.")
+    extraction_counts={"publisher_article_excerpt":0,"publisher_page_description":0,"publisher_rss_content":0,"rss_description":0,"unavailable":0}
+    for story in selected:
+        origin=story.get("summary_provenance","unavailable")
+        extraction_counts[origin]=extraction_counts.get(origin,0)+1
     weekly=editorial.get("weekly_trend",{})
     if not weekly.get("evidence"):
         weekly={"title":"No evidence-backed weekly trend published yet","summary":"Publish a sourced trend in editorial.json.","evidence":[]}
     feed={
         "updated_at":NOW.isoformat(timespec="seconds"),
         "headlines":selected,
+        "article_access_status":extraction_counts,
         "weekly_trend":weekly,
         "report_url":editorial.get("report_url","https://chatgpt.com/"),
         "notes":"RSS and aggregators are discovery only. Verification requires separately curated original evidence; no automatic fact-checking is claimed.",

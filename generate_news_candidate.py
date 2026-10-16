@@ -32,7 +32,7 @@ Each headline: title, summary, jurisdiction (federal/texas/arkansas/oklahoma/
 national/international/multiple), category, claim_type (established_fact/
 attributed_claim/proposal/legal_proceeding/data_release), verification (Verified,
 Corroborated, Unsubstantiated, Disputed, Legal Effect Unclear, Unverified, Refuted),
-evidence=[{type:primary/independent/attribution,description,url}].
+evidence=[{type:primary/independent/attribution,description,url,exact_excerpt}].\nFor primary evidence, exact_excerpt must be a short verbatim quotation found on the original official page, never fabricated. Missing exact_excerpts will be flagged, not fixed by guessing.
 For each headline use exactly one permitted jurisdiction, splitting different states into separate findings. A story cannot be Corroborated unless two genuinely independently originating sources can be demonstrated; syndications do not count. For each non-Verified item also include nonempty attribution, what_is_known,
 uncertainty, what_cannot_be_concluded, resolution_needed. For Legal Effect Unclear
 include legal_status. For Verified include original authoritative primary support.

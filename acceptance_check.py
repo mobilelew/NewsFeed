@@ -28,8 +28,8 @@ def audit(root=ROOT):
     continuity=bool(morning and evening and
                     morning.get("report_date")==evening.get("report_date") and
                     evening.get("morning_comparison",{}).get("comparison_status")=="direct_text_comparison")
-    delivery=published.get("status")=="published" and bool(stories) and
-             bool(published.get("report_path"))
+    delivery=(published.get("status")=="published" and bool(stories) and
+              bool(published.get("report_path")))
     checks={"coverage":coverage,"claim_authentication":evidence,
             "same_day_morning_evening_comparison":continuity,
             "published_feed_exists":delivery,

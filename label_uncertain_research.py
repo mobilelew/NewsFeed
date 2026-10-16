@@ -18,7 +18,7 @@ def prepare(candidate,authority):
             h["verification"]="Unverified"
         if h["verification"]!="Verified":
             h["claim_type"]="attributed_claim" if h.get("claim_type")=="established_fact" else h.get("claim_type","attributed_claim")
-            h.setdefault("attribution","Research candidate attributed to cited reporting")
+            h.setdefault("attribution","See individually linked cited reporting; not independently established")
             h.setdefault("what_is_known","The cited reporting makes this assertion.")
             h.setdefault("uncertainty","No independent confirmation of the complete assertion has been established.")
             h.setdefault("what_cannot_be_concluded","The original cited authority verifies the asserted position.")
@@ -29,8 +29,7 @@ def prepare(candidate,authority):
             h["jurisdiction"]="multiple"
         if not h.get("event_date"):
             h["event_date"]=None
-        if not h.get("source_checked_at"):
-            h["source_checked_at"]=result.get("report_time")
+        # Never synthesize a source inspection time from the report timestamp.
     result["independent_source_authentication"]=False
     result["editorial_caveat"]="Research assertions remain Unverified where competent authority confirmation is not established."
     result["quality_screen"]=review(result)

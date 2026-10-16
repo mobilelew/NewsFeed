@@ -28,7 +28,7 @@ Production ready only if all four have actually passed a real end-to-end morning
 | State legislative web monitors | Active pilot | Page changes are not legislative events |
 | Claim-level audit structure | Partial | Excerpt presence != semantic entailment |
 | Full source retrieval + claim interpretation and evidence reasoning | Missing | Essential for requested service |
-| Full AI-generated evidence-backed report scheduler | Candidate generator implemented, not exercised | ChatGPT scheduled task chats do not automatically submit to GitHub |
+| Full AI-generated evidence-backed report scheduler | Candidate generator now reads source registry; not exercised | ChatGPT scheduled task chats do not automatically submit to GitHub |
 | Morning/evening report publisher and JSON archive | Built, not exercised end to end | briefing.json remains unpublished as last observed |
 | Actual full evening-to-morning baseline comparison | Unproven | Comparison script exists |
 | Website automatic presentation | Frontend installed; no full reports | Depends on report publication |
@@ -37,7 +37,7 @@ Production ready only if all four have actually passed a real end-to-end morning
 | Development follow-up task | Scheduled daily | Does not guarantee engineering task completion |
 
 ## Current decision and blocking dependency
-Use GitHub Actions as scheduled research/verification compute initially; Namecheap hosts frontend; FreshRSS optional later as additional discovery source. A functioning API-based research generator requires dedicated API credentials and separately billed OpenAI API usage. Owner reports OpenAI API project created, billing credits and spend controls configured, and GitHub Actions secret `OPENAI_API_KEY` saved. Credential value has not been exposed to the assistant or independently tested. Next action: execute secure `Test News Reader OpenAI API connection` workflow and inspect outcome.
+Use GitHub Actions as scheduled research/verification compute initially; Namecheap hosts frontend; FreshRSS optional later as additional discovery source. A functioning API-based research generator requires dedicated API credentials and separately billed OpenAI API usage. Owner reports OpenAI API project created, billing credits and spend controls configured, and GitHub Actions secret `OPENAI_API_KEY` saved. Credential value has not been exposed to the assistant or independently tested. The redundant API-only connectivity test was removed at the owner's request. First paid API call should generate a substantive news report candidate.
 
 ## Next engineering milestone
 Implement real OpenAI API-driven research generator using live original-source retrieval with source pinning, claim entailment/contradiction, conservative uncertainty, full briefing JSON output, publisher integration and two scheduled America/Chicago report cycles. Validate real source audit and public site rendering. Do not claim done merely because an API key is set.
@@ -57,3 +57,4 @@ For each milestone, record what changed, direct link to source/commit, demonstra
 - 2026-10-15: Owner set resource-efficiency rule: no standalone paid API smoke calls. Deleted `.github/workflows/test-openai-api.yml` and `test_openai_connection.py`. First billed API run must produce a real source-backed briefing attempt with reusable evidence; dry-run structural checks remain free. Do not assert connectivity until the real workflow runs.
 
 - 2026-10-15: Added `generate_news_candidate.py` and manual GitHub Actions `Generate real News Reader report candidate`. Makes one Responses API request with web_search, tries to generate a sourced full-coverage morning/evening candidate, validates schema, and retains candidate as an Actions artifact. Added offline tests. **Not run**, content authenticity not established, no automatic full-report publishing, no scheduled production cycle. First execution should be a useful paid research attempt, not an isolated API connection test.\n
+- 2026-10-15: Source registry connected to `generate_news_candidate.py` research request; candidate now exposes jurisdiction coverage gaps. The paid workflow `generate-news-candidate.yml` remains a manual research run (preserves a usable report artifact). **No paid research run or automatic full-report publication has been confirmed.** Next: execute one genuine candidate run, audit claims against the referenced original records, then authorize scheduled publication only once evidence-level and coverage acceptance checks work. No RSS discovery item is automatically treated as verified.

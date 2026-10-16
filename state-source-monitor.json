@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "report_type": "source_monitor",
-  "checked_at": "2026-10-15T12:21:13-05:00",
+  "checked_at": "2026-10-16T01:19:57-05:00",
   "scope": "Texas, Arkansas and Oklahoma legislature official-source reachability and changes",
   "verification": "Unverified",
   "legal_changes_verified": false,
@@ -13,7 +13,7 @@
           "name": "Texas Legislature Online — legislative activity",
           "url": "https://capitol.texas.gov/Home.aspx",
           "status": "reachable",
-          "change": "no_baseline",
+          "change": "unchanged",
           "content_sha256": "308316ea90cfdf141f18e413d4176e6c27a349e85e47a00381d9c071e57cc105",
           "visible_characters": 3344
         },
@@ -21,7 +21,7 @@
           "name": "Texas Legislature Online — legislation",
           "url": "https://capitol.texas.gov/MnuLegislation.aspx",
           "status": "reachable",
-          "change": "no_baseline",
+          "change": "unchanged",
           "content_sha256": "fc35199a6d8f29d543f864feee1f3857aa80663f8ff5cabd08d048eac37bb452",
           "visible_characters": 1628
         }
@@ -36,17 +36,17 @@
           "name": "Arkansas General Assembly — recent activities",
           "url": "https://www.arkleg.state.ar.us/",
           "status": "reachable",
-          "change": "no_baseline",
-          "content_sha256": "04a77342b5bc017be908803cce59787fd56874bb4f7fb95245092bca9d80fec3",
-          "visible_characters": 8467
+          "change": "changed",
+          "content_sha256": "2fe66ff31ec77ef8710947db5ca623db58df24a476dd2ac0ff4bfe282c85d70a",
+          "visible_characters": 7494
         },
         {
           "name": "Arkansas General Assembly — meetings",
           "url": "https://www.arkleg.state.ar.us/Calendars/Meetings",
           "status": "reachable",
-          "change": "no_baseline",
-          "content_sha256": "14b0fef149d6d89b80c4e1b41d59c46ee08ed7e0f2d7fd6fd923fecc5e92b659",
-          "visible_characters": 8362
+          "change": "changed",
+          "content_sha256": "eb381ccbab603b2bfa66650e3ebe0389fd1afcdfb4827009f37029eed52d4b29",
+          "visible_characters": 7389
         }
       ],
       "legal_changes_verified": false,
@@ -59,7 +59,7 @@
           "name": "Oklahoma Legislature — bill tracking",
           "url": "https://www.oklegislature.gov/AdvancedSearchForm.aspx",
           "status": "reachable",
-          "change": "no_baseline",
+          "change": "unchanged",
           "content_sha256": "b1bbbf526059676e65d6edbe0eac37fb143c309444786eabbeccc7974e45e89e",
           "visible_characters": 1449
         },
@@ -67,7 +67,7 @@
           "name": "Oklahoma Legislature — official homepage",
           "url": "https://www.oklegislature.gov/",
           "status": "reachable",
-          "change": "no_baseline",
+          "change": "unchanged",
           "content_sha256": "10d93f0d6562e4df9fafa52d544da43990cff23fc5630436e2b2c0ab1772f211",
           "visible_characters": 1279
         }

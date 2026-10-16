@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Conservatively label individual AI research findings using captured authority evidence."""
-import copy,json,pathlib,argparse
+import copy,json,pathlib,argparse,datetime as dt
 from candidate_quality_gate import review
 ROOT=pathlib.Path(__file__).resolve().parent
 def prepare(candidate,authority):
@@ -27,8 +27,23 @@ def prepare(candidate,authority):
         h["claim_evidence_note"]="Cited authority "+h["authority_confirmation"]+"; literal excerpt presence is not semantic proof."
         if h.get("jurisdiction") not in {"federal","texas","arkansas","oklahoma","national","international","multiple"}:
             h["jurisdiction"]="multiple"
-        if not h.get("event_date"):
+        event=h.get("event_date")
+        try:
+            event_day=dt.date.fromisoformat(event)
+            report_day=dt.datetime.fromisoformat(result["report_time"]).date()
+            if event_day < report_day-dt.timedelta(days=1):
+                h["temporal_caveat"]="Historical event, not established as new"
+                h["summary"]="Historical context (event "+event+"): "+h.get("summary","")
+            elif event_day>report_day:
+                h["temporal_caveat"]="Future event, not established as completed"
+                h["summary"]="Future event not yet completed: "+h.get("summary","")
+                h["event_date"]=None
+        except (TypeError,ValueError):
+            h["temporal_caveat"]="Actual event date not established"
             h["event_date"]=None
+        if h.get("source_checked_at"):
+            h["model_claimed_source_check_time"]=h.pop("source_checked_at")
+            h["source_checked_at"]=None
         # Never synthesize a source inspection time from the report timestamp.
     result["independent_source_authentication"]=False
     result["editorial_caveat"]="Research assertions remain Unverified where competent authority confirmation is not established."

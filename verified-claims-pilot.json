@@ -3,9 +3,25 @@
   "kind": "automated-claim-matching-pilot",
   "scope": "Only CISA KEV listing claims explicitly identifiable from third-party headlines",
   "production_ready": false,
-  "checked_at": "2026-10-16T02:06:21-05:00",
+  "checked_at": "2026-10-16T12:25:51-05:00",
   "discovery_source": "https://news.google.com/rss/search?q=CISA%20%22known%20exploited%22%20CVE%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
   "primary_source": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-  "findings": [],
+  "findings": [
+    {
+      "headline": "Critical Atlassian Flaw CVE-2026-21589 Hits Eight Products and Lands on CISA’s Exploited List - TechNadu",
+      "publisher": "TechNadu",
+      "news_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWDN3dFZRaWhpM09NSDE3cVRjeGRZYUhNTlc3TmhOM2lLWlhlTG45a1g5V3NHMkVnRDU3QXNUWlFnOEU0Z1dCOGhyWHJnWjNZc2xsOW1vMU5wWFlZOTIyMnFVVG1qOC1DQTZnQkc2dU8zLU12NmJ4UUFWSk5leDZDbnNlbXZWTUNhbWl6SnE4N1ZGMHlTVzlLM2dJWkp6eWplVzdjeWgzY0g2WFNsTENGZS10TEFkN1c0R1ctX19uS3F1S0k?oc=5",
+      "news_publication_date": "Fri, 16 Oct 2026 11:02:40 GMT",
+      "specific_claim": "CISA lists CVE-2026-21589 in its Known Exploited Vulnerabilities catalog.",
+      "verification": "Verified",
+      "what_is_known": "CISA's current KEV catalog lists this exact CVE with the stated addition date. This verifies listing only, not the article's additional claims.",
+      "cve_id": "CVE-2026-21589",
+      "cisa_date_added": "2026-10-15",
+      "original_evidence": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+      "limitations": "Headline discovery metadata only; news article body not independently retrieved. Catalog listing does not establish the scope, current exploit activity or impact on particular users.",
+      "checked_at": "2026-10-16T12:25:51-05:00",
+      "source_classification": "CISA primary record"
+    }
+  ],
   "coverage_note": "Automated source-specific matching, not complete fact-checking, independent verification of every headline, or a full News Reader daily briefing."
 }

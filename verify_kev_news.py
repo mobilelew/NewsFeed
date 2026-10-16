@@ -30,7 +30,13 @@ def get(url):
             raise ValueError("Source too large")
         return data
 
-def fetch_catalog():\n    try:\n        return get(CATALOG), CATALOG\n    except Exception:\n        return get(CISA_MIRROR), CISA_MIRROR\n\ndef build(news_xml,catalog_json,now,official_source=CATALOG):
+def fetch_catalog():
+    try:
+        return get(CATALOG), CATALOG
+    except Exception:
+        return get(CISA_MIRROR), CISA_MIRROR
+
+def build(news_xml,catalog_json,now,official_source=CATALOG):
     catalogue=json.loads(catalog_json)
     items=catalogue.get("vulnerabilities")
     if not isinstance(items,list) or not items:
@@ -81,7 +87,8 @@ def fetch_catalog():\n    try:\n        return get(CATALOG), CATALOG\n    except
 
 def main():
     now=dt.datetime.now(dt.timezone.utc)
-    catalog, source=fetch_catalog()\n    data=build(get(RSS),catalog,now,source)
+    catalog, source=fetch_catalog()
+    data=build(get(RSS),catalog,now,source)
     p=ROOT/"verified-claims-pilot.json"
     p.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"CISA listing claim matching: {len(data['findings'])} findings")

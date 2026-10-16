@@ -11,6 +11,7 @@ import pathlib
 import urllib.parse
 import urllib.request
 from zoneinfo import ZoneInfo
+from federal_register_crosscheck import build_verified_metadata
 
 ROOT = pathlib.Path(__file__).resolve().parent
 CHICAGO = ZoneInfo("America/Chicago")
@@ -31,6 +32,44 @@ def fetch_register(day):
     if not isinstance(payload.get("results"), list):
         raise ValueError("Federal Register response missing results")
     return payload["results"]
+
+def fetch_individual_document(number):
+    if not isinstance(number,str) or not __import__("re").fullmatch(r"[0-9]{4}-[0-9]{4,6}",number):
+        raise ValueError("Invalid document identifier")
+    url="https://www.federalregister.gov/api/v1/documents/"+number+".json"
+    req=urllib.request.Request(url,headers={
+        "User-Agent":"NewsReader/1.0 (source-specific original record cross-check)",
+        "Accept":"application/json"})
+    with urllib.request.urlopen(req,timeout=15) as response:
+        return json.load(response)
+
+def crosscheck_report(report,retriever=fetch_individual_document):
+    """Accept only headlines whose individual official record matches the API index."""
+    kept=[]
+    failures=[]
+    for headline in report.get("headlines",[]):
+        number=headline["document_number"]
+        index={"document_number":number,
+               "publication_date":headline["publication_date"],
+               "type":headline["source_document_type"]}
+        try:
+            assessment=build_verified_metadata(index,retriever(number))
+            headline["metadata_crosscheck"]=assessment
+            kept.append(headline)
+        except (ValueError,KeyError,TypeError,urllib.error.URLError,TimeoutError) as exc:
+            failures.append({"document_number":number,"issue":type(exc).__name__})
+    report["headlines"]=kept
+    report["source_crosscheck"]={
+        "checked":len(kept)+len(failures),
+        "matched":len(kept),
+        "failures":failures,
+        "legal_effect_authenticated":False}
+    if report.get("report_type")=="morning":
+        surviving={h["document_number"] for h in kept}
+        report["baseline"]=[b for b in report.get("baseline",[])
+                            if b.get("identifier") in surviving]
+    report["coverage_note"]+=" Every listed record has been cross-checked against its individual official API document; no determination of current legal effect."
+    return report if kept else None
 
 def make_headline(record):
     title = str(record.get("title") or "").strip()
@@ -58,6 +97,7 @@ def make_headline(record):
         "resolution_needed": "Review the full published document, relevant effective-date provisions, implementing guidance, and controlling court orders.",
         "evidence": [{"type": "primary", "description": f"Federal Register listing for {number}", "url": url}],
         "document_number": number,
+        "source_document_type": doc_type,
         "publication_date": date
     }
 
@@ -102,6 +142,8 @@ def main():
         raise ValueError("Production refuses to publish historical dates")
     records = fetch_register(date)
     report = create_report(now, records, args.kind)
+    if report is not None:
+        report = crosscheck_report(report)
     if report is None:
         print("NO_PUBLISHABLE_RECORDS: No matching official records for today; leaving public archive unchanged")
         return 0

@@ -60,10 +60,10 @@ def crosscheck_report(report,retriever=fetch_individual_document):
             if abstract:
                 headline["summary"]=abstract[:800]+("…" if len(abstract)>800 else "")
                 headline["summary_provenance"]="federal_register_document_abstract"
-                headline["document_text_reviewed"]=True
+                headline["agency_abstract_read"]=True
             else:
                 headline["summary_provenance"]="metadata_only_no_abstract"
-                headline["document_text_reviewed"]=False
+                headline["agency_abstract_read"]=False
             for key in ("effective_on","comments_close_on","dates","action","agency_names"):
                 value=detail.get(key)
                 if value:

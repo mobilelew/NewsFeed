@@ -96,7 +96,7 @@ def build(kind, now, input_baseline=None):
     document["publication_policy"]="evidence-status-v1"
     document["report_type"]=kind
     document["report_time"]=local.isoformat(timespec="seconds")
-    document["coverage_audit"]=coverage_audit(document)\n    document["coverage_audit"]=coverage_audit(document)
+    document["coverage_audit"]=coverage_audit(document)
     if kind=="morning":
         document["baseline"]=[{"identifier":str(h.get("identifier") or h.get("title")),
                                "status":str(h.get("verification","Unverified")),

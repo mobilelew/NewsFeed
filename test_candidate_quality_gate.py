@@ -42,5 +42,11 @@ class QualityGateTests(unittest.TestCase):
         self.assertTrue(any("event_date" in msg for msg in result["issues"]))
         self.assertTrue(any("source_checked_at" in msg for msg in result["issues"]))
         self.assertTrue(any("claim-specific" in msg for msg in result["issues"]))
+    def test_source_check_must_include_timezone(self):
+        self.report["headlines"][0]["source_checked_at"]="2026-10-15T06:00:00"
+        self.assertFalse(review(self.report)["passed_prepublication_screen"])
+    def test_source_cannot_be_inspected_after_report(self):
+        self.report["headlines"][0]["source_checked_at"]="2026-10-16T06:00:00-05:00"
+        self.assertFalse(review(self.report)["passed_prepublication_screen"])
 if __name__=="__main__":
     unittest.main()

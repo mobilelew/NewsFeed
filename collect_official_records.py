@@ -53,8 +53,22 @@ def crosscheck_report(report,retriever=fetch_individual_document):
                "publication_date":headline["publication_date"],
                "type":headline["source_document_type"]}
         try:
-            assessment=build_verified_metadata(index,retriever(number))
+            detail=retriever(number)
+            assessment=build_verified_metadata(index,detail)
             headline["metadata_crosscheck"]=assessment
+            abstract=" ".join(str(detail.get("abstract") or "").split())
+            if abstract:
+                headline["summary"]=abstract[:800]+("…" if len(abstract)>800 else "")
+                headline["summary_provenance"]="federal_register_document_abstract"
+                headline["document_text_reviewed"]=True
+            else:
+                headline["summary_provenance"]="metadata_only_no_abstract"
+                headline["document_text_reviewed"]=False
+            for key in ("effective_on","comments_close_on","dates","action","agency_names"):
+                value=detail.get(key)
+                if value:
+                    headline.setdefault("official_document_details",{})[key]=value
+            headline["uncertainty"]="The agency's abstract and listed dates have been read where available; current legal effect, amendments, court stays and application to particular persons are not independently determined."
             kept.append(headline)
         except (ValueError,KeyError,TypeError,urllib.error.URLError,TimeoutError) as exc:
             failures.append({"document_number":number,"issue":type(exc).__name__})

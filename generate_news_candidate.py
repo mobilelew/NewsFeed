@@ -146,6 +146,8 @@ def build(kind, now, input_baseline=None):
         validation["quality_screen_issues"]=document["quality_screen"]["issues"]
     (ROOT/"submissions"/"ai-candidate-validation.json").write_text(
         json.dumps(validation, indent=2) + "\n", encoding="utf-8")
+    if not validation["valid"]:
+        raise ValueError("Research candidate failed prepublication screening; see retained artifact and validation JSON")
     return dest,document
 def main():
     p=argparse.ArgumentParser()

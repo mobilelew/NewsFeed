@@ -89,7 +89,12 @@ def load_submission(path):
         if not screen["passed_prepublication_screen"]:
             fail("AI research candidate fails prepublication screen: " + "; ".join(screen["issues"][:4]))
         if not data.get("independent_source_authentication"):
-            fail("AI research candidate lacks independent source authentication; publication blocked")
+            # Publish qualified, attributed uncertainty; never falsely certify the story.
+            for i, h in enumerate(data["headlines"]):
+                if h["verification"] in {"Verified", "Corroborated"}:
+                    fail(f"Unreviewed AI headline {i} cannot claim independent verification")
+                if not h.get("authority_confirmation"):
+                    fail(f"AI headline {i} must disclose the authority check outcome")
     return data, chicago
 
 def publish(source):

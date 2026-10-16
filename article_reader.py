@@ -46,7 +46,8 @@ def safe_public_https(url):
         ipaddress.ip_address(host)
         return False
     except ValueError:
-        return True
+        # Only the IP parser may raise here for a valid DNS hostname.
+        return bool(p.hostname and re.fullmatch(r"[a-zA-Z0-9.-]+",p.hostname) and "." in p.hostname)
     except (TypeError,AttributeError):
         return False
 

@@ -1,5 +1,5 @@
 import io, unittest
-from article_reader import article_extract,safe_public_https
+from article_reader import article_extract,safe_public_https,google_rss_link
 class Response:
     def __init__(self,raw):self.raw=io.BytesIO(raw);self.headers={"Content-Type":"text/html"}
     def __enter__(self):return self
@@ -13,6 +13,10 @@ class ReaderTests(unittest.TestCase):
     def test_private_or_google_news_refused(self):
         for link in ("http://publisher.example.com/","https://127.0.0.1/", "https://news.google.com/rss/articles/123","https://localhost/"):
             self.assertFalse(safe_public_https(link))
+    def test_google_link_needs_publisher_redirect(self):
+        url="https://news.google.com/rss/articles/CBfake"
+        self.assertTrue(google_rss_link(url))
+        self.assertEqual(article_extract(url,Opener())["summary_provenance"],"publisher_article_excerpt")
     def test_publisher_text_marked_excerpt(self):
         result=article_extract("https://publisher.example.com/story",Opener())
         self.assertIsNotNone(result)

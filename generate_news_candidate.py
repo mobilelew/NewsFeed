@@ -120,6 +120,7 @@ def build(kind, now, input_baseline=None):
     diag.parent.mkdir(parents=True,exist_ok=True)
     diag.write_text(json.dumps(diagnostic(result),indent=2)+"\n",encoding="utf-8")
     document=extract(result)
+    document["research_origin"]="api_web_research"
     document["schema_version"]=1
     document["publication_policy"]="evidence-status-v1"
     document["report_type"]=kind

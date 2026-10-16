@@ -20,6 +20,8 @@ on:
       - 'test_compare_briefings.py'
       - 'ingest_report.py'
       - 'test_ingest_report.py'
+      - 'authority_claim_check.py'
+      - 'test_authority_claim_check.py'
       - 'research_source_probe.py'
       - 'test_research_source_probe.py'
       - 'web_delivery_probe.py'

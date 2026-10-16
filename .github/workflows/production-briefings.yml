@@ -1,0 +1,133 @@
+name: Publish News Reader qualified briefings
+
+on:
+  push:
+    paths:
+      - '.github/workflows/production-briefings.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '9 11,12 * * *'
+    - cron: '9 1,2 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-reader-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offline preflight validation
+        run: |
+          set -euo pipefail
+          python -m compileall -q .
+          python -m unittest -v test_publication_policy.py test_generate_news_candidate.py test_candidate_quality_gate.py test_authority_claim_check.py test_publish_qualified_research.py
+      - name: Select local production slot or one-time trial
+        id: slot
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          local_hour=$(TZ=America/Chicago date +%H)
+          if [ "$EVENT_NAME" = "push" ] || [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "mode=trial" >> "$GITHUB_OUTPUT"
+            echo "kind=evening" >> "$GITHUB_OUTPUT"
+          elif [ "$local_hour" = "06" ]; then
+            echo "mode=production" >> "$GITHUB_OUTPUT"
+            echo "kind=morning" >> "$GITHUB_OUTPUT"
+          elif [ "$local_hour" = "20" ]; then
+            echo "mode=production" >> "$GITHUB_OUTPUT"
+            echo "kind=evening" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=skip" >> "$GITHUB_OUTPUT"
+            echo "kind=skip" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Avoid duplicate scheduled reports before API charges
+        id: duplicate
+        if: steps.slot.outputs.mode == 'production'
+        env:
+          KIND: ${{ steps.slot.outputs.kind }}
+        run: |
+          if [ -f "reports/$(TZ=America/Chicago date +%F)/$KIND.json" ]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "Report already archived, skipping paid research."
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Run one source-linked research request
+        if: steps.slot.outputs.mode != 'skip' && steps.duplicate.outputs.exists != 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_NEWS_MODEL: gpt-5-mini
+          KIND: ${{ steps.slot.outputs.kind }}
+        run: |
+          # Candidate schema review can reject a report: preserve the research
+          # and still classify claims individually rather than waste the API work.
+          python generate_news_candidate.py --kind "$KIND" || echo "Candidate must be qualified before use."
+          test -s submissions/ai-research-candidate.json
+      - name: Inspect primary-source citations
+        if: steps.slot.outputs.mode != 'skip' && steps.duplicate.outputs.exists != 'true'
+        run: |
+          python research_source_probe.py
+          python authority_claim_check.py
+      - name: Publish scheduled report, or save an isolated trial preview
+        if: steps.slot.outputs.mode != 'skip' && steps.duplicate.outputs.exists != 'true'
+        env:
+          MODE: ${{ steps.slot.outputs.mode }}
+        run: |
+          set -euo pipefail
+          if [ "$MODE" = "trial" ]; then
+            python label_uncertain_research.py --output trial-qualified-report.json
+          else
+            python publish_qualified_research.py
+          fi
+      - name: Archive diagnostics and trial results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: news-reader-briefing-execution
+          path: |
+            submissions/ai-research-candidate.json
+            submissions/ai-response-diagnostic.json
+            submissions/ai-original-source-review.json
+            submissions/ai-authority-confirmation.json
+            submissions/ai-candidate-validation.json
+            submissions/ai-qualified-for-publication.json
+            trial-qualified-report.json
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: Commit scheduled report only
+        if: steps.slot.outputs.mode == 'production' && steps.duplicate.outputs.exists != 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add briefing.json reports/latest/ reports/20*/
+          if git diff --cached --quiet; then
+            echo "No new report to publish."
+            exit 1
+          fi
+          git commit -m "Publish qualified News Reader briefing with disclosed verification status"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              echo "Scheduled briefing published to Pages."
+              exit 0
+            fi
+            sleep 4
+          done
+          exit 1

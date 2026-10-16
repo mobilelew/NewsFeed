@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "audit_type": "research-candidate-editorial-audit",
+  "candidate_report_time": "2026-10-15T22:05:59-05:00",
+  "candidate_status": "rejected_for_publication",
+  "reason": "Substantive citation/date/verification-label defects and incomplete priority coverage",
+  "source_file": "news-reader-research-candidate.zip / ai-research-candidate.json",
+  "findings": [
+    {
+      "index": 0,
+      "subject": "DHS voter-data lawsuit",
+      "result": "needs_primary_document",
+      "notes": "AP independently reports the lawsuit as an allegation, not an adjudicated finding. The underlying filed complaint was not inspected, and the single AP link cannot satisfy Corroborated requirement.",
+      "recommended_label": "Unsubstantiated or Unverified pending docket review",
+      "reference": "https://apnews.com/article/98365a44e96e46de14ad44e62ac7dd70"
+    },
+    {
+      "index": 1,
+      "subject": "Dollar and Treasury market movements",
+      "result": "insufficient_evidence",
+      "notes": "A single Reuters-syndicated article does not satisfy the project's two demonstrably independent source rule for Corroborated. Intraday observations, units and Fed remarks not captured.",
+      "recommended_label": "Unverified pending market records",
+      "reference": "https://uk.marketscreener.com/news/dollar-retreats-from-18-month-high-as-treasury-yields-dip-fed-hike-bets-ease-ce785dd3d98ef32c/"
+    },
+    {
+      "index": 2,
+      "subject": "Federal Reserve meetings",
+      "result": "date_mismatch",
+      "notes": "Fed recent-postings page dated Oct 13 lists Oct 19 discount-rate meeting; Oct 15 posting lists an Oct 20 financial-markets meeting. The candidate conflated publication and meeting dates.",
+      "recommended_label": "Refuted as phrased; corrected schedule can be reported separately",
+      "reference": "https://www.federalreserve.gov/recentpostings.htm"
+    },
+    {
+      "index": 3,
+      "subject": "Texas bills signed",
+      "result": "stale_as_new",
+      "notes": "Texas report page stamped Oct 15 2026 is a live listing for the 89th Legislature second called session; cited bill last actions are Sep 2025. Report timestamp is not enactment date and is not a new Oct 2026 legislative action.",
+      "recommended_label": "Refuted as 2026 enactment news; historical legislative context only",
+      "reference": "https://capitol.texas.gov/reports/Report.aspx?ID=signedbygov&LegSess=892"
+    },
+    {
+      "index": 4,
+      "subject": "USDA poultry releases",
+      "result": "partially_supported",
+      "notes": "USDA calendar lists Turkey Hatchery Oct13, Broiler Hatchery Oct14 pending, Slaughter Weekly Oct15 pending, but Poultry Slaughter Oct23 pending rather than Oct15. Publication statuses must distinguish schedule from actual release.",
+      "recommended_label": "Unverified or corrected specific calendar listing",
+      "reference": "https://data.nass.usda.gov/Publications/Calendar/reports_by_date.php?js=1&month=10&view=l&year=2026"
+    },
+    {
+      "index": 5,
+      "subject": "AI data center development",
+      "result": "not_claim_specific",
+      "notes": "Links point to broad trade-news indices without exact project, dated permit, land-deed, filing, or independently retrievable claimed event.",
+      "recommended_label": "Unsubstantiated until individual projects and records identified",
+      "reference": "https://www.datacenterdynamics.com/en/news/"
+    },
+    {
+      "index": 6,
+      "subject": "FMCSA contractor cyber incident",
+      "result": "independence_unestablished",
+      "notes": "Both cited secondary summaries reference Politico/DOT; independent corroboration and first-hand government or vendor statement not established. DOT statement is an attributed assertion, not independent verification of no data exposure.",
+      "recommended_label": "Unverified or qualified attributed report",
+      "reference": "https://www.hstoday.us/subject-matter-areas/cybersecurity/cyberattack-disrupts-transportation-department-safety-agency-contact-center/"
+    },
+    {
+      "index": 7,
+      "subject": "Arkansas and Oklahoma elections/energy",
+      "result": "not_coherent_or_schema_valid",
+      "notes": "Combines two jurisdictions in 'arkansas/oklahoma', which is not valid schema; unrelated local stories are bundled and no official election/legislative records support concrete action.",
+      "recommended_label": "Unverified; split by jurisdiction and by factual assertion",
+      "reference": "https://kgou.org/podcast/kgou-am-newsbrief/2026-10-15/am-newsbrief-oct-15-2026"
+    }
+  ],
+  "summary": {
+    "candidate_headlines": 8,
+    "validation_failed": true,
+    "coverage_complete": false,
+    "source_authenticated_full": false,
+    "direct_evening_comparison": false,
+    "ready_to_publish": false
+  },
+  "required_fixes": [
+    "Preserve report generation date; never call 22:05 CT a 06:00 start-of-day baseline.",
+    "Require each item to have a supported recognized jurisdiction; split multi-jurisdiction assertions.",
+    "Enforce Corroborated requires independent origins, not merely multiple downstream articles.",
+    "Distinguish live page update times from underlying legislative actions and effective dates.",
+    "Distinguish scheduled, pending and published statistical releases.",
+    "Use specific source records instead of news indexes or homepages.",
+    "Retain explicit source-level finding and uncertainties rather than promoting model labels."
+  ]
+}

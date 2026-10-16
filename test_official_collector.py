@@ -2,7 +2,7 @@
 import datetime as dt
 import unittest
 from zoneinfo import ZoneInfo
-from collect_official_records import create_report, make_headline
+from collect_official_records import create_report, make_headline, crosscheck_report
 
 class CollectorTests(unittest.TestCase):
     def setUp(self):
@@ -34,5 +34,15 @@ class CollectorTests(unittest.TestCase):
     def test_empty_results_no_report(self):
         self.assertIsNone(create_report(self.now, [], "morning"))
 
+    def test_individual_record_crosscheck_keeps_exact_metadata(self):
+        report=create_report(self.now,[self.record],"morning")
+        authenticated=crosscheck_report(report,lambda number:dict(self.record))
+        self.assertEqual(authenticated["source_crosscheck"]["matched"],1)
+        self.assertFalse(authenticated["source_crosscheck"]["legal_effect_authenticated"])
+        self.assertEqual(len(authenticated["baseline"]),1)
+    def test_date_mismatch_discards_record_and_baseline(self):
+        report=create_report(self.now,[self.record],"morning")
+        result=crosscheck_report(report,lambda number:dict(self.record,publication_date="2025-10-14"))
+        self.assertIsNone(result)
 if __name__ == "__main__":
     unittest.main()

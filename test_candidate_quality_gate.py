@@ -28,5 +28,19 @@ class QualityGateTests(unittest.TestCase):
     def test_rejects_combined_state(self):
         self.report["headlines"][0]["jurisdiction"]="arkansas/oklahoma"
         self.assertFalse(review(self.report)["passed_prepublication_screen"])
+    def test_first_paid_candidate_regression(self):
+        # Mirrors shape/time of the October 15 paid artifact without reproducing
+        # its articles: missing per-claim temporal and evidence-inspection fields.
+        self.report["report_time"]="2026-10-15T22:05:59-05:00"
+        h=self.report["headlines"][0]
+        h.pop("event_date")
+        h.pop("source_checked_at")
+        h.pop("claim_evidence_note")
+        result=review(self.report)
+        self.assertFalse(result["passed_prepublication_screen"])
+        self.assertTrue(any("morning window" in msg for msg in result["issues"]))
+        self.assertTrue(any("event_date" in msg for msg in result["issues"]))
+        self.assertTrue(any("source_checked_at" in msg for msg in result["issues"]))
+        self.assertTrue(any("claim-specific" in msg for msg in result["issues"]))
 if __name__=="__main__":
     unittest.main()

@@ -16,6 +16,10 @@ on:
       - 'test_compare_briefings.py'
       - 'ingest_report.py'
       - 'test_ingest_report.py'
+      - 'web_delivery_probe.py'
+      - 'test_web_delivery_probe.py'
+      - '.github/workflows/monitor-delivery.yml'
+      - '.github/workflows/update-feed.yml'
       - 'service_health.py'
       - 'test_service_health.py'
       - 'source_capture.py'
@@ -50,5 +54,5 @@ jobs:
           python-version: '3.12'
       - name: Compile all Python files before importing any tests
         run: python -m compileall -q .
-      - run: python -m unittest -v test_publication_policy.py test_official_collector.py test_state_monitor.py test_legislative_event_ledger.py test_compare_briefings.py test_ingest_report.py test_claim_evidence_audit.py test_verify_kev_news.py test_generate_news_candidate.py test_candidate_quality_gate.py test_source_capture.py test_captured_claim_audit.py test_service_health.py
-      - run: python -m py_compile publish_report.py collect_official_records.py publish_official_pilot.py monitor_state_sources.py legislative_event_ledger.py compare_briefings.py ingest_report.py claim_evidence_audit.py verify_kev_news.py generate_news_candidate.py candidate_quality_gate.py source_capture.py captured_claim_audit.py service_health.py
+      - run: python -m unittest -v test_publication_policy.py test_official_collector.py test_state_monitor.py test_legislative_event_ledger.py test_compare_briefings.py test_ingest_report.py test_claim_evidence_audit.py test_verify_kev_news.py test_generate_news_candidate.py test_candidate_quality_gate.py test_source_capture.py test_captured_claim_audit.py test_service_health.py test_web_delivery_probe.py
+      - run: python -m py_compile publish_report.py collect_official_records.py publish_official_pilot.py monitor_state_sources.py legislative_event_ledger.py compare_briefings.py ingest_report.py claim_evidence_audit.py verify_kev_news.py generate_news_candidate.py candidate_quality_gate.py source_capture.py captured_claim_audit.py service_health.py web_delivery_probe.py

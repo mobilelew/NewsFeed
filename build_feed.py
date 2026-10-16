@@ -19,6 +19,9 @@ def news(query):
     return "https://news.google.com/rss/search?q=" + urllib.parse.quote(query) + "&hl=en-US&gl=US&ceid=US:en"
 
 SOURCES = {
+    "TEXAS": [news("Texas legislature governor courts policy economy when:3d")],
+    "ARKANSAS": [news("Arkansas legislature governor courts economy when:3d")],
+    "OKLAHOMA": [news("Oklahoma legislature governor courts economy when:3d")],
     "U.S. POLICY": [
         "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Btype%5D%5B%5D=PRESDOCU",
         news("executive order congress legislation when:3d"),
@@ -46,6 +49,9 @@ SOURCES = {
     ],
 }
 KEYWORDS = {
+    "TEXAS": ("texas", "austin", "dallas", "houston", "senate", "governor", "legislature", "court", "bill", "property tax"),
+    "ARKANSAS": ("arkansas", "little rock", "governor", "legislature", "court", "bill", "schools", "tax"),
+    "OKLAHOMA": ("oklahoma", "oklahoma city", "tulsa", "governor", "legislature", "court", "bill", "tax"),
     "U.S. POLICY": ("executive", "rule", "law", "tariff", "policy", "budget", "military", "sanction", "congress", "federal", "legislation", "order"),
     "ECONOMY": ("dollar", "inflation", "payroll", "employment", "rates", "treasury", "federal reserve", "wages", "economic", "consumer", "cpi"),
     "HOUSING": ("housing", "mortgage", "home", "rental", "rent", "inventory", "construction", "foreclosure"),
@@ -176,7 +182,7 @@ def main():
     for category in SOURCES:
         if bycat[category]: selected.append(bycat[category].pop(0))
     remaining=sorted((x for values in bycat.values() for x in values),key=lambda x:x["discovery_score"],reverse=True)
-    selected=(selected+remaining)[:15]
+    selected=(selected+remaining)[:24]
     # Cached previous discovery is NOT re-used when any live source works.
     if not selected and previous.get("headlines"):
         source_errors.append("No fresh discoveries; prior headlines intentionally not republished as current.")

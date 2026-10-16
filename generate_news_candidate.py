@@ -55,6 +55,11 @@ def build(kind, now, input_baseline=None):
     if not os.environ.get("OPENAI_API_KEY"): raise ValueError("OPENAI_API_KEY missing")
     baseline_note=("No authentic archived morning baseline available." if input_baseline is None else
                    "Morning baseline for comparison: "+json.dumps(input_baseline,ensure_ascii=False)[:10000])
+    registry=source_registry()
+    source_guidance=json.dumps({"discovery_policy":registry["discovery"]["policy"],
+        "named_discovery_starting_points":registry["discovery"]["general"],
+        "priority_state_outlets":registry["discovery"]["states"],
+        "claim_specific_original_sources":registry["primary_sources"]},ensure_ascii=False)
     prompt=(f"News Reader {kind} as of {local.isoformat(timespec='seconds')}. "
             "Research material news developments in preceding 24 hours (for evening focus on "
             "developments since 6 AM Central). Verify against official records. "
@@ -80,7 +85,7 @@ def build(kind, now, input_baseline=None):
     document["publication_policy"]="evidence-status-v1"
     document["report_type"]=kind
     document["report_time"]=local.isoformat(timespec="seconds")
-    if kind=="morning":
+    document["coverage_audit"]=coverage_audit(document)\n    if kind=="morning":
         document["baseline"]=[{"identifier":str(h.get("identifier") or h.get("title")),
                                "status":str(h.get("verification","Unverified")),
                                "as_of":document["report_time"]} for h in document.get("headlines",[])]

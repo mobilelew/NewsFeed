@@ -75,5 +75,15 @@ class PublicationPolicyTests(unittest.TestCase):
         h["legal_status"] = "Enforceability unresolved"
         self.check(data, True)
 
+    def test_generated_candidate_requires_independent_authentication(self):
+        data = json.loads(json.dumps(self.base))
+        data["research_origin"] = "api_web_research"
+        data["independent_source_authentication"] = False
+        self.check(data, False)
+    def test_generated_candidate_cannot_bypass_quality_gate_with_auth_flag(self):
+        data = json.loads(json.dumps(self.base))
+        data["research_origin"] = "api_web_research"
+        data["independent_source_authentication"] = True
+        self.check(data, False)
 if __name__ == "__main__":
     unittest.main()

@@ -3,7 +3,8 @@ name: Update News Reader feed
 
 on:
   schedule:
-    - cron: '18 * * * *'
+    # Discovery refresh every six hours (UTC); evidence checks run hourly separately.
+    - cron: '18 */6 * * *'
   workflow_dispatch:
 
 permissions:

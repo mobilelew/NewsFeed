@@ -75,3 +75,15 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def compare_overnight(previous_evening, morning):
+    """Text-only previous-evening to morning comparison."""
+    if morning.get("report_type") != "morning":
+        raise ValueError("Expected morning report")
+    date=dt.date.fromisoformat(local_day(morning))
+    baseline={"comparison_status":"prior_evening_unavailable","summary":"Prior evening unavailable for comparison.","new_identifiers":[],"changed_text_identifiers":[]}
+    if not previous_evening or previous_evening.get("report_type")!="evening" or dt.date.fromisoformat(local_day(previous_evening))!=date-dt.timedelta(days=1):
+        return baseline
+    before={key(x):x for x in previous_evening.get("headlines",[]) if key(x)}
+    after={key(x):x for x in morning.get("headlines",[]) if key(x)}
+    return {"comparison_status":"direct_text_comparison","summary":"Prior-evening and current-morning report records compared. Text differences do not prove real-world change.","new_identifiers":sorted(after.keys()-before.keys()),"changed_text_identifiers":sorted(k for k in before.keys()&after.keys() if before[k].get("summary")!=after[k].get("summary"))}

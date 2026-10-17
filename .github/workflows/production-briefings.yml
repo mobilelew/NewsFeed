@@ -5,8 +5,10 @@ on:
   schedule:
     - cron: '9 11,12 * * *'
     - cron: '39 11,12 * * *'
+    - cron: '15 13,14 * * *'
     - cron: '9 1,2 * * *'
     - cron: '39 1,2 * * *'
+    - cron: '15 3,4 * * *'
 
 permissions:
   contents: write
@@ -41,16 +43,17 @@ jobs:
         run: |
           set -euo pipefail
           local_hour=$(TZ=America/Chicago date +%H)
+          local_minute=$(TZ=America/Chicago date +%M)
           if [ "$EVENT_NAME" = "push" ]; then
             echo "mode=production" >> "$GITHUB_OUTPUT"
             echo "kind=evening" >> "$GITHUB_OUTPUT"
           elif [ "$EVENT_NAME" = "workflow_dispatch" ]; then
             echo "mode=trial" >> "$GITHUB_OUTPUT"
             echo "kind=evening" >> "$GITHUB_OUTPUT"
-          elif [ "$local_hour" = "06" ]; then
+          elif [ "$local_hour" = "06" ] || [ "$local_hour" = "07" ] || { [ "$local_hour" = "08" ] && [ "$local_minute" -le 45 ]; }; then
             echo "mode=production" >> "$GITHUB_OUTPUT"
             echo "kind=morning" >> "$GITHUB_OUTPUT"
-          elif [ "$local_hour" = "20" ]; then
+          elif [ "$local_hour" = "20" ] || [ "$local_hour" = "21" ] || { [ "$local_hour" = "22" ] && [ "$local_minute" -le 45 ]; }; then
             echo "mode=production" >> "$GITHUB_OUTPUT"
             echo "kind=evening" >> "$GITHUB_OUTPUT"
           else

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "status": "unpublished",
+  "kind": "weekly",
+  "report_date": null,
+  "generated_at": null,
+  "content_markdown": null,
+  "source": "ChatGPT scheduled News Reader task",
+  "notes": "First weekly comparison is scheduled, not yet delivered."
+}

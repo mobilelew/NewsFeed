@@ -59,6 +59,8 @@ def extract_json(output):
                 texts.append(part["text"])
     if not texts: raise ValueError("No output_text from semantic verifier")
     data=json.loads("\n".join(texts))
+    if isinstance(data,list):
+        data={"findings":data}
     if not isinstance(data,dict) or not isinstance(data.get("findings"),list):
         raise ValueError("Semantic verifier returned invalid shape")
     return data

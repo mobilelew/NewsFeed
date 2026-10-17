@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'deployment/namecheap/index.html'
+      - '.github/workflows/deploy-namecheap-ftps.yml'
 permissions:
   contents: read
 jobs:

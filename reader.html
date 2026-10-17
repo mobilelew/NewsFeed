@@ -18,6 +18,7 @@ footer{font-size:.83rem;color:#64748b;padding-bottom:35px}
 <header><div class="wrap"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">Theme: Auto</button><h1>News Reader</h1><p>U.S. &amp; priority-state news · OKC/Tulsa · Little Rock · DFW · Austin · economy · agriculture · technology</p><div class="updated" id="updated">Loading current sources…</div></div></header>
 <main class="wrap">
 <div class="note"><strong>Evidence matters.</strong> Discovery stories below are <strong>not yet independently verified</strong>. Official-record entries confirm listed document metadata only; they do not establish legal effect. A full claim-verified briefing appears separately when available.</div>
+<section id="verification-section"><h2>Verification engine status</h2><p id="verification-status" class="small">Checking the latest hourly original-source audit…</p><p class="small">Source excerpt matching is not equivalent to independent confirmation of a claim. Only independently established assertions qualify as Verified.</p></section>
 <nav aria-label="News categories" id="filters"><button class="active" data-filter="ALL">All topics</button></nav>
 <section id="brief-section" hidden><h2>Published evidence-labelled briefing</h2><p><a href="https://mobilelew.github.io/NewsFeed/detailed-briefings.html" target="_blank" rel="noopener noreferrer">Read full morning/evening analysis, authority assessments and coverage gaps →</a></p><p class="small">Source-linked findings; verify controlling records for legal and financial decisions.</p><div id="brief"></div></section>
 <section><h2>Current news discovery</h2><p class="small">Regional coverage: Oklahoma City &amp; Tulsa, Little Rock, Dallas–Fort Worth and Austin. Local feeds are checked alongside national sources; unavailable feeds and categories are not represented as confirmed coverage.</p><p class="small">Automatically updated article leads. Headlines may be inaccurate, outdated, promotional, or disputed; read and assess the linked reporting.</p><div id="discovery" aria-live="polite"><div class="empty">Loading stories…</div></div></section>
@@ -110,6 +111,11 @@ if(results[2].status==='fulfilled'){
  }
 }
 }
+async function loadVerificationStatus(){
+ try{const r=await read('verification-status.json');const counts=(r.reports||[]).reduce((a,x)=>{a.checked+=(x.findings||[]).length;a.verified+=(x.independently_verified_findings||0);return a},{checked:0,verified:0});$('verification-status').textContent='Last evidence recheck: '+local(r.checked_at)+' · '+counts.checked+' findings assessed · '+counts.verified+' independently verified by the hourly audit. Unresolved claims remain labelled rather than promoted.'}
+ catch(e){$('verification-status').textContent='No recent verification audit is available; do not assume the findings are confirmed.'}
+}
+loadVerificationStatus();
 main().catch(()=>{$('updated').textContent='Unable to load feeds'});
 // Refresh the displayed feed timestamp when Safari resumes and every 5 minutes.
 // Use a unique query parameter to avoid stale intermediary caches.

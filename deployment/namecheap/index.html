@@ -23,7 +23,8 @@ section{background:white;border:1px solid #dce2e9;border-radius:12px;padding:16p
 .tag{display:inline-block;background:#f0f3f6;color:#43526a;padding:4px 7px;border-radius:5px;font-size:.75rem;margin:0 5px 5px 0}
 .small{font-size:.9rem;color:#475569}.empty{padding:16px;color:#64748b}.updated{margin-top:8px;font-size:.83rem;color:#c0d1e2}
 #task-briefings{border-left:4px solid #36a68a}#task-briefings h3{margin:22px 0 8px;font-size:1.1rem}#task-text p{line-height:1.65;white-space:pre-wrap}#task-text li{line-height:1.6;margin:8px 0}#task-text a{overflow-wrap:anywhere}#task-text .task-note{border-left:3px solid #c79b44;padding:10px;margin:10px 0}
-#full-briefings{border-left:4px solid #3b76b0}#full-briefings article{padding:18px 0;border-top:1px solid #dce2e9}#full-briefings article h3{margin-bottom:5px}#full-briefings dl{margin:20px 0;display:grid;row-gap:4px}#full-briefings dd{padding-bottom:14px;border-bottom:1px solid #e0e7f0}html[data-theme="dark"] #full-briefings dd{border-color:#34435a}#full-briefings article{line-height:1.65}#full-briefings article p{line-height:1.75;margin:15px 0}#full-briefings dt{font-weight:700;margin-top:8px}#full-briefings dd{margin:3px 0 9px;line-height:1.5}#full-briefings .analysis-block{border-top:1px solid #dce2e9;padding:22px 0;line-height:1.75}#full-briefings .analysis-block p{margin:12px 0 18px;max-width:78ch}#full-briefings .analysis-entry{padding:10px 16px;margin:13px 0;border-left:3px solid #6487ac;background:rgba(100,140,180,.075);border-radius:5px}#full-briefings .analysis-entry p{margin:7px 0;line-height:1.65}#full-briefings .evidence-link{display:block;margin:5px 0}#full-briefings .report-marker{display:inline-block;padding:4px 8px;border-radius:5px;background:#fff2d5;color:#795615}html[data-theme="dark"] #full-briefings .analysis-block,html[data-theme="dark"] #full-briefings article{border-color:#35455d}html[data-theme="dark"] #full-briefings .report-marker{background:#564522;color:#ffe5a1}
+#full-briefings{border-left:4px solid #3b76b0}#full-briefings article{padding:18px 0;border-top:1px solid #dce2e9}#full-briefings article h3{margin-bottom:5px}#full-briefings dl{margin:20px 0;display:grid;row-gap:4px}#full-briefings dd{padding-bottom:14px;border-bottom:1px solid #e0e7f0}html[data-theme="dark"] #full-briefings dd{border-color:#34435a}#full-briefings article{line-height:1.65}#full-briefings article p{line-height:1.75;margin:15px 0}#full-briefings dt{font-weight:700;margin-top:8px}#full-briefings dd{margin:3px 0 9px;line-height:1.5}#full-briefings .analysis-block{border-top:1px solid #dce2e9;padding:22px 0;line-height:1.75}#full-briefings .analysis-block p{margin:12px 0 18px;max-width:78ch}#full-briefings .analysis-entry{padding:10px 16px;margin:13px 0;border-left:3px solid #6487ac;background:rgba(100,140,180,.075);border-radius:5px}#full-briefings .analysis-entry p{margin:7px 0;line-height:1.65}#full-briefings .evidence-link{display:block;margin:5px 0}#full-briefings .executive-glance{padding:10px 0 18px}#full-briefings .executive-glance ul{padding-left:22px;margin:8px 0}#full-briefings .executive-glance li{margin:10px 0;line-height:1.55}#full-briefings details.analysis-more{margin:18px 0;padding:10px 0;border-top:1px solid #dce2e9}#full-briefings details.analysis-more summary{cursor:pointer;font-weight:700}html[data-theme="dark"] #full-briefings details.analysis-more{border-color:#34435a}
+#full-briefings .report-marker{display:inline-block;padding:4px 8px;border-radius:5px;background:#fff2d5;color:#795615}html[data-theme="dark"] #full-briefings .analysis-block,html[data-theme="dark"] #full-briefings article{border-color:#35455d}html[data-theme="dark"] #full-briefings .report-marker{background:#564522;color:#ffe5a1}
 footer{font-size:.83rem;color:#64748b;padding-bottom:35px}
 </style></head><body>
 <header><div class="wrap"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">Theme: Auto</button><h1>News Reader</h1><p>U.S. &amp; priority-state news · OKC/Tulsa · Little Rock · DFW · Austin · economy · agriculture · technology</p><div class="updated" id="updated">Loading current sources…</div></div></header>
@@ -196,6 +197,26 @@ async function refreshSourceAudit(){
  try{const audit=await read('verification-status.json');sourceAudit={};for(const report of audit.reports||[])for(const h of report.findings||[])sourceAudit[h.title]=h;}catch{sourceAudit={}}
  try{const a=await read('editorial-source-reviews.json');reviewedClaims={};for(const item of a.reviews||[])reviewedClaims[item.matching_title]=item;}catch{reviewedClaims={}}
 }
+function conciseExecutive(report){
+ const box=document.createElement('div');box.className='executive-glance';
+ box.append(reportText('h3','Executive summary'));
+ const ul=document.createElement('ul');
+ for(const h of (report.headlines||[]).slice(0,5)){
+   const li=document.createElement('li');
+   const review=reviewedClaims[h.title];
+   const status=(review?.claim_status||h.verification||'Unverified').replace(/^Corroborated by independent reporting.*$/,'Corroborated');
+   const implication=(h.practical_implication||'').trim();
+   li.append(reportText('strong',status+': '),document.createTextNode(h.title+(implication?' — '+implication:'')));
+   ul.append(li);
+ }
+ box.append(ul);
+ if(report.executive_summary){
+   const d=document.createElement('details');d.className='analysis-more';
+   const sm=document.createElement('summary');sm.textContent='Read full executive summary';d.append(sm);
+   d.append(reportText('p',report.executive_summary));box.append(d);
+ }
+ return box;
+}
 let fullReportIndex={};
 async function showFullBrief(kind){
  const area=$('full-brief-content');area.replaceChildren();
@@ -205,55 +226,55 @@ async function showFullBrief(kind){
  const report=await read(entry.path);
  $('full-brief-status').textContent=(kind==='morning'?'Morning briefing':'Evening comparison')+' · '+local(report.report_time)+' · '+(report.headlines||[]).length+' research findings · verification labels shown individually';
  if(!report.executive_summary){analysisSection(area,'Report limitation','This archived report predates the expanded executive-summary format. No comprehensive executive summary was archived; none has been invented.')}
- analysisSection(area,'Executive summary',report.executive_summary);
+ area.append(conciseExecutive(report));
  analysisSection(area,'Reporting scope and evidence reviewed',report.coverage_note);
- if(kind==='morning')analysisSection(area,'Start-of-day baseline',report.baseline);
+ if(kind==='morning'&&Array.isArray(report.baseline)&&report.baseline.length){
+   const d=document.createElement('details');d.className='analysis-more';
+   const sm=document.createElement('summary');sm.textContent='Start-of-day baseline (used to compare what changes by evening)';d.append(sm);
+   d.append(reportText('p','This is a morning checkpoint, not a reader action list.'));
+   const ul=document.createElement('ul');
+   for(const item of report.baseline){const li=document.createElement('li');li.textContent=(item.status||'Status unknown')+': '+(item.identifier||'Untitled item');ul.append(li)}
+   d.append(ul);area.append(d);
+ }
  if(kind==='evening')analysisSection(area,'Morning-to-evening comparison',report.morning_comparison?.summary||'No comparison available');
- analysisSection(area,'Financial and household implications',report.household_implications);
- analysisSection(area,'Source differences and verification',report.source_differences);
- analysisSection(area,'Upcoming events',report.verified_upcoming_events);
- analysisSection(area,'Coverage gaps',report.coverage_gaps||report.notes_on_coverage_gaps);
- analysisSection(area,'Verification limitations',report.editorial_caveat);
+ if(report.household_implications){const d=document.createElement('details');d.className='analysis-more';const sm=document.createElement('summary');sm.textContent='Financial and household implications';d.append(sm);analysisSection(d,'',report.household_implications);area.append(d)}
+ if(report.source_differences){const d=document.createElement('details');d.className='analysis-more';const sm=document.createElement('summary');sm.textContent='Source differences and verification';d.append(sm);analysisSection(d,'',report.source_differences);area.append(d)}
+ if(report.verified_upcoming_events){const d=document.createElement('details');d.className='analysis-more';const sm=document.createElement('summary');sm.textContent='Upcoming events';d.append(sm);analysisSection(d,'',report.verified_upcoming_events);area.append(d)}
+ if(report.coverage_gaps||report.notes_on_coverage_gaps){const d=document.createElement('details');d.className='analysis-more';const sm=document.createElement('summary');sm.textContent='Coverage gaps';d.append(sm);analysisSection(d,'',report.coverage_gaps||report.notes_on_coverage_gaps);area.append(d)}
+ if(report.editorial_caveat){const d=document.createElement('details');d.className='analysis-more';const sm=document.createElement('summary');sm.textContent='Verification limitations';d.append(sm);analysisSection(d,'',report.editorial_caveat);area.append(d)}
  const heading=reportText('h3','News developments, authority checks, and immediate implications');area.append(heading);
  for(const h of report.headlines||[]){
   const story=document.createElement('article');
   story.append(reportText('h3',h.title||'Untitled finding'));
-  const label=reportText('span',h.verification||'Unverified');label.className='report-marker';story.append(label);
+  const correction=reviewedClaims[h.title];
+  const displayStatus=(correction?.claim_status||h.verification||'Unverified').replace(/^Corroborated by independent reporting.*$/,'Corroborated');
+  const label=reportText('span',displayStatus);label.className='report-marker';story.append(label);
   story.append(reportText('p',h.summary||'Summary unavailable'));
   story.append(reportText('p',[h.jurisdiction,h.category,h.event_date?'Event date: '+h.event_date:'Event date not established'].filter(Boolean).join(' · ')));
   const dl=document.createElement('dl');
-  for(const [name,value] of [['Practical implications',h.practical_implication],['What is known',h.what_is_known],['Authority check',explainAuthority(h.authority_confirmation)],['Claim-specific source assessment',h.claim_evidence_note],['Attribution',h.attribution],['Uncertainty',h.uncertainty],['What cannot be concluded',h.what_cannot_be_concluded],['Resolution needed',h.resolution_needed],['Legal status',h.legal_status],['Date/context caution',h.temporal_caveat]]){
+  for(const [name,value] of [['Practical implications',h.practical_implication],['What is known',h.what_is_known],['Authority check',correction?.summary||explainAuthority(h.authority_confirmation)]]){
    if(value==null||value==='')continue;dl.append(reportText('dt',name),reportText('dd',value));
   }story.append(dl);
+  const more=document.createElement('details');more.className='analysis-more';const moreSummary=document.createElement('summary');moreSummary.textContent='More analysis and verification detail';more.append(moreSummary);
+  const moreDl=document.createElement('dl');
+  for(const [name,value] of [['Attribution',h.attribution],['Uncertainty',h.uncertainty],['What cannot be concluded',h.what_cannot_be_concluded],['Resolution needed',h.resolution_needed],['Legal status',h.legal_status],['Date/context caution',h.temporal_caveat],['Original source assessment',h.claim_evidence_note]]){
+   if(value==null||value==='')continue;moreDl.append(reportText('dt',name),reportText('dd',value));
+  }more.append(moreDl);story.append(more);
   const audit=sourceAudit[h.title];
-  if(audit){
-    const inspected=document.createElement('div');inspected.className='analysis-block';
-    inspected.append(reportText('h4','Hourly authority review: sources checked and findings'));
-    inspected.append(reportText('p',audit.sources_checked?.length?'Primary citations inspected: '+audit.sources_checked.length+'. '+(audit.claim_independently_verified?'Claim verified.':'Full claim not yet independently verified.'):'No cited primary documents were inspected.'));
-    for(const x of audit.sources_checked||[]){
-      const line=document.createElement('p');line.style.margin='11px 0';line.append(document.createTextNode((x.outcome||'Source status unavailable').replace('Source retrieved; cited exact passage not found.','Retrieved; text comparison inconclusive.').replace('Source retrieved; cited exact passage located.','Retrieved; quoted text found.')+' '));
-      const url=cleanDirectLink(x.url);if(url){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Source';line.append(a)}else if(x.url)line.append(document.createTextNode(x.url));inspected.append(line);
+  const correctionReview=reviewedClaims[h.title];
+  if(audit||correctionReview){
+    const reviewed=document.createElement('details');reviewed.className='analysis-more';
+    const rs=document.createElement('summary');rs.textContent='Authority sources checked';reviewed.append(rs);
+    if(correctionReview){
+      reviewed.append(reportText('p',correctionReview.claim_status+': '+correctionReview.summary));
+      for(const source of correctionReview.sources_checked||[]){
+        const line=document.createElement('p');line.append(document.createTextNode(source.finding+' '));
+        const u=cleanDirectLink(source.url);if(u){const a=document.createElement('a');a.href=u;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Source';line.append(a)}reviewed.append(line);
+      }
+    } else if(audit){
+      reviewed.append(reportText('p',audit.sources_checked?.length?'Primary sources inspected: '+audit.sources_checked.length+'. Full claim remains under review.':'No cited primary document was available for direct inspection.'));
     }
-    for(const x of audit.official_indexes_checked||[]){
-      const line=reportText('p',(x.authority||'Authority')+': '+(x.finding||'No result')+' ');
-      const url=cleanDirectLink(x.url);
-      if(url){const a=document.createElement('a');a.href=url;a.textContent='Official site';a.target='_blank';a.rel='noopener noreferrer';line.append(a)}
-      inspected.append(line);
-    }
-    story.append(inspected);
-  }
-  const correction=reviewedClaims[h.title];
-  if(correction){
-    const box=document.createElement('div');box.className='analysis-block';
-    box.append(reportText('h4','Additional primary-source review and correction'));
-    box.append(reportText('p',correction.claim_status));
-    box.append(reportText('p',correction.summary));
-    for(const source of correction.sources_checked||[]){
-      const line=document.createElement('p');line.style.margin='12px 0';line.append(document.createTextNode(source.finding+' '));
-      const u=cleanDirectLink(source.url);if(u){const a=document.createElement('a');a.href=u;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Official source';line.append(a)}box.append(line);
-    }
-    box.append(reportText('p','Remaining uncertainty: '+correction.what_is_not_established));
-    story.append(box);
+    story.append(reviewed);
   }
   const evidence=document.createElement('div');evidence.append(reportText('strong','Supporting sources'));
   let count=0;

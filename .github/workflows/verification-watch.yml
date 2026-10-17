@@ -1,4 +1,4 @@
-name: Hourly substantive verification checks
+name: Hourly substantive claim verification
 on:
   push:
     paths:

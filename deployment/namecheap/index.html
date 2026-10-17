@@ -127,7 +127,7 @@ if(results[2].status==='fulfilled'){
 
 function addTaskInline(parent,line){
  // Render text and direct HTTPS links without innerHTML or third-party scripts.
- const expr=/(https:\/\/[^\\s<>]+)|(\\*\\*([^*]+)\\*\\*)/g;
+ const expr=/(https:\/\/[^\s<>]+)|(\*\*([^*]+)\*\*)/g;
  let last=0,match;
  while((match=expr.exec(line))!==null){
   if(match.index>last)parent.append(document.createTextNode(line.slice(last,match.index)));
@@ -140,11 +140,11 @@ function addTaskInline(parent,line){
 function renderTaskMarkdown(markdown){
  const root=$('task-text');root.replaceChildren();
  let list=null;
- for(const raw of String(markdown).split(/\\r?\\n/)){
+ for(const raw of String(markdown).split(/\r?\n/)){
   const line=raw.trim();if(!line){list=null;continue}
-  const heading=line.match(/^(#{1,4})\\s+(.+)$/);
+  const heading=line.match(/^(#{1,4})\s+(.+)$/);
   if(heading){list=null;const element=document.createElement(heading[1].length<=2?'h3':'h4');addTaskInline(element,heading[2]);root.append(element);continue}
-  const numbered=line.match(/^(\\d+)[.)]\\s+(.+)$/),bullet=line.match(/^[-*]\\s+(.+)$/);
+  const numbered=line.match(/^(\d+)[.)]\s+(.+)$/),bullet=line.match(/^[-*]\s+(.+)$/);
   if(numbered||bullet){const type=numbered?'ol':'ul';if(!list||list.tagName.toLowerCase()!==type){list=document.createElement(type);root.append(list)}const item=document.createElement('li');addTaskInline(item,(numbered||bullet)[numbered?2:1]);list.append(item);continue}
   list=null;const para=document.createElement('p');addTaskInline(para,line);root.append(para);
  }

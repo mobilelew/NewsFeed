@@ -20,6 +20,32 @@
       "what_is_known": "The stated 7.40% weekly average is supported by Freddie Mac's own data, subject to the PMMS sample methodology.",
       "what_is_not_established": "The 7.40% weekly average does not establish any particular lender's current quote or any intraday rate.",
       "resolution_needed": "Use the most recent available PMMS release and distinguish weekly observation date from story publication date."
+    },
+    {
+      "matching_title": "Fed Chair Kevin Warsh declines to signal a near-term rate move at IMF fireside chat; reiterates price stability priority",
+      "claim_status": "Corroborated by independent reporting; official participation confirmed, verbatim remarks not independently authenticated against a transcript",
+      "summary": "The IMF event page and Federal Reserve public calendar establish the Bangkok discussion. Reuters and Associated Press separately reported that Warsh emphasized price stability and did not prejudge coming interest-rate decisions. This supports the substantive report, but the official event schedule alone does not establish the precise words he spoke.",
+      "sources_checked": [
+        {
+          "url": "https://www.imf.org/en/meetings/2026/annual/schedule/2026/10/16/managing-director-fireside-chat-with-federal-reserve-chairman-kevin-warsh",
+          "finding": "IMF confirms the October 16 Bangkok fireside chat and participants; not a transcript."
+        },
+        {
+          "url": "https://www.federalreserve.gov/newsevents/2026-october.htm",
+          "finding": "Federal Reserve calendar lists Warsh's discussion at the IMF fireside chat."
+        },
+        {
+          "url": "https://www.reuters.com/markets/asia/feds-warsh-gives-no-hint-october-policy-decision-2026-10-16/",
+          "finding": "Reuters separately reported Warsh did not signal the upcoming interest-rate choice and emphasized a data-based approach."
+        },
+        {
+          "url": "https://apnews.com/article/4c80750c113a82a464a46f58a4fdab43",
+          "finding": "Associated Press independently reported that Warsh would not prejudge the upcoming meetings and emphasized price stability."
+        }
+      ],
+      "what_is_known": "The scheduled official event took place and multiple independent reports agree on the substance of his comments.",
+      "what_is_not_established": "The precise spoken language has not been independently compared with an official transcript or full recording.",
+      "resolution_needed": "Retrieve the official audio/video or transcript for verbatim confirmation; distinguish substantive corroboration from primary-source quotation verification."
     }
   ]
 }

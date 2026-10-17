@@ -23,7 +23,7 @@ section{background:white;border:1px solid #dce2e9;border-radius:12px;padding:16p
 .tag{display:inline-block;background:#f0f3f6;color:#43526a;padding:4px 7px;border-radius:5px;font-size:.75rem;margin:0 5px 5px 0}
 .small{font-size:.9rem;color:#475569}.empty{padding:16px;color:#64748b}.updated{margin-top:8px;font-size:.83rem;color:#c0d1e2}
 #task-briefings{border-left:4px solid #36a68a}#task-briefings h3{margin:22px 0 8px;font-size:1.1rem}#task-text p{line-height:1.65;white-space:pre-wrap}#task-text li{line-height:1.6;margin:8px 0}#task-text a{overflow-wrap:anywhere}#task-text .task-note{border-left:3px solid #c79b44;padding:10px;margin:10px 0}
-#full-briefings{border-left:4px solid #3b76b0}#full-briefings article{padding:18px 0;border-top:1px solid #dce2e9}#full-briefings article h3{margin-bottom:5px}#full-briefings dl{margin:10px 0}#full-briefings dt{font-weight:700;margin-top:8px}#full-briefings dd{margin:3px 0 9px;line-height:1.5}#full-briefings .analysis-block{border-top:1px solid #dce2e9;padding:12px 0;line-height:1.6}#full-briefings .evidence-link{display:block;margin:5px 0}#full-briefings .report-marker{display:inline-block;padding:4px 8px;border-radius:5px;background:#fff2d5;color:#795615}html[data-theme="dark"] #full-briefings .analysis-block,html[data-theme="dark"] #full-briefings article{border-color:#35455d}html[data-theme="dark"] #full-briefings .report-marker{background:#564522;color:#ffe5a1}
+#full-briefings{border-left:4px solid #3b76b0}#full-briefings article{padding:18px 0;border-top:1px solid #dce2e9}#full-briefings article h3{margin-bottom:5px}#full-briefings dl{margin:20px 0;display:grid;row-gap:4px}#full-briefings dd{padding-bottom:14px;border-bottom:1px solid #e0e7f0}html[data-theme="dark"] #full-briefings dd{border-color:#34435a}#full-briefings article{line-height:1.65}#full-briefings article p{line-height:1.75;margin:15px 0}#full-briefings dt{font-weight:700;margin-top:8px}#full-briefings dd{margin:3px 0 9px;line-height:1.5}#full-briefings .analysis-block{border-top:1px solid #dce2e9;padding:12px 0;line-height:1.6}#full-briefings .evidence-link{display:block;margin:5px 0}#full-briefings .report-marker{display:inline-block;padding:4px 8px;border-radius:5px;background:#fff2d5;color:#795615}html[data-theme="dark"] #full-briefings .analysis-block,html[data-theme="dark"] #full-briefings article{border-color:#35455d}html[data-theme="dark"] #full-briefings .report-marker{background:#564522;color:#ffe5a1}
 footer{font-size:.83rem;color:#64748b;padding-bottom:35px}
 </style></head><body>
 <header><div class="wrap"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">Theme: Auto</button><h1>News Reader</h1><p>U.S. &amp; priority-state news · OKC/Tulsa · Little Rock · DFW · Austin · economy · agriculture · technology</p><div class="updated" id="updated">Loading current sources…</div></div></header>
@@ -168,6 +168,18 @@ showTaskBrief('evening');
 function reportText(tag,value){const n=document.createElement(tag);n.textContent=typeof value==='string'?value:JSON.stringify(value);return n}
 function analysisSection(parent,heading,value){if(value==null||value===''||(Array.isArray(value)&&!value.length))return;const box=document.createElement('div');box.className='analysis-block';box.append(reportText('h3',heading));const content=Array.isArray(value)?value.map(x=>typeof x==='string'?x:JSON.stringify(x)).join('\n'):typeof value==='string'?value:JSON.stringify(value);const para=reportText('p',content);para.style.whiteSpace='pre-line';box.append(para);parent.append(box)}
 function directEvidenceLink(raw){return cleanDirectLink(raw)}
+function explainAuthority(code){
+ const meanings={
+ 'cited_authority_unavailable_or_not_inspected':'The original authority was not independently confirmed in the initial research pass. Check the hourly source-by-source audit below.',
+ 'cited_source_does_not_confirm_position':'The cited original page was retrieved, but the exact quoted passage was not found. This does not disprove the claim.',
+ 'cited_source_contains_excerpt':'The cited original page contains a matching passage, but the full reported claim has not been semantically verified.'
+ };
+ return meanings[code]||code||'No authority assessment supplied.'
+}
+let sourceAudit={};
+async function refreshSourceAudit(){
+ try{const audit=await read('verification-status.json');sourceAudit={};for(const report of audit.reports||[])for(const h of report.findings||[])sourceAudit[h.title]=h;}catch{sourceAudit={}}
+}
 let fullReportIndex={};
 async function showFullBrief(kind){
  const area=$('full-brief-content');area.replaceChildren();
@@ -194,9 +206,20 @@ async function showFullBrief(kind){
   story.append(reportText('p',h.summary||'Summary unavailable'));
   story.append(reportText('p',[h.jurisdiction,h.category,h.event_date?'Event date: '+h.event_date:'Event date not established'].filter(Boolean).join(' · ')));
   const dl=document.createElement('dl');
-  for(const [name,value] of [['Practical implications',h.practical_implication],['What is known',h.what_is_known],['Authority check',h.authority_confirmation],['Claim-specific source assessment',h.claim_evidence_note],['Attribution',h.attribution],['Uncertainty',h.uncertainty],['What cannot be concluded',h.what_cannot_be_concluded],['Resolution needed',h.resolution_needed],['Legal status',h.legal_status],['Date/context caution',h.temporal_caveat]]){
+  for(const [name,value] of [['Practical implications',h.practical_implication],['What is known',h.what_is_known],['Authority check',explainAuthority(h.authority_confirmation)],['Claim-specific source assessment',h.claim_evidence_note],['Attribution',h.attribution],['Uncertainty',h.uncertainty],['What cannot be concluded',h.what_cannot_be_concluded],['Resolution needed',h.resolution_needed],['Legal status',h.legal_status],['Date/context caution',h.temporal_caveat]]){
    if(value==null||value==='')continue;dl.append(reportText('dt',name),reportText('dd',value));
   }story.append(dl);
+  const audit=sourceAudit[h.title];
+  if(audit){
+    const inspected=document.createElement('div');inspected.className='analysis-block';
+    inspected.append(reportText('h4','Hourly authority review: sources checked and findings'));
+    inspected.append(reportText('p',audit.authority_confirmation||'No review outcome'));
+    for(const x of audit.sources_checked||[]){
+      const line=document.createElement('p');line.style.margin='11px 0';line.append(document.createTextNode(x.outcome+' '));
+      const url=cleanDirectLink(x.url);if(url){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=url;line.append(a)}else if(x.url)line.append(document.createTextNode(x.url));inspected.append(line);
+    }
+    story.append(inspected);
+  }
   const evidence=document.createElement('div');evidence.append(reportText('strong','Supporting sources'));
   let count=0;
   for(const source of h.evidence||[]){const href=directEvidenceLink(source.url);if(!href)continue;const link=document.createElement('a');link.href=href;link.target='_blank';link.rel='noopener noreferrer';link.className='evidence-link';link.textContent=source.description||href;evidence.append(link);count++}
@@ -210,7 +233,7 @@ async function loadFullBriefings(){
  catch(e){$('full-brief-status').textContent='The report archive is temporarily unavailable: '+e.message}
 }
 document.querySelectorAll('#briefing-tabs button').forEach(b=>b.addEventListener('click',()=>showFullBrief(b.dataset.report)));
-loadFullBriefings();
+refreshSourceAudit().then(loadFullBriefings);
 
 async function loadVerificationStatus(){
  try{const r=await read('verification-status.json');const counts=(r.reports||[]).reduce((a,x)=>{a.checked+=(x.findings||[]).length;a.verified+=(x.independently_verified_findings||0);return a},{checked:0,verified:0});$('verification-status').textContent='Last evidence recheck: '+local(r.checked_at)+' · '+counts.checked+' findings assessed · '+counts.verified+' independently verified by the hourly audit. Unresolved claims remain labelled rather than promoted.'}

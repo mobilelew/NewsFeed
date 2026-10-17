@@ -51,6 +51,7 @@ def review(candidate,capturer=capture,limit=12):
                           "quoted_excerpt_found":match,
                           "excerpt_provided":bool(isinstance(quote,str) and quote.strip()),
                           "sha256":record.get("sha256"),
+                          "retrieved_at":record.get("retrieved_at"),
                           "issue":record.get("issue")})
         findings.append({"headline_index":i,"title":h.get("title"),"primary_records":found,
                          "independently_semantically_verified":False})

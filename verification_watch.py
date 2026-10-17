@@ -22,7 +22,7 @@ def examine(report,capturer=None):
         checked_sources=[]
         for item in citations:
             if item.get("captured"):
-                finding="Source retrieved; cited exact passage located." if item.get("quoted_excerpt_found") else "Source retrieved; cited exact passage not found."
+                finding="Source retrieved; quotation/text match located. Factual consistency and context require separate review." if item.get("quoted_excerpt_found") else "Source retrieved. Wording did not match; factual accuracy cannot be determined by literal text comparison."
             elif item.get("issue")=="source_budget_exceeded":
                 finding="Not checked: source inspection budget exhausted."
             elif item.get("issue")=="primary_url_not_allowlisted":
@@ -35,7 +35,7 @@ def examine(report,capturer=None):
         elif found:
             outcome="Source checked: a cited passage was found, but it does not independently prove the full claim."
         elif captured:
-            outcome="Source checked: retrieved page did not contain the cited exact passage. Claim remains unresolved."
+            outcome="Source retrieved. Literal wording comparison is inconclusive for paraphrased reporting; claim requires factual and contextual review."
         else:
             outcome="Cited authority was not accessible or not inspected; see each source outcome."
         related_indexes=review_indexes(headline,**({"capturer":capturer} if capturer else {}))

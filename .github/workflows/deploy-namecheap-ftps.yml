@@ -38,7 +38,7 @@ jobs:
           fi
           remote="${FTPS_REMOTE_DIR#/}"
           remote="${remote%/}"
-          # Explicit TLS is required; never permit silent downgrade to insecure FTP.
+          # Diagnose public TLS certificate identity without exposing credentials.\n          echo "FTPS server certificate (public identity):"\n          timeout 12 openssl s_client -starttls ftp -connect "$FTPS_HOST:21" -servername "$FTPS_HOST" </dev/null 2>/dev/null | openssl x509 -noout -subject -ext subjectAltName || true\n          # Explicit TLS is required; never permit silent downgrade to insecure FTP.
           curl --fail --silent --show-error --max-time 100 --ssl-reqd \
             --user "$FTPS_USERNAME:$FTPS_PASSWORD" \
             --upload-file deployment/namecheap/index.html \

@@ -109,8 +109,9 @@ def build(kind, now, input_baseline=None):
     if kind not in ("morning","evening"): raise ValueError("Invalid kind")
     local=now.astimezone(ZONE)
     if not os.environ.get("OPENAI_API_KEY"): raise ValueError("OPENAI_API_KEY missing")
-    baseline_note=("No authentic archived morning baseline available." if input_baseline is None else
-                   "Morning baseline for comparison: "+json.dumps(input_baseline,ensure_ascii=False)[:10000])
+    prior_label="previous-evening report" if kind=="morning" else "same-day morning report"
+    baseline_note=("No actual "+prior_label+" available; do not claim a direct comparison." if input_baseline is None else
+                   "Actual "+prior_label+" available for comparison: "+json.dumps(input_baseline,ensure_ascii=False)[:10000])
     registry=source_registry()
     leads=discovery_leads()
     sources=json.dumps({"discovery":registry["discovery"],"primary_sources":registry["primary_sources"]},ensure_ascii=False)
@@ -176,8 +177,12 @@ def main():
     args=p.parse_args()
     now=dt.datetime.now(dt.timezone.utc)
     morning=None
+    date=now.astimezone(ZONE).date()
     if args.kind=="evening":
-        f=ROOT/"reports"/now.astimezone(ZONE).date().isoformat()/"morning.json"
+        f=ROOT/"reports"/date.isoformat()/"morning.json"
+        if f.exists(): morning=json.loads(f.read_text())
+    else:
+        f=ROOT/"reports"/(date-dt.timedelta(days=1)).isoformat()/"evening.json"
         if f.exists(): morning=json.loads(f.read_text())
     path,report=build(args.kind,now,morning)
     print(f"Prepared candidate {args.kind} briefing with {len(report['headlines'])} sourced findings: {path}")

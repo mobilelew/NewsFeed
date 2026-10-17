@@ -219,6 +219,12 @@ async function showFullBrief(kind){
       const line=document.createElement('p');line.style.margin='11px 0';line.append(document.createTextNode(x.outcome+' '));
       const url=cleanDirectLink(x.url);if(url){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=url;line.append(a)}else if(x.url)line.append(document.createTextNode(x.url));inspected.append(line);
     }
+    for(const x of audit.official_indexes_checked||[]){
+      const line=reportText('p',(x.authority||'Authority')+': '+(x.finding||'No result')+' ');
+      const url=cleanDirectLink(x.url);
+      if(url){const a=document.createElement('a');a.href=url;a.textContent='Official site';a.target='_blank';a.rel='noopener noreferrer';line.append(a)}
+      inspected.append(line);
+    }
     story.append(inspected);
   }
   const correction=reviewedClaims[h.title];

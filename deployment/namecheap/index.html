@@ -176,9 +176,10 @@ function explainAuthority(code){
  };
  return meanings[code]||code||'No authority assessment supplied.'
 }
-let sourceAudit={};
+let sourceAudit={};let reviewedClaims={};
 async function refreshSourceAudit(){
  try{const audit=await read('verification-status.json');sourceAudit={};for(const report of audit.reports||[])for(const h of report.findings||[])sourceAudit[h.title]=h;}catch{sourceAudit={}}
+ try{const a=await read('editorial-source-reviews.json');reviewedClaims={};for(const item of a.reviews||[])reviewedClaims[item.matching_title]=item;}catch{reviewedClaims={}}
 }
 let fullReportIndex={};
 async function showFullBrief(kind){
@@ -219,6 +220,19 @@ async function showFullBrief(kind){
       const url=cleanDirectLink(x.url);if(url){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=url;line.append(a)}else if(x.url)line.append(document.createTextNode(x.url));inspected.append(line);
     }
     story.append(inspected);
+  }
+  const correction=reviewedClaims[h.title];
+  if(correction){
+    const box=document.createElement('div');box.className='analysis-block';
+    box.append(reportText('h4','Additional primary-source review and correction'));
+    box.append(reportText('p',correction.claim_status));
+    box.append(reportText('p',correction.summary));
+    for(const source of correction.sources_checked||[]){
+      const line=document.createElement('p');line.style.margin='12px 0';line.append(document.createTextNode(source.finding+' '));
+      const u=cleanDirectLink(source.url);if(u){const a=document.createElement('a');a.href=u;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Official source';line.append(a)}box.append(line);
+    }
+    box.append(reportText('p','Remaining uncertainty: '+correction.what_is_not_established));
+    story.append(box);
   }
   const evidence=document.createElement('div');evidence.append(reportText('strong','Supporting sources'));
   let count=0;

@@ -8,6 +8,7 @@ import datetime as dt
 import json
 import pathlib
 from research_source_probe import review
+from official_authority_lookup import review_indexes
 
 ROOT=pathlib.Path(__file__).resolve().parent
 def examine(report,capturer=None):
@@ -37,6 +38,7 @@ def examine(report,capturer=None):
             outcome="Source checked: retrieved page did not contain the cited exact passage. Claim remains unresolved."
         else:
             outcome="Cited authority was not accessible or not inspected; see each source outcome."
+        related_indexes=review_indexes(headline,**({"capturer":capturer} if capturer else {}))
         checked.append({
             "title":headline.get("title",""),
             "verification":headline.get("verification","Unverified"),
@@ -45,6 +47,7 @@ def examine(report,capturer=None):
             "legal_effect_confirmed":False,
             "authority_confirmation":outcome,
             "sources_checked":checked_sources,
+            "official_indexes_checked":related_indexes,
             "sources_reached":sum(bool(x.get("captured")) for x in citations),
             "quoted_passages_located":sum(bool(x.get("quoted_excerpt_found")) for x in citations),
         })

@@ -23,7 +23,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      # Exercise official redirects and authority discovery against public sources.
+      # Confirm source figures against official index text, without treating matching numbers as full verification.
       - run: python -m unittest -v test_verification_watch.py test_official_authority_lookup.py test_source_capture.py
       - name: Recheck competent original source documents
         run: python verification_watch.py

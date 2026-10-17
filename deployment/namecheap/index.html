@@ -2,7 +2,17 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>News Reader | news.palmerfamily.org</title>
 <style>
-:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#182235;background:#f5f7fa}
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#182235;background:#f5f7fa;color-scheme:light}
+:root[data-theme="dark"]{color-scheme:dark;background:#0b1422;color:#e7edf7}
+:root[data-theme="dark"] header{background:#07101d}
+:root[data-theme="dark"] section{background:#152236;border-color:#35455d}
+:root[data-theme="dark"] .note{background:#1d3048;border-color:#73a8e8}
+:root[data-theme="dark"] .story{border-color:#35455d}
+:root[data-theme="dark"] .meta,:root[data-theme="dark"] .small,:root[data-theme="dark"] footer{color:#bbcadc}
+:root[data-theme="dark"] button{background:#152236;color:#e7edf7;border-color:#5b6e87}
+:root[data-theme="dark"] button.active{background:#2b5c92}
+:root[data-theme="dark"] .story a,:root[data-theme="dark"] a{color:#91c5ff}
+.theme-toggle{margin-top:15px;font-size:.85rem}
 *{box-sizing:border-box}body{margin:0}.wrap{max-width:1000px;margin:auto;padding:20px}
 header{background:#11223a;color:white;padding:26px 0}header h1{margin:0 0 7px;font-size:2rem}header p{margin:0;color:#dde6f1}
 nav{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}button{padding:10px 14px;border:1px solid #b9c7d9;border-radius:9px;background:white;cursor:pointer}button.active{background:#123f70;color:white}
@@ -14,7 +24,7 @@ section{background:white;border:1px solid #dce2e9;border-radius:12px;padding:16p
 .small{font-size:.9rem;color:#475569}.empty{padding:16px;color:#64748b}.updated{margin-top:8px;font-size:.83rem;color:#c0d1e2}
 footer{font-size:.83rem;color:#64748b;padding-bottom:35px}
 </style></head><body>
-<header><div class="wrap"><h1>News Reader</h1><p>U.S. &amp; priority-state news · OKC/Tulsa · Little Rock · DFW · Austin · economy · agriculture · technology</p><div class="updated" id="updated">Loading current sources…</div></div></header>
+<header><div class="wrap"><h1>News Reader</h1><p>U.S. &amp; priority-state news · OKC/Tulsa · Little Rock · DFW · Austin · economy · agriculture · technology</p><div class="updated" id="updated">Loading current sources…</div><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Change color theme">Switch to dark mode</button></div></header>
 <main class="wrap">
 <div class="note"><strong>Evidence matters.</strong> Discovery stories below are <strong>not yet independently verified</strong>. Official-record entries confirm listed document metadata only; they do not establish legal effect. A full claim-verified briefing appears separately when available.</div>
 <nav aria-label="News categories" id="filters"><button class="active" data-filter="ALL">All topics</button></nav>
@@ -27,6 +37,11 @@ footer{font-size:.83rem;color:#64748b;padding-bottom:35px}
 const base=new URL('https://mobilelew.github.io/NewsFeed/');
 let stories=[],filter='ALL';
 const $=id=>document.getElementById(id);
+const themeKey='news-reader-theme-v1';
+function useTheme(theme){document.documentElement.dataset.theme=theme;$('theme-toggle').textContent=theme==='dark'?'Switch to light mode':'Switch to dark mode';}
+let savedTheme;try{savedTheme=localStorage.getItem(themeKey)}catch{}
+useTheme(savedTheme==='dark'||savedTheme==='light'?savedTheme:(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));
+$('theme-toggle').addEventListener('click',()=>{const next=document.documentElement.dataset.theme==='dark'?'light':'dark';useTheme(next);try{localStorage.setItem(themeKey,next)}catch{}});
 function cleanDirectLink(raw){
  try{const u=new URL(raw);if(u.protocol!=='https:')return null;
  const host=u.hostname.toLowerCase();

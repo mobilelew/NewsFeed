@@ -1,8 +1,5 @@
 name: Hourly substantive claim verification
 on:
-  push:
-    paths:
-      - '.github/workflows/verification-watch.yml'
   schedule:
     - cron: '28 * * * *'
   workflow_dispatch:

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T10:48:14+00:00",
+  "updated_at": "2026-10-17T15:38:24+00:00",
   "headlines": [
     {
       "category": "OKC & TULSA",
@@ -10,7 +10,7 @@
       "published_at": "2026-10-17T04:28:56+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.47,
+      "discovery_score": 119.07,
       "article_url": "https://kfor.com/news/fatal-shooting-under-investigation-in-nw-oklahoma-city-2/",
       "link_type": "direct_publisher"
     },
@@ -23,34 +23,34 @@
       "published_at": "2026-10-16T16:18:33+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.46,
+      "discovery_score": 118.06,
       "article_url": "https://arktimes.com/arkansas-blog/2026/10/16/central-arkansas-congressional-candidates-debate-independence-from-trump-cost-of-living",
       "link_type": "direct_publisher"
     },
     {
       "category": "DALLAS–FORT WORTH",
-      "title": "Fort Worth Public Library celebrates 125th birthday at city hall",
-      "url": "https://fortworthreport.org/2026/10/16/fort-worth-public-library-celebrates-125th-birthday-at-city-hall/",
-      "summary": "Fort Worth residents laughed and embraced in the city council chamber of Fort Worth City Hall, filling the room with the chatter of old friends. All were connected by one thing — the Fort Worth Public Library. During the 125th birthday of the Fort Worth Public Library on Oct. 15, Gaye Reed greets and embraces an old friend, Rosalinda Martinez, who both previously served on the library advisory board together. (Mica Magday | Fort Worth Report) “Of",
-      "summary_provenance": "publisher_rss_content",
-      "published_at": "2026-10-17T00:03:05+00:00",
+      "title": "Sibling drama and mixed martial arts duke it out in Dallas Theater Center show",
+      "url": "https://www.nbcdfw.com/entertainment/the-scene/sibling-drama-and-mixed-martial-arts-duke-it-out-in-dallas-theater-center-show/4091984/",
+      "summary": "Monsters aren’t just for Halloween. Dallas Theater Center’s regional premiere of Ngozi Anyanwu’s The Monsters combines mixed martial arts (MMA) and family drama. The play is now running at the Wyly Studio Theatre in the Dallas Arts District through Nov. 1. Lil is a determined, young fighter who idolizes a local MMA star, Big. Big just happens to be her older brother. After years of separation, Lil reconnects with Big, hoping he will help her trai",
+      "summary_provenance": "rss_description",
+      "published_at": "2026-10-17T09:48:55+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 109.1,
-      "article_url": "https://fortworthreport.org/2026/10/16/fort-worth-public-library-celebrates-125th-birthday-at-city-hall/",
+      "discovery_score": 109.51,
+      "article_url": "https://www.nbcdfw.com/entertainment/the-scene/sibling-drama-and-mixed-martial-arts-duke-it-out-in-dallas-theater-center-show/4091984/",
       "link_type": "direct_publisher"
     },
     {
       "category": "AUSTIN",
-      "title": "Increased law enforcement presence on Northridge Road in Austin",
-      "url": "https://www.kxan.com/news/local/williamson-county/increased-law-enforcement-presence-on-northridge-road-in-austin/",
-      "summary": "The Williamson County Sheriff's Office alerted the public on Friday night to increased law enforcement presence on Northridge Road.",
+      "title": "'Ice Poseidon event' in Austin: What is it?",
+      "url": "https://www.kxan.com/news/local/austin/ice-poseidon-event-in-austin-what-is-it/",
+      "summary": "Kick streamers could descend upon Austin on Saturday in hopes of winning $50,000—here's why.",
       "summary_provenance": "rss_description",
-      "published_at": "2026-10-17T00:53:13+00:00",
+      "published_at": "2026-10-17T12:21:38+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 109.17,
-      "article_url": "https://www.kxan.com/news/local/williamson-county/increased-law-enforcement-presence-on-northridge-road-in-austin/",
+      "discovery_score": 109.73,
+      "article_url": "https://www.kxan.com/news/local/austin/ice-poseidon-event-in-austin-what-is-it/",
       "link_type": "direct_publisher"
     },
     {
@@ -62,7 +62,7 @@
       "published_at": "2026-10-16T23:30:28+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.06,
+      "discovery_score": 118.66,
       "article_url": "https://kfor.com/news/local/silver-alert-issued-for-missing-84-year-old-man-last-seen-on-foot-in-oklahoma-city/",
       "link_type": "direct_publisher"
     },
@@ -75,7 +75,7 @@
       "published_at": "2026-10-16T23:04:27+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.02,
+      "discovery_score": 118.62,
       "article_url": "https://kfor.com/news/11-5-million-awarded-to-oklahoma-city-youth-mental-health-programs-research-shows-high-need/",
       "link_type": "direct_publisher"
     },
@@ -88,29 +88,29 @@
       "published_at": "2026-10-16T20:42:27+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.83,
+      "discovery_score": 118.42,
       "article_url": "https://kfor.com/news/local/recent-rain-in-oklahoma-city-leaves-the-unhoused-in-need/",
       "link_type": "direct_publisher"
     },
     {
       "category": "LITTLE ROCK",
-      "title": "Arkansas State Fair kicks off for 2026",
-      "url": "https://www.fox16.com/news/local-news/arkansas-state-fair-kicks-off-for-2026/",
-      "summary": "The Arkansas State Fair had its first day on Friday with plenty of people in attendance. One of those people was Joshua Pack, who had been to the fair before; this time it was on his daughter’s birthday.",
+      "title": "Arkansas Paranormal Expo invites visitors to explore the unknown",
+      "url": "https://www.fox16.com/news/local-news/arkansas-paranormal-expo-invites-visitors-to-explore-the-unknown/",
+      "summary": "From UFOs and ghost hunting to psychic phenomena and cryptozoology, the 2025 Arkansas Paranormal Expo will explore the unexplained, including an opportunity to summon a sasquatch.",
       "summary_provenance": "rss_description",
-      "published_at": "2026-10-17T04:11:37+00:00",
+      "published_at": "2026-10-17T15:38:23+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 109.45,
-      "article_url": "https://www.fox16.com/news/local-news/arkansas-state-fair-kicks-off-for-2026/",
+      "discovery_score": 110.0,
+      "article_url": "https://www.fox16.com/news/local-news/arkansas-paranormal-expo-invites-visitors-to-explore-the-unknown/",
       "link_type": "direct_publisher"
     }
   ],
   "article_access_status": {
     "publisher_article_excerpt": 0,
     "publisher_page_description": 0,
-    "publisher_rss_content": 2,
-    "rss_description": 6,
+    "publisher_rss_content": 1,
+    "rss_description": 7,
     "unavailable": 0
   },
   "direct_link_policy": {
@@ -128,7 +128,7 @@
   "source_status": {
     "TEXAS": {
       "ok": true,
-      "items": 1,
+      "items": 2,
       "working_sources": [
         "https://news.google.com/rss/search?q=Texas%20legislature%20governor%20courts%20policy%20economy%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
@@ -151,7 +151,7 @@
     },
     "OKC & TULSA": {
       "ok": true,
-      "items": 24,
+      "items": 22,
       "working_sources": [
         "https://kfor.com/feed/",
         "https://oklahomawatch.org/feed/",
@@ -161,7 +161,7 @@
     },
     "LITTLE ROCK": {
       "ok": true,
-      "items": 47,
+      "items": 43,
       "working_sources": [
         "https://www.fox16.com/feed/",
         "https://arktimes.com/feed/",
@@ -171,7 +171,7 @@
     },
     "DALLAS–FORT WORTH": {
       "ok": true,
-      "items": 10,
+      "items": 11,
       "working_sources": [
         "https://fortworthreport.org/feed/",
         "https://www.nbcdfw.com/?rss=y",
@@ -181,7 +181,7 @@
     },
     "AUSTIN": {
       "ok": true,
-      "items": 25,
+      "items": 24,
       "working_sources": [
         "https://www.kxan.com/feed/",
         "https://news.google.com/rss/search?q=Austin%20Texas%20Travis%20County%20city%20government%20housing%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
@@ -189,14 +189,14 @@
     },
     "U.S. POLICY": {
       "ok": true,
-      "items": 25,
+      "items": 33,
       "working_sources": [
         "https://news.google.com/rss/search?q=executive%20order%20congress%20legislation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "ECONOMY": {
       "ok": true,
-      "items": 33,
+      "items": 34,
       "working_sources": [
         "https://www.bls.gov/feed/bls_latest.rss",
         "https://news.google.com/rss/search?q=Federal%20Reserve%20dollar%20inflation%20treasury%20yields%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
@@ -230,14 +230,14 @@
     },
     "TURKEY": {
       "ok": true,
-      "items": 3,
+      "items": 1,
       "working_sources": [
         "https://news.google.com/rss/search?q=USDA%20turkey%20production%20hatchery%20poultry%20prices%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "DATA CENTERS": {
       "ok": true,
-      "items": 27,
+      "items": 25,
       "working_sources": [
         "https://news.google.com/rss/search?q=AI%20data%20center%20power%20grid%20permitting%20construction%20United%20States%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]

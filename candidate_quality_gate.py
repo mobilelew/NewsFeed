@@ -44,7 +44,7 @@ def review(report):
         event=h.get("event_date")
         if not date_value(event) and h.get("verification")=="Verified":
             problems.append(f"Headline {i}: verified finding requires a valid event_date")
-        elif current and date_value(event)>current.date():
+        elif current and date_value(event) is not None and date_value(event)>current.date():
             problems.append(f"Headline {i}: event_date in future, identify as scheduled not occurred")
         checked=h.get("source_checked_at")
         try:

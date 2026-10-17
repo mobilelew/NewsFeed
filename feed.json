@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-17T02:45:29+00:00",
+  "updated_at": "2026-10-17T10:48:14+00:00",
   "headlines": [
     {
       "category": "OKC & TULSA",
-      "title": "Silver Alert issued for missing 84-year-old man last seen on foot in Oklahoma City",
-      "url": "https://kfor.com/news/local/silver-alert-issued-for-missing-84-year-old-man-last-seen-on-foot-in-oklahoma-city/",
-      "summary": "OKLAHOMA CITY (KFOR) — The Oklahoma Highway Patrol has issued a Silver Alert for an 84-year-old man last seen in Oklahoma City. According to OHP, Eddie Rogers was last seen on foot near 1200 South May Avenue in Oklahoma City at around 10:30 a.m. on Friday. He is described as 6 feet tall, weighing 170 [...]",
+      "title": "Fatal shooting under investigation in NW Oklahoma City",
+      "url": "https://kfor.com/news/fatal-shooting-under-investigation-in-nw-oklahoma-city-2/",
+      "summary": "OKLAHOMA CITY(KFOR)- The Oklahoma City Police Department responded to a fatal shooting near Indian Creek Blvd and Trail Oaks Dr Friday night. OKCPD PIO confirmed authorities received a call of a disturbance in the surrounding area. Officers arrived at the scene to locate a person who had been shot. The whereabouts of a suspect is [...]",
       "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T23:30:28+00:00",
+      "published_at": "2026-10-17T04:28:56+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.73,
-      "article_url": "https://kfor.com/news/local/silver-alert-issued-for-missing-84-year-old-man-last-seen-on-foot-in-oklahoma-city/",
+      "discovery_score": 119.47,
+      "article_url": "https://kfor.com/news/fatal-shooting-under-investigation-in-nw-oklahoma-city-2/",
       "link_type": "direct_publisher"
     },
     {
@@ -23,7 +23,7 @@
       "published_at": "2026-10-16T16:18:33+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.13,
+      "discovery_score": 118.46,
       "article_url": "https://arktimes.com/arkansas-blog/2026/10/16/central-arkansas-congressional-candidates-debate-independence-from-trump-cost-of-living",
       "link_type": "direct_publisher"
     },
@@ -36,7 +36,7 @@
       "published_at": "2026-10-17T00:03:05+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 109.77,
+      "discovery_score": 109.1,
       "article_url": "https://fortworthreport.org/2026/10/16/fort-worth-public-library-celebrates-125th-birthday-at-city-hall/",
       "link_type": "direct_publisher"
     },
@@ -49,8 +49,21 @@
       "published_at": "2026-10-17T00:53:13+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 109.84,
+      "discovery_score": 109.17,
       "article_url": "https://www.kxan.com/news/local/williamson-county/increased-law-enforcement-presence-on-northridge-road-in-austin/",
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "OKC & TULSA",
+      "title": "Silver Alert issued for missing 84-year-old man last seen on foot in Oklahoma City",
+      "url": "https://kfor.com/news/local/silver-alert-issued-for-missing-84-year-old-man-last-seen-on-foot-in-oklahoma-city/",
+      "summary": "OKLAHOMA CITY (KFOR) — The Oklahoma Highway Patrol has issued a Silver Alert for an 84-year-old man last seen in Oklahoma City. According to OHP, Eddie Rogers was last seen on foot near 1200 South May Avenue in Oklahoma City at around 10:30 a.m. on Friday. He is described as 6 feet tall, weighing 170 [...]",
+      "summary_provenance": "rss_description",
+      "published_at": "2026-10-16T23:30:28+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 119.06,
+      "article_url": "https://kfor.com/news/local/silver-alert-issued-for-missing-84-year-old-man-last-seen-on-foot-in-oklahoma-city/",
       "link_type": "direct_publisher"
     },
     {
@@ -62,7 +75,7 @@
       "published_at": "2026-10-16T23:04:27+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.69,
+      "discovery_score": 119.02,
       "article_url": "https://kfor.com/news/11-5-million-awarded-to-oklahoma-city-youth-mental-health-programs-research-shows-high-need/",
       "link_type": "direct_publisher"
     },
@@ -75,209 +88,34 @@
       "published_at": "2026-10-16T20:42:27+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.5,
+      "discovery_score": 118.83,
       "article_url": "https://kfor.com/news/local/recent-rain-in-oklahoma-city-leaves-the-unhoused-in-need/",
       "link_type": "direct_publisher"
     },
     {
-      "category": "AI",
-      "title": "A Multi-Tiered AI Accessibility Model (MAIAM): Proportionate Access and Capability Limits for Comprehensive Frontier AI Safety",
-      "url": "https://arxiv.org/abs/2610.20921",
-      "summary": "arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.",
-      "summary_provenance": "publisher_article_excerpt",
-      "published_at": "2026-10-16T04:00:00+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.1,
-      "article_url": "https://arxiv.org/abs/2610.20921",
-      "article_read": true,
-      "link_type": "direct_publisher"
-    },
-    {
-      "category": "AI",
-      "title": "MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments",
-      "url": "https://arxiv.org/abs/2610.20939",
-      "summary": "arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.",
-      "summary_provenance": "publisher_article_excerpt",
-      "published_at": "2026-10-16T04:00:00+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.1,
-      "article_url": "https://arxiv.org/abs/2610.20939",
-      "article_read": true,
-      "link_type": "direct_publisher"
-    },
-    {
-      "category": "AI",
-      "title": "OmicsBench: a long-horizon multi-turn benchmark of AI agents on research-study-scale bioinformatics",
-      "url": "https://arxiv.org/abs/2610.21074",
-      "summary": "arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.",
-      "summary_provenance": "publisher_article_excerpt",
-      "published_at": "2026-10-16T04:00:00+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.1,
-      "article_url": "https://arxiv.org/abs/2610.21074",
-      "article_read": true,
-      "link_type": "direct_publisher"
-    },
-    {
       "category": "LITTLE ROCK",
-      "title": "Arkansas High School Football Scoreboard: Week 7",
-      "url": "https://www.fox16.com/fearless-friday/arkansas-high-school-football-scoreboard-week-7-2/",
-      "summary": "LITTLE ROCK, Ark. – Week 7 of the Arkansas high school football season is here, with key matchups scheduled under Friday night lights across the Natural State. From the Northwest tip of the state down to the Delta, here is a roundup of high school football games happening this week. Games of the Week: Statewide [...]",
+      "title": "Arkansas State Fair kicks off for 2026",
+      "url": "https://www.fox16.com/news/local-news/arkansas-state-fair-kicks-off-for-2026/",
+      "summary": "The Arkansas State Fair had its first day on Friday with plenty of people in attendance. One of those people was Joshua Pack, who had been to the fair before; this time it was on his daughter’s birthday.",
       "summary_provenance": "rss_description",
-      "published_at": "2026-10-17T01:29:48+00:00",
+      "published_at": "2026-10-17T04:11:37+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 109.89,
-      "article_url": "https://www.fox16.com/fearless-friday/arkansas-high-school-football-scoreboard-week-7-2/",
-      "link_type": "direct_publisher"
-    },
-    {
-      "category": "LITTLE ROCK",
-      "title": "Security guard recalls deadly Little Rock gas station shooting that left 2 dead, 4 injured",
-      "url": "https://www.fox16.com/crime/security-guard-recalls-deadly-little-rock-gas-station-shooting-that-left-2-dead-4-injured/",
-      "summary": "A deadly shooting at a Little Rock gas station Thursday evening left two people dead and four others injured, sending shockwaves through nearby businesses and raising renewed concerns about violence in the area.",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-17T00:34:56+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 109.82,
-      "article_url": "https://www.fox16.com/crime/security-guard-recalls-deadly-little-rock-gas-station-shooting-that-left-2-dead-4-injured/",
-      "link_type": "direct_publisher"
-    },
-    {
-      "category": "AUSTIN",
-      "title": "Central Texas leaders look to Miami for passenger rail lessons",
-      "url": "https://www.kxan.com/traffic/traffic-projects/central-texas-leaders-look-to-miami-for-passenger-rail-lessons/",
-      "summary": "Regional leaders from the Austin Chamber of Commerce and the newly formed Central Texas Alliance recently visited Miami to study Brightline's passenger rail system. The delegation focused on improving mobility and infrastructure for the 13-county region, which is expected to reach a population similar to Phoenix by 2050. While Brightline currently faces financial restructuring, local officials plan to proceed with a secondary study regarding the ",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-17T00:33:12+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 109.82,
-      "article_url": "https://www.kxan.com/traffic/traffic-projects/central-texas-leaders-look-to-miami-for-passenger-rail-lessons/",
-      "link_type": "direct_publisher"
-    },
-    {
-      "category": "LITTLE ROCK",
-      "title": "UAPB mourns alumnus killed in Little Rock gas station shooting that left two dead",
-      "url": "https://www.fox16.com/news/local-news/uapb-mourns-alumnus-killed-in-little-rock-gas-station-shooting-that-left-two-dead/",
-      "summary": "The University of Arkansas at Pine Bluff is mourning the loss of one of its alumni after 74-year-old James Parker was killed in a shooting in Little Rock that left two people dead and several others injured Thursday.",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-17T00:02:04+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 109.77,
-      "article_url": "https://www.fox16.com/news/local-news/uapb-mourns-alumnus-killed-in-little-rock-gas-station-shooting-that-left-two-dead/",
-      "link_type": "direct_publisher"
-    },
-    {
-      "category": "OKC & TULSA",
-      "title": "'Seems very random': South Tulsa neighbors frustrated by new billboard",
-      "url": "https://www.kjrh.com/news/local-news/seems-very-random-south-tulsa-neighbors-frustrated-by-new-billboard",
-      "summary": "TULSA, Okla. — Social media and our 2 News Problem Solvers line blew up after an LED billboard began going up near 111th and…",
-      "summary_provenance": "publisher_article_excerpt",
-      "published_at": "2026-10-16T23:27:27+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 109.72,
-      "article_url": "https://www.kjrh.com/news/local-news/seems-very-random-south-tulsa-neighbors-frustrated-by-new-billboard",
-      "article_read": true,
-      "link_type": "direct_publisher"
-    },
-    {
-      "category": "LITTLE ROCK",
-      "title": "Arkansas lawmakers OK contract for center to field questions on Medicaid, other services",
-      "url": "https://arkansasadvocate.com/2026/10/16/arkansas-lawmakers-ok-contract-for-center-to-field-questions-on-medicaid-other-services/",
-      "summary": "Lawmakers on Friday approved a three-year, $48 million contract with the Arkansas Foundation for Medical Care to set up a customer service center that will field questions about Medicaid, nutrition assistance and other…",
-      "summary_provenance": "publisher_article_excerpt",
-      "published_at": "2026-10-16T23:26:34+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 109.72,
-      "article_url": "https://arkansasadvocate.com/2026/10/16/arkansas-lawmakers-ok-contract-for-center-to-field-questions-on-medicaid-other-services/",
-      "article_read": true,
-      "link_type": "direct_publisher"
-    },
-    {
-      "category": "AUSTIN",
-      "title": "20% of voter-approved Austin bond funding from last decade yet to be spent, new dashboard shows",
-      "url": "https://www.kxan.com/news/local/austin/austin-bond-dashboard-shows-20-of-voter-approved-funding-from-last-decade-yet-to-be-spent/",
-      "summary": "The city of Austin has spent about 70% of total bond funding approved by voters in the last decade, according to a new dashboard released to increase transparency with the public.",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T23:19:22+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 109.71,
-      "article_url": "https://www.kxan.com/news/local/austin/austin-bond-dashboard-shows-20-of-voter-approved-funding-from-last-decade-yet-to-be-spent/",
-      "link_type": "direct_publisher"
-    },
-    {
-      "category": "OKC & TULSA",
-      "title": "Tulsa Ports considers legal action against Inola over proposed $4 billion aluminum smelter",
-      "url": "https://www.kjrh.com/news/local-news/tulsa-ports-considers-legal-action-against-inola-over-proposed-4-billion-aluminum-smelter",
-      "summary": "INOLA, Okla. — The fight over a proposed $4 billion aluminum smelter in Inola could be headed into another courtroom, with Tulsa Ports considering legal action against the…",
-      "summary_provenance": "publisher_article_excerpt",
-      "published_at": "2026-10-16T22:21:42+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 109.63,
-      "article_url": "https://www.kjrh.com/news/local-news/tulsa-ports-considers-legal-action-against-inola-over-proposed-4-billion-aluminum-smelter",
-      "article_read": true,
-      "link_type": "direct_publisher"
-    },
-    {
-      "category": "OKC & TULSA",
-      "title": "Body cam captures moments OKC officers find DUI driver asleep in the road with the car still in drive",
-      "url": "https://kfor.com/news/local/body-cam-captures-moments-okc-officers-find-dui-driver-asleep-in-the-road-with-the-car-still-in-drive/",
-      "summary": "Body camera footage captured the moments Oklahoma City police officers found a driver asleep in the driver's seat while the car was in drive and a child was sleeping in the back seat.",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T22:09:21+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 109.62,
-      "article_url": "https://kfor.com/news/local/body-cam-captures-moments-okc-officers-find-dui-driver-asleep-in-the-road-with-the-car-still-in-drive/",
-      "link_type": "direct_publisher"
-    },
-    {
-      "category": "OKC & TULSA",
-      "title": "OKC Oktoberfest and it's Unofficial King",
-      "url": "https://kfor.com/news/great-state/okc-oktoberfest-and-its-unofficial-king/",
-      "summary": "OKLAHOMA CITY (KFOR) — If anyone could carry the title of 'King of OKC Oktoberfest', it would have to be Mike Tourek. \"1 in 6 Oklahomans comes from German heritage,\" he tells us. \"It's impressive.\" He's a longtime organizer of Oktoberfests in the Metro who came of age in his parents Old Germany restaurant, and [...]",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T22:13:13+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 109.62,
-      "article_url": "https://kfor.com/news/great-state/okc-oktoberfest-and-its-unofficial-king/",
-      "link_type": "direct_publisher"
-    },
-    {
-      "category": "DALLAS–FORT WORTH",
-      "title": "ASI looks to expand testing at north Fort Worth facility",
-      "url": "https://fortworthreport.org/2026/10/16/asi-looks-to-expand-testing-at-north-fort-worth-facility/",
-      "summary": "Fort Worth’s AllianceTexas development continues to be a hub for the growing autonomous vehicle market. Autonomous Solutions Inc., a company that develops technology for self-governing vehicles, plans to expand its Texas-based office space to over twice its size as it advances testing. “For customers and partners, this enables optimal support and accelerated deployment of OEM-agnostic, autonomous vehicle solutions that enhance safety, efficiency ",
-      "summary_provenance": "publisher_rss_content",
-      "published_at": "2026-10-16T22:13:18+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 109.62,
-      "article_url": "https://fortworthreport.org/2026/10/16/asi-looks-to-expand-testing-at-north-fort-worth-facility/",
+      "discovery_score": 109.45,
+      "article_url": "https://www.fox16.com/news/local-news/arkansas-state-fair-kicks-off-for-2026/",
       "link_type": "direct_publisher"
     }
   ],
   "article_access_status": {
-    "publisher_article_excerpt": 6,
+    "publisher_article_excerpt": 0,
     "publisher_page_description": 0,
-    "publisher_rss_content": 3,
-    "rss_description": 11,
+    "publisher_rss_content": 2,
+    "rss_description": 6,
     "unavailable": 0
   },
   "direct_link_policy": {
     "enabled": true,
-    "google_intermediaries_excluded": 40,
+    "google_intermediaries_excluded": 52,
     "tracking_or_affiliate_links_excluded": 0
   },
   "weekly_trend": {
@@ -305,7 +143,7 @@
     },
     "OKLAHOMA": {
       "ok": true,
-      "items": 3,
+      "items": 4,
       "working_sources": [
         "https://news.google.com/rss/search?q=Oklahoma%20state%20government%20news&hl=en-US&gl=US&ceid=US:en",
         "https://news.google.com/rss/search?q=Oklahoma%20economy%20court&hl=en-US&gl=US&ceid=US:en"
@@ -313,7 +151,7 @@
     },
     "OKC & TULSA": {
       "ok": true,
-      "items": 23,
+      "items": 24,
       "working_sources": [
         "https://kfor.com/feed/",
         "https://oklahomawatch.org/feed/",
@@ -323,7 +161,7 @@
     },
     "LITTLE ROCK": {
       "ok": true,
-      "items": 49,
+      "items": 47,
       "working_sources": [
         "https://www.fox16.com/feed/",
         "https://arktimes.com/feed/",
@@ -343,7 +181,7 @@
     },
     "AUSTIN": {
       "ok": true,
-      "items": 26,
+      "items": 25,
       "working_sources": [
         "https://www.kxan.com/feed/",
         "https://news.google.com/rss/search?q=Austin%20Texas%20Travis%20County%20city%20government%20housing%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
@@ -351,7 +189,7 @@
     },
     "U.S. POLICY": {
       "ok": true,
-      "items": 17,
+      "items": 25,
       "working_sources": [
         "https://news.google.com/rss/search?q=executive%20order%20congress%20legislation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
@@ -366,7 +204,7 @@
     },
     "HOUSING": {
       "ok": true,
-      "items": 15,
+      "items": 16,
       "working_sources": [
         "https://news.google.com/rss/search?q=US%20mortgage%20housing%20rates&hl=en-US&gl=US&ceid=US:en"
       ]
@@ -399,7 +237,7 @@
     },
     "DATA CENTERS": {
       "ok": true,
-      "items": 28,
+      "items": 27,
       "working_sources": [
         "https://news.google.com/rss/search?q=AI%20data%20center%20power%20grid%20permitting%20construction%20United%20States%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
@@ -420,9 +258,8 @@
     },
     "AI": {
       "ok": true,
-      "items": 52,
+      "items": 32,
       "working_sources": [
-        "https://export.arxiv.org/rss/cs.AI",
         "https://news.google.com/rss/search?q=AI%20models%20OpenAI%20NVIDIA%20data%20centers%20electricity%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },

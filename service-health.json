@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-17T02:45:47+00:00",
+  "checked_at": "2026-10-17T10:48:30+00:00",
   "discovery": {
     "current": true,
-    "item_count": 20,
-    "last_updated": "2026-10-17T02:45:29+00:00",
-    "age_hours": 0.01,
+    "item_count": 8,
+    "last_updated": "2026-10-17T10:48:14+00:00",
+    "age_hours": 0.0,
     "status": "available_unverified"
   },
   "official_record_pilot": {

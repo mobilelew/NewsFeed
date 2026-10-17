@@ -22,14 +22,16 @@ section{background:white;border:1px solid #dce2e9;border-radius:12px;padding:16p
 .story a{color:#134877;font-weight:650;text-decoration:none;line-height:1.4}.story a:hover{text-decoration:underline}
 .tag{display:inline-block;background:#f0f3f6;color:#43526a;padding:4px 7px;border-radius:5px;font-size:.75rem;margin:0 5px 5px 0}
 .small{font-size:.9rem;color:#475569}.empty{padding:16px;color:#64748b}.updated{margin-top:8px;font-size:.83rem;color:#c0d1e2}
+#full-briefings{border-left:4px solid #3b76b0}#full-briefings article{padding:18px 0;border-top:1px solid #dce2e9}#full-briefings article h3{margin-bottom:5px}#full-briefings dl{margin:10px 0}#full-briefings dt{font-weight:700;margin-top:8px}#full-briefings dd{margin:3px 0 9px;line-height:1.5}#full-briefings .analysis-block{border-top:1px solid #dce2e9;padding:12px 0;line-height:1.6}#full-briefings .evidence-link{display:block;margin:5px 0}#full-briefings .report-marker{display:inline-block;padding:4px 8px;border-radius:5px;background:#fff2d5;color:#795615}html[data-theme="dark"] #full-briefings .analysis-block,html[data-theme="dark"] #full-briefings article{border-color:#35455d}html[data-theme="dark"] #full-briefings .report-marker{background:#564522;color:#ffe5a1}
 footer{font-size:.83rem;color:#64748b;padding-bottom:35px}
 </style></head><body>
-<header><div class="wrap"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">Theme: Auto</button><h1>News Reader</h1><p>U.S. &amp; priority-state news · OKC/Tulsa · Little Rock · DFW · Austin · economy · agriculture · technology</p><div class="updated" id="updated">Loading current sources…</div><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Change color theme">Switch to dark mode</button></div></header>
+<header><div class="wrap"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">Theme: Auto</button><h1>News Reader</h1><p>U.S. &amp; priority-state news · OKC/Tulsa · Little Rock · DFW · Austin · economy · agriculture · technology</p><div class="updated" id="updated">Loading current sources…</div></div></header>
 <main class="wrap">
 <div class="note"><strong>Evidence matters.</strong> Discovery stories below are <strong>not yet independently verified</strong>. Official-record entries confirm listed document metadata only; they do not establish legal effect. A full claim-verified briefing appears separately when available.</div>
 <section id="verification-section"><h2>Verification engine status</h2><p id="verification-status" class="small">Checking the latest hourly original-source audit…</p><p class="small">Source excerpt matching is not equivalent to independent confirmation of a claim. Only independently established assertions qualify as Verified.</p></section>
+<section id="full-briefings"><h2>Morning &amp; Evening News Analysis</h2><p class="small">Evidence-labelled analysis following the News Reader reporting criteria. Items marked Unverified are not independently established. Archived reports, not the separate ChatGPT task messages.</p><nav id="briefing-tabs" aria-label="Choose report"><button type="button" data-report="morning">Morning briefing</button><button type="button" data-report="evening">Evening comparison</button></nav><div id="full-brief-status" class="small">Loading published analysis…</div><div id="full-brief-content" aria-live="polite"></div></section>
 <nav aria-label="News categories" id="filters"><button class="active" data-filter="ALL">All topics</button></nav>
-<section id="brief-section" hidden><h2>Published evidence-labelled briefing</h2><p><a href="https://mobilelew.github.io/NewsFeed/detailed-briefings.html" target="_blank" rel="noopener noreferrer">Read full morning/evening analysis, authority assessments and coverage gaps →</a></p><p class="small">Source-linked findings; verify controlling records for legal and financial decisions.</p><div id="brief"></div></section>
+<section id="brief-section" hidden style="display:none"><h2>Published evidence-labelled briefing</h2><p><a href="https://mobilelew.github.io/NewsFeed/detailed-briefings.html" target="_blank" rel="noopener noreferrer">Read full morning/evening analysis, authority assessments and coverage gaps →</a></p><p class="small">Source-linked findings; verify controlling records for legal and financial decisions.</p><div id="brief"></div></section>
 <section><h2>Current news discovery</h2><p class="small">Regional coverage: Oklahoma City &amp; Tulsa, Little Rock, Dallas–Fort Worth and Austin. Local feeds are checked alongside national sources; unavailable feeds and categories are not represented as confirmed coverage.</p><p class="small">Automatically updated article leads. Headlines may be inaccurate, outdated, promotional, or disputed; read and assess the linked reporting.</p><div id="discovery" aria-live="polite"><div class="empty">Loading stories…</div></div></section>
 <section id="official-section"><h2>Official federal document notices</h2><p class="small">Federal Register publication metadata only. The legal effect and effective dates have not been independently analyzed.</p><div id="official"><div class="empty">Checking available notices…</div></div></section>
 <footer>News Reader · Reporting dates shown in America/Chicago · Feeds update on GitHub Actions schedules · No story is certified true solely because it is listed here.</footer>
@@ -119,6 +121,54 @@ if(results[2].status==='fulfilled'){
  }
 }
 }
+
+function reportText(tag,value){const n=document.createElement(tag);n.textContent=typeof value==='string'?value:JSON.stringify(value);return n}
+function analysisSection(parent,heading,value){if(value==null||value===''||(Array.isArray(value)&&!value.length))return;const box=document.createElement('div');box.className='analysis-block';box.append(reportText('h3',heading));const content=Array.isArray(value)?value.map(x=>typeof x==='string'?x:JSON.stringify(x)).join('\n'):typeof value==='string'?value:JSON.stringify(value);const para=reportText('p',content);para.style.whiteSpace='pre-line';box.append(para);parent.append(box)}
+function directEvidenceLink(raw){return cleanDirectLink(raw)}
+let fullReportIndex={};
+async function showFullBrief(kind){
+ const area=$('full-brief-content');area.replaceChildren();
+ for(const btn of document.querySelectorAll('#briefing-tabs button'))btn.classList.toggle('active',btn.dataset.report===kind);
+ const entry=fullReportIndex[kind];if(!entry){$('full-brief-status').textContent='No archived '+kind+' briefing available. A comparison cannot be claimed without its actual morning baseline.';return}
+ try{
+ const report=await read(entry.path);
+ $('full-brief-status').textContent=(kind==='morning'?'Morning briefing':'Evening comparison')+' · '+local(report.report_time)+' · '+(report.headlines||[]).length+' research findings · verification labels shown individually';
+ if(!report.executive_summary){analysisSection(area,'Report limitation','This archived report predates the expanded executive-summary format. No comprehensive executive summary was archived; none has been invented.')}
+ analysisSection(area,'Executive summary',report.executive_summary);
+ analysisSection(area,'Reporting scope and evidence reviewed',report.coverage_note);
+ if(kind==='morning')analysisSection(area,'Start-of-day baseline',report.baseline);
+ if(kind==='evening')analysisSection(area,'Morning-to-evening comparison',report.morning_comparison?.summary||'No comparison available');
+ analysisSection(area,'Financial and household implications',report.household_implications);
+ analysisSection(area,'Source differences and verification',report.source_differences);
+ analysisSection(area,'Upcoming events',report.verified_upcoming_events);
+ analysisSection(area,'Coverage gaps',report.coverage_gaps||report.notes_on_coverage_gaps);
+ analysisSection(area,'Verification limitations',report.editorial_caveat);
+ const heading=reportText('h3','News developments, authority checks, and immediate implications');area.append(heading);
+ for(const h of report.headlines||[]){
+  const story=document.createElement('article');
+  story.append(reportText('h3',h.title||'Untitled finding'));
+  const label=reportText('span',h.verification||'Unverified');label.className='report-marker';story.append(label);
+  story.append(reportText('p',h.summary||'Summary unavailable'));
+  story.append(reportText('p',[h.jurisdiction,h.category,h.event_date?'Event date: '+h.event_date:'Event date not established'].filter(Boolean).join(' · ')));
+  const dl=document.createElement('dl');
+  for(const [name,value] of [['Practical implications',h.practical_implication],['What is known',h.what_is_known],['Authority check',h.authority_confirmation],['Claim-specific source assessment',h.claim_evidence_note],['Attribution',h.attribution],['Uncertainty',h.uncertainty],['What cannot be concluded',h.what_cannot_be_concluded],['Resolution needed',h.resolution_needed],['Legal status',h.legal_status],['Date/context caution',h.temporal_caveat]]){
+   if(value==null||value==='')continue;dl.append(reportText('dt',name),reportText('dd',value));
+  }story.append(dl);
+  const evidence=document.createElement('div');evidence.append(reportText('strong','Supporting sources'));
+  let count=0;
+  for(const source of h.evidence||[]){const href=directEvidenceLink(source.url);if(!href)continue;const link=document.createElement('a');link.href=href;link.target='_blank';link.rel='noopener noreferrer';link.className='evidence-link';link.textContent=source.description||href;evidence.append(link);count++}
+  if(!count)evidence.append(reportText('p','No direct publisher/authority source link available.'));
+  story.append(evidence);area.append(story);
+ }
+ }catch(e){$('full-brief-status').textContent='Unable to retrieve archived '+kind+' report: '+e.message}
+}
+async function loadFullBriefings(){
+ try{const index=await read('reports/latest/index.json');fullReportIndex=index.latest||{};await showFullBrief(fullReportIndex.evening?'evening':'morning')}
+ catch(e){$('full-brief-status').textContent='The report archive is temporarily unavailable: '+e.message}
+}
+document.querySelectorAll('#briefing-tabs button').forEach(b=>b.addEventListener('click',()=>showFullBrief(b.dataset.report)));
+loadFullBriefings();
+
 async function loadVerificationStatus(){
  try{const r=await read('verification-status.json');const counts=(r.reports||[]).reduce((a,x)=>{a.checked+=(x.findings||[]).length;a.verified+=(x.independently_verified_findings||0);return a},{checked:0,verified:0});$('verification-status').textContent='Last evidence recheck: '+local(r.checked_at)+' · '+counts.checked+' findings assessed · '+counts.verified+' independently verified by the hourly audit. Unresolved claims remain labelled rather than promoted.'}
  catch(e){$('verification-status').textContent='No recent verification audit is available; do not assume the findings are confirmed.'}

@@ -16,7 +16,7 @@ jobs:
       # User updated FTPS remote directory; rerun secure deployment acceptance test.
       - name: Verify secure FTPS configuration
         env:
-          FTPS_HOST: ${{ secrets.FTPS_HOST }}
+          FTPS_HOST: server238.web-hosting.com
           FTPS_USERNAME: ${{ secrets.FTPS_USERNAME }}
           FTPS_PASSWORD: ${{ secrets.FTPS_PASSWORD }}
           FTPS_REMOTE_DIR: ${{ vars.FTPS_REMOTE_DIR || '/' }}

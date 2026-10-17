@@ -192,10 +192,11 @@ function explainAuthority(code){
  };
  return meanings[code]||code||'No authority assessment supplied.'
 }
-let sourceAudit={};let reviewedClaims={};
+let sourceAudit={};let reviewedClaims={};let semanticClaims={};
 async function refreshSourceAudit(){
  try{const audit=await read('verification-status.json');sourceAudit={};for(const report of audit.reports||[])for(const h of report.findings||[])sourceAudit[h.title]=h;}catch{sourceAudit={}}
  try{const a=await read('editorial-source-reviews.json');reviewedClaims={};for(const item of a.reviews||[])reviewedClaims[item.matching_title]=item;}catch{reviewedClaims={}}
+ try{const a=await read('semantic-verification.json');semanticClaims={};for(const item of a.findings||[])semanticClaims[item.title]=item;}catch{semanticClaims={}}
 }
 function conciseExecutive(report){
  const box=document.createElement('div');box.className='executive-glance';
@@ -203,8 +204,8 @@ function conciseExecutive(report){
  const ul=document.createElement('ul');
  for(const h of (report.headlines||[]).slice(0,5)){
    const li=document.createElement('li');
-   const review=reviewedClaims[h.title];
-   const status=(review?.claim_status||h.verification||'Unverified').replace(/^Corroborated by independent reporting.*$/,'Corroborated');
+   const review=reviewedClaims[h.title];const semantic=semanticClaims[h.title];
+   const status=(semantic?.status||review?.claim_status||h.verification||'Unverified').replace(/^Corroborated by independent reporting.*$/,'Corroborated');
    const implication=(h.practical_implication||'').trim();
    li.append(reportText('strong',status+': '),document.createTextNode(h.title+(implication?' — '+implication:'')));
    ul.append(li);
@@ -246,13 +247,13 @@ async function showFullBrief(kind){
  for(const h of report.headlines||[]){
   const story=document.createElement('article');
   story.append(reportText('h3',h.title||'Untitled finding'));
-  const correction=reviewedClaims[h.title];
-  const displayStatus=(correction?.claim_status||h.verification||'Unverified').replace(/^Corroborated by independent reporting.*$/,'Corroborated');
+  const correction=reviewedClaims[h.title];const semantic=semanticClaims[h.title];
+  const displayStatus=(semantic?.status||correction?.claim_status||h.verification||'Unverified').replace(/^Corroborated by independent reporting.*$/,'Corroborated');
   const label=reportText('span',displayStatus);label.className='report-marker';story.append(label);
   story.append(reportText('p',h.summary||'Summary unavailable'));
   story.append(reportText('p',[h.jurisdiction,h.category,h.event_date?'Event date: '+h.event_date:'Event date not established'].filter(Boolean).join(' · ')));
   const dl=document.createElement('dl');
-  for(const [name,value] of [['Practical implications',h.practical_implication],['What is known',h.what_is_known],['Authority check',correction?.summary||explainAuthority(h.authority_confirmation)]]){
+  for(const [name,value] of [['Practical implications',h.practical_implication],['What is known',h.what_is_known],['Authority check',semantic?.concise_conclusion||correction?.summary||explainAuthority(h.authority_confirmation)]]){
    if(value==null||value==='')continue;dl.append(reportText('dt',name),reportText('dd',value));
   }story.append(dl);
   const more=document.createElement('details');more.className='analysis-more';const moreSummary=document.createElement('summary');moreSummary.textContent='More analysis and verification detail';more.append(moreSummary);
@@ -262,10 +263,16 @@ async function showFullBrief(kind){
   }more.append(moreDl);story.append(more);
   const audit=sourceAudit[h.title];
   const correctionReview=reviewedClaims[h.title];
-  if(audit||correctionReview){
+  const semanticReview=semanticClaims[h.title];
+  if(audit||correctionReview||semanticReview){
     const reviewed=document.createElement('details');reviewed.className='analysis-more';
     const rs=document.createElement('summary');rs.textContent='Authority sources checked';reviewed.append(rs);
-    if(correctionReview){
+    if(semanticReview){
+      reviewed.append(reportText('p',semanticReview.status+': '+semanticReview.concise_conclusion));
+      const allChecks=[...(semanticReview.authority_checks||[]),...(semanticReview.independent_checks||[])];
+      for(const source of allChecks.slice(0,5)){const line=document.createElement('p');line.append(document.createTextNode((source.source||'Source')+': '+(source.what_found||'No finding')+' '));const u=cleanDirectLink(source.url);if(u){const a=document.createElement('a');a.href=u;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Source';line.append(a)}reviewed.append(line)}
+      if(semanticReview.remaining_uncertainty)reviewed.append(reportText('p','Remaining uncertainty: '+semanticReview.remaining_uncertainty));
+    } else if(correctionReview){
       reviewed.append(reportText('p',correctionReview.claim_status+': '+correctionReview.summary));
       for(const source of correctionReview.sources_checked||[]){
         const line=document.createElement('p');line.append(document.createTextNode(source.finding+' '));

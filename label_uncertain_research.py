@@ -50,6 +50,12 @@ def prepare(candidate,authority):
             h["model_claimed_source_check_time"]=h.pop("source_checked_at")
             h["source_checked_at"]=None
         # Never synthesize a source inspection time from the report timestamp.
+    if not any(h.get("verification") in ("Verified","Corroborated") for h in result.get("headlines",[])):
+        import re
+        summary=result.get("executive_summary")
+        if isinstance(summary,str) and summary.strip():
+            summary=re.sub(r"(?i)\\bkey verified developments\\b","Reported developments requiring confirmation",summary)
+            result["executive_summary"]="Verification notice: none of the findings below has been independently established as Verified or Corroborated. "+summary
     result["independent_source_authentication"]=False
     result["editorial_caveat"]="Research assertions remain Unverified where competent authority confirmation is not established."
     result["quality_screen"]=review(result)

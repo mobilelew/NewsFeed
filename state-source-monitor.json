@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "report_type": "source_monitor",
-  "checked_at": "2026-10-16T11:57:15-05:00",
+  "checked_at": "2026-10-17T01:08:33-05:00",
   "scope": "Texas, Arkansas and Oklahoma legislature official-source reachability and changes",
   "verification": "Unverified",
   "legal_changes_verified": false,
@@ -36,17 +36,17 @@
           "name": "Arkansas General Assembly — recent activities",
           "url": "https://www.arkleg.state.ar.us/",
           "status": "reachable",
-          "change": "unchanged",
-          "content_sha256": "2fe66ff31ec77ef8710947db5ca623db58df24a476dd2ac0ff4bfe282c85d70a",
-          "visible_characters": 7494
+          "change": "changed",
+          "content_sha256": "669e3a520c07a2597e17ee31100a5454f393ea09e9ee04d3ee66d1c3eabe3943",
+          "visible_characters": 6295
         },
         {
           "name": "Arkansas General Assembly — meetings",
           "url": "https://www.arkleg.state.ar.us/Calendars/Meetings",
           "status": "reachable",
-          "change": "unchanged",
-          "content_sha256": "eb381ccbab603b2bfa66650e3ebe0389fd1afcdfb4827009f37029eed52d4b29",
-          "visible_characters": 7389
+          "change": "changed",
+          "content_sha256": "192f539ef4042bce7e9c4165f646ed22f2cb039d408e44867871f17a2962d683",
+          "visible_characters": 6190
         }
       ],
       "legal_changes_verified": false,

@@ -23,7 +23,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m unittest -v test_verification_watch.py
+      - run: python -m unittest -v test_verification_watch.py test_official_authority_lookup.py
       - name: Recheck competent original source documents
         run: python verification_watch.py
       - name: Publish verification status

@@ -4,9 +4,6 @@ on:
     - cron: '45 11,12 * * *'
     - cron: '45 1,2 * * *'
   workflow_dispatch:
-  push:
-    paths:
-      - '.github/workflows/check-task-delivery.yml'
 permissions:
   contents: write
 concurrency:

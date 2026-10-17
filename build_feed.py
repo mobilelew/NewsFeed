@@ -12,6 +12,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from article_reader import article_extract
+from publisher_links import direct_publisher_url
 
 ROOT = pathlib.Path(__file__).resolve().parent
 NOW = dt.datetime.now(dt.timezone.utc)
@@ -227,7 +228,7 @@ def main():
     for category in SOURCES:
         if bycat[category]: selected.append(bycat[category].pop(0))
     remaining=sorted((x for values in bycat.values() for x in values),key=lambda x:x["discovery_score"],reverse=True)
-    selected=(selected+remaining)[:36]
+    selected=(selected+remaining)[:60]
     # Best-effort publisher article extracts; RSS-derived summaries remain labelled.
     # Limit network work to bounded selected stories, not all discovered links.
     for story in selected:
@@ -238,6 +239,26 @@ def main():
             story["summary_provenance"]=extraction["summary_provenance"]
             story["article_url"]=extraction["article_url"]
             story["article_read"]=extraction.get("article_read",False)
+    # Never publish a Google News intermediary or a tracked/affiliate link.
+    # Google News can discover a candidate, but it must resolve to a real
+    # publisher before it is retained for the public website.
+    direct_selected=[]
+    excluded_intermediary=0
+    excluded_tracking_or_affiliate=0
+    for story in selected:
+        candidate=story.get("article_url") or story.get("url")
+        direct=direct_publisher_url(candidate)
+        if not direct:
+            if "google.com" in str(candidate):
+                excluded_intermediary+=1
+            else:
+                excluded_tracking_or_affiliate+=1
+            continue
+        story["url"]=direct
+        story["article_url"]=direct
+        story["link_type"]="direct_publisher"
+        direct_selected.append(story)
+    selected=direct_selected[:36]
     # Cached previous discovery is NOT re-used when any live source works.
     if not selected and previous.get("headlines"):
         source_errors.append("No fresh discoveries; prior headlines intentionally not republished as current.")
@@ -252,6 +273,7 @@ def main():
         "updated_at":NOW.isoformat(timespec="seconds"),
         "headlines":selected,
         "article_access_status":extraction_counts,
+        "direct_link_policy":{"enabled":True,"google_intermediaries_excluded":excluded_intermediary,"tracking_or_affiliate_links_excluded":excluded_tracking_or_affiliate},
         "weekly_trend":weekly,
         "report_url":editorial.get("report_url","https://chatgpt.com/"),
         "notes":"RSS and aggregators are discovery only. Verification requires separately curated original evidence; no automatic fact-checking is claimed.",

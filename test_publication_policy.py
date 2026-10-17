@@ -60,6 +60,14 @@ class PublicationPolicyTests(unittest.TestCase):
         data = json.loads(json.dumps(self.base))
         data["headlines"][0]["evidence"][0]["type"] = "attribution"
         self.check(data, False)
+    def test_ordinary_replacement_language_not_placeholder(self):
+        data=json.loads(json.dumps(self.base))
+        data["headlines"][0]["summary"]="The agency plans to replace its old data system."
+        self.check(data,True)
+    def test_explicit_template_marker_rejected(self):
+        data=json.loads(json.dumps(self.base))
+        data["headlines"][0]["summary"]="PLACEHOLDER: source forthcoming"
+        self.check(data,False)
     def test_placeholder_url_rejected(self):
         data = json.loads(json.dumps(self.base))
         data["headlines"][0]["evidence"][0]["url"] = "https://example.org/replace"

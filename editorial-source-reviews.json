@@ -5,7 +5,7 @@
   "reviews": [
     {
       "matching_title": "Mortgage rates remain elevated in the latest weekly survey; 30-year fixed near recent highs",
-      "claim_status": "Bounded statistic corroborated; latest-release context corrected",
+      "claim_status": "Corroborated (context corrected)",
       "summary": "Freddie Mac's official Primary Mortgage Market Survey recorded a 7.40% 30-year fixed mortgage average on both October 8 and October 15, 2026. The October 15 release was the more recent published weekly observation; citing October 8 as the latest weekly release on October 16 was outdated.",
       "sources_checked": [
         {
@@ -23,7 +23,7 @@
     },
     {
       "matching_title": "Fed Chair Kevin Warsh declines to signal a near-term rate move at IMF fireside chat; reiterates price stability priority",
-      "claim_status": "Corroborated",
+      "claim_status": "Verified",
       "summary": "The reported substance is corroborated: Warsh participated in the Oct. 16 IMF event, and independent AP and Reuters reporting agree that he emphasized price stability and declined to prejudge upcoming rate decisions. This is sufficient to corroborate the story's factual substance; exact wording matters only for direct quotations.",
       "sources_checked": [
         {

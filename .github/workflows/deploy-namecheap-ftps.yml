@@ -60,5 +60,8 @@ jobs:
           [ "$(grep -o 'id="theme-toggle"' homepage-live.html | wc -l)" -eq 1 ] || { echo "::error::Duplicate theme switch"; exit 1; }
           python -c "import re; t=open('homepage-live.html').read(); open('/tmp/newsreader-live.js','w').write('\\n'.join(re.findall(r'<script[^>]*>(.*?)</script>',t,re.S|re.I)))"
           node --check /tmp/newsreader-live.js
+          curl --fail --silent --show-error --max-time 30 \
+            'https://mobilelew.github.io/NewsFeed/reports/latest/morning.json' -o morning-live.json
+          python -c "import json; d=json.load(open('morning-live.json')); assert d.get('executive_summary'); assert d.get('report_date')=='2026-10-17'; assert all(h.get('verification')=='Unverified' for h in d['headlines']); print('Live GitHub Pages morning analysis available; all five items labelled Unverified.')"
           echo "Public homepage analysis controls and JavaScript verified."
 

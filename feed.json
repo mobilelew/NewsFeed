@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-16T23:37:46+00:00",
+  "updated_at": "2026-10-17T02:45:29+00:00",
   "headlines": [
-    {
-      "category": "TEXAS",
-      "title": "Why Elon Musk has so much at stake in Greg Abbott’s reelection bid - Houston Chronicle",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNOHVCaDhvdDdCR1F4ZWlCV1RjaWxfTTFsQ0ZTMnVRREZFWXV5aDNtSTV6YzhVRDlJVmtPRUxjXzlaUUxVRWRNdGsxVHRTdGxMeXFIcVdFZXZ1RXdJSkozb2syd0VhZFVMMkFNT0RSYWU4VkhWNGp2YkU1bVhEWHFQcm8tWFV0dnBldFFjNUhB?oc=5",
-      "summary": "Why Elon Musk has so much at stake in Greg Abbott’s reelection bid Houston Chronicle",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T09:06:43+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 108.79
-    },
-    {
-      "category": "ARKANSAS",
-      "title": "Gov. Sanders makes visit to South Arkansas - Camden News",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMUdIenFSeTVvc3h6VEtpN1EzRDhfU1dBcng5SFo2b2F2djRpZVhhYUJmV21heHVwZkE4NEhySEppZG9TaDlHbmdKbTl3c0hZTTBaSE5tc2pLYWc5TVJnajdESk5Rankxei1IbE1IZDNEcmdHZXdiMFJNbkNWNnFONGNxVm5EU1o5M210NDBlc0JueTA?oc=5",
-      "summary": "Gov. Sanders makes visit to South Arkansas Camden News",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-15T22:03:00+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 42.87
-    },
-    {
-      "category": "OKLAHOMA",
-      "title": "State Question 847 would cap Oklahomans’ property tax growth. At what cost? - Oklahoma Voice",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZERkU3pLYUxxSG9mYXZpZFE5VkVwQkZxUDBiRVNMR3NwTmpmdmFiZUJpSFpabDZJQmxfbkVpdU52Y2hPU3ItS3A1Q2M1b2xVOFlUMjR5amZPOFg1NjFkMDBYalBhU2FndTRYNURnQVFWZkl2STY2SGE0RFBaRWJvMDZiV0lPRUVWeWNzQkVJOVRXRUZ2Ymd3SlRZZkx0dkNIbThNbUVoREhaa2RfblVj?oc=5",
-      "summary": "State Question 847 would cap Oklahomans’ property tax growth. At what cost? Oklahoma Voice",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-14T10:31:47+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 49.91
-    },
     {
       "category": "OKC & TULSA",
       "title": "Silver Alert issued for missing 84-year-old man last seen on foot in Oklahoma City",
@@ -43,7 +10,9 @@
       "published_at": "2026-10-16T23:30:28+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.99
+      "discovery_score": 119.73,
+      "article_url": "https://kfor.com/news/local/silver-alert-issued-for-missing-84-year-old-man-last-seen-on-foot-in-oklahoma-city/",
+      "link_type": "direct_publisher"
     },
     {
       "category": "LITTLE ROCK",
@@ -54,150 +23,35 @@
       "published_at": "2026-10-16T16:18:33+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.39
+      "discovery_score": 119.13,
+      "article_url": "https://arktimes.com/arkansas-blog/2026/10/16/central-arkansas-congressional-candidates-debate-independence-from-trump-cost-of-living",
+      "link_type": "direct_publisher"
     },
     {
       "category": "DALLAS–FORT WORTH",
-      "title": "ASI looks to expand testing at north Fort Worth facility",
-      "url": "https://fortworthreport.org/2026/10/16/asi-looks-to-expand-testing-at-north-fort-worth-facility/",
-      "summary": "Fort Worth’s AllianceTexas development continues to be a hub for the growing autonomous vehicle market. Autonomous Solutions Inc., a company that develops technology for self-governing vehicles, plans to expand its Texas-based office space to over twice its size as it advances testing. “For customers and partners, this enables optimal support and accelerated deployment of OEM-agnostic, autonomous vehicle solutions that enhance safety, efficiency ",
+      "title": "Fort Worth Public Library celebrates 125th birthday at city hall",
+      "url": "https://fortworthreport.org/2026/10/16/fort-worth-public-library-celebrates-125th-birthday-at-city-hall/",
+      "summary": "Fort Worth residents laughed and embraced in the city council chamber of Fort Worth City Hall, filling the room with the chatter of old friends. All were connected by one thing — the Fort Worth Public Library. During the 125th birthday of the Fort Worth Public Library on Oct. 15, Gaye Reed greets and embraces an old friend, Rosalinda Martinez, who both previously served on the library advisory board together. (Mica Magday | Fort Worth Report) “Of",
       "summary_provenance": "publisher_rss_content",
-      "published_at": "2026-10-16T22:13:18+00:00",
+      "published_at": "2026-10-17T00:03:05+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 109.88
+      "discovery_score": 109.77,
+      "article_url": "https://fortworthreport.org/2026/10/16/fort-worth-public-library-celebrates-125th-birthday-at-city-hall/",
+      "link_type": "direct_publisher"
     },
     {
       "category": "AUSTIN",
-      "title": "Travis County, City of Austin take step toward 'History Corridor' - Community Impact Newspaper",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTEZMcGRYbUFmMUcwZ3VPTjRXVXBSa3ZXZFQxUGpPRXB3UlJ4bkEybnpYVlRhMmRoNTdTQ0IzME1KTWVBMTZuN0hMaEhKd1dsNXA5VF8wTEdMRGdjUml5UTE1RXJtUXFLNUd0THR2LUxvR3RmYjNWbE85ZVljcHBVNmtxV3Y3N0NWMUVfeFpzUnlBODRGdzFvc3l1cHN6bWk4SURkR3dWc3V0eF9TZHY1S05MLTZIazJF?oc=5",
-      "summary": "Travis County, City of Austin take step toward 'History Corridor' Community Impact Newspaper",
+      "title": "Increased law enforcement presence on Northridge Road in Austin",
+      "url": "https://www.kxan.com/news/local/williamson-county/increased-law-enforcement-presence-on-northridge-road-in-austin/",
+      "summary": "The Williamson County Sheriff's Office alerted the public on Friday night to increased law enforcement presence on Northridge Road.",
       "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T00:54:16+00:00",
+      "published_at": "2026-10-17T00:53:13+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.11
-    },
-    {
-      "category": "U.S. POLICY",
-      "title": "Ask Jordan: What power does Congress have over pardons? - Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQd2xFZVZidmVTRE82aG5qZWk3d1lsUTBKc2dvdkhQeEYwbGl0bW9MSG5BSF93VlZUaEc5b1c2VXJNNXJVZ1lOZHJFRW9OUTBPNEozZ2tRRG9qTEVmYTc2Y1FLT0xKNzdPZi1PZUxnaW9raTB2QWd2QTVWZnhwUlVYTWs0djlwVmVNYnkxTXNlVFA1Ymow?oc=5",
-      "summary": "Ask Jordan: What power does Congress have over pardons? Yahoo",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T16:00:50+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 109.37
-    },
-    {
-      "category": "ECONOMY",
-      "title": "Gold rises and catches its breath near 4200 dollars amid the struggle of inflation and interest rates - المتداول العربي",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNVHEzYm5OdTd0VHpLcmxUd0FwREhzMUM0UkNEQjEwTFpxOTB0a0lVQmdHNklYYzRLV2hRX2NaWGc5TWVNUHhxU2QtN1pCN2xETzk0ZG1PUEFYS2R6cXZlTHZCQVhmdWUzX2Z2Zk1sREd5Y1JBU29oZGdFZDI5MGtFLWFBd1p2Y0RkRGxjNmJHZFcyRmJhT3pCTVVtWEpuMUpJeXU1SmMxRTJuVDRQdHFtYUQ5VXpRbTEzdDloZ25FcE5wbGVXZEZMTG1XRlcwc1ZNWGhuWmV1bnU2S09QUlFOOEpnSUJRU1Y2M2ItRjBR?oc=5",
-      "summary": "Gold rises and catches its breath near 4200 dollars amid the struggle of inflation and interest rates المتداول العربي",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T11:53:27+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 129.02
-    },
-    {
-      "category": "HOUSING",
-      "title": "U.S. Mortgage Rates Steady at 7.4% - Housing Strain - Briefs Finance",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNFFKaHZBR2RHa21EM1N3S18xenhEbVBNRzV2VEx2SnFrMkgxTGxEVVNhTmRHd3VLeGFTNENVUDRrSnZlbXJYR1drbm0wMHNqYnlpQzd6b1FkdXlLYU1hWjQwWENpbWRLblVKVlQxQ0JRZU5WYWZ1NVpqSnJ2RWNCRjZoVmk0RTh1SHpXclFLeGxlQQ?oc=5",
-      "summary": "U.S. Mortgage Rates Steady at 7.4% - Housing Strain Briefs Finance",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T04:02:33+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.37
-    },
-    {
-      "category": "CIVIL RIGHTS",
-      "title": "Blockbuster-era law governing privacy of video rentals gets a fresh look from Supreme Court - The Tribune-Democrat",
-      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPMlVqcjA3V21KTk1EdWxwMVFWeVB1NWg5dm1NTXYyTEFwMVN3TTUwSGpPU0trdTRBdzNRaUVrS0dnSFhDQ1FHNEY4T1d5WElBTDhMVjBTRFc0d2QtTjlwNXZyQ051YkpObUxRdUhBcHA2RU5EMlZVZTY1NTlzWG5nclVrTFptQ09rZFFHN1NicGF6OUtzQU1NRlhYcEFLa3NLWWM5djZyUGVzY3lzMTNSdk1MSWYwdkZHUFRGdzYzdTVQQlJpa1BKd2xLSWdpQkVRZXhYZWQ3cWJGejRKYXFibGxDZzR3d0FmbFFZMkExd2d6cEt0cU52eG1vclNxUGtHNEpGYV80TzNNU3FPMWdV?oc=5",
-      "summary": "Blockbuster-era law governing privacy of video rentals gets a fresh look from Supreme Court The Tribune-Democrat",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-14T18:04:00+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 50.54
-    },
-    {
-      "category": "BEEF",
-      "title": "USDA Boxed Beef Cutout Report October 16, 2026: Choice & Select Values - News and Statistics - IndexBox",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRXVjc2JfQmI5bGhFdnR5SldBMVJ6aWJVZzVJWFVLNnRIYmc4M0VCQ0lPaHJYbGxhLU15SFR4YmtROVBXMHdqTlZmV3BSYzA5UWY3R3QwMlowUzE1MjZZVGJ5Rnh0Z3hJcEhHaFl1X1ZCR0NTcGRaXzZfa0w4WV9HeG1TNktyakdzQzNQYlRUX0tncXFfT255bXF5TTh4Zw?oc=5",
-      "summary": "USDA Boxed Beef Cutout Report October 16, 2026: Choice & Select Values - News and Statistics IndexBox",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T20:01:00+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.7
-    },
-    {
-      "category": "TURKEY",
-      "title": "USDA raises poultry and egg production forecasts for 2026 and 2027 - High Plains Journal",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNjB1Yno2b3pDdzlQZk1aQUYzcS01V2U1VEFmYmVOMmY2TzlBSnEwY2I3S19MM1FVUWNUWFdkWEwwUDE2a2FUNkVLam1yYTRtekhhZjhRZ3dVbjkwdzl5WTM0WFJkeWEtLXM0bmUzMF9lcHNJX0lySWN0UHFGOGJjb2l1TVFWQzQtckNtRHJaaWZ3M0FPSFBzMFR3?oc=5",
-      "summary": "USDA raises poultry and egg production forecasts for 2026 and 2027 High Plains Journal",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T16:07:35+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.37
-    },
-    {
-      "category": "DATA CENTERS",
-      "title": "A Giant Data Center Offers a Permitting Reform Test Case - Heatmap News",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB4Q3RPYzBvLTlMLW13czVLTG5Xc0djYjNxNTQ2TkZVV21SLTgtMDRWX0hHc3hjcV9SOWJnSnJRbkNBM2hERFVpS2FoQm85OG5sOHRoUUtVX3B6ZVNIY2s2ZzNhQzJ0RUdqYV9ZS1ZZdGlSUHlYbEQwc3JZUjY?oc=5",
-      "summary": "A Giant Data Center Offers a Permitting Reform Test Case Heatmap News",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T20:14:21+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 109.72
-    },
-    {
-      "category": "AGRICULTURE",
-      "title": "USDA Slaughter Data Oct 16, 2026: Cattle, Hogs, Chickens - News and Statistics - IndexBox",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVENKTkNTMHp0cy1adjJBSi0xRkIwbGRkaXBZSnNDWVNoSVVNVEpGYnQ5YVBpZHZjS1FnM2ZHWkRsamN0czRjRmR4cXA0UzdCNGhLSUFxN3BpRWJLSmUzNXZkMnRJSHRBdkJUQ1NYdWZxajFxQnh4RFRQOEhDYS02cEhxUlc1QmdaLUdYb1dJZGUtbHc?oc=5",
-      "summary": "USDA Slaughter Data Oct 16, 2026: Cattle, Hogs, Chickens - News and Statistics IndexBox",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T18:41:16+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 129.59
-    },
-    {
-      "category": "CRYPTO",
-      "title": "Crypto News Today | Top Headlines & Updates - BlockchainReporter",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5lTGFkV2RNY2NwVUVIeUVhcWxIcV9BNElCWEQ1TkRQUFFOVm05MU9sZ29haDY5NkliZjYtZHRLUmgyZnREdnRWLThWTFE4bGJycDZ2VnBZa0NRRXFRanc?oc=5",
-      "summary": "Crypto News Today | Top Headlines & Updates BlockchainReporter",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T18:24:12+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.56
-    },
-    {
-      "category": "AI",
-      "title": "Not Nvidia. Not Cisco. This Is the AI Networking Stock Quietly Wiring Every Data Center - The Motley Fool",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPN0dmS0NFZ3cwcWdpZlNxcmhwaTlWbGJIM3JJanEtakVrZ0gxOGUwSHlMcl94VzQtQlJqMk5wVWFCdFVLbVNhVEJ2VTNMV2Z3dHdCNWJWbk5kRGd2UmJlbEpFZ3lMMWFjUC0yckFjLU1LYXhsU1haTHdtRG8xR2p2QXhZaUpFWjhGOVY3V1dkTVpjSXpPOVZ2bw?oc=5",
-      "summary": "Not Nvidia. Not Cisco. This Is the AI Networking Stock Quietly Wiring Every Data Center The Motley Fool",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T00:15:00+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 128.05
-    },
-    {
-      "category": "TECH & SECURITY",
-      "title": "CISA Warns of Palo Alto Networks PAN-OS Code Injection Vulnerability Exploited in Attacks - CyberSecurityNews",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPSUc4U2FLWlZmTW4wSFVleFoxQmlYWXR3MUV3U2ZjR04waDdvY1lvX0VwTnZBX0YwOTJpN25qZEtkVDFoOWt1ZlVjMV9DcjhkbFA0NHlFMFM1SlRrNVh1aEZaNmRFYU82YjlIU2tvTjhlMlZMZVdGa0RvQzUxd29EbzR30gGCAUFVX3lxTE9JRzhTYUtaVmZNbjBIVWV4WjFCaVhZdHcxRXdTZmNHTjBoN29jWW9fRXBOdkFfRjA5Mmk3bmpkS2RUMWg5a3VmVWMxX0NyOGRsUDQ0eUUwUzVKVGs1WHVoRlo2ZEVhTzZiOUhTa29OOGUyVkxlV0ZrRG9DNTF3b0RvNHc?oc=5",
-      "summary": "CISA Warns of Palo Alto Networks PAN-OS Code Injection Vulnerability Exploited in Attacks CyberSecurityNews",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T06:45:45+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 128.59
+      "discovery_score": 109.84,
+      "article_url": "https://www.kxan.com/news/local/williamson-county/increased-law-enforcement-presence-on-northridge-road-in-austin/",
+      "link_type": "direct_publisher"
     },
     {
       "category": "OKC & TULSA",
@@ -208,7 +62,9 @@
       "published_at": "2026-10-16T23:04:27+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.95
+      "discovery_score": 119.69,
+      "article_url": "https://kfor.com/news/11-5-million-awarded-to-oklahoma-city-youth-mental-health-programs-research-shows-high-need/",
+      "link_type": "direct_publisher"
     },
     {
       "category": "OKC & TULSA",
@@ -219,139 +75,9 @@
       "published_at": "2026-10-16T20:42:27+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.76
-    },
-    {
-      "category": "AGRICULTURE",
-      "title": "USDA Turkey Market Report Oct 12-16, 2026: Prices, Trading Volumes & Grocery Features - News and Statistics - IndexBox",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQUFDb2NySjdiNjN4MVNJcGFPMjA0VjN5MzNma29idXBkVnI3WDZRSGlNcmE4OXdSQU9TNTJSZm5JdEtKbUt2TEJzMnRabVV1Q1BTX09yS1BhVGZvRDVWR1dvUXQ5Sk9jcXdFc19nV3N0LUF1YXExMnp3Y0tTSnMteGd6ZktOV1c4OXJBYTkxSDh0YXFNa09UVGM3ZjV3WjRsenQ4TVdfeEZrdTdGSDNaWWVSa2ljTlk4?oc=5",
-      "summary": "USDA Turkey Market Report Oct 12-16, 2026: Prices, Trading Volumes & Grocery Features - News and Statistics IndexBox",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T20:00:30+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.7
-    },
-    {
-      "category": "AGRICULTURE",
-      "title": "USDA Chicken Market Report: Whole Bird Prices, Retail Features, Cold Storage - News and Statistics - IndexBox",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQd2dUQWZSM05wTWJfMlJ2RUlOZEZ5YVBBMDBKU0RVaW5RSHktMDhHdGl4UXdlYXEzUm16UGRhcjJLeEhON3U2bDlnOEM2Y3RhaVF6dDJHaTY5d3Q2OGNiZHNLWG5fOXVTTGpvdjdhOVltYkE5MWxrTGt3bU5vVTJjVzdfMTVBWkg4VHpzN3VZYVBTd3RmOG45czFxazN5aUFyTmlFYVJzdGo?oc=5",
-      "summary": "USDA Chicken Market Report: Whole Bird Prices, Retail Features, Cold Storage - News and Statistics IndexBox",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T20:00:31+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.7
-    },
-    {
-      "category": "BEEF",
-      "title": "Cattle climb, hogs slide after USDA report - Farm Progress",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQMFZJYUJlNEQ2M0lULTQ3Y3V2clpOS1IxTGFmRlA0alVWUmx6bFFiODVJSTVUanlSYktTX3RtRTJ4VnF0WE9WaGVfcExGMms0SXZLLTNFM1BzRDNqU0NyVmRJRElTclR0U0Q4RUlrN1dENm9JRjFMTndrRDF4LTU5TWwzazByZEptNFpJ?oc=5",
-      "summary": "Cattle climb, hogs slide after USDA report Farm Progress",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T17:41:41+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.51
-    },
-    {
-      "category": "AI",
-      "title": "Investors Turn on Data Center Builders as Rising Interest Rates Dampen the AI Trade - Newcomer | Substack",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA3S2lacWZZLTlPRm9hczZIXzlaTlpBd1VVSzk5dWNXeWxfZUNqNFo4UWdwX0ZpWllLakZzNDNSWEg5Z0xIa0dSNzNZOEVwZUhqVGdpczgzSi03VDZhSVdnRE4tY29sWlQ5VnJLT3prQy0tZw?oc=5",
-      "summary": "Investors Turn on Data Center Builders as Rising Interest Rates Dampen the AI Trade Newcomer | Substack",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T15:02:45+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.28
-    },
-    {
-      "category": "ECONOMY",
-      "title": "US Dollar Slides as Fed Rate Hike Bets Fade Despite Hot Inflation - Investing.com",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQaHFSM1BRME9GV3ZkX2FaRXAyUy1vR2c2cG9HZ1R3TDBkQ3lNbUU4ODd2RUZaTnpOdEhVRVBlWGFUaFBiVlpKYzdaclYyRkd4ejhnRzNrTTJ2NkZoWkpQdjNickh6TGtMaEN3UGU0ZnZpX2RuV2hoRFp0YTlCZURRUEZ3NGdOQk1NNzNXVFlRc0ExaWx6WVowN0JfQlN0eDF2R3lVcG1fOGJLYzFVcnhn?oc=5",
-      "summary": "US Dollar Slides as Fed Rate Hike Bets Fade Despite Hot Inflation Investing.com",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T14:47:37+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.26
-    },
-    {
-      "category": "AGRICULTURE",
-      "title": "USDA Turkey Market: Wholesale Prices Fall, Retail Features Increase - News and Statistics - IndexBox",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMWxkZFd0aXRxdWg4dnBneGtkQUJYMVo1WlY1ZlVqV1FMSHhPc2tVV2dhYnQ1ZjNRczI5b1lyMExpZmdRV2tTSDdJUGoyQTlZU1BBN1d3UzVWYVRLbVpOUXlpaXg3cm5BVlpSSjF4bzNZVFZvUlhZZUFzblJaNlljMERlRjNFUXVIdV9IZ3ppMWhReXY3cnVMcTR5aFhuUVk?oc=5",
-      "summary": "USDA Turkey Market: Wholesale Prices Fall, Retail Features Increase - News and Statistics IndexBox",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T14:30:38+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.24
-    },
-    {
-      "category": "CRYPTO",
-      "title": "Deutsche Bank to Launch Bitcoin and Ethereum Custody Within Weeks - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOS1RqN1FjZy0tNV9PQXNVVGRpZXBheTB5MkpHWTVPQktkblpqVzY2SUdNQVR6cDdHeER5ME1oT25xeGRaallQNFYxTkFtOVdxY0t6YnpZUXh6NkExTnNPMk9TSTdOWHpOSVdKeXdDdHNNTkl4RkF3Z3JGMGhHMkF3Y1o0WGNSUlZoeHRjUVo2RHhKa0g0UU42RGtLZnVXUk1hY0dnZUxaek1RcjdmR0RPX1RaLWp6OUdDa3RuZVZqUEZtOVk?oc=5",
-      "summary": "Deutsche Bank to Launch Bitcoin and Ethereum Custody Within Weeks TradingView",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T13:39:00+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 119.17
-    },
-    {
-      "category": "TECH & SECURITY",
-      "title": "U.S. CISA adds Atlassian flaw to its Known Exploited Vulnerabilities catalog - Security Affairs",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNOXpFdUNkVmJmcGJTdnhqX2JaYXVPaHlBVDlXeHBZYkc0VU00QzdzeDNWdFl1VTRBV3N0TFRNYmp2SjZrM1RXWjlRRDN6R1BuWXA3NXZSeUZFcW9SeW95Q3VjMldnQWZkN1g1Yko0YzBoUldkZ19GN0lPQkUtaVcyOW5fZ3lld3pUVzZnRmVmSWtyVlVBX0RoZHluQmU5LWVzN19sc3dxVVY2aWdMYXR0T3dEenVlQ0lwTnlselJVcWxMMEk0R3fSAcYBQVVfeXFMTTl6RXVDZFZiZnBiU3Z4al9iWmF1T2h5QVQ5V3hwWWJHNFVNNEM3c3gzVnRZdVU0QVdzdExUTWJqdko2azNUV1o5UUQzekdQbllwNzV2UnlGRXFvUnlveUN1YzJXZ0FmZDdYNWJKNGMwaFJXZGdfRjdJT0JFLWlXMjluX2d5ZXd6VFc2Z0ZlZklrclZVQV9EaGR5bkJlOS1lczdfbHN3cVVWNmlnTGF0dE93RHp1ZUNJcE55bHpSVXFsTDBJNEd3?oc=5",
-      "summary": "U.S. CISA adds Atlassian flaw to its Known Exploited Vulnerabilities catalog Security Affairs",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T11:06:31+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.96
-    },
-    {
-      "category": "ECONOMY",
-      "title": "Gold and Silver Futures Rise as Treasury Yields and Dollar Retreat - TOKENPOST",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1lUnhFRUFaXzdoa0lMMnNYaWUtaHprVWtIVHRsYVVyT1prVWVES0h1VFkxZ1Z4OGFnZXNES0hXY196MTlvc2lHTHZHLXJubWxwVVp4ZkowZ2lqQQ?oc=5",
-      "summary": "Gold and Silver Futures Rise as Treasury Yields and Dollar Retreat TOKENPOST",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T07:01:37+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.62
-    },
-    {
-      "category": "TECH & SECURITY",
-      "title": "Chinese Hackers Exploit BeyondTrust Zero-Day to Gain Root Access and Deploy Backdoors - CyberSecurityNews",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1JSElwSnU2RXRLRkVBRkR3Z1kxSnJRQk5XeWdLUTBKcjN0RTNNdEdjN09xaUUtWXptTVNjM1ZnQjRwUUFQbjFPa1pwQnFQLVl3Qm9WNzVIWU5WbzY3eVNnazRlQ0t1Z9IBZkFVX3lxTE1JSElwSnU2RXRLRkVBRkR3Z1kxSnJRQk5XeWdLUTBKcjN0RTNNdEdjN09xaUUtWXptTVNjM1ZnQjRwUUFQbjFPa1pwQnFQLVl3Qm9WNzVIWU5WbzY3eVNnazRlQ0t1Zw?oc=5",
-      "summary": "Chinese Hackers Exploit BeyondTrust Zero-Day to Gain Root Access and Deploy Backdoors CyberSecurityNews",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T07:07:41+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.62
-    },
-    {
-      "category": "ECONOMY",
-      "title": "10-Year Treasury Yield Rises to 5.3% as Hot Inflation Revives Fed Rate Hike Fears - KuCoin",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPTmh3Ykg2cEl0cjVnYkxrVFVkWjlnYXk4UTlONmJaRmRjU0NQdmpqbXg3MnFFX0M5NW9iaUNaTkcyTmx2bmhoRUlDVkZVR3dtUHRmSGlwRlNTNUZYUmFlUlVmVFp0bGNMdDl4dXRXUlluc2NiYTZrV3M5U3RKR3pPamF2cEk?oc=5",
-      "summary": "10-Year Treasury Yield Rises to 5.3% as Hot Inflation Revives Fed Rate Hike Fears KuCoin",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T06:01:26+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.53
-    },
-    {
-      "category": "AI",
-      "title": "AI: Anthropic’s Mega Data Center Sprint ahead of its Mega-AI IPO. AI-RTZ #1241 - AI: Reset to Zero",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5hRnBlSkROYjJscmJiRUVsckl5WnNMdGQ5UHJQQzkzTkJyV1BMRkZYNTgtbUdMQTNwU3ZNeTJIOG9IVnBmXzV4eTBiZFo2bEktaU1qTldRN05sb1RINlB1TW8wTTlUMGpMZ2NfYVZ1SkpnaEpnVldTMTZHeDFySFE?oc=5",
-      "summary": "AI: Anthropic’s Mega Data Center Sprint ahead of its Mega-AI IPO. AI-RTZ #1241 AI: Reset to Zero",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T05:02:36+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.45
+      "discovery_score": 119.5,
+      "article_url": "https://kfor.com/news/local/recent-rain-in-oklahoma-city-leaves-the-unhoused-in-need/",
+      "link_type": "direct_publisher"
     },
     {
       "category": "AI",
@@ -362,9 +88,10 @@
       "published_at": "2026-10-16T04:00:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.36,
+      "discovery_score": 118.1,
       "article_url": "https://arxiv.org/abs/2610.20921",
-      "article_read": true
+      "article_read": true,
+      "link_type": "direct_publisher"
     },
     {
       "category": "AI",
@@ -375,9 +102,10 @@
       "published_at": "2026-10-16T04:00:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.36,
+      "discovery_score": 118.1,
       "article_url": "https://arxiv.org/abs/2610.20939",
-      "article_read": true
+      "article_read": true,
+      "link_type": "direct_publisher"
     },
     {
       "category": "AI",
@@ -388,9 +116,62 @@
       "published_at": "2026-10-16T04:00:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.36,
+      "discovery_score": 118.1,
       "article_url": "https://arxiv.org/abs/2610.21074",
-      "article_read": true
+      "article_read": true,
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "LITTLE ROCK",
+      "title": "Arkansas High School Football Scoreboard: Week 7",
+      "url": "https://www.fox16.com/fearless-friday/arkansas-high-school-football-scoreboard-week-7-2/",
+      "summary": "LITTLE ROCK, Ark. – Week 7 of the Arkansas high school football season is here, with key matchups scheduled under Friday night lights across the Natural State. From the Northwest tip of the state down to the Delta, here is a roundup of high school football games happening this week. Games of the Week: Statewide [...]",
+      "summary_provenance": "rss_description",
+      "published_at": "2026-10-17T01:29:48+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.89,
+      "article_url": "https://www.fox16.com/fearless-friday/arkansas-high-school-football-scoreboard-week-7-2/",
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "LITTLE ROCK",
+      "title": "Security guard recalls deadly Little Rock gas station shooting that left 2 dead, 4 injured",
+      "url": "https://www.fox16.com/crime/security-guard-recalls-deadly-little-rock-gas-station-shooting-that-left-2-dead-4-injured/",
+      "summary": "A deadly shooting at a Little Rock gas station Thursday evening left two people dead and four others injured, sending shockwaves through nearby businesses and raising renewed concerns about violence in the area.",
+      "summary_provenance": "rss_description",
+      "published_at": "2026-10-17T00:34:56+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.82,
+      "article_url": "https://www.fox16.com/crime/security-guard-recalls-deadly-little-rock-gas-station-shooting-that-left-2-dead-4-injured/",
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "AUSTIN",
+      "title": "Central Texas leaders look to Miami for passenger rail lessons",
+      "url": "https://www.kxan.com/traffic/traffic-projects/central-texas-leaders-look-to-miami-for-passenger-rail-lessons/",
+      "summary": "Regional leaders from the Austin Chamber of Commerce and the newly formed Central Texas Alliance recently visited Miami to study Brightline's passenger rail system. The delegation focused on improving mobility and infrastructure for the 13-county region, which is expected to reach a population similar to Phoenix by 2050. While Brightline currently faces financial restructuring, local officials plan to proceed with a secondary study regarding the ",
+      "summary_provenance": "rss_description",
+      "published_at": "2026-10-17T00:33:12+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.82,
+      "article_url": "https://www.kxan.com/traffic/traffic-projects/central-texas-leaders-look-to-miami-for-passenger-rail-lessons/",
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "LITTLE ROCK",
+      "title": "UAPB mourns alumnus killed in Little Rock gas station shooting that left two dead",
+      "url": "https://www.fox16.com/news/local-news/uapb-mourns-alumnus-killed-in-little-rock-gas-station-shooting-that-left-two-dead/",
+      "summary": "The University of Arkansas at Pine Bluff is mourning the loss of one of its alumni after 74-year-old James Parker was killed in a shooting in Little Rock that left two people dead and several others injured Thursday.",
+      "summary_provenance": "rss_description",
+      "published_at": "2026-10-17T00:02:04+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.77,
+      "article_url": "https://www.fox16.com/news/local-news/uapb-mourns-alumnus-killed-in-little-rock-gas-station-shooting-that-left-two-dead/",
+      "link_type": "direct_publisher"
     },
     {
       "category": "OKC & TULSA",
@@ -401,17 +182,103 @@
       "published_at": "2026-10-16T23:27:27+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 109.99,
+      "discovery_score": 109.72,
       "article_url": "https://www.kjrh.com/news/local-news/seems-very-random-south-tulsa-neighbors-frustrated-by-new-billboard",
-      "article_read": true
+      "article_read": true,
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "LITTLE ROCK",
+      "title": "Arkansas lawmakers OK contract for center to field questions on Medicaid, other services",
+      "url": "https://arkansasadvocate.com/2026/10/16/arkansas-lawmakers-ok-contract-for-center-to-field-questions-on-medicaid-other-services/",
+      "summary": "Lawmakers on Friday approved a three-year, $48 million contract with the Arkansas Foundation for Medical Care to set up a customer service center that will field questions about Medicaid, nutrition assistance and other…",
+      "summary_provenance": "publisher_article_excerpt",
+      "published_at": "2026-10-16T23:26:34+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.72,
+      "article_url": "https://arkansasadvocate.com/2026/10/16/arkansas-lawmakers-ok-contract-for-center-to-field-questions-on-medicaid-other-services/",
+      "article_read": true,
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "AUSTIN",
+      "title": "20% of voter-approved Austin bond funding from last decade yet to be spent, new dashboard shows",
+      "url": "https://www.kxan.com/news/local/austin/austin-bond-dashboard-shows-20-of-voter-approved-funding-from-last-decade-yet-to-be-spent/",
+      "summary": "The city of Austin has spent about 70% of total bond funding approved by voters in the last decade, according to a new dashboard released to increase transparency with the public.",
+      "summary_provenance": "rss_description",
+      "published_at": "2026-10-16T23:19:22+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.71,
+      "article_url": "https://www.kxan.com/news/local/austin/austin-bond-dashboard-shows-20-of-voter-approved-funding-from-last-decade-yet-to-be-spent/",
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "OKC & TULSA",
+      "title": "Tulsa Ports considers legal action against Inola over proposed $4 billion aluminum smelter",
+      "url": "https://www.kjrh.com/news/local-news/tulsa-ports-considers-legal-action-against-inola-over-proposed-4-billion-aluminum-smelter",
+      "summary": "INOLA, Okla. — The fight over a proposed $4 billion aluminum smelter in Inola could be headed into another courtroom, with Tulsa Ports considering legal action against the…",
+      "summary_provenance": "publisher_article_excerpt",
+      "published_at": "2026-10-16T22:21:42+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.63,
+      "article_url": "https://www.kjrh.com/news/local-news/tulsa-ports-considers-legal-action-against-inola-over-proposed-4-billion-aluminum-smelter",
+      "article_read": true,
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "OKC & TULSA",
+      "title": "Body cam captures moments OKC officers find DUI driver asleep in the road with the car still in drive",
+      "url": "https://kfor.com/news/local/body-cam-captures-moments-okc-officers-find-dui-driver-asleep-in-the-road-with-the-car-still-in-drive/",
+      "summary": "Body camera footage captured the moments Oklahoma City police officers found a driver asleep in the driver's seat while the car was in drive and a child was sleeping in the back seat.",
+      "summary_provenance": "rss_description",
+      "published_at": "2026-10-16T22:09:21+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.62,
+      "article_url": "https://kfor.com/news/local/body-cam-captures-moments-okc-officers-find-dui-driver-asleep-in-the-road-with-the-car-still-in-drive/",
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "OKC & TULSA",
+      "title": "OKC Oktoberfest and it's Unofficial King",
+      "url": "https://kfor.com/news/great-state/okc-oktoberfest-and-its-unofficial-king/",
+      "summary": "OKLAHOMA CITY (KFOR) — If anyone could carry the title of 'King of OKC Oktoberfest', it would have to be Mike Tourek. \"1 in 6 Oklahomans comes from German heritage,\" he tells us. \"It's impressive.\" He's a longtime organizer of Oktoberfests in the Metro who came of age in his parents Old Germany restaurant, and [...]",
+      "summary_provenance": "rss_description",
+      "published_at": "2026-10-16T22:13:13+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.62,
+      "article_url": "https://kfor.com/news/great-state/okc-oktoberfest-and-its-unofficial-king/",
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "DALLAS–FORT WORTH",
+      "title": "ASI looks to expand testing at north Fort Worth facility",
+      "url": "https://fortworthreport.org/2026/10/16/asi-looks-to-expand-testing-at-north-fort-worth-facility/",
+      "summary": "Fort Worth’s AllianceTexas development continues to be a hub for the growing autonomous vehicle market. Autonomous Solutions Inc., a company that develops technology for self-governing vehicles, plans to expand its Texas-based office space to over twice its size as it advances testing. “For customers and partners, this enables optimal support and accelerated deployment of OEM-agnostic, autonomous vehicle solutions that enhance safety, efficiency ",
+      "summary_provenance": "publisher_rss_content",
+      "published_at": "2026-10-16T22:13:18+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.62,
+      "article_url": "https://fortworthreport.org/2026/10/16/asi-looks-to-expand-testing-at-north-fort-worth-facility/",
+      "link_type": "direct_publisher"
     }
   ],
   "article_access_status": {
-    "publisher_article_excerpt": 4,
+    "publisher_article_excerpt": 6,
     "publisher_page_description": 0,
-    "publisher_rss_content": 2,
-    "rss_description": 30,
+    "publisher_rss_content": 3,
+    "rss_description": 11,
     "unavailable": 0
+  },
+  "direct_link_policy": {
+    "enabled": true,
+    "google_intermediaries_excluded": 40,
+    "tracking_or_affiliate_links_excluded": 0
   },
   "weekly_trend": {
     "title": "No evidence-backed weekly trend published yet",
@@ -456,7 +323,7 @@
     },
     "LITTLE ROCK": {
       "ok": true,
-      "items": 51,
+      "items": 49,
       "working_sources": [
         "https://www.fox16.com/feed/",
         "https://arktimes.com/feed/",
@@ -466,7 +333,7 @@
     },
     "DALLAS–FORT WORTH": {
       "ok": true,
-      "items": 8,
+      "items": 10,
       "working_sources": [
         "https://fortworthreport.org/feed/",
         "https://www.nbcdfw.com/?rss=y",
@@ -476,7 +343,7 @@
     },
     "AUSTIN": {
       "ok": true,
-      "items": 25,
+      "items": 26,
       "working_sources": [
         "https://www.kxan.com/feed/",
         "https://news.google.com/rss/search?q=Austin%20Texas%20Travis%20County%20city%20government%20housing%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
@@ -491,7 +358,7 @@
     },
     "ECONOMY": {
       "ok": true,
-      "items": 34,
+      "items": 33,
       "working_sources": [
         "https://www.bls.gov/feed/bls_latest.rss",
         "https://news.google.com/rss/search?q=Federal%20Reserve%20dollar%20inflation%20treasury%20yields%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
@@ -499,7 +366,7 @@
     },
     "HOUSING": {
       "ok": true,
-      "items": 16,
+      "items": 15,
       "working_sources": [
         "https://news.google.com/rss/search?q=US%20mortgage%20housing%20rates&hl=en-US&gl=US&ceid=US:en"
       ]
@@ -513,7 +380,7 @@
     },
     "BEEF": {
       "ok": true,
-      "items": 32,
+      "items": 33,
       "working_sources": [
         "https://news.google.com/rss/search?q=USDA%20cattle%20beef%20livestock%20cattle-on-feed%20market%20report%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
@@ -532,7 +399,7 @@
     },
     "DATA CENTERS": {
       "ok": true,
-      "items": 27,
+      "items": 28,
       "working_sources": [
         "https://news.google.com/rss/search?q=AI%20data%20center%20power%20grid%20permitting%20construction%20United%20States%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
@@ -546,7 +413,7 @@
     },
     "CRYPTO": {
       "ok": true,
-      "items": 34,
+      "items": 33,
       "working_sources": [
         "https://news.google.com/rss/search?q=bitcoin%20ethereum%20SEC%20stablecoin%20regulation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]

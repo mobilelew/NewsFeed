@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "evaluated_at": "2026-10-16T23:38:03.788190+00:00",
+  "evaluated_at": "2026-10-17T02:45:47.740571+00:00",
   "acceptance": {
     "coverage": false,
-    "claim_authentication": false,
+    "claim_authentication": true,
     "same_day_morning_evening_comparison": false,
-    "published_feed_exists": false,
+    "published_feed_exists": true,
     "live_custom_domain_delivery": "not_tested_by_repository_audit"
   },
   "all_accepted": false,

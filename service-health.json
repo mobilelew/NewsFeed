@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-16T23:38:03+00:00",
+  "checked_at": "2026-10-17T02:45:47+00:00",
   "discovery": {
     "current": true,
-    "item_count": 36,
-    "last_updated": "2026-10-16T23:37:46+00:00",
-    "age_hours": 0.0,
+    "item_count": 20,
+    "last_updated": "2026-10-17T02:45:29+00:00",
+    "age_hours": 0.01,
     "status": "available_unverified"
   },
   "official_record_pilot": {
@@ -17,14 +17,16 @@
     "status": "metadata_only_not_legal_effect"
   },
   "verified_briefing": {
-    "published": false,
-    "last_updated": null,
-    "report_date": null,
-    "report_type": null,
-    "status": "not_published"
+    "published": true,
+    "last_updated": "2026-10-17T02:38:08+00:00",
+    "report_date": "2026-10-16",
+    "report_type": "evening",
+    "status": "published_not_independently_reaudited"
   },
   "archive": {
-    "kinds": []
+    "kinds": [
+      "evening"
+    ]
   },
   "acceptance": {
     "full_coverage_confirmed": false,

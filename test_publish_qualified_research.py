@@ -12,6 +12,14 @@ class QualifiedResearchTests(unittest.TestCase):
         self.assertEqual(doc["headlines"][0]["verification"],"Unverified")
         self.assertFalse(doc["independent_source_authentication"])
         self.assertTrue(doc["headlines"][0]["authority_confirmation"])
+    def test_blank_attribution_fields_are_filled_without_promoting_claim(self):
+        doc=copy.deepcopy(self.doc)
+        doc["headlines"][0]["attribution"]=""
+        doc["headlines"][0]["uncertainty"]=" "
+        checked=process(doc,{})["headlines"][0]
+        self.assertEqual(checked["verification"],"Unverified")
+        self.assertTrue(checked["attribution"].strip())
+        self.assertTrue(checked["uncertainty"].strip())
     def test_no_claims_rejected(self):
         self.doc["headlines"]=[]
         with self.assertRaises(ValueError):process(self.doc,{})

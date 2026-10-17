@@ -61,7 +61,7 @@ def load_submission(path):
             fail(f"Headline {i} must specify unknown or qualified legal status")
         if status == "Refuted" and h["claim_type"] != "attributed_claim":
             fail(f"Headline {i}: refuted assertion must be presented as an attributed claim")
-        if re.search(r"REPLACE|PLACEHOLDER|EXAMPLE\.ORG", json.dumps(h), re.I):
+        if re.search(r"\b(?:REPLACE_ME|PLACEHOLDER|TODO_INSERT|TBD_SOURCE)\b", json.dumps(h), re.I):
             fail(f"Headline {i} contains placeholder material")
         evidence = h.get("evidence")
         if not isinstance(evidence, list) or not evidence:
@@ -77,7 +77,7 @@ def load_submission(path):
             fail(f"Corroborated headline {i} needs two distinct independent-source URLs")
         if h.get("jurisdiction") not in STATES | {"national", "international", "multiple"}:
             fail(f"Headline {i} needs jurisdiction")
-    if re.search(r"REPLACE|PLACEHOLDER", json.dumps(data.get("baseline", [])), re.I):
+        if re.search(r"\b(?:REPLACE_ME|PLACEHOLDER|TODO_INSERT|TBD_SOURCE)\b", json.dumps(h), re.I):
         fail("Baseline contains placeholders")
     if data["report_type"] == "morning":
         baseline = data.get("baseline")

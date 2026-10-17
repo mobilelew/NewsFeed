@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-17T06:39:43+00:00",
+  "checked_at": "2026-10-17T14:25:15+00:00",
   "local_date": "2026-10-17",
   "reports": {
     "morning": {
-      "status": "not_due_or_pending",
+      "status": "missing_after_cutoff",
       "published_today": false,
       "cutoff_local": "06:45 America/Chicago"
     },

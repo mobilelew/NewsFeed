@@ -1,8 +1,13 @@
 """Offline tests for API report decoding; do not spend API credits."""
 import json, unittest
-from generate_news_candidate import extract, diagnostic, source_registry, coverage_audit
+from generate_news_candidate import extract, diagnostic, source_registry, coverage_audit, discovery_leads
 
 class CandidateTests(unittest.TestCase):
+    def test_discovery_leads_are_direct_and_bounded(self):
+        leads=discovery_leads(limit=3)
+        self.assertLessEqual(len(leads),3)
+        self.assertTrue(all(x["status"]=="UNVERIFIED DISCOVERY LEAD" for x in leads))
+        self.assertTrue(all("news.google.com" not in x["url"] for x in leads))
     def test_source_registry_includes_all_required_groups(self):
         sources=source_registry()
         self.assertIn("texas",sources["primary_sources"])

@@ -1,11 +1,146 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-17T16:17:26+00:00",
+  "checked_at": "2026-10-17T16:31:16+00:00",
   "status": "source_audit_only_not_semantic_verification",
   "reports": [
     {
       "schema_version": 1,
-      "checked_at": "2026-10-17T16:17:26+00:00",
+      "checked_at": "2026-10-17T16:31:14+00:00",
+      "report_date": "2026-10-17",
+      "report_type": "morning",
+      "source_check_scope": "original-source excerpts and reachability; NOT independent semantic verification",
+      "findings": [
+        {
+          "title": "Fed Chair Kevin Warsh declines to signal a near-term rate move at IMF fireside chat; emphasizes price stability",
+          "verification": "Unverified",
+          "source_check_status": "source_not_inspected",
+          "claim_independently_verified": false,
+          "legal_effect_confirmed": false,
+          "authority_confirmation": "Not checked: no eligible primary authority was cited; locate the controlling original record before verification.",
+          "sources_checked": [],
+          "official_indexes_checked": [
+            {
+              "authority": "Federal Reserve official speeches",
+              "url": "https://www.federalreserve.gov/newsevents/speeches.htm",
+              "status": "unavailable",
+              "checked_at": null,
+              "finding": "Official index retrieval failed: ValueError",
+              "claim_verified": false
+            }
+          ],
+          "sources_reached": 0,
+          "quoted_passages_located": 0
+        },
+        {
+          "title": "CoreWeave bond yields spike; market scrutiny of debt-funded AI data-center expansion intensifies",
+          "verification": "Unverified",
+          "source_check_status": "source_not_inspected",
+          "claim_independently_verified": false,
+          "legal_effect_confirmed": false,
+          "authority_confirmation": "Not checked: no eligible primary authority was cited; locate the controlling original record before verification.",
+          "sources_checked": [],
+          "official_indexes_checked": [],
+          "sources_reached": 0,
+          "quoted_passages_located": 0
+        },
+        {
+          "title": "Freddie Mac weekly PMMS shows 30-year fixed mortgage near 7.4% (latest published weekly reading)",
+          "verification": "Unverified",
+          "source_check_status": "source_retrieved_no_exact_excerpt",
+          "claim_independently_verified": false,
+          "legal_effect_confirmed": false,
+          "authority_confirmation": "Source checked: retrieved page did not contain the cited exact passage. Claim remains unresolved.",
+          "sources_checked": [
+            {
+              "url": "https://www.freddiemac.com/pmms/pmms_archives",
+              "outcome": "Source retrieved; cited exact passage not found.",
+              "retrieved_at": "2026-10-17T16:31:13+00:00",
+              "sha256": "6c7a314dd30199957e798394a9952ef7634360b63eacd04d1f3bce3f0a16dee4"
+            }
+          ],
+          "official_indexes_checked": [
+            {
+              "authority": "Freddie Mac PMMS data",
+              "url": "https://www.freddiemac.com/pmms/archive",
+              "status": "retrieved",
+              "checked_at": "2026-10-17T16:31:14+00:00",
+              "finding": "Official index retrieved; no claim-specific identifier matched. This does not confirm or refute the claim.",
+              "claim_verified": false
+            }
+          ],
+          "sources_reached": 1,
+          "quoted_passages_located": 0
+        },
+        {
+          "title": "USDA AMS published regional daily cattle reports including Texas and TX/OK/NM negotiated slaughter cattle summary (entries dated Oct 16, 2026)",
+          "verification": "Unverified",
+          "source_check_status": "source_retrieved_no_exact_excerpt",
+          "claim_independently_verified": false,
+          "legal_effect_confirmed": false,
+          "authority_confirmation": "Source checked: retrieved page did not contain the cited exact passage. Claim remains unresolved.",
+          "sources_checked": [
+            {
+              "url": "https://mymarketnews.ams.usda.gov/filerepo/reports",
+              "outcome": "Source retrieved; cited exact passage not found.",
+              "retrieved_at": "2026-10-17T16:31:13+00:00",
+              "sha256": "017485d043b9ad108e908fc4b23ecce0f97856f449078f053208a8c6de278494"
+            },
+            {
+              "url": "https://www.ams.usda.gov/market-news/regional-direct-slaughter-cattle",
+              "outcome": "Source retrieved; cited exact passage not found.",
+              "retrieved_at": "2026-10-17T16:31:14+00:00",
+              "sha256": "2d280d69ea3fa34295d7d163eb38f9c9611af55f33e2e562d8b0a71588256985"
+            }
+          ],
+          "official_indexes_checked": [
+            {
+              "authority": "USDA Agricultural Marketing Service",
+              "url": "https://www.ams.usda.gov/market-news",
+              "status": "retrieved",
+              "checked_at": "2026-10-17T16:31:14+00:00",
+              "finding": "Official index retrieved; no claim-specific identifier matched. This does not confirm or refute the claim.",
+              "claim_verified": false
+            }
+          ],
+          "sources_reached": 2,
+          "quoted_passages_located": 0
+        },
+        {
+          "title": "No verified new federal rights/legislation/regulation action in the prior 24 hours (federal rights/courts/legislation checked)",
+          "verification": "Unverified",
+          "source_check_status": "source_not_inspected",
+          "claim_independently_verified": false,
+          "legal_effect_confirmed": false,
+          "authority_confirmation": "Not checked: no eligible primary authority was cited; locate the controlling original record before verification.",
+          "sources_checked": [],
+          "official_indexes_checked": [
+            {
+              "authority": "U.S. Supreme Court opinions",
+              "url": "https://www.supremecourt.gov/opinions/slipopinions.aspx",
+              "status": "unavailable",
+              "checked_at": null,
+              "finding": "Official index retrieval failed: ValueError",
+              "claim_verified": false
+            },
+            {
+              "authority": "Federal Register",
+              "url": "https://www.federalregister.gov/",
+              "status": "unavailable",
+              "checked_at": null,
+              "finding": "Official index retrieval failed: ValueError",
+              "claim_verified": false
+            }
+          ],
+          "sources_reached": 0,
+          "quoted_passages_located": 0
+        }
+      ],
+      "independently_verified_findings": 0,
+      "pending_findings": 5
+    },
+    {
+      "schema_version": 1,
+      "checked_at": "2026-10-17T16:31:16+00:00",
       "report_date": "2026-10-16",
       "report_type": "evening",
       "source_check_scope": "original-source excerpts and reachability; NOT independent semantic verification",
@@ -18,6 +153,16 @@
           "legal_effect_confirmed": false,
           "authority_confirmation": "Not checked: no eligible primary authority was cited; locate the controlling original record before verification.",
           "sources_checked": [],
+          "official_indexes_checked": [
+            {
+              "authority": "Federal Reserve official speeches",
+              "url": "https://www.federalreserve.gov/newsevents/speeches.htm",
+              "status": "unavailable",
+              "checked_at": null,
+              "finding": "Official index retrieval failed: ValueError",
+              "claim_verified": false
+            }
+          ],
           "sources_reached": 0,
           "quoted_passages_located": 0
         },
@@ -29,6 +174,7 @@
           "legal_effect_confirmed": false,
           "authority_confirmation": "Not checked: no eligible primary authority was cited; locate the controlling original record before verification.",
           "sources_checked": [],
+          "official_indexes_checked": [],
           "sources_reached": 0,
           "quoted_passages_located": 0
         },
@@ -43,8 +189,18 @@
             {
               "url": "https://www.freddiemac.com/pmms",
               "outcome": "Source retrieved; cited exact passage not found.",
-              "retrieved_at": null,
-              "sha256": "cbed85de85bee37c242d2a165e836418eb676086f1fb5048c1b8ccae0df491a2"
+              "retrieved_at": "2026-10-17T16:31:15+00:00",
+              "sha256": "d8ff90877f5248b1fd567e08d4719a80727af796d3372f90cef5977b03ff5eeb"
+            }
+          ],
+          "official_indexes_checked": [
+            {
+              "authority": "Freddie Mac PMMS data",
+              "url": "https://www.freddiemac.com/pmms/archive",
+              "status": "retrieved",
+              "checked_at": "2026-10-17T16:31:15+00:00",
+              "finding": "Official index retrieved; no claim-specific identifier matched. This does not confirm or refute the claim.",
+              "claim_verified": false
             }
           ],
           "sources_reached": 1,
@@ -61,14 +217,24 @@
             {
               "url": "https://mymarketnews.ams.usda.gov/filerepo/reports",
               "outcome": "Source retrieved; cited exact passage not found.",
-              "retrieved_at": null,
-              "sha256": "d32af8b835fe9ca90a8923a4513cc690aedd0b6f97b9ad79c704749b3a46d993"
+              "retrieved_at": "2026-10-17T16:31:15+00:00",
+              "sha256": "389c5fdf22026d56f209ab952085c152359dd34379be06a835e1afc551cd52c8"
             },
             {
               "url": "https://mymarketnews.ams.usda.gov/filerepo/reports",
               "outcome": "Source retrieved; cited exact passage not found.",
-              "retrieved_at": null,
-              "sha256": "d32af8b835fe9ca90a8923a4513cc690aedd0b6f97b9ad79c704749b3a46d993"
+              "retrieved_at": "2026-10-17T16:31:15+00:00",
+              "sha256": "389c5fdf22026d56f209ab952085c152359dd34379be06a835e1afc551cd52c8"
+            }
+          ],
+          "official_indexes_checked": [
+            {
+              "authority": "USDA Agricultural Marketing Service",
+              "url": "https://www.ams.usda.gov/market-news",
+              "status": "retrieved",
+              "checked_at": "2026-10-17T16:31:15+00:00",
+              "finding": "Official index retrieved; no claim-specific identifier matched. This does not confirm or refute the claim.",
+              "claim_verified": false
             }
           ],
           "sources_reached": 2,
@@ -85,8 +251,26 @@
             {
               "url": "https://www.supremecourt.gov/opinions/slipopinions.aspx?Term=05&lang=en",
               "outcome": "Source retrieved; cited exact passage not found.",
-              "retrieved_at": null,
-              "sha256": "4474a632c7681dcc8b09dcbc2b30450b84aaf39cead52a53cd39884ae6f98805"
+              "retrieved_at": "2026-10-17T16:31:15+00:00",
+              "sha256": "2f2bbe69a19e9d93981f8a27421928c3fecb585ac80d4d1a47dfa0b7d1a06b27"
+            }
+          ],
+          "official_indexes_checked": [
+            {
+              "authority": "U.S. Supreme Court opinions",
+              "url": "https://www.supremecourt.gov/opinions/slipopinions.aspx",
+              "status": "unavailable",
+              "checked_at": null,
+              "finding": "Official index retrieval failed: ValueError",
+              "claim_verified": false
+            },
+            {
+              "authority": "U.S. Supreme Court orders",
+              "url": "https://www.supremecourt.gov/orders/ordersofthecourt/",
+              "status": "retrieved",
+              "checked_at": "2026-10-17T16:31:16+00:00",
+              "finding": "Official index retrieved; no claim-specific identifier matched. This does not confirm or refute the claim.",
+              "claim_verified": false
             }
           ],
           "sources_reached": 1,

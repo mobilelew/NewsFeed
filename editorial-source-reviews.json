@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-17",
+  "status": "editorial_source_review",
+  "reviews": [
+    {
+      "matching_title": "Mortgage rates remain elevated in the latest weekly survey; 30-year fixed near recent highs",
+      "claim_status": "Bounded statistic corroborated; latest-release context corrected",
+      "summary": "Freddie Mac's official Primary Mortgage Market Survey recorded a 7.40% 30-year fixed mortgage average on both October 8 and October 15, 2026. The October 15 release was the more recent published weekly observation; citing October 8 as the latest weekly release on October 16 was outdated.",
+      "sources_checked": [
+        {
+          "url": "https://www.freddiemac.com/pmms/archive",
+          "finding": "Freddie Mac's official 2026 weekly archive lists October 15, 2026: 30-year FRM 7.40%, 15-year FRM 6.71%; October 8, 2026: 30-year FRM 7.40%, 15-year FRM 6.73%."
+        },
+        {
+          "url": "https://freddiemac.gcs-web.com/news-releases/news-release-details/mortgage-rates-hold-steady-740",
+          "finding": "Freddie Mac's October 15 release states that the 30-year fixed-rate mortgage averaged 7.40%, unchanged from October 8."
+        }
+      ],
+      "what_is_known": "The stated 7.40% weekly average is supported by Freddie Mac's own data, subject to the PMMS sample methodology.",
+      "what_is_not_established": "The 7.40% weekly average does not establish any particular lender's current quote or any intraday rate.",
+      "resolution_needed": "Use the most recent available PMMS release and distinguish weekly observation date from story publication date."
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-17T19:36:05+00:00",
+  "checked_at": "2026-10-17T21:34:54+00:00",
   "status": "source_audit_only_not_semantic_verification",
   "reports": [
     {
       "schema_version": 1,
-      "checked_at": "2026-10-17T19:36:03+00:00",
+      "checked_at": "2026-10-17T21:34:52+00:00",
       "report_date": "2026-10-17",
       "report_type": "morning",
       "source_check_scope": "original-source excerpts and reachability; NOT independent semantic verification",
@@ -23,7 +23,7 @@
               "authority": "Federal Reserve official speeches",
               "url": "https://www.federalreserve.gov/newsevents/speeches.htm",
               "status": "retrieved",
-              "checked_at": "2026-10-17T19:36:02+00:00",
+              "checked_at": "2026-10-17T21:34:50+00:00",
               "finding": "Official index retrieved; no claim-specific identifier matched. This does not confirm or refute the claim.",
               "claim_verified": false
             }
@@ -54,8 +54,8 @@
             {
               "url": "https://www.freddiemac.com/pmms/pmms_archives",
               "outcome": "Source retrieved. Wording did not match; factual accuracy cannot be determined by literal text comparison.",
-              "retrieved_at": "2026-10-17T19:36:00+00:00",
-              "sha256": "27b43420a4dc49c50b5645f428fd1d8de6354d6d8f215f53fac5bd98cf72f191"
+              "retrieved_at": "2026-10-17T21:34:48+00:00",
+              "sha256": "2808f6db0821fabaa186191e01967f0fa9e8966e9d23a45044c453fccb0b521d"
             }
           ],
           "official_indexes_checked": [
@@ -63,7 +63,7 @@
               "authority": "Freddie Mac PMMS data",
               "url": "https://www.freddiemac.com/pmms/archive",
               "status": "retrieved",
-              "checked_at": "2026-10-17T19:36:02+00:00",
+              "checked_at": "2026-10-17T21:34:50+00:00",
               "finding": "Official index contains a reported number: 7.4%, 7.40%. Source date and full claim remain unconfirmed.",
               "claim_verified": false
             }
@@ -82,14 +82,14 @@
             {
               "url": "https://mymarketnews.ams.usda.gov/filerepo/reports",
               "outcome": "Source retrieved. Wording did not match; factual accuracy cannot be determined by literal text comparison.",
-              "retrieved_at": "2026-10-17T19:36:01+00:00",
-              "sha256": "60de9f2a5ed9ccd10e61f661ef77a056eca05538d61dee0e3e35c00309170855"
+              "retrieved_at": "2026-10-17T21:34:49+00:00",
+              "sha256": "ab8cda8f5f0fab82f142162333c6f38914fbfe70b1c10f534e18ec76b9703b02"
             },
             {
               "url": "https://www.ams.usda.gov/market-news/regional-direct-slaughter-cattle",
               "outcome": "Source retrieved. Wording did not match; factual accuracy cannot be determined by literal text comparison.",
-              "retrieved_at": "2026-10-17T19:36:01+00:00",
-              "sha256": "23b1f1cbb6fa9be9ad90b7fd90080e56e23e3eb92918a9c5da73a19993b7d85f"
+              "retrieved_at": "2026-10-17T21:34:50+00:00",
+              "sha256": "08e0b9664c5d72e0495a86b01d94249afb0f424c67be9e87061189768ee086d0"
             }
           ],
           "official_indexes_checked": [
@@ -97,7 +97,7 @@
               "authority": "USDA Agricultural Marketing Service",
               "url": "https://www.ams.usda.gov/market-news",
               "status": "retrieved",
-              "checked_at": "2026-10-17T19:36:02+00:00",
+              "checked_at": "2026-10-17T21:34:50+00:00",
               "finding": "Official index retrieved; no claim-specific identifier matched. This does not confirm or refute the claim.",
               "claim_verified": false
             }
@@ -118,7 +118,7 @@
               "authority": "U.S. Supreme Court opinions",
               "url": "https://www.supremecourt.gov/opinions/slipopinions.aspx",
               "status": "retrieved",
-              "checked_at": "2026-10-17T19:36:03+00:00",
+              "checked_at": "2026-10-17T21:34:51+00:00",
               "finding": "Official index retrieved; no claim-specific identifier matched. This does not confirm or refute the claim.",
               "claim_verified": false
             },
@@ -126,7 +126,7 @@
               "authority": "Federal Register",
               "url": "https://www.federalregister.gov/",
               "status": "retrieved",
-              "checked_at": "2026-10-17T19:36:03+00:00",
+              "checked_at": "2026-10-17T21:34:52+00:00",
               "finding": "Official index retrieved; no claim-specific identifier matched. This does not confirm or refute the claim.",
               "claim_verified": false
             }
@@ -140,7 +140,7 @@
     },
     {
       "schema_version": 1,
-      "checked_at": "2026-10-17T19:36:05+00:00",
+      "checked_at": "2026-10-17T21:34:54+00:00",
       "report_date": "2026-10-16",
       "report_type": "evening",
       "source_check_scope": "original-source excerpts and reachability; NOT independent semantic verification",
@@ -158,7 +158,7 @@
               "authority": "Federal Reserve official speeches",
               "url": "https://www.federalreserve.gov/newsevents/speeches.htm",
               "status": "retrieved",
-              "checked_at": "2026-10-17T19:36:04+00:00",
+              "checked_at": "2026-10-17T21:34:53+00:00",
               "finding": "Official index retrieved; no claim-specific identifier matched. This does not confirm or refute the claim.",
               "claim_verified": false
             }
@@ -189,8 +189,8 @@
             {
               "url": "https://www.freddiemac.com/pmms",
               "outcome": "Source retrieved. Wording did not match; factual accuracy cannot be determined by literal text comparison.",
-              "retrieved_at": "2026-10-17T19:36:03+00:00",
-              "sha256": "d0623f56469e9705fe1626903c95df64fd0b8cc2093792c7c624b9cfb30b5891"
+              "retrieved_at": "2026-10-17T21:34:52+00:00",
+              "sha256": "08d36c9f6e70067df00fc55e3fa30b1a8650d7871c7706d99e40e806b569f44f"
             }
           ],
           "official_indexes_checked": [
@@ -198,7 +198,7 @@
               "authority": "Freddie Mac PMMS data",
               "url": "https://www.freddiemac.com/pmms/archive",
               "status": "retrieved",
-              "checked_at": "2026-10-17T19:36:04+00:00",
+              "checked_at": "2026-10-17T21:34:53+00:00",
               "finding": "Official index contains a reported number: 7.40%. Source date and full claim remain unconfirmed.",
               "claim_verified": false
             }
@@ -217,14 +217,14 @@
             {
               "url": "https://mymarketnews.ams.usda.gov/filerepo/reports",
               "outcome": "Source retrieved. Wording did not match; factual accuracy cannot be determined by literal text comparison.",
-              "retrieved_at": "2026-10-17T19:36:04+00:00",
-              "sha256": "f6379b7374c06e86855508c2dd1dbbfae33ad8b0716c1470c6a91b531a20481a"
+              "retrieved_at": "2026-10-17T21:34:52+00:00",
+              "sha256": "fbf386a404bdcd0455657d98891e1d766032a2f62a1f46e537406bc3f63a084e"
             },
             {
               "url": "https://mymarketnews.ams.usda.gov/filerepo/reports",
               "outcome": "Source retrieved. Wording did not match; factual accuracy cannot be determined by literal text comparison.",
-              "retrieved_at": "2026-10-17T19:36:04+00:00",
-              "sha256": "f6379b7374c06e86855508c2dd1dbbfae33ad8b0716c1470c6a91b531a20481a"
+              "retrieved_at": "2026-10-17T21:34:52+00:00",
+              "sha256": "fbf386a404bdcd0455657d98891e1d766032a2f62a1f46e537406bc3f63a084e"
             }
           ],
           "official_indexes_checked": [
@@ -232,7 +232,7 @@
               "authority": "USDA Agricultural Marketing Service",
               "url": "https://www.ams.usda.gov/market-news",
               "status": "retrieved",
-              "checked_at": "2026-10-17T19:36:04+00:00",
+              "checked_at": "2026-10-17T21:34:53+00:00",
               "finding": "Official index retrieved; no claim-specific identifier matched. This does not confirm or refute the claim.",
               "claim_verified": false
             }
@@ -251,8 +251,8 @@
             {
               "url": "https://www.supremecourt.gov/opinions/slipopinions.aspx?Term=05&lang=en",
               "outcome": "Source retrieved. Wording did not match; factual accuracy cannot be determined by literal text comparison.",
-              "retrieved_at": "2026-10-17T19:36:04+00:00",
-              "sha256": "083a64856add007ea6516ebbaa6e9180d6f9de41e3400f09a85b5a59b1496454"
+              "retrieved_at": "2026-10-17T21:34:53+00:00",
+              "sha256": "d0ed697b11512fe900dcfed16fdab2cd69dd8f3262717febc3ca07df093af43d"
             }
           ],
           "official_indexes_checked": [
@@ -260,7 +260,7 @@
               "authority": "U.S. Supreme Court opinions",
               "url": "https://www.supremecourt.gov/opinions/slipopinions.aspx",
               "status": "retrieved",
-              "checked_at": "2026-10-17T19:36:05+00:00",
+              "checked_at": "2026-10-17T21:34:54+00:00",
               "finding": "Official index retrieved; no claim-specific identifier matched. This does not confirm or refute the claim.",
               "claim_verified": false
             },
@@ -268,7 +268,7 @@
               "authority": "U.S. Supreme Court orders",
               "url": "https://www.supremecourt.gov/orders/ordersofthecourt/",
               "status": "retrieved",
-              "checked_at": "2026-10-17T19:36:05+00:00",
+              "checked_at": "2026-10-17T21:34:54+00:00",
               "finding": "Official index retrieved; no claim-specific identifier matched. This does not confirm or refute the claim.",
               "claim_verified": false
             }

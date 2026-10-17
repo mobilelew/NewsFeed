@@ -54,7 +54,7 @@ def prepare(candidate,authority):
         import re
         summary=result.get("executive_summary")
         if isinstance(summary,str) and summary.strip():
-            summary=re.sub(r"(?i)\\bkey verified developments\\b","Reported developments requiring confirmation",summary)
+            summary=re.sub(r"(?i)\bkey verified developments\b","Reported developments requiring confirmation",summary)
             result["executive_summary"]="Verification notice: none of the findings below has been independently established as Verified or Corroborated. "+summary
     result["independent_source_authentication"]=False
     result["editorial_caveat"]="Research assertions remain Unverified where competent authority confirmation is not established."

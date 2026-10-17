@@ -32,7 +32,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      # Preflight validates template markers, null event dates, and syntax before paid research.
+      # Preflight validates template markers, missing attribution, null dates, and syntax before research.
       - name: Offline preflight validation
         run: |
           set -euo pipefail

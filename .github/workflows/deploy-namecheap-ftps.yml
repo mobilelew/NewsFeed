@@ -44,3 +44,14 @@ jobs:
             --upload-file deployment/namecheap/index.html \
             "ftp://$FTPS_HOST/$remote/index.html"
           echo "FTPS homepage upload completed."
+      - name: Verify published HTTPS homepage
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --location --max-time 30 \
+            --header 'Cache-Control: no-cache' \
+            'https://news.palmerfamily.org/?deploy_check='${GITHUB_RUN_ID} -o homepage-live.html
+          grep -q 'id="theme-toggle"' homepage-live.html || { echo "::error::Live homepage lacks the light/dark switch"; exit 1; }
+          grep -q 'id="verification-status"' homepage-live.html || { echo "::error::Live homepage lacks verification status"; exit 1; }
+          echo "Public HTTPS homepage confirms theme toggle and verification status."
+

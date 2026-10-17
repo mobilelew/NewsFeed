@@ -48,8 +48,8 @@ def review_indexes(headline,capturer=capture):
             notes=("Official index retrieved; candidate identifiers visible: "+", ".join(found)
                    if found else
                    "Official index retrieved; no claim-specific identifier matched. This does not confirm or refute the claim.")
-            rates=re.findall(r"\\d+(?:\\.\\d+)?%",title+" "+str(headline.get("summary") or ""))
-            observed=set(re.findall(r"\\d+(?:\\.\\d+)?%",body))
+            rates=re.findall(r"\d+(?:\.\d+)?%",title+" "+str(headline.get("summary") or ""))
+            observed=set(re.findall(r"\d+(?:\.\d+)?%",body))
             confirmed_numbers=[rate for rate in rates if any(float(rate[:-1])==float(x[:-1]) for x in observed)]
             if confirmed_numbers and not found:
                 notes="Official index contains a reported number: "+", ".join(sorted(set(confirmed_numbers)))+". Source date and full claim remain unconfirmed."

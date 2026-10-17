@@ -1,6 +1,7 @@
 import io
 import unittest
-from source_capture import allowed,capture,run_manifest,MAX_BYTES
+import urllib.request
+from source_capture import allowed,capture,run_manifest,MAX_BYTES,OfficialRedirects
 class Headers(dict):
     def get_content_type(self): return self.get("type","text/html")
     def get_content_charset(self): return "utf-8"
@@ -15,6 +16,15 @@ class Opener:
     def __init__(self,data,kind="text/html"): self.data=data;self.kind=kind
     def open(self,request,timeout=12): return Response(self.data,self.kind)
 class CaptureTests(unittest.TestCase):
+    def test_redirects_restricted_to_approved_https_hosts(self):
+        opener=OfficialRedirects()
+        req=urllib.request.Request("https://www.bls.gov/")
+        safe=opener.redirect_request(req,None,302,"Found",{},"https://www.bls.gov/news.release/")
+        self.assertTrue(safe.full_url.startswith("https://www.bls.gov/"))
+        with self.assertRaises(ValueError):
+            opener.redirect_request(req,None,302,"Found",{},"https://news.google.com/")
+        with self.assertRaises(ValueError):
+            opener.redirect_request(req,None,302,"Found",{},"http://www.bls.gov/")
     def test_rejects_external_and_local(self):
         for u in ("http://www.bls.gov/", "https://example.com/", "https://127.0.0.1/",
                   "https://evil.com/?source=www.bls.gov","https://www.bls.gov.evil.com/"):

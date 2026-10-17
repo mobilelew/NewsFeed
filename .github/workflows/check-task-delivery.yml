@@ -1,0 +1,42 @@
+name: Check scheduled task handoff
+on:
+  schedule:
+    - cron: '45 11,12 * * *'
+    - cron: '45 1,2 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/check-task-delivery.yml'
+permissions:
+  contents: write
+concurrency:
+  group: news-reader-task-delivery-check
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest -v test_task_delivery.py
+      - run: python check_task_delivery.py
+      - name: Publish delivery status
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add task-briefings/delivery-status.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Record task briefing delivery status"
+          for n in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 3
+          done
+          exit 1

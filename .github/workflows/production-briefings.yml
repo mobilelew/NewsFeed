@@ -1,9 +1,6 @@
 name: Publish News Reader qualified briefings
 
 on:
-  push:
-    paths:
-      - '.github/workflows/production-briefings.yml'
   workflow_dispatch:
   schedule:
     - cron: '9 11,12 * * *'
@@ -48,10 +45,7 @@ jobs:
           set -euo pipefail
           # Select the scheduled REPORT TYPE from the triggering cron, not
           # the runner's current clock: GitHub may start a scheduled run hours late.
-          if [ "$EVENT_NAME" = "push" ]; then
-            echo "mode=production" >> "$GITHUB_OUTPUT"
-            echo "kind=morning" >> "$GITHUB_OUTPUT"
-          elif [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
             echo "mode=trial" >> "$GITHUB_OUTPUT"
             echo "kind=evening" >> "$GITHUB_OUTPUT"
           elif [ "$EVENT_NAME" = "schedule" ] && [[ "$NOMINAL_CRON" == *"11,12"* || "$NOMINAL_CRON" == *"13,14"* ]]; then

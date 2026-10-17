@@ -16,8 +16,9 @@ MAX_BYTES=1_000_000
 MAX_ITEMS=12
 SOURCE_HOSTS={
 "congress.gov","govinfo.gov","federalregister.gov","regulations.gov",
-"capitol.texas.gov","sos.state.tx.us","arkleg.state.ar.us",
-"sos.arkansas.gov","oklegislature.gov","oklahoma.gov",
+"supremecourt.gov","uscourts.gov","ca5.uscourts.gov","ca10.uscourts.gov",
+"capitol.texas.gov","sos.state.tx.us","txcourts.gov","arkleg.state.ar.us",
+"sos.arkansas.gov","arcourts.gov","oklegislature.gov","oklahoma.gov","oscn.net",
 "bls.gov","bea.gov","federalreserve.gov","treasury.gov",
 "sec.gov","freddiemac.com","usda.gov","ams.usda.gov",
 "nass.usda.gov","ers.usda.gov","cisa.gov","nist.gov",

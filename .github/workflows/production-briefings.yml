@@ -39,26 +39,24 @@ jobs:
         id: slot
         env:
           EVENT_NAME: ${{ github.event_name }}
+          NOMINAL_CRON: ${{ github.event.schedule }}
         shell: bash
         run: |
           set -euo pipefail
-          local_hour=$(TZ=America/Chicago date +%H)
-          local_minute=$(TZ=America/Chicago date +%M)
-          if [ "$EVENT_NAME" = "push" ]; then
-            echo "mode=production" >> "$GITHUB_OUTPUT"
-            echo "kind=evening" >> "$GITHUB_OUTPUT"
-          elif [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+          # Select the scheduled REPORT TYPE from the triggering cron, not
+          # the runner's current clock: GitHub may start a scheduled run hours late.
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
             echo "mode=trial" >> "$GITHUB_OUTPUT"
             echo "kind=evening" >> "$GITHUB_OUTPUT"
-          elif [ "$local_hour" = "06" ] || [ "$local_hour" = "07" ] || { [ "$local_hour" = "08" ] && [ "$local_minute" -le 45 ]; }; then
+          elif [ "$EVENT_NAME" = "schedule" ] && [[ "$NOMINAL_CRON" == *"11,12"* || "$NOMINAL_CRON" == *"13,14"* ]]; then
             echo "mode=production" >> "$GITHUB_OUTPUT"
             echo "kind=morning" >> "$GITHUB_OUTPUT"
-          elif [ "$local_hour" = "20" ] || [ "$local_hour" = "21" ] || { [ "$local_hour" = "22" ] && [ "$local_minute" -le 45 ]; }; then
+          elif [ "$EVENT_NAME" = "schedule" ] && [[ "$NOMINAL_CRON" == *"1,2"* || "$NOMINAL_CRON" == *"3,4"* ]]; then
             echo "mode=production" >> "$GITHUB_OUTPUT"
             echo "kind=evening" >> "$GITHUB_OUTPUT"
           else
-            echo "mode=skip" >> "$GITHUB_OUTPUT"
-            echo "kind=skip" >> "$GITHUB_OUTPUT"
+            echo "::error::Unknown scheduled event: cannot safely select report type."
+            exit 1
           fi
       - name: Avoid duplicate scheduled reports before API charges
         id: duplicate

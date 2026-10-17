@@ -13,6 +13,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+      # Configuration confirmed by site owner; this commit initiates the FTPS acceptance test.
       - name: Verify secure FTPS configuration
         env:
           FTPS_HOST: ${{ secrets.FTPS_HOST }}

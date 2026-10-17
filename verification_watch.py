@@ -18,13 +18,33 @@ def examine(report,capturer=None):
         citations=record.get("primary_records",[])
         found=any(c.get("quoted_excerpt_found") for c in citations)
         captured=any(c.get("captured") for c in citations)
+        checked_sources=[]
+        for item in citations:
+            if item.get("captured"):
+                finding="Source retrieved; cited exact passage located." if item.get("quoted_excerpt_found") else "Source retrieved; cited exact passage not found."
+            elif item.get("issue")=="source_budget_exceeded":
+                finding="Not checked: source inspection budget exhausted."
+            elif item.get("issue")=="primary_url_not_allowlisted":
+                finding="Not checked: authority domain not on capture allowlist."
+            else:
+                finding="Unavailable or retrieval failed: "+str(item.get("issue") or "unknown error")
+            checked_sources.append({"url":item.get("url"),"outcome":finding,"retrieved_at":item.get("retrieved_at"),"sha256":item.get("sha256")})
+        if not citations:
+            outcome="Not checked: no eligible primary authority was cited; locate the controlling original record before verification."
+        elif found:
+            outcome="Source checked: a cited passage was found, but it does not independently prove the full claim."
+        elif captured:
+            outcome="Source checked: retrieved page did not contain the cited exact passage. Claim remains unresolved."
+        else:
+            outcome="Cited authority was not accessible or not inspected; see each source outcome."
         checked.append({
             "title":headline.get("title",""),
             "verification":headline.get("verification","Unverified"),
             "source_check_status":"source_excerpt_located" if found else "source_retrieved_no_exact_excerpt" if captured else "source_not_inspected",
             "claim_independently_verified":False,
             "legal_effect_confirmed":False,
-            "authority_confirmation":"The original-source review confirms text location only; semantic claim verification remains pending." if found else "No confirming primary-source text located.",
+            "authority_confirmation":outcome,
+            "sources_checked":checked_sources,
             "sources_reached":sum(bool(x.get("captured")) for x in citations),
             "quoted_passages_located":sum(bool(x.get("quoted_excerpt_found")) for x in citations),
         })

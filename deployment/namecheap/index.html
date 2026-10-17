@@ -205,7 +205,7 @@ function conciseExecutive(report){
  for(const h of (report.headlines||[]).slice(0,5)){
    const li=document.createElement('li');
    const review=reviewedClaims[h.title];const semantic=semanticClaims[h.title];
-   const status=(semantic?.status||review?.claim_status||h.verification||'Unverified').replace(/^Corroborated by independent reporting.*$/,'Corroborated');
+   const status=(review?.claim_status||semantic?.status||h.verification||'Unverified').replace(/^Corroborated by independent reporting.*$/,'Corroborated');
    const implication=(h.practical_implication||'').trim();
    li.append(reportText('strong',status+': '),document.createTextNode(h.title+(implication?' — '+implication:'')));
    ul.append(li);
@@ -248,12 +248,12 @@ async function showFullBrief(kind){
   const story=document.createElement('article');
   story.append(reportText('h3',h.title||'Untitled finding'));
   const correction=reviewedClaims[h.title];const semantic=semanticClaims[h.title];
-  const displayStatus=(semantic?.status||correction?.claim_status||h.verification||'Unverified').replace(/^Corroborated by independent reporting.*$/,'Corroborated');
+  const displayStatus=(correction?.claim_status||semantic?.status||h.verification||'Unverified').replace(/^Corroborated by independent reporting.*$/,'Corroborated');
   const label=reportText('span',displayStatus);label.className='report-marker';story.append(label);
   story.append(reportText('p',h.summary||'Summary unavailable'));
   story.append(reportText('p',[h.jurisdiction,h.category,h.event_date?'Event date: '+h.event_date:'Event date not established'].filter(Boolean).join(' · ')));
   const dl=document.createElement('dl');
-  for(const [name,value] of [['Practical implications',h.practical_implication],['What is known',h.what_is_known],['Authority check',semantic?.concise_conclusion||correction?.summary||explainAuthority(h.authority_confirmation)]]){
+  for(const [name,value] of [['Practical implications',h.practical_implication],['What is known',h.what_is_known],['Authority check',correction?.summary||semantic?.concise_conclusion||explainAuthority(h.authority_confirmation)]]){
    if(value==null||value==='')continue;dl.append(reportText('dt',name),reportText('dd',value));
   }story.append(dl);
   const more=document.createElement('details');more.className='analysis-more';const moreSummary=document.createElement('summary');moreSummary.textContent='More analysis and verification detail';more.append(moreSummary);

@@ -27,8 +27,8 @@ all claims within it. Do not assign Verified merely because a URL exists. Cover 
 and jurisdiction to the degree supported by available evidence. No filler.
 Return ONLY a JSON object compatible with these required report fields:
 schema_version=1, publication_policy='evidence-status-v1', report_type, report_time
-(with supplied timestamp), coverage_note, source_checked (array), headlines (array).
-Each headline: title, summary, jurisdiction (federal/texas/arkansas/oklahoma/
+(with supplied timestamp), coverage_note, source_checked (array), headlines (array), executive_summary (text),\nhousehold_implications (array of concise text), source_differences (array of concise text),\nverified_upcoming_events (array of objects with title, date, source_url),\ncoverage_gaps (array of concise text).
+Each headline: title, summary, practical_implication, jurisdiction (federal/texas/arkansas/oklahoma/
 national/international/multiple), category, claim_type (established_fact/
 attributed_claim/proposal/legal_proceeding/data_release), verification (Verified,
 Corroborated, Unsubstantiated, Disputed, Legal Effect Unclear, Unverified, Refuted),
@@ -39,7 +39,7 @@ include legal_status. For Verified include original authoritative primary suppor
 For morning, include baseline=[{identifier,status,as_of}]. For evening include
 a note on whether an actual morning baseline was supplied, but never claim a
 comparison if absent. Every material event needs an actual event_date YYYY-MM-DD, source_checked_at ISO timestamp and claim_evidence_note explaining what cited text actually establishes. Do not confuse date printed on search-result page with action date. If unknown, do not fabricate, and allow the publication screen to flag the gap.
-Keep findings concise, diverse and relevant. If sources are insufficient, note a
+Write a substantial but evidence-bounded executive summary, what changed and why it matters to middle-class households. Separate proposals, enacted acts, effectiveness and allegations. Report source conflicts and missing records without implying verification.\nKeep findings concise, diverse and relevant. If sources are insufficient, note a
 coverage gap rather than invent news. Headlines should be independently meaningful."""
 def source_registry():
     data=json.loads((ROOT/"news_sources.json").read_text(encoding="utf-8"))

@@ -165,7 +165,7 @@ async function showTaskBrief(kind){
 document.querySelectorAll('#task-tabs button').forEach(x=>x.addEventListener('click',()=>showTaskBrief(x.dataset.task)));
 showTaskBrief('evening');
 
-function reportText(tag,value){const n=document.createElement(tag);n.textContent=typeof value==='string'?value:JSON.stringify(value);return n}
+function reportText(tag,value){const n=document.createElement(tag);const v=typeof value==='string'?value:JSON.stringify(value);n.textContent=typeof v==='string'?v.replaceAll('cited_authority_unavailable_or_not_inspected','Primary-source verification incomplete; see specific authority review.').replaceAll('cited_source_does_not_confirm_position','Exact quotation not located; factual content not disproved.').replaceAll('cited_source_contains_excerpt','Quoted passage found; full assertion not yet verified.'):v;return n}
 function analysisSection(parent,heading,value){
  if(value==null||value===''||(Array.isArray(value)&&!value.length))return;
  const box=document.createElement('div');box.className='analysis-block';box.append(reportText('h3',heading));

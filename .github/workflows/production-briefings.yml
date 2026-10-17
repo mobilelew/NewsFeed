@@ -1,9 +1,6 @@
 name: Publish News Reader qualified briefings
 
 on:
-  push:
-    paths:
-      - '.github/workflows/production-briefings.yml'
   workflow_dispatch:
   schedule:
     - cron: '9 11,12 * * *'

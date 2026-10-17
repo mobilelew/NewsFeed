@@ -53,6 +53,8 @@ jobs:
             'https://news.palmerfamily.org/?deploy_check='${GITHUB_RUN_ID} -o homepage-live.html
           grep -q 'id="theme-toggle"' homepage-live.html || { echo "::error::Live homepage lacks the light/dark switch"; exit 1; }
           grep -q 'id="verification-status"' homepage-live.html || { echo "::error::Live homepage lacks verification status"; exit 1; }
+          grep -q 'id="task-briefings"' homepage-live.html || { echo "::error::Missing full scheduled task reports section"; exit 1; }
+          grep -q 'showTaskBrief' homepage-live.html || { echo "::error::Missing scheduled task JSON report renderer"; exit 1; }
           grep -q 'id="full-briefings"' homepage-live.html || { echo "::error::Missing morning/evening analysis"; exit 1; }
           grep -q 'loadFullBriefings()' homepage-live.html || { echo "::error::Report archive reader missing"; exit 1; }
           [ "$(grep -o 'id="theme-toggle"' homepage-live.html | wc -l)" -eq 1 ] || { echo "::error::Duplicate theme switch"; exit 1; }

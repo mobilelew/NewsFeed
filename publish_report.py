@@ -116,6 +116,15 @@ def publish(source):
         if comparison["comparison_status"] == "direct_text_comparison":
             comparison["morning_report_path"] = str(morning_path.relative_to(ROOT))
         published["morning_comparison"] = comparison
+    if kind == "morning":
+        from compare_briefings import compare_overnight
+        prior=(when.date()-dt.timedelta(days=1)).isoformat()
+        last=ROOT/"reports"/prior/"evening.json"
+        last_report=json.loads(last.read_text(encoding="utf-8")) if last.exists() else None
+        overnight=compare_overnight(last_report,report)
+        if overnight["comparison_status"]=="direct_text_comparison":
+            overnight["prior_evening_report_path"]=str(last.relative_to(ROOT))
+        published["overnight_comparison"]=overnight
     published["report_date"] = date
     published["published_at"] = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     serialized = json.dumps(published, indent=2, ensure_ascii=False) + "\n"

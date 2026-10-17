@@ -13,7 +13,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      # User updated FTPS remote directory; rerun secure deployment acceptance test.
+      # Acceptance replay: upload current homepage and verify actual live HTTPS HTML.
       - name: Verify secure FTPS configuration
         env:
           FTPS_HOST: server238.web-hosting.com

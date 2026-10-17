@@ -41,6 +41,24 @@ a note on whether an actual morning baseline was supplied, but never claim a
 comparison if absent. Every material event needs an actual event_date YYYY-MM-DD, source_checked_at ISO timestamp and claim_evidence_note explaining what cited text actually establishes. Do not confuse date printed on search-result page with action date. If unknown, do not fabricate, and allow the publication screen to flag the gap.
 Write a substantial but evidence-bounded executive summary, what changed and why it matters to middle-class households. Separate proposals, enacted acts, effectiveness and allegations. Report source conflicts and missing records without implying verification.\nKeep findings concise, diverse and relevant. If sources are insufficient, note a
 coverage gap rather than invent news. Headlines should be independently meaningful."""
+def discovery_leads(limit=24):
+    """Publisher leads only, never independently established facts."""
+    path=ROOT/"feed.json"
+    if not path.is_file():return []
+    try: feed=json.loads(path.read_text(encoding="utf-8"))
+    except (ValueError,OSError):return []
+    from publisher_links import direct_publisher_url
+    leads=[]
+    for item in feed.get("headlines",[]):
+        if not isinstance(item,dict):continue
+        url=direct_publisher_url(item.get("article_url") or item.get("url"))
+        if not url or not item.get("title"):continue
+        leads.append({"title":str(item["title"])[:160],"category":str(item.get("category",""))[:70],
+                      "published_at":item.get("published_at"),"url":url,
+                      "status":"UNVERIFIED DISCOVERY LEAD"})
+        if len(leads)>=limit:break
+    return leads
+
 def source_registry():
     data=json.loads((ROOT/"news_sources.json").read_text(encoding="utf-8"))
     required={"federal_law","texas","arkansas","oklahoma","finance_housing","agriculture","technology_cyber"}
@@ -94,11 +112,12 @@ def build(kind, now, input_baseline=None):
     baseline_note=("No authentic archived morning baseline available." if input_baseline is None else
                    "Morning baseline for comparison: "+json.dumps(input_baseline,ensure_ascii=False)[:10000])
     registry=source_registry()
+    leads=discovery_leads()
     sources=json.dumps({"discovery":registry["discovery"],"primary_sources":registry["primary_sources"]},ensure_ascii=False)
     prompt=(f"News Reader {kind} as of {local.isoformat(timespec='seconds')}. "
             "Research material news developments in preceding 24 hours (for evening focus on "
             "developments since 6 AM Central). Verify against official records. "
-            "Focus areas: "+TOPICS+"\nSource registry (starting points, not a publisher whitelist): "+sources+"\n"+baseline_note+
+            "Focus areas: "+TOPICS+"\nSource registry (starting points, not a publisher whitelist): "+sources+"\nUnverified publisher discovery leads (verify independently before use): "+json.dumps(leads,ensure_ascii=False)+"\n"+baseline_note+
             "\nMaximum 12 concise findings. Before selecting findings, check separately: federal, Texas, Arkansas, Oklahoma; rights/courts/laws; dollar/Fed/mortgages/crypto; USDA beef, chicken and turkey; AI/data centers and cybersecurity. Use separate actual findings for each jurisdiction and sector when supported. Explicitly disclose each jurisdiction and sector with no current verified development in coverage_note, rather than omitting it or inventing stories. No category may dominate the report merely because its sources are easier to find. Strict JSON object only.")
     body={"model":os.environ.get("OPENAI_NEWS_MODEL","gpt-5-mini"),
           "instructions":INSTRUCTIONS,

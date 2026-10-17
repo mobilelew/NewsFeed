@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-10-17",
+  "report_time": "2026-10-17T11:26:15-05:00",
+  "source_path": "reports/2026-10-17/morning.json",
+  "baseline": [
+    {
+      "identifier": "Fed Chair Kevin Warsh declines to signal a near-term rate move at IMF fireside chat; emphasizes price stability",
+      "status": "Verified",
+      "as_of": "2026-10-17T11:26:15-05:00"
+    },
+    {
+      "identifier": "CoreWeave bond yields spike; market scrutiny of debt-funded AI data-center expansion intensifies",
+      "status": "Corroborated",
+      "as_of": "2026-10-17T11:26:15-05:00"
+    },
+    {
+      "identifier": "Freddie Mac weekly PMMS shows 30-year fixed mortgage near 7.4% (latest published weekly reading)",
+      "status": "Verified",
+      "as_of": "2026-10-17T11:26:15-05:00"
+    },
+    {
+      "identifier": "USDA AMS published regional daily cattle reports including Texas and TX/OK/NM negotiated slaughter cattle summary (entries dated Oct 16, 2026)",
+      "status": "Verified",
+      "as_of": "2026-10-17T11:26:15-05:00"
+    },
+    {
+      "identifier": "No verified new federal rights/legislation/regulation action in the prior 24 hours (federal rights/courts/legislation checked)",
+      "status": "Verified",
+      "as_of": "2026-10-17T11:26:15-05:00"
+    }
+  ]
+}

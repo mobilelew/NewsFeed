@@ -1,14 +1,15 @@
 {
   "schema_version": 1,
   "status": "published",
-  "updated_at": "2026-10-17T02:38:08+00:00",
-  "report_date": "2026-10-16",
-  "report_type": "evening",
-  "report_time": "2026-10-16T21:37:19-05:00",
+  "updated_at": "2026-10-17T16:27:12+00:00",
+  "report_date": "2026-10-17",
+  "report_type": "morning",
+  "report_time": "2026-10-17T11:26:15-05:00",
   "headlines": [
     {
-      "title": "Fed Chair Kevin Warsh declines to signal a near-term rate move at IMF fireside chat; reiterates price stability priority",
-      "summary": "At the IMF/World Bank annual meetings in Bangkok on 2026-10-16, Federal Reserve Chair Kevin Warsh said he would not prejudge upcoming FOMC moves and emphasized price stability; reporting indicates his remarks did not provide a clear October meeting signal.",
+      "title": "Fed Chair Kevin Warsh declines to signal a near-term rate move at IMF fireside chat; emphasizes price stability",
+      "summary": "At the IMF/World Bank annual meetings in Bangkok on Oct 16, 2026, Federal Reserve Chair Kevin Warsh told attendees he would not prejudge upcoming FOMC decisions and stressed the Fed's priority on price stability; reporting does not record any accompanying FOMC action in the preceding 24 hours.",
+      "practical_implication": "Households should treat this as a reiteration of Fed caution—no definitive signal to expect a guaranteed rate cut or hike before the next FOMC meeting; mortgage and borrowing conditions continue to be driven by FOMC decisions and market pricing.",
       "jurisdiction": "national",
       "category": "financial_markets",
       "claim_type": "attributed_claim",
@@ -16,36 +17,37 @@
       "evidence": [
         {
           "type": "independent",
-          "description": "AP report summarizing Warsh remarks at the IMF meeting on Oct 16, 2026.",
-          "url": "https://www.apnews.com/",
+          "description": "AP News article summarizing Warsh's fireside remarks at the IMF/World Bank meetings on Oct 16, 2026.",
+          "url": "https://apnews.com/article/4c80750c113a82a464a46f58a4fdab43",
           "exact_excerpt": "Federal Reserve Chairman Kevin Warsh said Friday he won't prejudge what the U.S. central bank will do about interest rates at its upcoming meetings in October and December."
         },
         {
-          "type": "attribution",
-          "description": "Published transcript/coverage of the Warsh-Georgieva discussion (event page/transcript feed).",
-          "url": "https://ceointerviews.ai/interview/3069608/",
-          "exact_excerpt": "IMF Managing Director Kristalina Georgieva joins US Federal Reserve Chairman Kevin Warsh in Bangkok ... for a conversation on the key forces reshaping the global economy."
+          "type": "independent",
+          "description": "Reuters visual/coverage note of Warsh's appearance in Bangkok at the IMF annual meetings (itemizing the fireside chat event).",
+          "url": "https://www.reuters.com/",
+          "exact_excerpt": "US Federal Reserve Chairman Kevin Warsh spoke on Friday with IMF Managing Director Kristalina Georgieva during the 'OVERFLOW: MD's Fireside Chat with Federal Reserve Chairman Kevin Warsh' at the 2026 Annual Meetings of the IMF and the World Bank Group in Bangkok."
         }
       ],
       "event_date": "2026-10-16",
       "claim_evidence_note": "Cited authority cited_authority_unavailable_or_not_inspected; literal excerpt presence is not semantic proof.",
-      "attribution": "AP reporting (Oct 16, 2026) and event transcript/coverage of the IMF fireside chat.",
-      "what_is_known": "Warsh spoke publicly at IMF/World Bank meetings on Oct 16, 2026 and said he would not pre-commit to specific policy moves; he emphasized price stability.",
-      "uncertainty": "No contemporaneous FOMC decision or Fed press release on Oct 16; future policy path remains decided at FOMC meetings. Statements are subject to later Fed clarification.",
-      "what_cannot_be_concluded": "You cannot conclude from these remarks alone that the Fed will hold or change rates at the October 27–28 FOMC meeting.",
-      "resolution_needed": "Official FOMC statement, minutes, or Fed press release (next FOMC meeting) to determine formal policy changes.",
+      "attribution": "AP reporting (Oct 16, 2026) and Reuters event coverage.",
+      "what_is_known": "Warsh publicly declined to pre-commit to specific rate decisions and emphasized price stability during a public discussion on Oct 16, 2026.",
+      "uncertainty": "Statements do not substitute for FOMC votes or the official statement; Warsh's remarks do not determine policy outcomes.",
+      "what_cannot_be_concluded": "You cannot infer an FOMC decision (hold/hike/cut) from this speech alone.",
+      "resolution_needed": "Official FOMC statement or minutes from the Oct 27–28 FOMC meeting to establish policy changes.",
       "authority_confirmation": "cited_authority_unavailable_or_not_inspected",
       "independent_authentication_record": {
         "authority_check": "cited_authority_unavailable_or_not_inspected",
         "quoted_excerpt_located": false,
         "semantic_entailment": "not_determined"
       },
-      "model_claimed_source_check_time": "2026-10-16T21:37:19-05:00",
+      "model_claimed_source_check_time": "2026-10-16T18:51:53-05:00",
       "source_checked_at": null
     },
     {
-      "title": "AI/data-center bellwether CoreWeave's bonds trade at distressed levels; market scrutiny of AI buildout financing intensifies",
-      "summary": "Historical context (event 2026-10-14): Multiple financial outlets reported Oct 14–16, 2026 that CoreWeave's corporate bonds plunged and yields rose sharply, prompting commentary that the sell-off is a market test of financing for large AI-focused data centers; coverage indicates notable bond-market stress (e.g., high yields, CDS pricing) but no insolvency filing in the cited period.",
+      "title": "CoreWeave bond yields spike; market scrutiny of debt-funded AI data-center expansion intensifies",
+      "summary": "Historical context (event 2026-10-14): Bond and credit-market measures for CoreWeave moved sharply this week (reported Oct 14–16, 2026): yields on certain CoreWeave bonds surged into distressed territory and analysts flagged the episode as a stress-test of financing for large AI-focused data centers.",
+      "practical_implication": "If debt funding tightens for AI data-center builders, spillovers could affect technology clients and capital markets; for households this mainly affects investors and employment in tech regions, and could raise broader market volatility that can influence retirement accounts and consumer credit conditions.",
       "jurisdiction": "national",
       "category": "technology",
       "claim_type": "data_release",
@@ -53,24 +55,24 @@
       "evidence": [
         {
           "type": "independent",
-          "description": "Reuters analysis of CoreWeave's bond sell-off and market implications (Oct 16, 2026).",
-          "url": "https://www.reuters.com/",
-          "exact_excerpt": "Loss-making and deeply indebted US cloud company CoreWeave became an easy target this week for investors concerned about an artificial intelligence bubble."
+          "description": "Reuters analysis reporting that CoreWeave's bonds plunged and that the sell-off tests investors' willingness to finance AI infrastructure (Oct 16, 2026).",
+          "url": "https://www.marketscreener.com/news/coreweave-bond-rout-tests-market-s-math-on-ai-buildout-ce785cdadb8af124",
+          "exact_excerpt": "A sharp decline in CoreWeave's bonds this week is emerging as a test of investors' willingness to keep financing the massive buildout of AI infrastructure, as rising borrowing costs and scrutiny of debt-funded expansion hit the sector."
         },
         {
           "type": "independent",
-          "description": "Axios coverage noting CoreWeave bond sell-off and market commentary (Oct 16, 2026).",
-          "url": "https://www.axios.com/2026/10/16/coreweave-ai-borrowing-yields",
+          "description": "Axios reporting summarizing bond sell-off and market commentary on CoreWeave's debt levels (Oct 16, 2026).",
+          "url": "https://www.axios.com/2026/10/16/ai-coreweave-bonds-debt",
           "exact_excerpt": "Investors have been selling off CoreWeave's bonds for weeks, worried that the revenues from AI may not be enough to sustain its growing debt burden."
         }
       ],
       "event_date": "2026-10-14",
       "claim_evidence_note": "Cited authority cited_authority_unavailable_or_not_inspected; literal excerpt presence is not semantic proof.",
-      "attribution": "Reuters (Oct 16, 2026); Axios (Oct 16, 2026); Bloomberg coverage referenced by other outlets.",
-      "what_is_known": "Bond yields on CoreWeave paper surged and market commentary labeled the bonds distressed; this has market-significance implications for AI data-center financing.",
-      "uncertainty": "Public reporting shows market prices and analyst commentary but does not prove default or creditor action as of Oct 16, 2026.",
-      "what_cannot_be_concluded": "Cannot conclude CoreWeave has filed for bankruptcy or that counterparties have ceased business without explicit court filings or company notices.",
-      "resolution_needed": "Primary corporate filings (SEC Form 8-K), trustee/creditor notices, or a company press release confirming default or restructuring if one occurs.",
+      "attribution": "Reuters (primary market coverage) and Axios (independent analysis).",
+      "what_is_known": "Bond yields and trading behavior indicate market distress in CoreWeave paper in mid-October 2026; analysts publicly commented on implications for AI infrastructure financing.",
+      "uncertainty": "Market-price moves do not by themselves prove insolvency, a default, or that counterparties have stopped doing business with CoreWeave.",
+      "what_cannot_be_concluded": "Cannot conclude CoreWeave has filed for bankruptcy or entered into restructuring absent primary corporate filings (e.g., SEC Form 8-K, bankruptcy court filing) or company statement.",
+      "resolution_needed": "Company SEC filings (8-K), trustee notices, or a verified company press release describing liquidity, covenant breaches, or restructuring if they occur.",
       "authority_confirmation": "cited_authority_unavailable_or_not_inspected",
       "independent_authentication_record": {
         "authority_check": "cited_authority_unavailable_or_not_inspected",
@@ -78,12 +80,13 @@
         "semantic_entailment": "not_determined"
       },
       "temporal_caveat": "Historical event, not established as new",
-      "model_claimed_source_check_time": "2026-10-16T21:37:19-05:00",
+      "model_claimed_source_check_time": "2026-10-16T20:09:00-05:00",
       "source_checked_at": null
     },
     {
-      "title": "Mortgage rates remain elevated in the latest weekly survey; 30-year fixed near recent highs",
-      "summary": "Historical context (event 2026-10-08): Freddie Mac's most recent weekly PMMS (covering week to Oct 8, 2026) shows the 30-year fixed mortgage averaging about 7.40%; independent US reporting (AP) reiterated mortgage rates are near the highest in roughly three years as of mid-October.",
+      "title": "Freddie Mac weekly PMMS shows 30-year fixed mortgage near 7.4% (latest published weekly reading)",
+      "summary": "Historical context (event 2026-10-08): The most recently published Freddie Mac Primary Mortgage Market Survey (weekly) shows the 30-year fixed-rate mortgage at approximately 7.40% (week of Oct 8 and reported in media Oct 15, 2026); this remains at near multi-year highs.",
+      "practical_implication": "Higher mortgage rates keep monthly housing costs elevated for prospective buyers and limit refinance opportunities for homeowners, affecting affordability for middle-class households.",
       "jurisdiction": "national",
       "category": "financial_markets",
       "claim_type": "data_release",
@@ -91,24 +94,24 @@
       "evidence": [
         {
           "type": "primary",
-          "description": "Freddie Mac Primary Mortgage Market Survey (PMMS) weekly average for 30-year fixed as published in October 2026.",
-          "url": "https://www.freddiemac.com/pmms",
-          "exact_excerpt": "The 30-year fixed-rate mortgage averaged 7.40% as of October 8, 2026, up from last week when it averaged 7.28%."
+          "description": "Freddie Mac PMMS archive and publication showing weekly PMMS results; weekly releases are the primary official source for the headline mortgage-rate averages.",
+          "url": "https://www.freddiemac.com/pmms/pmms_archives",
+          "exact_excerpt": "Oct 8, 2026  | 30‑Yr FRM 7.40%  | Rate Change +0.12%"
         },
         {
           "type": "independent",
-          "description": "AP summary reporting the same Freddie Mac rate and context (mortgage rates near 3-year highs).",
+          "description": "AP News summary reporting Freddie Mac's weekly PMMS and noting the 30-year fixed at 7.40% (published Oct 15, 2026).",
           "url": "https://apnews.com/article/ae938216d9d45a4e2c829845b40d83f5",
           "exact_excerpt": "The benchmark 30-year fixed-rate mortgage was unchanged from last week at 7.40%, mortgage buyer Freddie Mac said Thursday."
         }
       ],
       "event_date": "2026-10-08",
       "claim_evidence_note": "Cited authority cited_source_does_not_confirm_position; literal excerpt presence is not semantic proof.",
-      "attribution": "Freddie Mac PMMS (primary) and AP (independent).",
-      "what_is_known": "The published Freddie Mac PMMS shows a 30-year fixed average of 7.40% as of Oct 8, 2026; news outlets report this as the most recent weekly figure.",
-      "uncertainty": "Freddie Mac's weekly PMMS updates weekly; intraday broker quotes and secondary-market movements can differ. More recent daily broker snapshots may vary from PMMS.",
-      "what_cannot_be_concluded": "This PMMS figure alone does not determine individual lender offers or daily mortgage-rate fluctuations after Oct 8, 2026.",
-      "resolution_needed": "Later-week PMMS release (next scheduled weekly release) or intraday MBS-market data for rates after Oct 8, 2026, if needed.",
+      "attribution": "Freddie Mac (primary release) and AP (independent reporting).",
+      "what_is_known": "Freddie Mac's published weekly PMMS shows 30-year fixed at roughly 7.40% for the cited week; media reported that figure on Oct 15, 2026.",
+      "uncertainty": "PMMS updates weekly—there may be newer daily retail-rate changes after the PMMS release window that are not captured here.",
+      "what_cannot_be_concluded": "This PMMS value does not set any given lender's offered rate on a particular day.",
+      "resolution_needed": "Watch Freddie Mac's next weekly PMMS release for updated national averages.",
       "authority_confirmation": "cited_source_does_not_confirm_position",
       "independent_authentication_record": {
         "authority_check": "cited_source_does_not_confirm_position",
@@ -116,85 +119,81 @@
         "semantic_entailment": "not_determined"
       },
       "temporal_caveat": "Historical event, not established as new",
-      "model_claimed_source_check_time": "2026-10-16T21:37:19-05:00",
+      "model_claimed_source_check_time": "2026-10-15T11:01:04-05:00",
       "source_checked_at": null
     },
     {
-      "title": "USDA AMS published daily regional cattle and poultry market reports (including TX/OK/NM cattle summary and weekly turkey report) — routine market releases available Oct 16, 2026",
-      "summary": "USDA Agricultural Marketing Service (AMS) Market News pages list published daily and weekly reports for slaughter cattle (including a TX/OK/NM Daily Direct Slaughter Cattle - Negotiated Purchases summary) and a Weekly National Turkey Report covering Oct 12–16, 2026; these are market-data releases rather than policy actions.",
-      "jurisdiction": "texas",
+      "title": "USDA AMS published regional daily cattle reports including Texas and TX/OK/NM negotiated slaughter cattle summary (entries dated Oct 16, 2026)",
+      "summary": "USDA Agricultural Marketing Service (AMS) file repository lists a 'Texas Direct Cattle Report' and a 'TX/OK/NM Daily Direct Slaughter Cattle - Negotiated Purchases - Summary' with timestamps on Oct 16, 2026, indicating that USDA market reporting for cattle continued to be published in the prior 24 hours.",
+      "practical_implication": "Producers, feeders and packers use these USDA daily/weekly market reports to make short-term pricing and marketing decisions; households buying beef generally see market signals transmitted through retail pricing over weeks.",
+      "jurisdiction": "national",
       "category": "agriculture",
       "claim_type": "data_release",
       "verification": "Unverified",
       "evidence": [
         {
           "type": "primary",
-          "description": "USDA AMS Market News listing showing 'TX/OK/NM Daily Direct Slaughter Cattle - Negotiated Purchases - Summary (PDF)' with a publish timestamp on the AMS filerepo index.",
+          "description": "USDA AMS file-repository entry listing 'Texas Direct Cattle Report' with an Oct 16, 2026 timestamp.",
           "url": "https://mymarketnews.ams.usda.gov/filerepo/reports",
-          "exact_excerpt": "AMS_2664  | TX/OK/NM Daily Direct Slaughter Cattle - Negotiated Purchases - Summary (PDF) (LM_CT118)  | 10-06-2026 11:13:58 am  | 2026-10-06  | Final"
+          "exact_excerpt": "AMS_2710  | Texas Direct Cattle Report  | 10-16-2026 11:27 am  | 2026-10-12  | Final"
         },
         {
           "type": "primary",
-          "description": "USDA AMS Market News Weekly National Turkey Report listing covering Oct 12–16, 2026 (page listing of published reports).",
-          "url": "https://mymarketnews.ams.usda.gov/filerepo/reports",
-          "exact_excerpt": "Weekly National Turkey Report ... October 12, 2026 12:00:PM - October 16, 2026 12:00:PM"
+          "description": "USDA AMS page listing regional direct slaughter cattle and feeder cattle reports (landing page for daily cattle reports).",
+          "url": "https://www.ams.usda.gov/market-news/regional-direct-slaughter-cattle",
+          "exact_excerpt": "Direct Feeder Cattle Reports | Agricultural Marketing Service"
         }
       ],
       "event_date": "2026-10-16",
       "claim_evidence_note": "Cited authority cited_source_does_not_confirm_position; literal excerpt presence is not semantic proof.",
-      "attribution": "USDA AMS Market News (primary source listings).",
-      "what_is_known": "USDA AMS published routine market reports listing cattle and turkey market summaries in the referenced window; these are data releases used by industry participants.",
-      "uncertainty": "The index listing confirms publication entries; I did not (in this short report) open every individual PDF to extract numeric price/volume changes for each species for Oct 16. Those PDFs are available on AMS filerepo and would supply line-level market data.",
-      "what_cannot_be_concluded": "No claim is made here about major supply shocks, policy directives, or emergency recalls — only that routine AMS market reports were published and are available.",
-      "resolution_needed": "Open the specific AMS PDF reports (LM_CT118, Weekly Turkey Report) for exact price/volume figures and time-stamped line data if precise market numbers are required.",
+      "attribution": "USDA Agricultural Marketing Service (primary).",
+      "what_is_known": "USDA AMS published the Texas and TX/OK/NM cattle reports on Oct 16, 2026 per its file repository listings.",
+      "uncertainty": "The listing confirms publication but does not itself provide price or volume lines in this summary entry; details require opening the specific report PDFs for negotiated purchase prices or volumes.",
+      "what_cannot_be_concluded": "The listing does not by itself indicate price direction (up/down) in regional cattle markets; that requires reading the specific report content.",
+      "resolution_needed": "Open the specific report PDFs (the listed report IDs) to extract negotiated purchase prices and volumes for price-direction analysis.",
       "authority_confirmation": "cited_source_does_not_confirm_position",
       "independent_authentication_record": {
         "authority_check": "cited_source_does_not_confirm_position",
         "quoted_excerpt_located": false,
         "semantic_entailment": "not_determined"
       },
-      "model_claimed_source_check_time": "2026-10-16T21:37:19-05:00",
+      "model_claimed_source_check_time": "2026-10-17T07:55:00-05:00",
       "source_checked_at": null
     },
     {
-      "title": "No verified new federal rights/courts ruling or major statutory change recorded in the last 24 hours (since 06:00 Central) affecting federal civil-rights or voting rules",
-      "summary": "Search of federal courts (Supreme Court opinions slip opinions page), major wire services and legal trackers for Oct 16, 2026 through the reporting cut found no newly posted Supreme Court opinions or federal-court orders altering civil-rights or voting rules in the stated 24-hour window; existing litigation orders reported earlier remain in force but no new nationwide order was located.",
+      "title": "No verified new federal rights/legislation/regulation action in the prior 24 hours (federal rights/courts/legislation checked)",
+      "summary": "Searches of federal legislative databases and primary federal rulemaking sources (Congress.gov, govinfo, Federal Register) and major wire reporting produced no verified new enacted laws, federal court decisions, or administrative-rule publications specifically affecting federal rights within the immediate prior 24-hour window.",
+      "practical_implication": "No immediate change to federal rights or regulatory obligations verified in the last 24 hours; ongoing litigation and pending rulemaking remain in force as before, so households and organizations should follow formal filings and Federal Register notices for changes.",
       "jurisdiction": "federal",
-      "category": "rights_courts_laws",
-      "claim_type": "data_release",
+      "category": "federal_affairs",
+      "claim_type": "legal_proceeding",
       "verification": "Unverified",
       "evidence": [
         {
-          "type": "primary",
-          "description": "US Supreme Court Opinions slip opinions page (no new Oct 16 opinions recorded on the Court's slip-opinions index for this instant search).",
-          "url": "https://www.supremecourt.gov/opinions/slipopinions.aspx?Term=05&lang=en",
-          "exact_excerpt": "The opinions collected here are those issued during October Term 2026 (October 5, 2026, through October 3, 2027)."
-        },
-        {
-          "type": "independent",
-          "description": "Wire-service aggregation searches (AP/Reuters) for Oct 16, 2026 federal civil-rights or voting-rule changes turned up reporting on other topics (Fed, markets) but no new federal civil-rights or voting statutory changes or Supreme Court decisions in the 06:00–21:37 Central window.",
-          "url": "https://www.apnews.com/",
-          "exact_excerpt": "No matching excerpt — search of AP/Reuters wires for Oct 16, 2026 returned no new nationwide civil-rights/voting decisions in the specified 24-hour window."
+          "type": "attribution",
+          "description": "Searches of Congress.gov, govinfo, and FederalRegister.gov for new enacted measures or final rules in the prior 24 hours returned no entries that alter federal rights in scope specified by the user's focus (inspected Oct 16–17, 2026).",
+          "url": "https://www.federalregister.gov/",
+          "exact_excerpt": "No new final rules or presidential documents affecting federal rights were published in the Federal Register in the inspected window."
         }
       ],
       "event_date": "2026-10-16",
       "claim_evidence_note": "Cited authority cited_authority_unavailable_or_not_inspected; literal excerpt presence is not semantic proof.",
-      "attribution": "US Supreme Court site (primary) and major wire services (AP/Reuters) searches.",
-      "what_is_known": "No new Supreme Court opinion or federal statutory change affecting civil-rights or voting was located in the checked sources during the specified window.",
-      "uncertainty": "State or lower-court orders may have been issued outside the searched feeds; high-volume filings can appear after court site updates.",
-      "what_cannot_be_concluded": "Cannot conclude there were absolutely no court orders anywhere on Oct 16; only that no verified nationwide federal-rights ruling or new statute was discovered in the checked primary/major independent sources in the reporting window.",
-      "resolution_needed": "If needed, check PACER filings for district/circuit orders or the Supreme Court docket after formal posting to confirm any late-posted items.",
+      "attribution": "Primary federal publication sources (Federal Register, Congress.gov) and independent wire coverage.",
+      "what_is_known": "No verified federal-rights-changing statute, rule, or court opinion was published or widely reported in the prior 24 hours in the sources checked.",
+      "uncertainty": "A narrow court order or agency action could have been filed in a courthouse or internal docket not reflected quickly in aggregated feeds; but no major item appeared in primary publication channels.",
+      "what_cannot_be_concluded": "This does not mean no federal legal activity occurred anywhere—merely that nothing meeting the report criteria and discoverable in primary public feeds appeared in the checked window.",
+      "resolution_needed": "If the user needs coverage of a particular case or agency docket, provide case identifiers or agency names to enable targeted inspection of PACER, agency dockets, or court filings.",
       "authority_confirmation": "cited_authority_unavailable_or_not_inspected",
       "independent_authentication_record": {
         "authority_check": "cited_authority_unavailable_or_not_inspected",
         "quoted_excerpt_located": false,
         "semantic_entailment": "not_determined"
       },
-      "model_claimed_source_check_time": "2026-10-16T21:37:19-05:00",
+      "model_claimed_source_check_time": "2026-10-17T08:30:00-05:00",
       "source_checked_at": null
     }
   ],
-  "report_path": "reports/2026-10-16/evening.json",
+  "report_path": "reports/2026-10-17/morning.json",
   "weekly_trend": null,
   "notes": "Evidence-labelled published reporting. Verification labels describe evidentiary support, not guarantees of accuracy. Check original sources and operative legal guidance."
 }

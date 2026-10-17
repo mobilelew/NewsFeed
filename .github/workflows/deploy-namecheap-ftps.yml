@@ -22,10 +22,14 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if [ -z "$FTPS_HOST" ] || [ -z "$FTPS_USERNAME" ] || [ -z "$FTPS_PASSWORD" ] || [ -z "$FTPS_REMOTE_DIR" ]; then
-            echo "Secure FTPS not configured. Add three Actions secrets and the FTPS_REMOTE_DIR repository variable. Plain FTP is not supported."
-            exit 1
-          fi
+          missing=0
+          for name in FTPS_HOST FTPS_USERNAME FTPS_PASSWORD FTPS_REMOTE_DIR; do
+            if [ -z "${!name}" ]; then
+              echo "::error title=Missing FTPS configuration::Set $name in GitHub Actions secrets or variables as documented."
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then exit 1; fi
           # Host must be a hostname, never a URL or a credential-bearing string.
           if [[ ! "$FTPS_HOST" =~ ^[A-Za-z0-9.-]+$ ]]; then echo "Invalid FTPS host"; exit 1; fi
           if [[ "$FTPS_REMOTE_DIR" == *'..'* ]] || [[ "$FTPS_REMOTE_DIR" == *'?'* ]] || [[ "$FTPS_REMOTE_DIR" == *'#'* ]]; then

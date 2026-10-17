@@ -28,7 +28,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      # Regression tests distinguish actual template tokens from ordinary prose; syntax and policy checks must pass.
+      # Preflight validates template markers, null event dates, and syntax before paid research.
       - name: Offline preflight validation
         run: |
           set -euo pipefail

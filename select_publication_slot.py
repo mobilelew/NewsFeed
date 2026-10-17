@@ -15,12 +15,13 @@ def select(event,nominal,when):
     if event!="schedule":
         raise ValueError("Unsupported event cannot trigger paid production")
     if nominal in MORNING:
-        if local.hour<6: return {"mode":"skip","kind":"morning","reason":"standby UTC cron before local 6 AM"}
+        if local.hour==5: return {"mode":"skip","kind":"morning","reason":"standby UTC cron before local 6 AM"}
+        if local.hour<5: raise ValueError("Morning event delayed into an inappropriate local time window")
         if local.hour>=12: raise ValueError("Morning schedule delayed beyond local reporting window; manual review required")
         return {"mode":"production","kind":"morning","reason":"6 AM local target or delayed recovery"}
     if nominal in EVENING:
-        if local.hour<20: return {"mode":"skip","kind":"evening","reason":"standby UTC cron before local 8 PM"}
-        if local.hour>=24: raise ValueError("Evening execution outside local day")
+        if local.hour==19: return {"mode":"skip","kind":"evening","reason":"standby UTC cron before local 8 PM"}
+        if local.hour<19: raise ValueError("Evening event delayed into the following day; needs manual review")
         return {"mode":"production","kind":"evening","reason":"8 PM local target or delayed recovery"}
     raise ValueError("Unknown nominal GitHub Actions schedule")
 

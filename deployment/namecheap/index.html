@@ -22,6 +22,7 @@ section{background:white;border:1px solid #dce2e9;border-radius:12px;padding:16p
 .story a{color:#134877;font-weight:650;text-decoration:none;line-height:1.4}.story a:hover{text-decoration:underline}
 .tag{display:inline-block;background:#f0f3f6;color:#43526a;padding:4px 7px;border-radius:5px;font-size:.75rem;margin:0 5px 5px 0}
 .small{font-size:.9rem;color:#475569}.empty{padding:16px;color:#64748b}.updated{margin-top:8px;font-size:.83rem;color:#c0d1e2}
+#current-executive{border-left:4px solid #4e8dd2}#current-executive ul{margin:8px 0 0;padding-left:22px}#current-executive li{margin:10px 0;line-height:1.55}#current-analysis{border-left:4px solid #6f9a55}#current-analysis article{padding:18px 0;border-top:1px solid #dce2e9}#current-analysis article:first-child{border-top:0}#current-analysis .status{display:inline-block;padding:4px 8px;border-radius:5px;background:#edf2f7;margin:0 0 8px}html[data-theme="dark"] #current-analysis .status{background:#2b3b50}#current-analysis details{margin:12px 0}#current-analysis p{line-height:1.65}
 #task-briefings{border-left:4px solid #36a68a}#task-briefings h3{margin:22px 0 8px;font-size:1.1rem}#task-text p{line-height:1.65;white-space:pre-wrap}#task-text li{line-height:1.6;margin:8px 0}#task-text a{overflow-wrap:anywhere}#task-text .task-note{border-left:3px solid #c79b44;padding:10px;margin:10px 0}
 #full-briefings{border-left:4px solid #3b76b0}#full-briefings article{padding:18px 0;border-top:1px solid #dce2e9}#full-briefings article h3{margin-bottom:5px}#full-briefings dl{margin:20px 0;display:grid;row-gap:4px}#full-briefings dd{padding-bottom:14px;border-bottom:1px solid #e0e7f0}html[data-theme="dark"] #full-briefings dd{border-color:#34435a}#full-briefings article{line-height:1.65}#full-briefings article p{line-height:1.75;margin:15px 0}#full-briefings dt{font-weight:700;margin-top:8px}#full-briefings dd{margin:3px 0 9px;line-height:1.5}#full-briefings .analysis-block{border-top:1px solid #dce2e9;padding:22px 0;line-height:1.75}#full-briefings .analysis-block p{margin:12px 0 18px;max-width:78ch}#full-briefings .analysis-entry{padding:10px 16px;margin:13px 0;border-left:3px solid #6487ac;background:rgba(100,140,180,.075);border-radius:5px}#full-briefings .analysis-entry p{margin:7px 0;line-height:1.65}#full-briefings .evidence-link{display:block;margin:5px 0}#full-briefings .executive-glance{padding:10px 0 18px}#full-briefings .executive-glance ul{padding-left:22px;margin:8px 0}#full-briefings .executive-glance li{margin:10px 0;line-height:1.55}#full-briefings details.analysis-more{margin:18px 0;padding:10px 0;border-top:1px solid #dce2e9}#full-briefings details.analysis-more summary{cursor:pointer;font-weight:700}html[data-theme="dark"] #full-briefings details.analysis-more{border-color:#34435a}
 #full-briefings .report-marker{display:inline-block;padding:4px 8px;border-radius:5px;background:#fff2d5;color:#795615}html[data-theme="dark"] #full-briefings .analysis-block,html[data-theme="dark"] #full-briefings article{border-color:#35455d}html[data-theme="dark"] #full-briefings .report-marker{background:#564522;color:#ffe5a1}
@@ -29,6 +30,8 @@ footer{font-size:.83rem;color:#64748b;padding-bottom:35px}
 </style></head><body>
 <header><div class="wrap"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">Theme: Auto</button><h1>News Reader</h1><p>U.S. &amp; priority-state news · OKC/Tulsa · Little Rock · DFW · Austin · economy · agriculture · technology</p><div class="updated" id="updated">Loading current sources…</div></div></header>
 <main class="wrap" style="display:flex;flex-direction:column">
+<section id="current-executive" style="order:-20"><h2>Executive Summary</h2><p class="small" id="current-executive-meta">Analyzing current discovery…</p><div id="current-executive-content"><div class="empty">Loading current news summary…</div></div></section>
+<section id="current-analysis" style="order:-19"><h2>Current News Analysis</h2><p class="small">Analysis of the current discovery feed using the configured areas of interest and evidence labels.</p><div id="current-analysis-content"><div class="empty">Loading current analysis…</div></div></section>
 <div class="note"><strong>Evidence matters.</strong> Discovery stories below are <strong>not yet independently verified</strong>. Official-record entries confirm listed document metadata only; they do not establish legal effect. A full claim-verified briefing appears separately when available.</div>
 <section id="verification-section" style="order:99"><h2>Verification engine status</h2><p id="verification-status" class="small">Checking the latest hourly original-source audit…</p><p class="small">Source excerpt matching is not equivalent to independent confirmation of a claim. Only independently established assertions qualify as Verified.</p></section>
 <section id="task-briefings" style="order:-1"><h2>Full ChatGPT Morning &amp; Evening Reports</h2><p class="small">These are the full reports from the scheduled News Reader tasks when publication succeeds. Their stated source assessments remain attributed to the task; do not confuse them with independent verification by the GitHub audit engine.</p><nav id="task-tabs" aria-label="Scheduled task reports"><button type="button" data-task="morning">6 AM report</button><button type="button" data-task="evening">8 PM report</button><button type="button" data-task="weekly">Weekly comparison</button></nav><p id="task-status" class="small">Checking scheduled task report archive…</p><div id="task-text"></div></section>
@@ -297,6 +300,34 @@ async function loadFullBriefings(){
 }
 document.querySelectorAll('#briefing-tabs button').forEach(b=>b.addEventListener('click',()=>showFullBrief(b.dataset.report)));
 refreshSourceAudit().then(loadFullBriefings);
+
+
+function renderCurrentDiscoveryAnalysis(doc){
+ const summary=$('current-executive-content');summary.replaceChildren();
+ $('current-executive-meta').textContent='Current discovery refreshed '+local(doc.feed_updated_at)+' · analyzed '+local(doc.analyzed_at)+' · '+doc.analyzed_finding_count+' material findings reviewed';
+ const ul=document.createElement('ul');
+ for(const bullet of doc.executive_summary||[]){const li=document.createElement('li');li.textContent=bullet;ul.append(li)}
+ if(!ul.children.length)ul.append(reportText('li','No executive summary is available for the current discovery set.'));
+ summary.append(ul);
+ const area=$('current-analysis-content');area.replaceChildren();
+ for(const f of doc.findings||[]){
+   const article=document.createElement('article');
+   article.append(reportText('h3',f.title));
+   const status=reportText('span',f.status||'Unresolved');status.className='status';article.append(status);
+   if(f.analysis)article.append(reportText('p',f.analysis));
+   if(f.practical_implication){const p=document.createElement('p');p.append(reportText('strong','Why it matters: '),document.createTextNode(f.practical_implication));article.append(p)}
+   const d=document.createElement('details');const sm=document.createElement('summary');sm.textContent='Sources checked and remaining uncertainty';d.append(sm);
+   for(const x of [...(f.authority_checks||[]),...(f.independent_checks||[])]){const p=document.createElement('p');p.append(reportText('strong',(x.source||'Source')+': '),document.createTextNode(x.finding||''));const u=cleanDirectLink(x.url);if(u){p.append(document.createTextNode(' '));const a=document.createElement('a');a.href=u;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Source';p.append(a)}d.append(p)}
+   if(f.remaining_uncertainty)d.append(reportText('p','Remaining uncertainty: '+f.remaining_uncertainty));
+   article.append(d);area.append(article);
+ }
+ if(!(doc.findings||[]).length)area.append(reportText('p','No material current discovery findings were analyzed.'));
+}
+async function loadCurrentDiscoveryAnalysis(){
+ try{const d=await read('discovery-analysis.json');renderCurrentDiscoveryAnalysis(d)}
+ catch(e){$('current-executive-content').textContent='Current discovery summary is temporarily unavailable.';$('current-analysis-content').textContent='Current discovery analysis is temporarily unavailable.'}
+}
+loadCurrentDiscoveryAnalysis();
 
 async function loadVerificationStatus(){
  try{const r=await read('verification-status.json');const counts=(r.reports||[]).reduce((a,x)=>{a.checked+=(x.findings||[]).length;a.verified+=(x.independently_verified_findings||0);return a},{checked:0,verified:0});$('verification-status').textContent='Last evidence recheck: '+local(r.checked_at)+' · '+counts.checked+' findings assessed · '+counts.verified+' independently verified by the hourly audit. Unresolved claims remain labelled rather than promoted.'}

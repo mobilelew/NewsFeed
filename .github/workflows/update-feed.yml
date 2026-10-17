@@ -2,9 +2,6 @@
 name: Update News Reader feed
 
 on:
-  push:
-    paths:
-      - '.github/workflows/update-feed.yml'
   schedule:
     - cron: '18 * * * *'
   workflow_dispatch:

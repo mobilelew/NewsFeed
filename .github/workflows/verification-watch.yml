@@ -1,4 +1,4 @@
-name: Hourly original-source verification checks
+name: Hourly substantive verification checks
 on:
   push:
     paths:

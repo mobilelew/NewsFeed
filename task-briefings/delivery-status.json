@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-17T06:39:43+00:00",
+  "local_date": "2026-10-17",
+  "reports": {
+    "morning": {
+      "status": "not_due_or_pending",
+      "published_today": false,
+      "cutoff_local": "06:45 America/Chicago"
+    },
+    "evening": {
+      "status": "not_due_or_pending",
+      "published_today": false,
+      "cutoff_local": "20:45 America/Chicago"
+    }
+  },
+  "note": "This checks whether complete task text was delivered, not the factual correctness of the report."
+}

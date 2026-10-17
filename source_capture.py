@@ -53,6 +53,13 @@ def allowed(url):
         pass
     return True
 
+class OfficialRedirects(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self,request,fp,code,msg,headers,newurl):
+        if not allowed(newurl):
+            raise ValueError("Official URL redirected outside permitted HTTPS government/agency domains")
+        return super().redirect_request(request,fp,code,msg,headers,newurl)
+
+# Keep the original strict handler for callers that explicitly require no redirects.
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,*args,**kwargs):
         raise ValueError("Redirect refused; inspect final authoritative URL manually")
@@ -60,7 +67,7 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
 def capture(url,opener=None):
     if not isinstance(url,str) or not allowed(url):
         raise ValueError("URL is not an allowlisted authoritative HTTPS source")
-    opener=opener or urllib.request.build_opener(NoRedirect())
+    opener=opener or urllib.request.build_opener(OfficialRedirects())
     request=urllib.request.Request(url,headers={"User-Agent":"NewsReaderSourceCapture/1.0","Accept":"text/html,application/json,text/plain"})
     with opener.open(request,timeout=12) as response:
         mime=response.headers.get_content_type()

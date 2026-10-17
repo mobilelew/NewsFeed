@@ -19,7 +19,7 @@ jobs:
           FTPS_HOST: ${{ secrets.FTPS_HOST }}
           FTPS_USERNAME: ${{ secrets.FTPS_USERNAME }}
           FTPS_PASSWORD: ${{ secrets.FTPS_PASSWORD }}
-          FTPS_REMOTE_DIR: ${{ vars.FTPS_REMOTE_DIR }}
+          FTPS_REMOTE_DIR: ${{ vars.FTPS_REMOTE_DIR || '/' }}
         shell: bash
         run: |
           set -euo pipefail

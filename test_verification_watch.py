@@ -13,7 +13,7 @@ class HourlyReviewTests(unittest.TestCase):
         self.assertEqual(result["findings"][0]["source_check_status"],"source_excerpt_located")
         self.assertFalse(result["findings"][0]["claim_independently_verified"])
         self.assertEqual(result["pending_findings"],1)
-        self.assertEqual(result["findings"][0]["sources_checked"][0]["outcome"],"Source retrieved; cited exact passage located.")
+        self.assertEqual(result["findings"][0]["sources_checked"][0]["outcome"],"Source retrieved; quotation/text match located. Factual consistency and context require separate review.")
     def test_unreachable_remains_pending(self):
         result=examine({"headlines":[{"title":"X","verification":"Unverified","evidence":[]}]})
         self.assertEqual(result["findings"][0]["source_check_status"],"source_not_inspected")

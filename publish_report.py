@@ -77,7 +77,7 @@ def load_submission(path):
             fail(f"Corroborated headline {i} needs two distinct independent-source URLs")
         if h.get("jurisdiction") not in STATES | {"national", "international", "multiple"}:
             fail(f"Headline {i} needs jurisdiction")
-        if re.search(r"\b(?:REPLACE_ME|PLACEHOLDER|TODO_INSERT|TBD_SOURCE)\b", json.dumps(h), re.I):
+    if re.search(r"\b(?:REPLACE_ME|PLACEHOLDER|TODO_INSERT|TBD_SOURCE)\b", json.dumps(data.get("baseline", [])), re.I):
         fail("Baseline contains placeholders")
     if data["report_type"] == "morning":
         baseline = data.get("baseline")

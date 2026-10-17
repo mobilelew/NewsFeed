@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T15:38:24+00:00",
+  "updated_at": "2026-10-17T20:39:02+00:00",
   "headlines": [
     {
       "category": "OKC & TULSA",
@@ -10,60 +10,21 @@
       "published_at": "2026-10-17T04:28:56+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 119.07,
+      "discovery_score": 118.65,
       "article_url": "https://kfor.com/news/fatal-shooting-under-investigation-in-nw-oklahoma-city-2/",
       "link_type": "direct_publisher"
     },
     {
-      "category": "LITTLE ROCK",
-      "title": "Central Arkansas congressional candidates debate independence from Trump, cost of living",
-      "url": "https://arktimes.com/arkansas-blog/2026/10/16/central-arkansas-congressional-candidates-debate-independence-from-trump-cost-of-living",
-      "summary": "Democrat Chris Jones said Republican U.S. Rep. French Hill is too closely aligned with President Donald Trump as the two rivals running for a central Arkansas congressional seat that’s gaining national attention debated Thursday. Hill argued that Congress has attempted to check Trump’s power during his two non-consecutive terms. Jones disagreed, pointing out that the six-term congressman’s voting record has almost always matched Trump’s prioritie",
-      "summary_provenance": "publisher_rss_content",
-      "published_at": "2026-10-16T16:18:33+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.06,
-      "article_url": "https://arktimes.com/arkansas-blog/2026/10/16/central-arkansas-congressional-candidates-debate-independence-from-trump-cost-of-living",
-      "link_type": "direct_publisher"
-    },
-    {
       "category": "DALLAS–FORT WORTH",
-      "title": "Sibling drama and mixed martial arts duke it out in Dallas Theater Center show",
-      "url": "https://www.nbcdfw.com/entertainment/the-scene/sibling-drama-and-mixed-martial-arts-duke-it-out-in-dallas-theater-center-show/4091984/",
-      "summary": "Monsters aren’t just for Halloween. Dallas Theater Center’s regional premiere of Ngozi Anyanwu’s The Monsters combines mixed martial arts (MMA) and family drama. The play is now running at the Wyly Studio Theatre in the Dallas Arts District through Nov. 1. Lil is a determined, young fighter who idolizes a local MMA star, Big. Big just happens to be her older brother. After years of separation, Lil reconnects with Big, hoping he will help her trai",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-17T09:48:55+00:00",
+      "title": "Fort Worth Art Commission green-lights two public art final designs",
+      "url": "https://fortworthreport.org/2026/10/17/fort-worth-art-commission-green-lights-two-public-art-final-designs/",
+      "summary": "The Fort Worth Art Commission unanimously approved two final designs for new public art installations at their September meeting. Artist Demarcus McGaughey, with In House Media Group, presented his final design for the Fire Station #26 installation in District 6, and artist Trevor O’Tool presented his plans for Gateway Park over a Teams video conference Sept. 21. The Fort Worth Report Documenters program empowers people like you to help fill the ",
+      "summary_provenance": "publisher_rss_content",
+      "published_at": "2026-10-17T19:30:00+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 109.51,
-      "article_url": "https://www.nbcdfw.com/entertainment/the-scene/sibling-drama-and-mixed-martial-arts-duke-it-out-in-dallas-theater-center-show/4091984/",
-      "link_type": "direct_publisher"
-    },
-    {
-      "category": "AUSTIN",
-      "title": "'Ice Poseidon event' in Austin: What is it?",
-      "url": "https://www.kxan.com/news/local/austin/ice-poseidon-event-in-austin-what-is-it/",
-      "summary": "Kick streamers could descend upon Austin on Saturday in hopes of winning $50,000—here's why.",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-17T12:21:38+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 109.73,
-      "article_url": "https://www.kxan.com/news/local/austin/ice-poseidon-event-in-austin-what-is-it/",
-      "link_type": "direct_publisher"
-    },
-    {
-      "category": "OKC & TULSA",
-      "title": "Silver Alert issued for missing 84-year-old man last seen on foot in Oklahoma City",
-      "url": "https://kfor.com/news/local/silver-alert-issued-for-missing-84-year-old-man-last-seen-on-foot-in-oklahoma-city/",
-      "summary": "OKLAHOMA CITY (KFOR) — The Oklahoma Highway Patrol has issued a Silver Alert for an 84-year-old man last seen in Oklahoma City. According to OHP, Eddie Rogers was last seen on foot near 1200 South May Avenue in Oklahoma City at around 10:30 a.m. on Friday. He is described as 6 feet tall, weighing 170 [...]",
-      "summary_provenance": "rss_description",
-      "published_at": "2026-10-16T23:30:28+00:00",
-      "verification": "Not yet verified",
-      "is_editorial": false,
-      "discovery_score": 118.66,
-      "article_url": "https://kfor.com/news/local/silver-alert-issued-for-missing-84-year-old-man-last-seen-on-foot-in-oklahoma-city/",
+      "discovery_score": 109.9,
+      "article_url": "https://fortworthreport.org/2026/10/17/fort-worth-art-commission-green-lights-two-public-art-final-designs/",
       "link_type": "direct_publisher"
     },
     {
@@ -75,7 +36,7 @@
       "published_at": "2026-10-16T23:04:27+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.62,
+      "discovery_score": 118.2,
       "article_url": "https://kfor.com/news/11-5-million-awarded-to-oklahoma-city-youth-mental-health-programs-research-shows-high-need/",
       "link_type": "direct_publisher"
     },
@@ -88,8 +49,48 @@
       "published_at": "2026-10-16T20:42:27+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 118.42,
+      "discovery_score": 118.0,
       "article_url": "https://kfor.com/news/local/recent-rain-in-oklahoma-city-leaves-the-unhoused-in-need/",
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "OKC & TULSA",
+      "title": "Tulsa family collects cans to raise money for children with cancer in hospice",
+      "url": "https://www.kjrh.com/news/local-news/mobley-family-cans-collection-cancer-kids-hospice-oct-17-2026",
+      "summary": "TULSA, Okla. — Did you know cans — yes, like soda cans — can actually impact someone's life? A local family has been collecting them through donations from the community, all to raise money for kids fighting…",
+      "summary_provenance": "publisher_article_excerpt",
+      "published_at": "2026-10-17T19:38:20+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.92,
+      "article_url": "https://www.kjrh.com/news/local-news/mobley-family-cans-collection-cancer-kids-hospice-oct-17-2026",
+      "article_read": true,
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "OKC & TULSA",
+      "title": "Juvenile injured after NW OKC shooting",
+      "url": "https://kfor.com/news/local/juvenile-injured-after-nw-okc-shooting/",
+      "summary": "Oklahoma City Police responded to a shooting call that left a juvenile injured near NW 97th St. and Western Ave. Saturday afternoon.",
+      "summary_provenance": "rss_description",
+      "published_at": "2026-10-17T19:28:17+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.9,
+      "article_url": "https://kfor.com/news/local/juvenile-injured-after-nw-okc-shooting/",
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "DALLAS–FORT WORTH",
+      "title": "DFW Airport is going high-tech to support operations",
+      "url": "https://fortworthreport.org/2026/10/17/dfw-airport-is-going-high-tech-to-support-operations/",
+      "summary": "New technologies, from drones to robotics to AI, are coming to Dallas Fort Worth International Airport across operational departments. The need for those new technologies is exemplified by the operational challenge the airport faces regularly, said Jerome Woodard, executive vice president of operations. He presented these advances in an overview to the airport’s board of directors Oct. 1. The Fort Worth Report Documenters program empowers people ",
+      "summary_provenance": "publisher_rss_content",
+      "published_at": "2026-10-17T19:00:00+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.86,
+      "article_url": "https://fortworthreport.org/2026/10/17/dfw-airport-is-going-high-tech-to-support-operations/",
       "link_type": "direct_publisher"
     },
     {
@@ -101,21 +102,47 @@
       "published_at": "2026-10-17T15:38:23+00:00",
       "verification": "Not yet verified",
       "is_editorial": false,
-      "discovery_score": 110.0,
+      "discovery_score": 109.58,
       "article_url": "https://www.fox16.com/news/local-news/arkansas-paranormal-expo-invites-visitors-to-explore-the-unknown/",
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "AUSTIN",
+      "title": "'Ice Poseidon event' in Austin: What is it?",
+      "url": "https://www.kxan.com/news/local/austin/ice-poseidon-event-in-austin-what-is-it/",
+      "summary": "Kick streamers could descend upon Austin on Saturday in hopes of winning $50,000—here's why.",
+      "summary_provenance": "rss_description",
+      "published_at": "2026-10-17T12:21:38+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.31,
+      "article_url": "https://www.kxan.com/news/local/austin/ice-poseidon-event-in-austin-what-is-it/",
+      "link_type": "direct_publisher"
+    },
+    {
+      "category": "DALLAS–FORT WORTH",
+      "title": "Sibling drama and mixed martial arts duke it out in Dallas Theater Center show",
+      "url": "https://www.nbcdfw.com/entertainment/the-scene/sibling-drama-and-mixed-martial-arts-duke-it-out-in-dallas-theater-center-show/4091984/",
+      "summary": "Monsters aren’t just for Halloween. Dallas Theater Center’s regional premiere of Ngozi Anyanwu’s The Monsters combines mixed martial arts (MMA) and family drama. The play is now running at the Wyly Studio Theatre in the Dallas Arts District through Nov. 1. Lil is a determined, young fighter who idolizes a local MMA star, Big. Big just happens to be her older brother. After years of separation, Lil reconnects with Big, hoping he will help her trai",
+      "summary_provenance": "rss_description",
+      "published_at": "2026-10-17T09:48:55+00:00",
+      "verification": "Not yet verified",
+      "is_editorial": false,
+      "discovery_score": 109.1,
+      "article_url": "https://www.nbcdfw.com/entertainment/the-scene/sibling-drama-and-mixed-martial-arts-duke-it-out-in-dallas-theater-center-show/4091984/",
       "link_type": "direct_publisher"
     }
   ],
   "article_access_status": {
-    "publisher_article_excerpt": 0,
+    "publisher_article_excerpt": 1,
     "publisher_page_description": 0,
-    "publisher_rss_content": 1,
+    "publisher_rss_content": 2,
     "rss_description": 7,
     "unavailable": 0
   },
   "direct_link_policy": {
     "enabled": true,
-    "google_intermediaries_excluded": 52,
+    "google_intermediaries_excluded": 50,
     "tracking_or_affiliate_links_excluded": 0
   },
   "weekly_trend": {
@@ -151,7 +178,7 @@
     },
     "OKC & TULSA": {
       "ok": true,
-      "items": 22,
+      "items": 24,
       "working_sources": [
         "https://kfor.com/feed/",
         "https://oklahomawatch.org/feed/",
@@ -161,7 +188,7 @@
     },
     "LITTLE ROCK": {
       "ok": true,
-      "items": 43,
+      "items": 42,
       "working_sources": [
         "https://www.fox16.com/feed/",
         "https://arktimes.com/feed/",
@@ -181,7 +208,7 @@
     },
     "AUSTIN": {
       "ok": true,
-      "items": 24,
+      "items": 25,
       "working_sources": [
         "https://www.kxan.com/feed/",
         "https://news.google.com/rss/search?q=Austin%20Texas%20Travis%20County%20city%20government%20housing%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
@@ -189,14 +216,14 @@
     },
     "U.S. POLICY": {
       "ok": true,
-      "items": 33,
+      "items": 34,
       "working_sources": [
         "https://news.google.com/rss/search?q=executive%20order%20congress%20legislation%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "ECONOMY": {
       "ok": true,
-      "items": 34,
+      "items": 32,
       "working_sources": [
         "https://www.bls.gov/feed/bls_latest.rss",
         "https://news.google.com/rss/search?q=Federal%20Reserve%20dollar%20inflation%20treasury%20yields%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
@@ -218,15 +245,17 @@
     },
     "BEEF": {
       "ok": true,
-      "items": 33,
+      "items": 31,
       "working_sources": [
         "https://news.google.com/rss/search?q=USDA%20cattle%20beef%20livestock%20cattle-on-feed%20market%20report%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "CHICKEN": {
-      "ok": false,
-      "items": 0,
-      "working_sources": []
+      "ok": true,
+      "items": 2,
+      "working_sources": [
+        "https://news.google.com/rss/search?q=chicken%20broiler%20poultry%20USDA%20prices&hl=en-US&gl=US&ceid=US:en"
+      ]
     },
     "TURKEY": {
       "ok": true,
@@ -237,14 +266,14 @@
     },
     "DATA CENTERS": {
       "ok": true,
-      "items": 25,
+      "items": 22,
       "working_sources": [
         "https://news.google.com/rss/search?q=AI%20data%20center%20power%20grid%20permitting%20construction%20United%20States%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "AGRICULTURE": {
       "ok": true,
-      "items": 8,
+      "items": 6,
       "working_sources": [
         "https://news.google.com/rss/search?q=USDA%20beef%20cattle%20chicken%20turkey%20livestock%20prices%20farms%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
@@ -258,20 +287,18 @@
     },
     "AI": {
       "ok": true,
-      "items": 32,
+      "items": 31,
       "working_sources": [
         "https://news.google.com/rss/search?q=AI%20models%20OpenAI%20NVIDIA%20data%20centers%20electricity%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "TECH & SECURITY": {
       "ok": true,
-      "items": 13,
+      "items": 12,
       "working_sources": [
         "https://news.google.com/rss/search?q=CISA%20cybersecurity%20breach%20ransomware%20vulnerability%20when%3A3d&hl=en-US&gl=US&ceid=US:en"
       ]
     }
   },
-  "source_errors": [
-    "CHICKEN: ValueError: No fresh, relevant items; ValueError: No fresh, relevant items"
-  ]
+  "source_errors": []
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "evaluated_at": "2026-10-17T15:38:38.560497+00:00",
+  "evaluated_at": "2026-10-17T20:39:18.422889+00:00",
   "acceptance": {
     "coverage": false,
     "claim_authentication": true,

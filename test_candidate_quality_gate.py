@@ -16,6 +16,13 @@ class QualityGateTests(unittest.TestCase):
     def test_no_stale_morning_label(self):
         self.report["report_time"]="2026-10-15T22:05:00-05:00"
         self.assertFalse(review(self.report)["passed_prepublication_screen"])
+    def test_unknown_date_allowed_for_unverified_claim(self):
+        h=self.report["headlines"][0]
+        h["verification"]="Unverified"
+        h["event_date"]=None
+        h["source_checked_at"]=None
+        result=review(self.report)
+        self.assertTrue(result["passed_prepublication_screen"])
     def test_dates_required(self):
         self.report["headlines"][0].pop("event_date")
         self.assertFalse(review(self.report)["passed_prepublication_screen"])

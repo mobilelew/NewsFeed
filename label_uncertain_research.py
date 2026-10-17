@@ -18,11 +18,16 @@ def prepare(candidate,authority):
             h["verification"]="Unverified"
         if h["verification"]!="Verified":
             h["claim_type"]="attributed_claim" if h.get("claim_type")=="established_fact" else h.get("claim_type","attributed_claim")
-            h.setdefault("attribution","See individually linked cited reporting; not independently established")
-            h.setdefault("what_is_known","The cited reporting makes this assertion.")
-            h.setdefault("uncertainty","No independent confirmation of the complete assertion has been established.")
-            h.setdefault("what_cannot_be_concluded","The original cited authority verifies the asserted position.")
-            h.setdefault("resolution_needed","Inspect the exact controlling original record for the individual factual assertion.")
+            fallbacks={
+                "attribution":"See individually linked cited reporting; not independently established.",
+                "what_is_known":"The cited reporting makes this assertion; the cited source text is not yet authenticated.",
+                "uncertainty":"No independent confirmation of the complete assertion has been established.",
+                "what_cannot_be_concluded":"That the original cited authority confirms the full reported position.",
+                "resolution_needed":"Inspect the exact controlling original record for the individual factual assertion."
+            }
+            for key,value in fallbacks.items():
+                if not str(h.get(key) or "").strip():
+                    h[key]=value
         # Prevent one unrelated or uninspected source from looking like validated support.
         h["claim_evidence_note"]="Cited authority "+h["authority_confirmation"]+"; literal excerpt presence is not semantic proof."
         if h.get("jurisdiction") not in {"federal","texas","arkansas","oklahoma","national","international","multiple"}:

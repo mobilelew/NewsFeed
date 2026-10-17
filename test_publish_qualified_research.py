@@ -20,6 +20,12 @@ class QualifiedResearchTests(unittest.TestCase):
         self.assertEqual(checked["verification"],"Unverified")
         self.assertTrue(checked["attribution"].strip())
         self.assertTrue(checked["uncertainty"].strip())
+    def test_generated_summary_cannot_claim_all_findings_verified(self):
+        doc=copy.deepcopy(self.doc)
+        doc["executive_summary"]="Key verified developments across federal and state agencies."
+        result=process(doc,{})
+        self.assertIn("none of the findings",result["executive_summary"])
+        self.assertNotIn("Key verified developments",result["executive_summary"])
     def test_no_claims_rejected(self):
         self.doc["headlines"]=[]
         with self.assertRaises(ValueError):process(self.doc,{})

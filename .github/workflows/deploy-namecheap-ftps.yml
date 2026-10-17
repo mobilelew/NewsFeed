@@ -1,0 +1,40 @@
+name: Deploy News Reader homepage by secure FTPS
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'deployment/namecheap/index.html'
+permissions:
+  contents: read
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify secure FTPS configuration
+        env:
+          FTPS_HOST: ${{ secrets.FTPS_HOST }}
+          FTPS_USERNAME: ${{ secrets.FTPS_USERNAME }}
+          FTPS_PASSWORD: ${{ secrets.FTPS_PASSWORD }}
+          FTPS_REMOTE_DIR: ${{ vars.FTPS_REMOTE_DIR }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "$FTPS_HOST" ] || [ -z "$FTPS_USERNAME" ] || [ -z "$FTPS_PASSWORD" ] || [ -z "$FTPS_REMOTE_DIR" ]; then
+            echo "Secure FTPS not configured. Add three Actions secrets and the FTPS_REMOTE_DIR repository variable. Plain FTP is not supported."
+            exit 1
+          fi
+          # Host must be a hostname, never a URL or a credential-bearing string.
+          if [[ ! "$FTPS_HOST" =~ ^[A-Za-z0-9.-]+$ ]]; then echo "Invalid FTPS host"; exit 1; fi
+          if [[ "$FTPS_REMOTE_DIR" == *'..'* ]] || [[ "$FTPS_REMOTE_DIR" == *'?'* ]] || [[ "$FTPS_REMOTE_DIR" == *'#'* ]]; then
+            echo "Invalid remote directory"; exit 1
+          fi
+          remote="${FTPS_REMOTE_DIR#/}"
+          remote="${remote%/}"
+          # Explicit TLS is required; never permit silent downgrade to insecure FTP.
+          curl --fail --silent --show-error --max-time 100 --ssl-reqd \
+            --user "$FTPS_USERNAME:$FTPS_PASSWORD" \
+            --upload-file deployment/namecheap/index.html \
+            "ftp://$FTPS_HOST/$remote/index.html"
+          echo "FTPS homepage upload completed."

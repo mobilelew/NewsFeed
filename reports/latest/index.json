@@ -1,4 +1,10 @@
 {
   "schema_version": 1,
-  "latest": {}
+  "latest": {
+    "evening": {
+      "report_date": "2026-10-16",
+      "report_time": "2026-10-16T21:37:19-05:00",
+      "path": "reports/2026-10-16/evening.json"
+    }
+  }
 }

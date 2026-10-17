@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-17T15:48:20+00:00",
+  "checked_at": "2026-10-17T16:17:26+00:00",
   "status": "source_audit_only_not_semantic_verification",
   "reports": [
     {
       "schema_version": 1,
-      "checked_at": "2026-10-17T15:48:20+00:00",
+      "checked_at": "2026-10-17T16:17:26+00:00",
       "report_date": "2026-10-16",
       "report_type": "evening",
       "source_check_scope": "original-source excerpts and reachability; NOT independent semantic verification",
@@ -16,7 +16,8 @@
           "source_check_status": "source_not_inspected",
           "claim_independently_verified": false,
           "legal_effect_confirmed": false,
-          "authority_confirmation": "No confirming primary-source text located.",
+          "authority_confirmation": "Not checked: no eligible primary authority was cited; locate the controlling original record before verification.",
+          "sources_checked": [],
           "sources_reached": 0,
           "quoted_passages_located": 0
         },
@@ -26,7 +27,8 @@
           "source_check_status": "source_not_inspected",
           "claim_independently_verified": false,
           "legal_effect_confirmed": false,
-          "authority_confirmation": "No confirming primary-source text located.",
+          "authority_confirmation": "Not checked: no eligible primary authority was cited; locate the controlling original record before verification.",
+          "sources_checked": [],
           "sources_reached": 0,
           "quoted_passages_located": 0
         },
@@ -36,7 +38,15 @@
           "source_check_status": "source_retrieved_no_exact_excerpt",
           "claim_independently_verified": false,
           "legal_effect_confirmed": false,
-          "authority_confirmation": "No confirming primary-source text located.",
+          "authority_confirmation": "Source checked: retrieved page did not contain the cited exact passage. Claim remains unresolved.",
+          "sources_checked": [
+            {
+              "url": "https://www.freddiemac.com/pmms",
+              "outcome": "Source retrieved; cited exact passage not found.",
+              "retrieved_at": null,
+              "sha256": "cbed85de85bee37c242d2a165e836418eb676086f1fb5048c1b8ccae0df491a2"
+            }
+          ],
           "sources_reached": 1,
           "quoted_passages_located": 0
         },
@@ -46,18 +56,40 @@
           "source_check_status": "source_retrieved_no_exact_excerpt",
           "claim_independently_verified": false,
           "legal_effect_confirmed": false,
-          "authority_confirmation": "No confirming primary-source text located.",
+          "authority_confirmation": "Source checked: retrieved page did not contain the cited exact passage. Claim remains unresolved.",
+          "sources_checked": [
+            {
+              "url": "https://mymarketnews.ams.usda.gov/filerepo/reports",
+              "outcome": "Source retrieved; cited exact passage not found.",
+              "retrieved_at": null,
+              "sha256": "d32af8b835fe9ca90a8923a4513cc690aedd0b6f97b9ad79c704749b3a46d993"
+            },
+            {
+              "url": "https://mymarketnews.ams.usda.gov/filerepo/reports",
+              "outcome": "Source retrieved; cited exact passage not found.",
+              "retrieved_at": null,
+              "sha256": "d32af8b835fe9ca90a8923a4513cc690aedd0b6f97b9ad79c704749b3a46d993"
+            }
+          ],
           "sources_reached": 2,
           "quoted_passages_located": 0
         },
         {
           "title": "No verified new federal rights/courts ruling or major statutory change recorded in the last 24 hours (since 06:00 Central) affecting federal civil-rights or voting rules",
           "verification": "Unverified",
-          "source_check_status": "source_not_inspected",
+          "source_check_status": "source_retrieved_no_exact_excerpt",
           "claim_independently_verified": false,
           "legal_effect_confirmed": false,
-          "authority_confirmation": "No confirming primary-source text located.",
-          "sources_reached": 0,
+          "authority_confirmation": "Source checked: retrieved page did not contain the cited exact passage. Claim remains unresolved.",
+          "sources_checked": [
+            {
+              "url": "https://www.supremecourt.gov/opinions/slipopinions.aspx?Term=05&lang=en",
+              "outcome": "Source retrieved; cited exact passage not found.",
+              "retrieved_at": null,
+              "sha256": "4474a632c7681dcc8b09dcbc2b30450b84aaf39cead52a53cd39884ae6f98805"
+            }
+          ],
+          "sources_reached": 1,
           "quoted_passages_located": 0
         }
       ],

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-17T03:27:45+00:00",
+  "status": "source_audit_only_not_semantic_verification",
+  "reports": [
+    {
+      "schema_version": 1,
+      "checked_at": "2026-10-17T03:27:45+00:00",
+      "report_date": "2026-10-16",
+      "report_type": "evening",
+      "source_check_scope": "original-source excerpts and reachability; NOT independent semantic verification",
+      "findings": [
+        {
+          "title": "Fed Chair Kevin Warsh declines to signal a near-term rate move at IMF fireside chat; reiterates price stability priority",
+          "verification": "Unverified",
+          "source_check_status": "source_not_inspected",
+          "claim_independently_verified": false,
+          "legal_effect_confirmed": false,
+          "authority_confirmation": "No confirming primary-source text located.",
+          "sources_reached": 0,
+          "quoted_passages_located": 0
+        },
+        {
+          "title": "AI/data-center bellwether CoreWeave's bonds trade at distressed levels; market scrutiny of AI buildout financing intensifies",
+          "verification": "Unverified",
+          "source_check_status": "source_not_inspected",
+          "claim_independently_verified": false,
+          "legal_effect_confirmed": false,
+          "authority_confirmation": "No confirming primary-source text located.",
+          "sources_reached": 0,
+          "quoted_passages_located": 0
+        },
+        {
+          "title": "Mortgage rates remain elevated in the latest weekly survey; 30-year fixed near recent highs",
+          "verification": "Unverified",
+          "source_check_status": "source_retrieved_no_exact_excerpt",
+          "claim_independently_verified": false,
+          "legal_effect_confirmed": false,
+          "authority_confirmation": "No confirming primary-source text located.",
+          "sources_reached": 1,
+          "quoted_passages_located": 0
+        },
+        {
+          "title": "USDA AMS published daily regional cattle and poultry market reports (including TX/OK/NM cattle summary and weekly turkey report) — routine market releases available Oct 16, 2026",
+          "verification": "Unverified",
+          "source_check_status": "source_retrieved_no_exact_excerpt",
+          "claim_independently_verified": false,
+          "legal_effect_confirmed": false,
+          "authority_confirmation": "No confirming primary-source text located.",
+          "sources_reached": 2,
+          "quoted_passages_located": 0
+        },
+        {
+          "title": "No verified new federal rights/courts ruling or major statutory change recorded in the last 24 hours (since 06:00 Central) affecting federal civil-rights or voting rules",
+          "verification": "Unverified",
+          "source_check_status": "source_not_inspected",
+          "claim_independently_verified": false,
+          "legal_effect_confirmed": false,
+          "authority_confirmation": "No confirming primary-source text located.",
+          "sources_reached": 0,
+          "quoted_passages_located": 0
+        }
+      ],
+      "independently_verified_findings": 0,
+      "pending_findings": 5
+    }
+  ],
+  "note": "Original source extraction never automatically certifies entire claims. Publish Verified only after a separately grounded semantic verification step."
+}

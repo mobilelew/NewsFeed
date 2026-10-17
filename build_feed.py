@@ -232,7 +232,7 @@ def main():
     # Best-effort publisher article extracts; RSS-derived summaries remain labelled.
     # Limit network work to bounded selected stories, not all discovered links.
     for story in selected:
-        if story.get("is_editorial"): continue
+        if story.get("is_editorial") or not direct_publisher_url(story.get("url","")): continue
         extraction=article_extract(story.get("url",""))
         if extraction:
             story["summary"]=extraction["summary"]
